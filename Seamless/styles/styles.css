@@ -234,6 +234,9 @@ a:hover {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
+.accordion_content.no-grid {
+  display: block; }
+
 .accordion_content.claim-details {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr; }
@@ -500,7 +503,7 @@ a:hover {
 .smaller .dpl-claims-details li:first-child a {
   font-size: 0.875rem; }
 
-.dpl-button, .dpl-button-ghost {
+.dpl-button, .dpl-button-ghost, .dpl-button-full {
   border: 1px solid #196FD0;
   color: #FFFFFF;
   background-color: #196FD0;
@@ -508,9 +511,10 @@ a:hover {
   padding: 0.75rem 1rem;
   display: inline-block;
   border-radius: 3px;
-  text-decoration: none; }
+  text-decoration: none;
+  text-align: center; }
 
-.smaller .dpl-button, .smaller .dpl-button-ghost {
+.smaller .header .dpl-button, .smaller .header .dpl-button-ghost {
   padding: 0.375rem 0.875rem;
   font-size: 0.813rem; }
 
@@ -519,6 +523,9 @@ a:hover {
   color: #196FD0;
   background-color: #FFFFFF;
   font-family: "UHC Sans Bold", sans-serif; }
+
+.dpl-button-full {
+  width: 100%; }
 
 .dpl-claims-status {
   display: flex;
@@ -608,6 +615,9 @@ a:hover {
   border-radius: 3px;
   margin: 5px 0; }
 
+.no-grid .dpl-card {
+  margin-bottom: 1rem; }
+
 .dpl-card-header {
   background-color: #E0E0E0;
   padding: 0.688rem 1rem; }
@@ -624,6 +634,12 @@ a:hover {
 
 .dpl-card-body.no-flex {
   display: block; }
+
+.dpl-card-body.full {
+  grid-template-columns: 1fr; }
+
+.button-bottom {
+  margin-top: 1.75rem; }
 
 .dpl-card-body.billing-summary {
   display: flex;
@@ -646,6 +662,12 @@ a:hover {
 
 .dpl-card-body p span {
   font-family: "UHC Sans Bold", sans-serif; }
+
+.dpl-card-body.line-items {
+  grid-template-columns: 2fr 1fr; }
+
+.dpl-card-body.line-items > div:nth-child(2) {
+  text-align: right; }
 
 .claim-summary-details {
   display: flex;

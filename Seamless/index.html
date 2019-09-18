@@ -57,7 +57,7 @@
 
             <div class="dpl-account-nav wrapper">
 
-                <a href="#">Return to Legacy Links</a> | <a href="#"><i class="fas fa-user"></i> My Account <i class="fas fa-chevron-down"></i></a>
+                <a href="#">Return to Legacy Link</a> | <a href="#"><i class="fas fa-user"></i> My Account <i class="fas fa-chevron-down"></i></a>
                 
             </div>
 
@@ -392,27 +392,31 @@
 
                 <button class="accordion_tab" id="line-items"><i class="fas fa-id-card"></i> Line Items</button>
 
-                <div class="accordion_content">
+                <div class="accordion_content no-grid">
 
                     <div class="dpl-card">
 
                         <div class="dpl-card-header">
 
-                            <h2 class="dpl-card-title">Member Information</h2>
+                            <h2 class="dpl-card-title">Claim Details and Line Items</h2>
 
                         </div>
 
-                        <div class="dpl-card-body">
+                        <div class="dpl-card-body line-items">
 
-                            <p>Member Name<br> Stephanie Johnson</p>
+                            <div>
 
-                            <p>Policy Number<br> 0222244</p>
+                                <p>You can add/remove columns by clicking the <strong>Customize Table button.</strong></p>
 
-                            <p>Member ID<br> 123456 00</p>
+                                <p><strong>Use the <i class="fas fa-chevron-down"></i> to view more details about that row,</strong> including potential remark codes, claim adjustment remark codes or reimbursement policies.</p>
 
-                            <p>Subscriber<br> Stephanie Johnson <br> 18283 Main Street,<br> Minneapolis, MN 55408</p>
+                            </div>
 
-                            <p>Date of Birth<br> 05/04/1976</p>
+                            <div>
+
+                                <a class="dpl-button">Customize Table</a>
+                                
+                            </div>
 
                         </div>
 
@@ -422,19 +426,13 @@
 
                         <div class="dpl-card-header">
 
-                            <h2 class="dpl-card-title">Provider Information</h2>
+                            <h2 class="dpl-card-title">Coordination of Benefits</h2>
 
                         </div>
 
-                        <div class="dpl-card-body">
+                        <div class="dpl-card-body no-flex">
 
-                            <p>Billing Provider<br> Minneapolis Medical Center</p>
-
-                            <p>Insurance Type<br> Commercial</p>
-
-                            <p>Tax ID<br> 956130458</p>
-
-                            <p>Servicing Provider<br> Scott Brundle</p>
+                            <p><strong>No coordination of benefits information was recieved for this claim.</strong> Check this <a href="#">patient's eligibility</a> to determine if additional coverage exists.</p>
 
                         </div>
 
@@ -494,7 +492,7 @@
 
                 </div>
 
-                <button class="accordion_tab" id="documents"><i class="fas fa-id-card"></i> Documents</button>
+                <button class="accordion_tab" id="documents"><i class="fas fa-id-card"></i> Related Documents</button>
 
                 <div class="accordion_content">
 
@@ -502,21 +500,15 @@
 
                         <div class="dpl-card-header">
 
-                            <h2 class="dpl-card-title">Member Information</h2>
+                            <h2 class="dpl-card-title">Letters</h2>
 
                         </div>
 
-                        <div class="dpl-card-body">
+                        <div class="dpl-card-body no-flex">
 
-                            <p>Member Name<br> Stephanie Johnson</p>
+                            <p>There are no letters associated with the claim at this time.</p>
 
-                            <p>Policy Number<br> 0222244</p>
-
-                            <p>Member ID<br> 123456 00</p>
-
-                            <p>Subscriber<br> Stephanie Johnson <br> 18283 Main Street,<br> Minneapolis, MN 55408</p>
-
-                            <p>Date of Birth<br> 05/04/1976</p>
+                            <p><strong>Note:</strong> Letters are displayed for UnitedHealthcare commercial and Medicare Advantage claims only.</p>
 
                         </div>
 
@@ -530,15 +522,9 @@
 
                         </div>
 
-                        <div class="dpl-card-body">
+                        <div class="dpl-card-body no-flex">
 
-                            <p>Billing Provider<br> Minneapolis Medical Center</p>
-
-                            <p>Insurance Type<br> Commercial</p>
-
-                            <p>Tax ID<br> 956130458</p>
-
-                            <p>Servicing Provider<br> Scott Brundle</p>
+                            <p><a href="#">08/29/2019</a></p>
 
                         </div>
 
@@ -554,21 +540,26 @@
 
                         <div class="dpl-card-header">
 
-                            <h2 class="dpl-card-title">Member Information</h2>
+                            <h2 class="dpl-card-title">Claim Reconsideration</h2>
 
                         </div>
 
-                        <div class="dpl-card-body">
+                        <div class="dpl-card-body no-flex">
 
-                            <p>Member Name<br> Stephanie Johnson</p>
+                            <p><strong>This claim is not eligible for an appeal or dispute</strong></p>
 
-                            <p>Policy Number<br> 0222244</p>
+                            <p>You should submit a Claim Reconsideration request if you believe a claim was paid incorrectly. Situations for reprocessing include, but are not limited to:</p>
 
-                            <p>Member ID<br> 123456 00</p>
+                            <ul>
 
-                            <p>Subscriber<br> Stephanie Johnson <br> 18283 Main Street,<br> Minneapolis, MN 55408</p>
+                                <li>Amount is different than what provider expected</li>
+                                <li>Claim was filed in a timely manner, when provider has proof</li>
+                                <li>Claim was denied for no authorization, when provider has an authorization number</li>
+                                <li>Difference in Coordination of Benefits (COB) information</li>
+                                
+                            </ul>
 
-                            <p>Date of Birth<br> 05/04/1976</p>
+                            <a class="dpl-button" href="#">Create a Claim Reconsideration</a> <a class="dpl-button-ghost" href="#">Submit Corrected Claim</a>
 
                         </div>
 
@@ -578,19 +569,25 @@
 
                         <div class="dpl-card-header">
 
-                            <h2 class="dpl-card-title">Provider Information</h2>
+                            <h2 class="dpl-card-title">Appeal/Dispute</h2>
 
                         </div>
 
-                        <div class="dpl-card-body">
+                        <div class="dpl-card-body full">
 
-                            <p>Billing Provider<br> Minneapolis Medical Center</p>
+                            <p><strong>When should you submit an Appeal/Dispute?</strong></p>
 
-                            <p>Insurance Type<br> Commercial</p>
+                            <p>You should submit an Appeal/Dispute when you wish to challenge a decision or request an exception. Situations for reprocessing include, but are not limited to:</p>
 
-                            <p>Tax ID<br> 956130458</p>
+                            <ul>
 
-                            <p>Servicing Provider<br> Scott Brundle</p>
+                                <li>Medical necessity (must be filed as a member appeal/dispute and can be submitteed by the member or by the provider on the member's behalf)</li>
+
+                                <li>Exception to reimbursement policy</li>
+                                
+                            </ul>
+
+                            <a class="dpl-button-full button-bottom" href="#">File Appeal/Dispute</a>
 
                         </div>
 

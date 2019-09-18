@@ -1,7 +1,621 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+
+    <head>
+
+        <meta name="description" content="XXX">
+
+        <title>XXX</title>
+
+        <!-- Meta Info -->
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1" />
+
+
+        <!-- Styles -->
+
+        <link href="styles/fontawesome.css" rel="stylesheet" type="text/css">
+        <link href="styles/styles.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+
+        <!-- Favicons/Icons -->
+
+        <link rel="shortcut icon" href="images/icons/favicon.ico">
+
+        <link rel="apple-touch-icon" href="images/icons/touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="images/icons/touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="images/icons/touch-icon-iphone-retina.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="images/icons/touch-icon-ipad-retina.png" />
+
+        <meta name="application-name" content="Site Tile"/>
+        <meta name="msapplication-TileColor" content="#000000"/>
+        <meta name="msapplication-square70x70logo" content="images/icons/tiny.png"/>
+        <meta name="msapplication-square150x150logo" content="images/icons/square.png"/>
+        <meta name="msapplication-wide310x150logo" content="images/icons/wide.png"/>
+        <meta name="msapplication-square310x310logo" content="images/icons/large.png"/>
+
+
+        <!-- Google Analytics Script -->
+
+
+        <!-- Force Old Browsers to Accept HTML5 -->
+
+        <!--[if lt IE 10]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <header class="dpl-header">
+
+            <div class="dpl-account-nav wrapper">
+
+                <a href="#">Return to Legacy Link</a> | <a href="#"><i class="fas fa-user"></i> My Account <i class="fas fa-chevron-down"></i></a>
+                
+            </div>
+
+            <div class="dpl-header-options wrapper">
+
+                <h1 class="dpl-logo">UnitedHealthcare | Link</h1>
+
+                <div class="dpl-header-selectors">
+
+                    <a class="dpl-header-selector" href="#selectors-options"><span>Payer</span> 87726 - UnitedHealthcare <i class="fas fa-chevron-down"></i></a>
+
+                    <div class="dpl-payer-modal" id="payer-modal">
+
+                        <div class="dpl-payer-options">
+
+                            <h4 class="dpl-payer-options-title">Selected Payer</h4>
+
+                            <hr>
+
+                            <label class="dpl-payer-options-label">Payer Group</label>
+
+                            <select class="dpl-payer-options-select">
+
+                                <option value="volvo">United Healthcare - 87726</option>
+                                <option value="saab">other option</option>
+                                <option value="saab">other option</option>
+
+                            </select>
+
+                            <a class="dpl-payer-options-link" href="#">What is this <i class="fas fa-chevron-down"></i></a>
+
+                            <hr>
+
+                            <div class="dpl-payer-options-buttons">
+
+                                <a class="dpl-button-ghost" href="#">Cancel</a> <a class="dpl-button" href="#">Save</a>
+
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <a class="dpl-header-selector" href="#"><span>Provider</span> Scott Brundle <i class="fas fa-chevron-down"></i></a>
+
+                </div>
+
+            </div>
+
+            <nav class="dpl-main-nav">
+
+                <div class="wrapper">
+
+                    <ul class="dpl-main-nav-list">
+
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Eligibility &amp; Benefits</a></li>
+                        <li><a href="#">Claims</a></li>
+                        <li><a href="#">Referrals</a></li>
+                        <li><a href="#">Prior Authorizations <i class="fas fa-external-link-square-alt"></i></a></li>
+                        
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <div class="dpl-breadcrumbs wrapper">
+
+                <ul class="dpl-breadcrumbs-list">
+
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Claims Search Results</a></li>
+                    <li>Claims Summary Page</li>
+                    
+                </ul>
+
+                <a class="dpl-button-link" href="#"><i class="fas fa-print"></i> Print</a>
+                
+            </div>
+
+            <div class="dpl-claims-header wrapper">
+
+                <ul class="dpl-claims-details">
+
+                    <li>Claim Number:<br class="remove"> <span>7479894912</span> <a href="#">Stephanie Johnson</a></li>
+                    <li>Member ID: <strong>123456 00</strong></li>
+                    <li>Patient Account Number: <strong>103411304333</strong></li>
+                    
+                </ul>
+
+                <div class="dpl-claims-options">
+
+                    <a class="dpl-button-ghost"><i class="fas fa-flag"></i> Unflag Claim</a> <a class="dpl-button">New Search</a>
+
+                </div>
+
+            </div>
+
+            <div class="dpl-claims-status wrapper">
+
+                <div class="dpl-notification-alert-error">
+
+                    <p>Current Claim Status: <i class="fas fa-exclamation-triangle"></i> <strong>Denied</strong> <a href="#">why?</a> • First Date of Service: <strong>08/08/2019</strong> • Total Billed: <strong>$3,848.95</strong></p>
+
+                </div>
+
+                <div class="dpl-notification-alert-success">
+
+                    <p>Adjudication Status: <strong>In-Network</strong></p>
+
+                </div>
+
+            </div>
+
+            <div class="dpl-jump-menu wrapper" id="jump-menu">
+
+                <ul class="dpl-jump-menu-list">
+
+                    <li><a class="active" href="#member-details">Member &amp; Provider Details</a></li>
+                    <li><a href="#claim-details">Claim Details</a></li>
+                    <li><a href="#line-items">Line Items</a></li>
+                    <li><a href="#payments">Payments</a></li>
+                    <li><a href="#documents">Documents</a></li>
+                    <li><a href="#act">Act on Claim</a></li>
+                    
+                </ul>
+
+                <p class="dpl-jump-menu-cta"><a href="#">View Patients Eligibility &amp; Benefits <i class="fas fa-angle-right"></i></a></p>
+
+            </div>
+
+        </header>
+
+        <div class="wrapper content-container">
+
+            <main class="main" id="memberdetails">
+
+                <button class="accordion_tab" id="member-details"><i class="fas fa-id-card"></i> Member &amp; Provider Details</button>
+
+                <div class="accordion_content">
+
+                    <div class="dpl-card">
+
+                        <div class="dpl-card-header">
+
+                            <h2 class="dpl-card-title">Member Information</h2>
+
+                        </div>
+
+                        <div class="dpl-card-body">
+
+                            <div>
+
+                                <p>Member Name<br> <span>Stephanie Johnson</span></p>
+
+                                <p>Member ID<br> <span>123456 00</span></p>
+
+                                <p>Date of Birth<br> <span>05/04/1976</span></p>
+
+                            </div>
+
+                            <div>
+
+                                <p>Policy Number<br> <span>0222244</span></p>
+
+                                <p>Subscriber<br> <span>Stephanie Johnson <br> 18283 Main Street,<br> Minneapolis, MN 55408</span></p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="dpl-card">
+
+                        <div class="dpl-card-header">
+
+                            <h2 class="dpl-card-title">Provider Information</h2>
+
+                        </div>
+
+                        <div class="dpl-card-body">
+
+                            <p>Billing Provider<br> <span>Minneapolis Medical Center</span></p>
+
+                            <p>Insurance Type<br> <span>Commercial</span></p>
+
+                            <p>Tax ID<br> <span>956130458</span></p>
+
+                            <p>Servicing Provider<br> <span>Scott Brundle</span></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="accordion_tab" id="claim-details"><i class="fas fa-id-card"></i> Claim Details</button>
+
+                <div class="accordion_content claim-details">
+
+                    <div class="dpl-card card-1">
+
+                        <div class="dpl-card-header">
+
+                            <h2 class="dpl-card-title">Claim Summary</h2>
+
+                        </div>
+
+                        <div class="dpl-card-body no-flex">
+
+                            <div class="claim-summary-details">
+
+                                <p>Claim Number<br> <span>7479894912</span></p>
+
+                                <p>Patient Account Number<br> <span>103411304333</span></p>
+
+                                <p>First Date of Service<br> <span>08/08/2019</span></p>
+
+                                <p>Received Date<br> <span>08/15/2019</span></p>
+                                
+                            </div>
+
+                            <div class="claim-summary-status">
+
+                                <div class="dpl-notification-alert-error">
+
+                                    <p>Current Claim Status: <i class="fas fa-exclamation-triangle"></i> <strong>Denied</strong> <a href="#">why?</a></p>
+
+                                </div>
+
+                                <div class="dpl-notification-alert-success">
+
+                                    <p>Adjudication Status: <strong>In-Network</strong></p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="status-history">
+
+                                <h3 class="status-history-title">Status History</h3>
+
+                                <p class="status-history-copy">Hover over spots on timeline for more information on that item</p>
+
+                                <div class="history-timeline">
+
+                                    <p class="history-timeline-item one"><i class="fas fa-check-circle"></i><br> <span>08/15/2019</span><br> Received</p>
+
+                                    <p class="history-timeline-item two"><i class="fas fa-exclamation-triangle"></i><br> <span>08/21/2019</span><br> Denied</p>
+
+                                    <p class="history-timeline-item three"><i class="fas fa-circle"></i></p>
+                                    
+                                </div>
+
+                                <p class="status-history-copy"><strong>F1:</strong> Finalized/Denial - The claim/line has been denied</p>
+
+                                <p class="status-history-copy"><strong>585:</strong> Denied charge or non-covered charge</p>
+                                
+                            </div>
+
+                            <div class="claim-summary-footer">
+
+                                <p>Capitated/Fee For Service<br> <span>Fee For Service</span></p>
+
+                                <p>Claim Remark Code<br> <span>-</span></p>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="dpl-card card-2">
+
+                        <div class="dpl-card-header">
+
+                            <h2 class="dpl-card-title">Billing Summary</h2>
+
+                        </div>
+
+                        <div class="dpl-card-body billing-summary">
+
+                            <div>
+
+                                <p>Total Billed</p>
+
+                                <p>Total Adjustments</p>
+
+                                <p>Total Member Responsibility</p>
+
+                                <p>Total Paid</p>
+
+                            </div>
+
+                            <div>
+
+                                <p>$3,848.95</p>
+
+                                <p>$0.00</p>
+
+                                <p>$3,848.95</p>
+
+                                <p><strong>$0.00</strong></p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="dpl-card card-3">
+
+                        <div class="dpl-card-header">
+
+                            <h2 class="dpl-card-title">Diagnosis code</h2>
+
+                        </div>
+
+                        <div class="dpl-card-body no-flex">
+
+                            <p>Diagnosis Codes<br> <strong>JO69, R05</strong></p>
+
+                            <p>DRG<br> <strong>234</strong></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="accordion_tab" id="line-items"><i class="fas fa-id-card"></i> Line Items</button>
+
+                <div class="accordion_content">
+
+                    <div class="dpl-card">
+
+                        <div class="dpl-card-header">
+
+                            <h2 class="dpl-card-title">Member Information</h2>
+
+                        </div>
+
+                        <div class="dpl-card-body">
+
+                            <p>Member Name<br> Stephanie Johnson</p>
+
+                            <p>Policy Number<br> 0222244</p>
+
+                            <p>Member ID<br> 123456 00</p>
+
+                            <p>Subscriber<br> Stephanie Johnson <br> 18283 Main Street,<br> Minneapolis, MN 55408</p>
+
+                            <p>Date of Birth<br> 05/04/1976</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="dpl-card">
+
+                        <div class="dpl-card-header">
+
+                            <h2 class="dpl-card-title">Provider Information</h2>
+
+                        </div>
+
+                        <div class="dpl-card-body">
+
+                            <p>Billing Provider<br> Minneapolis Medical Center</p>
+
+                            <p>Insurance Type<br> Commercial</p>
+
+                            <p>Tax ID<br> 956130458</p>
+
+                            <p>Servicing Provider<br> Scott Brundle</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="accordion_tab" id="payments"><i class="fas fa-id-card"></i> Payments</button>
+
+                <div class="accordion_content">
+
+                    <div class="dpl-card">
+
+                        <div class="dpl-card-header">
+
+                            <h2 class="dpl-card-title">Member Information</h2>
+
+                        </div>
+
+                        <div class="dpl-card-body">
+
+                            <p>Member Name<br> Stephanie Johnson</p>
+
+                            <p>Policy Number<br> 0222244</p>
+
+                            <p>Member ID<br> 123456 00</p>
+
+                            <p>Subscriber<br> Stephanie Johnson <br> 18283 Main Street,<br> Minneapolis, MN 55408</p>
+
+                            <p>Date of Birth<br> 05/04/1976</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="dpl-card">
+
+                        <div class="dpl-card-header">
+
+                            <h2 class="dpl-card-title">Provider Information</h2>
+
+                        </div>
+
+                        <div class="dpl-card-body">
+
+                            <p>Billing Provider<br> Minneapolis Medical Center</p>
+
+                            <p>Insurance Type<br> Commercial</p>
+
+                            <p>Tax ID<br> 956130458</p>
+
+                            <p>Servicing Provider<br> Scott Brundle</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="accordion_tab" id="documents"><i class="fas fa-id-card"></i> Documents</button>
+
+                <div class="accordion_content">
+
+                    <div class="dpl-card">
+
+                        <div class="dpl-card-header">
+
+                            <h2 class="dpl-card-title">Member Information</h2>
+
+                        </div>
+
+                        <div class="dpl-card-body">
+
+                            <p>Member Name<br> Stephanie Johnson</p>
+
+                            <p>Policy Number<br> 0222244</p>
+
+                            <p>Member ID<br> 123456 00</p>
+
+                            <p>Subscriber<br> Stephanie Johnson <br> 18283 Main Street,<br> Minneapolis, MN 55408</p>
+
+                            <p>Date of Birth<br> 05/04/1976</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="dpl-card">
+
+                        <div class="dpl-card-header">
+
+                            <h2 class="dpl-card-title">Provider Information</h2>
+
+                        </div>
+
+                        <div class="dpl-card-body">
+
+                            <p>Billing Provider<br> Minneapolis Medical Center</p>
+
+                            <p>Insurance Type<br> Commercial</p>
+
+                            <p>Tax ID<br> 956130458</p>
+
+                            <p>Servicing Provider<br> Scott Brundle</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="accordion_tab" id="act"><i class="fas fa-id-card"></i> Act on Claim</button>
+
+                <div class="accordion_content">
+
+                    <div class="dpl-card">
+
+                        <div class="dpl-card-header">
+
+                            <h2 class="dpl-card-title">Member Information</h2>
+
+                        </div>
+
+                        <div class="dpl-card-body">
+
+                            <p>Member Name<br> Stephanie Johnson</p>
+
+                            <p>Policy Number<br> 0222244</p>
+
+                            <p>Member ID<br> 123456 00</p>
+
+                            <p>Subscriber<br> Stephanie Johnson <br> 18283 Main Street,<br> Minneapolis, MN 55408</p>
+
+                            <p>Date of Birth<br> 05/04/1976</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="dpl-card">
+
+                        <div class="dpl-card-header">
+
+                            <h2 class="dpl-card-title">Provider Information</h2>
+
+                        </div>
+
+                        <div class="dpl-card-body">
+
+                            <p>Billing Provider<br> Minneapolis Medical Center</p>
+
+                            <p>Insurance Type<br> Commercial</p>
+
+                            <p>Tax ID<br> 956130458</p>
+
+                            <p>Servicing Provider<br> Scott Brundle</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                                
+            </main>
+
+        </div>
+
+        <!-- JS Links -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+        <script defer src="js/classie.js"></script>
+
+        <script defer src="js/smoothscroll.js"></script>
+
+        <script defer src="js/accordion.js"></script>
+
+        <script defer src="js/scripts.js"></script>
+
+    </body>
+
 </html>

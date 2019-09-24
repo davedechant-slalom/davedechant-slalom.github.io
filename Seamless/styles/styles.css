@@ -766,6 +766,49 @@ a:hover {
   border: 3px solid #E0E0E0;
   border-radius: 50%; }
 
+.table {
+  font-family: "UHC Sans Regular", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3; }
+
+td, th {
+  border: 1px solid #E0E0E0;
+  text-align: left;
+  padding: 1rem 0.813rem;
+  font-size: 0.875rem; }
+
+tr:nth-child(odd) {
+  background-color: #FAFAFA; }
+
+th {
+  border-top: 3px solid #E0E0E0;
+  border-bottom: 3px solid #E0E0E0;
+  font-family: "UHC Sans Bold", sans-serif;
+  background-color: #F1FAFC;
+  vertical-align: middle; }
+
+.table tr td:first-child, .table tr th:first-child {
+  text-align: center; }
+
+.t-break {
+  background-color: #FFFFFF;
+  border: 0;
+  font-family: "UHC Sans Bold", sans-serif;
+  text-transform: uppercase;
+  padding: 0.75rem;
+  padding-left: 1.25rem; }
+
+.table tr td.t-break:first-child {
+  text-align: left; }
+
+.t-body-top td {
+  border-top: 3px solid #E0E0E0; }
+
+.t-body-bottom td {
+  border-bottom: 3px solid #E0E0E0; }
+
 /* End Website/Product Specific Styles */
 /*---------------------------------------------------------------------*/
 /* 7. Begin Responsive/Media Queries */

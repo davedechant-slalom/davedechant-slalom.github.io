@@ -963,12 +963,11 @@ a:hover {
 	width: 50%;
 	height: 4px;
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#196fd0+0,d2341e+100 */
-background: rgb(25,111,208); /* Old browsers */
-background: -moz-linear-gradient(left,  rgba(25,111,208,1) 0%, rgba(210,52,30,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  rgba(25,111,208,1) 0%,rgba(210,52,30,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  rgba(25,111,208,1) 0%,rgba(210,52,30,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#196fd0', endColorstr='#d2341e',GradientType=1 ); /* IE6-9 */
-
+	background: rgb(25,111,208); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(25,111,208,1) 0%, rgba(210,52,30,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(25,111,208,1) 0%,rgba(210,52,30,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(25,111,208,1) 0%,rgba(210,52,30,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#196fd0', endColorstr='#d2341e',GradientType=1 ); /* IE6-9 */
 }
 
 .history-timeline-item {
@@ -1014,6 +1013,58 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#196fd0', end
 	color: $grayscale-0;
 	border: 3px solid $grayscale-400;
 	border-radius: 50%;
+}
+
+.table {
+	font-family: $brand-font;
+	border-collapse: collapse;
+	width: 100%;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+td, th {
+	border: 1px solid $grayscale-400;
+	text-align: left;
+	padding: 1rem 0.813rem;
+	font-size: 0.875rem;
+}
+
+tr:nth-child(odd) {
+	background-color: $grayscale-100;
+}
+
+th {
+	border-top: 3px solid $grayscale-400;
+	border-bottom: 3px solid $grayscale-400;
+	font-family: $base-font;
+	background-color: #F1FAFC;
+	vertical-align: middle;
+}
+
+.table tr td:first-child, .table tr th:first-child {
+	text-align: center;
+}
+
+.t-break {
+	background-color: $grayscale-0;
+	border: 0;
+	font-family: $base-font;
+	text-transform: uppercase;
+	padding: 0.75rem;
+	padding-left: 1.25rem;
+}
+
+.table tr td.t-break:first-child {
+	text-align: left;
+}
+
+.t-body-top td {
+	border-top: 3px solid $grayscale-400;
+}
+
+.t-body-bottom td {
+	border-bottom: 3px solid $grayscale-400;
 }
 
 /* End Website/Product Specific Styles */

@@ -176,7 +176,7 @@ a:hover {
 /*---------------------------------------------------------------------*/
 /* Begin Module/Universal Styles */
 /*-- 5d. Accordion --*/
-.accordion_tab {
+.accordion_tab, .accordion_tab2 {
   position: relative;
   background: none;
   font-family: "UHC Sans Bold", sans-serif;
@@ -195,12 +195,12 @@ a:hover {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
-.accordion-table .accordion_tab {
+.accordion-table .accordion_tab, .accordion-table .accordion_tab2 {
   padding: 0;
   margin-bottom: 0;
   margin-top: 0; }
 
-.accordion_tab:before {
+.accordion_tab:before, .accordion_tab2:before {
   position: absolute;
   content: "";
   top: 0;
@@ -209,28 +209,28 @@ a:hover {
   height: 3px;
   width: calc(100% - 10px); }
 
-.accordion-table .accordion_tab:before {
+.accordion-table .accordion_tab:before, .accordion-table .accordion_tab2:before {
   display: none; }
 
-.accordion_tab:first-of-type {
+.accordion_tab:first-of-type, .accordion_tab2:first-of-type {
   margin-top: 0; }
 
-.accordion_tab:first-of-type:before {
+.accordion_tab:first-of-type:before, .accordion_tab2:first-of-type:before {
   display: none; }
 
-.accordion_tab.active {
+.accordion_tab.active, .accordion_tab2.active {
   background: none; }
 
-.accordion_tab:hover {
+.accordion_tab:hover, .accordion_tab2:hover {
   background: none; }
 
-.accordion_tab .fas {
+.accordion_tab .fas, .accordion_tab2 .fas {
   background-color: #FFFFFF;
   padding: 0.75rem 0.688rem;
   border-radius: 50%;
   color: #196FD0; }
 
-.accordion_content {
+.accordion_content, .accordion_content2 {
   padding: 0 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -244,23 +244,19 @@ a:hover {
   max-height: 0;
   overflow: hidden; }
 
-.accordion-table .accordion_content {
+.accordion-table .accordion_content, .accordion-table .accordion_content2 {
   padding: 0 1rem;
   background-color: #FAFAFA;
   border-left: 1px solid #E0E0E0;
   border-right: 1px solid #E0E0E0; }
 
-.accordion-table .accordion_content.white {
+.accordion-table .accordion_content.white, .accordion-table .accordion_content2.white {
   background-color: #FFFFFF; }
 
-.accordion_content.open_tab {
-  max-height: 100%;
-  overflow: visible; }
-
-.accordion_content.no-grid {
+.accordion_content.no-grid, .accordion_content2.no-grid {
   display: block; }
 
-.accordion_content.claim-details {
+.accordion_content.claim-details, .accordion_content2.claim-details {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr; }
 
@@ -272,7 +268,7 @@ a:hover {
   grid-column-start: 2;
   grid-column-end: 3; }
 
-.accordion_tab:after {
+.accordion_tab:after, .accordion_tab2:after {
   font-family: "Font Awesome 5 Pro";
   content: "\f107";
   font-size: 1.875rem;
@@ -287,11 +283,11 @@ a:hover {
   transform: translate(0, -50%);
   border-radius: 50%; }
 
-.accordion_tab.active:after {
+.accordion_tab.active:after, .accordion_tab2.active:after {
   font-family: "Font Awesome 5 Pro";
   content: "\f106"; }
 
-.accordion-table .accordion_tab:after {
+.accordion-table .accordion_tab:after, .accordion-table .accordion_tab2:after {
   font-size: 1.313rem;
   top: 50%;
   right: auto;
@@ -313,7 +309,7 @@ a:hover {
   font-size: 0.875rem;
   margin: 0; }
 
-.accordion-table .accordion_content .accordion-table-copy:last-child {
+.accordion-table .accordion_content .accordion-table-copy:last-child, .accordion-table .accordion_content2 .accordion-table-copy:last-child {
   margin: 0 0 1rem; }
 
 /* End Module/Universal Styles */
@@ -837,10 +833,10 @@ td, th {
 .t-body-top td {
   border-top: 3px solid #E0E0E0; }
 
-.accordion_tab.active .table td:first-child {
+.accordion_tab.active .table td:first-child, .accordion_tab2.active .table td:first-child {
   border-bottom: 1px solid #FAFAFA; }
 
-.accordion_tab.active .table.white td:first-child {
+.accordion_tab.active .table.white td:first-child, .accordion_tab2.active .table.white td:first-child {
   border-bottom: 1px solid #FFFFFF; }
 
 td:first-child, th:first-child, td:nth-child(2), th:nth-child(2) {

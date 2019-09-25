@@ -250,6 +250,9 @@ a:hover {
   border-left: 1px solid #E0E0E0;
   border-right: 1px solid #E0E0E0; }
 
+.accordion-table .accordion_content.white {
+  background-color: #FFFFFF; }
+
 .accordion_content.open_tab {
   max-height: 100%;
   overflow: visible; }
@@ -837,6 +840,9 @@ td, th {
 .accordion_tab.active .table td:first-child {
   border-bottom: 1px solid #FAFAFA; }
 
+.accordion_tab.active .table.white td:first-child {
+  border-bottom: 1px solid #FFFFFF; }
+
 td:first-child, th:first-child, td:nth-child(2), th:nth-child(2) {
   width: 6.5%;
   text-align: center; }
@@ -858,8 +864,11 @@ td.t-break:nth-child(3) {
 .table.default th, .table.default td {
   width: auto; }
 
-tr:nth-child(odd) {
+tr {
   background-color: #FAFAFA; }
+
+.white tr {
+  background-color: #FFFFFF; }
 
 th {
   border-top: 3px solid #E0E0E0;
@@ -886,7 +895,7 @@ th {
 td:first-child {
   text-indent: -9999px; }
 
-td.t-break:first-child {
+td.t-break:first-child, .default td:first-child {
   text-indent: 0; }
 
 .no-margin {

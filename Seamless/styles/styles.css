@@ -489,7 +489,7 @@ a:hover {
   text-decoration: none;
   font-family: "UHC Sans Regular", sans-serif; }
 
-.dpl-button-link {
+.dpl-button-link, .dpl-button-link:visited {
   font-size: 0.938rem;
   font-family: "UHC Sans Regular", sans-serif;
   text-decoration: none; }
@@ -547,7 +547,7 @@ a:hover {
 .smaller .dpl-claims-details li:first-child a {
   font-size: 0.875rem; }
 
-.dpl-button, .dpl-button-ghost, .dpl-button-full {
+.dpl-button, .dpl-button-ghost, .dpl-button-full, .dpl-button:visited, .dpl-button-ghost:visited, .dpl-button-full:visited {
   border: 1px solid #196FD0;
   color: #FFFFFF;
   background-color: #196FD0;
@@ -901,6 +901,13 @@ td.t-break:first-child, .default td:first-child {
   display: block;
   grid-column-start: 1;
   grid-column-end: 3; }
+
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0; }
+
+.padding-normal {
+  padding: 0 1rem; }
 
 /* End Website/Product Specific Styles */
 /*---------------------------------------------------------------------*/

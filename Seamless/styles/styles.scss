@@ -1083,6 +1083,19 @@ td, th {
 	padding: 1rem 0.813rem;
 	font-size: 0.875rem;
 	width: 13.8%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.t-body-top td {
+	border-top: 3px solid $grayscale-400;
+}
+
+.accordion_tab.active .table td:first-child {
+    border-bottom: 1px solid $grayscale-100;
 }
 
 td:first-child, th:first-child, td:nth-child(2), th:nth-child(2) {
@@ -1108,6 +1121,10 @@ td.t-break:nth-child(3) {
 	padding-left: 1rem;
 }
 
+.table.default th, .table.default td {
+	width: auto;
+}
+
 tr:nth-child(odd) {
 	background-color: $grayscale-100;
 }
@@ -1127,6 +1144,7 @@ th {
 .t-break {
 	background-color: $grayscale-0;
 	border: 0;
+	border-top: 3px solid $grayscale-400;
 	font-family: $base-font;
 	text-transform: uppercase;
 	padding: 0.75rem;
@@ -1137,12 +1155,12 @@ th {
 	text-align: left;
 }
 
-.t-body-top td:first-child {
+td:first-child {
 	text-indent: -9999px;
 }
 
-.t-body-bottom td {
-	
+td.t-break:first-child {
+	text-indent: 0;
 }
 
 .no-margin {

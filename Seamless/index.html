@@ -111,7 +111,7 @@
 
                 <div class="wrapper">
 
-                    <ul class="dpl-main-nav-list">
+                    <ul class="dpl-main-nav-list wrapper">
 
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Eligibility &amp; Benefits</a></li>
@@ -139,9 +139,9 @@
                 
             </div>
 
-            <div class="dpl-claims-header wrapper">
+            <div class="dpl-insights-header wrapper">
 
-                <ul class="dpl-claims-details">
+                <ul class="dpl-insights-details">
 
                     <li>Claim Number:<br class="remove"> <span>7479894912</span> <a href="#">Stephanie Johnson</a></li>
                     <li>Member ID: <strong>123456 00</strong></li>
@@ -149,7 +149,7 @@
                     
                 </ul>
 
-                <div class="dpl-claims-options">
+                <div class="dpl-insights-options">
 
                     <a class="dpl-button-ghost"><i class="fas fa-flag"></i> Unflag Claim</a> <a class="dpl-button">New Search</a>
 
@@ -157,15 +157,15 @@
 
             </div>
 
-            <div class="dpl-claims-status wrapper">
+            <div class="dpl-insights-status wrapper">
 
-                <div class="dpl-notification-alert-error">
+                <div class="dpl-notification-error">
 
                     <p>Current Claim Status: <i class="fas fa-exclamation-triangle"></i> <strong>Denied</strong> <a href="#">why?</a> • First Date of Service: <strong>08/08/2019</strong> • Total Billed: <strong>$3,848.95</strong></p>
 
                 </div>
 
-                <div class="dpl-notification-alert-success">
+                <div class="dpl-notification-success">
 
                     <p>Adjudication Status: <strong>In-Network</strong></p>
 
@@ -192,63 +192,37 @@
 
         </header>
 
-        <div class="wrapper content-container">
+        <main class="wrapper main-content">
 
-            <main class="main" id="memberdetails">
+            <button class="accordion_tab" id="member-details"><i class="fas fa-id-card"></i> Member &amp; Provider Details</button>
 
-                <button class="accordion_tab" id="member-details"><i class="fas fa-id-card"></i> Member &amp; Provider Details</button>
+            <div class="accordion_content acc-content-grid-1">
 
-                <div class="accordion_content">
+                <div class="dpl-card">
 
-                    <div class="dpl-card">
+                    <div class="dpl-card-header">
 
-                        <div class="dpl-card-header">
-
-                            <h2 class="dpl-card-title">Member Information</h2>
-
-                        </div>
-
-                        <div class="dpl-card-body">
-
-                            <div>
-
-                                <p>Member Name<br> <span>Stephanie Johnson</span></p>
-
-                                <p>Member ID<br> <span>123456 00</span></p>
-
-                                <p class="no-margin">Date of Birth<br> <span>05/04/1976</span></p>
-
-                            </div>
-
-                            <div>
-
-                                <p>Policy Number<br> <span>0222244</span></p>
-
-                                <p>Subscriber<br> <span>Stephanie Johnson <br> 18283 Main Street,<br> Minneapolis, MN 55408</span></p>
-
-                            </div>
-
-                        </div>
+                        <h2 class="dpl-card-title">Member Information</h2>
 
                     </div>
 
-                    <div class="dpl-card">
+                    <div class="dpl-card-body">
 
-                        <div class="dpl-card-header">
+                        <div>
 
-                            <h2 class="dpl-card-title">Provider Information</h2>
+                            <p>Member Name<br> <span>Stephanie Johnson</span></p>
+
+                            <p>Member ID<br> <span>123456 00</span></p>
+
+                            <p class="no-margin">Date of Birth<br> <span>05/04/1976</span></p>
 
                         </div>
 
-                        <div class="dpl-card-body">
+                        <div>
 
-                            <p>Billing Provider<br> <span>Minneapolis Medical Center</span></p>
+                            <p>Policy Number<br> <span>0222244</span></p>
 
-                            <p>Insurance Type<br> <span>Commercial</span></p>
-
-                            <p>Tax ID<br> <span>956130458</span></p>
-
-                            <p>Servicing Provider<br> <span>Scott Brundle</span></p>
+                            <p>Subscriber<br> <span>Stephanie Johnson <br> 18283 Main Street,<br> Minneapolis, MN 55408</span></p>
 
                         </div>
 
@@ -256,133 +230,137 @@
 
                 </div>
 
-                <button class="accordion_tab" id="claim-details"><i class="fas fa-id-card"></i> Claim Details</button>
+                <div class="dpl-card">
 
-                <div class="accordion_content claim-details">
+                    <div class="dpl-card-header">
 
-                    <div class="dpl-card card-1">
+                        <h2 class="dpl-card-title">Provider Information</h2>
 
-                        <div class="dpl-card-header">
+                    </div>
 
-                            <h2 class="dpl-card-title">Claim Summary</h2>
+                    <div class="dpl-card-body">
+
+                        <p>Billing Provider<br> <span>Minneapolis Medical Center</span></p>
+
+                        <p>Insurance Type<br> <span>Commercial</span></p>
+
+                        <p>Tax ID<br> <span>956130458</span></p>
+
+                        <p>Servicing Provider<br> <span>Scott Brundle</span></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="accordion_tab" id="claim-details"><i class="fas fa-id-card"></i> Claim Details</button>
+
+            <div class="accordion_content acc-content-grid-2">
+
+                <div class="dpl-card">
+
+                    <div class="dpl-card-header">
+
+                        <h2 class="dpl-card-title">Claim Summary</h2>
+
+                    </div>
+
+                    <div class="dpl-card-body d-block">
+
+                        <div class="claim-summary-details">
+
+                            <p>Claim Number<br> <span>7479894912</span></p>
+
+                            <p>Patient Account Number<br> <span>103411304333</span></p>
+
+                            <p>First Date of Service<br> <span>08/08/2019</span></p>
+
+                            <p>Received Date<br> <span>08/15/2019</span></p>
+                            
+                        </div>
+
+                        <div class="claim-summary-status">
+
+                            <div class="dpl-notification-alert-error">
+
+                                <p>Current Claim Status: <i class="fas fa-exclamation-triangle"></i> <strong>Denied</strong> <a href="#">why?</a></p>
+
+                            </div>
+
+                            <div class="dpl-notification-alert-success">
+
+                                <p>Adjudication Status: <strong>In-Network</strong></p>
+
+                            </div>
 
                         </div>
 
-                        <div class="dpl-card-body no-flex">
+                        <div class="status-history">
 
-                            <div class="claim-summary-details">
+                            <h3 class="status-history-title">Status History</h3>
 
-                                <p>Claim Number<br> <span>7479894912</span></p>
+                            <p class="status-history-copy">Hover over spots on timeline for more information on that item</p>
 
-                                <p>Patient Account Number<br> <span>103411304333</span></p>
+                            <div class="history-timeline">
 
-                                <p>First Date of Service<br> <span>08/08/2019</span></p>
+                                <p class="history-timeline-item one"><i class="fas fa-check-circle"></i><br> <span>08/15/2019</span><br> Received</p>
 
-                                <p>Received Date<br> <span>08/15/2019</span></p>
+                                <p class="history-timeline-item two"><i class="fas fa-exclamation-triangle"></i><br> <span>08/21/2019</span><br> Denied</p>
+
+                                <p class="history-timeline-item three"><i class="fas fa-circle"></i></p>
                                 
                             </div>
 
-                            <div class="claim-summary-status">
+                            <p class="status-history-copy"><strong>F1:</strong> Finalized/Denial - The claim/line has been denied</p>
 
-                                <div class="dpl-notification-alert-error">
+                            <p class="status-history-copy"><strong>585:</strong> Denied charge or non-covered charge</p>
+                            
+                        </div>
 
-                                    <p>Current Claim Status: <i class="fas fa-exclamation-triangle"></i> <strong>Denied</strong> <a href="#">why?</a></p>
+                        <div class="claim-summary-footer">
 
-                                </div>
+                            <p>Capitated/Fee For Service<br> <span>Fee For Service</span></p>
 
-                                <div class="dpl-notification-alert-success">
-
-                                    <p>Adjudication Status: <strong>In-Network</strong></p>
-
-                                </div>
-
-                            </div>
-
-                            <div class="status-history">
-
-                                <h3 class="status-history-title">Status History</h3>
-
-                                <p class="status-history-copy">Hover over spots on timeline for more information on that item</p>
-
-                                <div class="history-timeline">
-
-                                    <p class="history-timeline-item one"><i class="fas fa-check-circle"></i><br> <span>08/15/2019</span><br> Received</p>
-
-                                    <p class="history-timeline-item two"><i class="fas fa-exclamation-triangle"></i><br> <span>08/21/2019</span><br> Denied</p>
-
-                                    <p class="history-timeline-item three"><i class="fas fa-circle"></i></p>
-                                    
-                                </div>
-
-                                <p class="status-history-copy"><strong>F1:</strong> Finalized/Denial - The claim/line has been denied</p>
-
-                                <p class="status-history-copy"><strong>585:</strong> Denied charge or non-covered charge</p>
-                                
-                            </div>
-
-                            <div class="claim-summary-footer">
-
-                                <p>Capitated/Fee For Service<br> <span>Fee For Service</span></p>
-
-                                <p>Claim Remark Code<br> <span>-</span></p>
-                                
-                            </div>
-
+                            <p>Claim Remark Code<br> <span>-</span></p>
+                            
                         </div>
 
                     </div>
 
-                    <div class="dpl-card card-2">
+                </div>
 
-                        <div class="dpl-card-header">
+                <div class="dpl-card billing-summary">
 
-                            <h2 class="dpl-card-title">Billing Summary</h2>
+                    <div class="dpl-card-header">
 
-                        </div>
-
-                        <div class="dpl-card-body billing-summary">
-
-                            <div>
-
-                                <p>Total Billed</p>
-
-                                <p>Total Adjustments</p>
-
-                                <p>Total Member Responsibility</p>
-
-                                <p>Total Paid</p>
-
-                            </div>
-
-                            <div>
-
-                                <p>$3,848.95</p>
-
-                                <p>$0.00</p>
-
-                                <p>$3,848.95</p>
-
-                                <p><strong>$0.00</strong></p>
-
-                            </div>
-
-                        </div>
+                        <h2 class="dpl-card-title">Billing Summary</h2>
 
                     </div>
 
-                    <div class="dpl-card card-3">
+                    <div class="dpl-card-body">
 
-                        <div class="dpl-card-header">
+                        <div>
 
-                            <h2 class="dpl-card-title">Diagnosis code</h2>
+                            <p>Total Billed</p>
+
+                            <p>Total Adjustments</p>
+
+                            <p>Total Member Responsibility</p>
+
+                            <p>Total Paid</p>
 
                         </div>
 
-                        <div class="dpl-card-body no-flex">
+                        <div>
 
-                            <p>Diagnosis Codes<br> <strong>JO69, R05</strong></p>
+                            <p>$3,848.95</p>
 
-                            <p>DRG<br> <strong>234</strong></p>
+                            <p>$0.00</p>
+
+                            <p>$3,848.95</p>
+
+                            <p><strong>$0.00</strong></p>
 
                         </div>
 
@@ -390,239 +368,189 @@
 
                 </div>
 
-                <button class="accordion_tab" id="line-items"><i class="fas fa-id-card"></i> Line Items</button>
+                <div class="dpl-card card-3">
 
-                <div class="accordion_content no-grid">
+                    <div class="dpl-card-header">
 
-                    <div class="dpl-card">
-
-                        <div class="dpl-card-header">
-
-                            <h2 class="dpl-card-title">Claim Details and Line Items</h2>
-
-                        </div>
-
-                        <div class="dpl-card-body line-items padding-0">
-
-                            <div class="padding-normal">
-
-                                <p>You can add/remove columns by clicking the <strong>Customize Table button.</strong></p>
-
-                                <p><strong>Use the <i class="fas fa-chevron-down"></i> to view more details about that row,</strong> including potential remark codes, claim adjustment remark codes or reimbursement policies.</p>
-
-                            </div>
-
-                            <div class="padding-normal">
-
-                                <a class="dpl-button">Customize Table</a>
-                                
-                            </div>
-
-                            <div class="accordion-table">
-
-                                <table class="table no-margin">
-
-                                    <tr>
-
-                                        <th><a href="#">Show<br> All</a></th>
-                                        <th>Line #</th>
-                                        <th>Date of Service</th>
-                                        <th>Service Code</th>
-                                        <th>Revenue Code</th>
-                                        <th>Modifier</th>
-                                        <th>Billed Amount</th>
-                                        <th>Paid Amount</th>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <td class="t-break" colspan="8">Processed Date: 08/14/2019</td>
-
-                                    </tr>
-
-                                </table>
-
-                                <button class="accordion_tab2">
-
-                                    <table class="table no-margin">
-
-                                        <tr class="t-body-top">
-
-                                            <td>Open Table Row</i></a></td>
-                                            <td>1</td>
-                                            <td>08/08/2019 - 08/08/2019</td>
-                                            <td>99284</td>
-                                            <td>-</td>
-                                            <td>25</td>
-                                            <td>$2,732.00</td>
-                                            <td>$0.00</td>
-
-                                        </tr>
-
-                                    </table>
-
-                                </button>
-
-                                <div class="accordion_content2 no-grid">
-
-                                    <h4 class="accordion-table-header">Remark Codes</h4>
-
-                                    <p class="accordion-table-copy"><strong>OC:</strong> Before we can consider this claim, please send us the date and place of the accident and a brief description of how the accident happened.</p>
-
-                                    <h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
-
-                                    <p class="accordion-table-copy"><strong>40:</strong> The necessary information is stil needed to process this claim.</p>
-
-                                </div>
-
-                                <button class="accordion_tab2">
-
-                                    <table class="table no-margin white">
-
-                                        <tr>
-
-                                            <td>Open Table Row</i></a></td>
-                                            <td>2</td>
-                                            <td>08/08/2019 - 08/08/2019</td>
-                                            <td>99284</td>
-                                            <td>-</td>
-                                            <td>25</td>
-                                            <td>$2,732.00</td>
-                                            <td>$0.00</td>
-
-                                        </tr>
-
-                                    </table>
-
-                                </button>
-
-                                <div class="accordion_content2 no-grid white">
-
-                                    <h4 class="accordion-table-header">Remark Codes</h4>
-
-                                    <p class="accordion-table-copy"><strong>OC:</strong> Before we can consider this claim, please send us the date and place of the accident and a brief description of how the accident happened.</p>
-
-                                    <h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
-
-                                    <p class="accordion-table-copy"><strong>40:</strong> The necessary information is stil needed to process this claim.</p>
-
-                                </div>
-
-                                <button class="accordion_tab2">
-
-                                    <table class="table no-margin">
-
-                                        <tr>
-
-                                            <td>Open Table Row</i></a></td>
-                                            <td>3</td>
-                                            <td>08/08/2019 - 08/08/2019</td>
-                                            <td>99284</td>
-                                            <td>-</td>
-                                            <td>25</td>
-                                            <td>$2,732.00</td>
-                                            <td>$0.00</td>
-
-                                        </tr>
-
-                                    </table>
-
-                                </button>
-
-                                <div class="accordion_content2 no-grid">
-
-                                    <h4 class="accordion-table-header">Remark Codes</h4>
-
-                                    <p class="accordion-table-copy"><strong>OC:</strong> Before we can consider this claim, please send us the date and place of the accident and a brief description of how the accident happened.</p>
-
-                                    <h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
-
-                                    <p class="accordion-table-copy"><strong>40:</strong> The necessary information is stil needed to process this claim.</p>
-
-                                </div>
-
-                                <table class="table no-margin">
-
-                                    <tr>
-
-                                        <td class="t-break">Overall Claim Totals</td>
-                                        <td class="t-break">$3848.95</td>
-                                        <td class="t-break">$0.00</td>
-
-                                    </tr>
-
-                                </table>
-
-                            </div>
-
-                        </div>
+                        <h2 class="dpl-card-title">Diagnosis code</h2>
 
                     </div>
 
-                    <div class="dpl-card">
+                    <div class="dpl-card-body no-flex">
 
-                        <div class="dpl-card-header">
+                        <p>Diagnosis Codes<br> <strong>JO69, R05</strong></p>
 
-                            <h2 class="dpl-card-title">Coordination of Benefits</h2>
-
-                        </div>
-
-                        <div class="dpl-card-body no-flex">
-
-                            <p class="no-margin"><strong>No coordination of benefits information was recieved for this claim.</strong> Check this <a href="#">patient's eligibility</a> to determine if additional coverage exists.</p>
-
-                        </div>
+                        <p>DRG<br> <strong>234</strong></p>
 
                     </div>
 
                 </div>
 
-                <button class="accordion_tab" id="payments"><i class="fas fa-id-card"></i> Payments</button>
+            </div>
 
-                <div class="accordion_content no-grid">
+            <button class="accordion_tab" id="line-items"><i class="fas fa-id-card"></i> Line Items</button>
 
-                    <div class="dpl-card">
+            <div class="accordion_content">
 
-                        <div class="dpl-card-header">
+                <div class="dpl-card line-items">
 
-                            <h2 class="dpl-card-title">Payment Information</h2>
+                    <div class="dpl-card-header">
+
+                        <h2 class="dpl-card-title">Claim Details and Line Items</h2>
+
+                    </div>
+
+                    <div class="dpl-card-body padding-0">
+
+                        <div class="padding-normal">
+
+                            <p>You can add/remove columns by clicking the <strong>Customize Table button.</strong></p>
+
+                            <p><strong>Use the <i class="fas fa-chevron-down"></i> to view more details about that row,</strong> including potential remark codes, claim adjustment remark codes or reimbursement policies.</p>
 
                         </div>
 
-                        <div class="dpl-card-body line-items padding-0">
+                        <div class="padding-normal">
 
-                            <table class="table default">
+                            <a class="dpl-button">Customize Table</a>
+                            
+                        </div>
+
+                        <div class="accordion-table">
+
+                            <table class="table no-margin">
 
                                 <tr>
 
-                                    <th>Payment Type</th>
-                                    <th>Payment Issue Date</th>
-                                    <th>Payee Type</th>
-                                    <th>Check Number</th>
-                                    <th>Check Amount</th>
-                                    <th>Draft Number</th>
-                                    <th>Draft Amount</th>
-                                    <th>Bulk Funds Report</th>
+                                    <th><a href="#">Show<br> All</a></th>
+                                    <th>Line #</th>
+                                    <th>Date of Service</th>
+                                    <th>Service Code</th>
+                                    <th>Revenue Code</th>
+                                    <th>Modifier</th>
+                                    <th>Billed Amount</th>
+                                    <th>Paid Amount</th>
 
                                 </tr>
 
-                                <tr class="t-body-top">
+                                <tr>
 
-                                    <td>Electronic*</td>
-                                    <td>08/24/2019</td>
-                                    <td>-</td>
-                                    <td>26362242</td>
-                                    <td>$246,556.02</td>
-                                    <td>0021456470</td>
-                                    <td>$0.00</td>
-                                    <td><a href="#">View</a></td>
+                                    <td class="t-break" colspan="8">Processed Date: 08/14/2019</td>
 
                                 </tr>
 
                             </table>
 
-                            <small class="no-margin padding-normal">*Electronic payments do not have additional details available. Go to <a href="#">Electronic Payments and Statements</a> to get this information.</small>
+                            <button class="accordion_tab_table">
+
+                                <table class="table no-margin">
+
+                                    <tr class="t-body-top">
+
+                                        <td>Open Table Row</i></a></td>
+                                        <td>1</td>
+                                        <td>08/08/2019 - 08/08/2019</td>
+                                        <td>99284</td>
+                                        <td>-</td>
+                                        <td>25</td>
+                                        <td>$2,732.00</td>
+                                        <td>$0.00</td>
+
+                                    </tr>
+
+                                </table>
+
+                            </button>
+
+                            <div class="accordion_content_table">
+
+                                <h4 class="accordion-table-header">Remark Codes</h4>
+
+                                <p class="accordion-table-copy"><strong>OC:</strong> Before we can consider this claim, please send us the date and place of the accident and a brief description of how the accident happened.</p>
+
+                                <h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
+
+                                <p class="accordion-table-copy"><strong>40:</strong> The necessary information is stil needed to process this claim.</p>
+
+                            </div>
+
+                            <button class="accordion_tab_table">
+
+                                <table class="table no-margin white">
+
+                                    <tr>
+
+                                        <td>Open Table Row</i></a></td>
+                                        <td>2</td>
+                                        <td>08/08/2019 - 08/08/2019</td>
+                                        <td>99284</td>
+                                        <td>-</td>
+                                        <td>25</td>
+                                        <td>$2,732.00</td>
+                                        <td>$0.00</td>
+
+                                    </tr>
+
+                                </table>
+
+                            </button>
+
+                            <div class="accordion_content_table white">
+
+                                <h4 class="accordion-table-header">Remark Codes</h4>
+
+                                <p class="accordion-table-copy"><strong>OC:</strong> Before we can consider this claim, please send us the date and place of the accident and a brief description of how the accident happened.</p>
+
+                                <h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
+
+                                <p class="accordion-table-copy"><strong>40:</strong> The necessary information is stil needed to process this claim.</p>
+
+                            </div>
+
+                            <button class="accordion_tab_table">
+
+                                <table class="table no-margin">
+
+                                    <tr>
+
+                                        <td>Open Table Row</i></a></td>
+                                        <td>3</td>
+                                        <td>08/08/2019 - 08/08/2019</td>
+                                        <td>99284</td>
+                                        <td>-</td>
+                                        <td>25</td>
+                                        <td>$2,732.00</td>
+                                        <td>$0.00</td>
+
+                                    </tr>
+
+                                </table>
+
+                            </button>
+
+                            <div class="accordion_content_table">
+
+                                <h4 class="accordion-table-header">Remark Codes</h4>
+
+                                <p class="accordion-table-copy"><strong>OC:</strong> Before we can consider this claim, please send us the date and place of the accident and a brief description of how the accident happened.</p>
+
+                                <h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
+
+                                <p class="accordion-table-copy"><strong>40:</strong> The necessary information is stil needed to process this claim.</p>
+
+                            </div>
+
+                            <table class="table no-margin">
+
+                                <tr>
+
+                                    <td class="t-break">Overall Claim Totals</td>
+                                    <td class="t-break">$3848.95</td>
+                                    <td class="t-break">$0.00</td>
+
+                                </tr>
+
+                            </table>
 
                         </div>
 
@@ -630,112 +558,180 @@
 
                 </div>
 
-                <button class="accordion_tab" id="documents"><i class="fas fa-id-card"></i> Related Documents</button>
+                <div class="dpl-card">
 
-                <div class="accordion_content">
+                    <div class="dpl-card-header">
 
-                    <div class="dpl-card">
-
-                        <div class="dpl-card-header">
-
-                            <h2 class="dpl-card-title">Letters</h2>
-
-                        </div>
-
-                        <div class="dpl-card-body no-flex">
-
-                            <p>There are no letters associated with the claim at this time.</p>
-
-                            <p class="no-margin"><strong>Note:</strong> Letters are displayed for UnitedHealthcare commercial and Medicare Advantage claims only.</p>
-
-                        </div>
+                        <h2 class="dpl-card-title">Coordination of Benefits</h2>
 
                     </div>
 
-                    <div class="dpl-card">
+                    <div class="dpl-card-body no-flex">
 
-                        <div class="dpl-card-header">
-
-                            <h2 class="dpl-card-title">Provider Information</h2>
-
-                        </div>
-
-                        <div class="dpl-card-body no-flex">
-
-                            <p><a href="#">08/29/2019</a></p>
-
-                        </div>
+                        <p class="no-margin"><strong>No coordination of benefits information was recieved for this claim.</strong> Check this <a href="#">patient's eligibility</a> to determine if additional coverage exists.</p>
 
                     </div>
 
                 </div>
 
-                <button class="accordion_tab" id="act"><i class="fas fa-id-card"></i> Act on Claim</button>
+            </div>
 
-                <div class="accordion_content">
+            <button class="accordion_tab" id="payments"><i class="fas fa-id-card"></i> Payments</button>
 
-                    <div class="dpl-card">
+            <div class="accordion_content line-items">
 
-                        <div class="dpl-card-header">
+                <div class="dpl-card">
 
-                            <h2 class="dpl-card-title">Claim Reconsideration</h2>
+                    <div class="dpl-card-header">
 
-                        </div>
-
-                        <div class="dpl-card-body no-flex">
-
-                            <p><strong>This claim is not eligible for an appeal or dispute</strong></p>
-
-                            <p>You should submit a Claim Reconsideration request if you believe a claim was paid incorrectly. Situations for reprocessing include, but are not limited to:</p>
-
-                            <ul>
-
-                                <li>Amount is different than what provider expected</li>
-                                <li>Claim was filed in a timely manner, when provider has proof</li>
-                                <li>Claim was denied for no authorization, when provider has an authorization number</li>
-                                <li>Difference in Coordination of Benefits (COB) information</li>
-                                
-                            </ul>
-
-                            <a class="dpl-button" href="#">Create a Claim Reconsideration</a> <a class="dpl-button-ghost" href="#">Submit Corrected Claim</a>
-
-                        </div>
+                        <h2 class="dpl-card-title">Payment Information</h2>
 
                     </div>
 
-                    <div class="dpl-card">
+                    <div class="dpl-card-body padding-0">
 
-                        <div class="dpl-card-header">
+                        <table class="table default">
 
-                            <h2 class="dpl-card-title">Appeal/Dispute</h2>
+                            <tr>
 
-                        </div>
+                                <th>Payment Type</th>
+                                <th>Payment Issue Date</th>
+                                <th>Payee Type</th>
+                                <th>Check Number</th>
+                                <th>Check Amount</th>
+                                <th>Draft Number</th>
+                                <th>Draft Amount</th>
+                                <th>Bulk Funds Report</th>
 
-                        <div class="dpl-card-body full">
+                            </tr>
 
-                            <p><strong>When should you submit an Appeal/Dispute?</strong></p>
+                            <tr class="t-body-top">
 
-                            <p>You should submit an Appeal/Dispute when you wish to challenge a decision or request an exception. Situations for reprocessing include, but are not limited to:</p>
+                                <td>Electronic*</td>
+                                <td>08/24/2019</td>
+                                <td>-</td>
+                                <td>26362242</td>
+                                <td>$246,556.02</td>
+                                <td>0021456470</td>
+                                <td>$0.00</td>
+                                <td><a href="#">View</a></td>
 
-                            <ul>
+                            </tr>
 
-                                <li>Medical necessity (must be filed as a member appeal/dispute and can be submitteed by the member or by the provider on the member's behalf)</li>
+                        </table>
 
-                                <li>Exception to reimbursement policy</li>
-                                
-                            </ul>
-
-                            <a class="dpl-button-full button-bottom" href="#">File Appeal/Dispute</a>
-
-                        </div>
+                        <small class="no-margin padding-normal">*Electronic payments do not have additional details available. Go to <a href="#">Electronic Payments and Statements</a> to get this information.</small>
 
                     </div>
 
                 </div>
-                                
-            </main>
 
-        </div>
+            </div>
+
+            <button class="accordion_tab" id="documents"><i class="fas fa-id-card"></i> Related Documents</button>
+
+            <div class="accordion_content acc-content-grid-1">
+
+                <div class="dpl-card">
+
+                    <div class="dpl-card-header">
+
+                        <h2 class="dpl-card-title">Letters</h2>
+
+                    </div>
+
+                    <div class="dpl-card-body d-block">
+
+                        <p>There are no letters associated with the claim at this time.</p>
+
+                        <p class="no-margin"><strong>Note:</strong> Letters are displayed for UnitedHealthcare commercial and Medicare Advantage claims only.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="dpl-card">
+
+                    <div class="dpl-card-header">
+
+                        <h2 class="dpl-card-title">Provider Information</h2>
+
+                    </div>
+
+                    <div class="dpl-card-body d-block">
+
+                        <p><a href="#">08/29/2019</a></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="accordion_tab" id="act"><i class="fas fa-id-card"></i> Act on Claim</button>
+
+            <div class="accordion_content acc-content-grid-1">
+
+                <div class="dpl-card">
+
+                    <div class="dpl-card-header">
+
+                        <h2 class="dpl-card-title">Claim Reconsideration</h2>
+
+                    </div>
+
+                    <div class="dpl-card-body d-block">
+
+                        <p><strong>This claim is not eligible for an appeal or dispute</strong></p>
+
+                        <p>You should submit a Claim Reconsideration request if you believe a claim was paid incorrectly. Situations for reprocessing include, but are not limited to:</p>
+
+                        <ul>
+
+                            <li>Amount is different than what provider expected</li>
+                            <li>Claim was filed in a timely manner, when provider has proof</li>
+                            <li>Claim was denied for no authorization, when provider has an authorization number</li>
+                            <li>Difference in Coordination of Benefits (COB) information</li>
+                            
+                        </ul>
+
+                        <a class="dpl-button" href="#">Create a Claim Reconsideration</a> <a class="dpl-button-ghost" href="#">Submit Corrected Claim</a>
+
+                    </div>
+
+                </div>
+
+                <div class="dpl-card">
+
+                    <div class="dpl-card-header">
+
+                        <h2 class="dpl-card-title">Appeal/Dispute</h2>
+
+                    </div>
+
+                    <div class="dpl-card-body grid-full">
+
+                        <p><strong>When should you submit an Appeal/Dispute?</strong></p>
+
+                        <p>You should submit an Appeal/Dispute when you wish to challenge a decision or request an exception. Situations for reprocessing include, but are not limited to:</p>
+
+                        <ul>
+
+                            <li>Medical necessity (must be filed as a member appeal/dispute and can be submitteed by the member or by the provider on the member's behalf)</li>
+
+                            <li>Exception to reimbursement policy</li>
+                            
+                        </ul>
+
+                        <a class="dpl-button-full button-bottom" href="#">File Appeal/Dispute</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+                            
+        </main>
 
         <!-- JS Links -->
 

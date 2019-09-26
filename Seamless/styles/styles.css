@@ -560,6 +560,9 @@ a:hover {
   max-height: 0;
   overflow: hidden; }
 
+.fix-height {
+  max-height: 2000px !important; }
+
 /*- Accordion Content Grid Options -*/
 .acc-content-grid-1 {
   display: grid;

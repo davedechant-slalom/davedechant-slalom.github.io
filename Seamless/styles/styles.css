@@ -911,14 +911,17 @@ td:first-child {
 .d-block {
   display: block; }
 
-.no-margin {
+.m-0 {
   margin: 0; }
 
-.padding-0 {
+.m-b {
+  margin-bottom: 1rem; }
+
+.p-0 {
   padding-right: 0;
   padding-left: 0; }
 
-.padding-normal {
+.p-lr {
   padding: 0 1rem; }
 
 .grid-full {

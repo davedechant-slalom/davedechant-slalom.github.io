@@ -193,9 +193,9 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 10px;
-	font-family: $brand-font;
+	font-family: $base-font;
 	font-weight: 700;
-	color: $base-primary-color;
+	color: $grayscale-1000;
 }
 
 h1 {
@@ -207,7 +207,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.75rem;
+	font-size: 1.25rem;
 }
 
 h4 {
@@ -731,9 +731,12 @@ a:hover {
 
 .accordion_tab .fas, .accordion_tab_table .fas {
 	background-color: $grayscale-0;
-	padding: 0.75rem 0.688rem;
+	text-align: center;
+	padding-top: 0.688rem;
 	border-radius: 50%;
 	color: $base-accent-color;
+	width: 42px;
+	height: 42px;
 }
 
 .accordion_tab:after, .accordion_tab_table:after {
@@ -1034,37 +1037,6 @@ a:hover {
 	text-align: right;
 }
 
-/*-- DPL Button Styles --*/
-
-.dpl-button, .dpl-button-ghost, .dpl-button-full, .dpl-button:visited, .dpl-button-ghost:visited, .dpl-button-full:visited {
-	border: 1px solid $base-accent-color;
-	color: $grayscale-0;
-	background-color: $base-accent-color;
-	font-family: $base-font;
-	padding: 0.75rem 1rem;
-	display: inline-block;
-	border-radius: 3px;
-	text-decoration: none;
-	text-align: center;
-}
-
-.dpl-button-ghost, .dpl-button-ghost:visited {
-	border: 1px solid $base-accent-color;
-	color: $base-accent-color;
-	background-color: $grayscale-0;
-	font-family: $base-font;
-}
-
-.dpl-button-full {
-	width: 100%;
-}
-
-.dpl-button-link, .dpl-button-link:visited {
-	font-size: 0.938rem;
-	font-family: $brand-font;
-	text-decoration: none;
-}
-
 /*-- DPL Notification Styles --*/
 
 .dpl-notification-error, .dpl-notification-success {
@@ -1200,6 +1172,46 @@ td:first-child {
 
 /* Begin Module/Universal Styles */
 
+/*-- DPL Button Styles --*/
+
+.dpl-button, .dpl-button-ghost, .dpl-button-full, .dpl-button-inactive, .dpl-button:visited, .dpl-button-ghost:visited, .dpl-button-full:visited, .dpl-button-inactive:visited {
+	border: 1px solid $base-accent-color;
+	color: $grayscale-0;
+	background-color: $base-accent-color;
+	font-family: $base-font;
+	padding: 0.75rem 1rem;
+	display: inline-block;
+	border-radius: 3px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.dpl-button-ghost, .dpl-button-ghost:visited {
+	border: 1px solid $base-accent-color;
+	color: $base-accent-color;
+	background-color: $grayscale-0;
+	font-family: $base-font;
+}
+
+.dpl-button-inactive, .dpl-button-inactive:visited {
+	border: 1px solid $grayscale-700;
+	color: $grayscale-700;
+	background-color: $grayscale-400;
+	font-family: $base-font;
+}
+
+.dpl-button-full {
+	width: 100%;
+}
+
+.dpl-button-link, .dpl-button-link:visited {
+	font-size: 0.938rem;
+	font-family: $brand-font;
+	text-decoration: none;
+}
+
+/*-- DPL Spacing Styles --*/
+
 .d-block {
 	display: block;
 }
@@ -1225,12 +1237,34 @@ td:first-child {
 	padding: 0 1rem;
 }
 
+.p-r {
+	padding-right: 1rem;
+}
+
+/*-- DPL Layout Styles --*/
+
 .grid-full {
 	grid-template-columns: 1fr;
 }
 
+.flex-item-r {
+	flex-basis: auto;
+	flex-grow: 1;
+	text-align: right;
+}
+
 .button-bottom {
 	margin-top: 1.75rem;
+}
+
+/*-- DPL Tab Styles --*/
+
+.tab_panel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 3px solid $grayscale-400;
+	padding: 1rem;
 }
 
 /* End Module/Universal Styles */

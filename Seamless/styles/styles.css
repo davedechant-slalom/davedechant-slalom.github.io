@@ -96,9 +96,9 @@ img {
 /*- 2c. Text -*/
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
-  font-family: "UHC Sans Regular", sans-serif;
+  font-family: "UHC Sans Bold", sans-serif;
   font-weight: 700;
-  color: #2F3952; }
+  color: #000000; }
 
 h1 {
   font-size: 3rem; }
@@ -107,7 +107,7 @@ h2 {
   font-size: 2.375rem; }
 
 h3 {
-  font-size: 1.75rem; }
+  font-size: 1.25rem; }
 
 h4 {
   font-size: 1.125rem; }
@@ -525,9 +525,12 @@ a:hover {
 
 .accordion_tab .fas, .accordion_tab_table .fas {
   background-color: #FFFFFF;
-  padding: 0.75rem 0.688rem;
+  text-align: center;
+  padding-top: 0.688rem;
   border-radius: 50%;
-  color: #196FD0; }
+  color: #196FD0;
+  width: 42px;
+  height: 42px; }
 
 .accordion_tab:after, .accordion_tab_table:after {
   font-family: "Font Awesome 5 Pro";
@@ -779,32 +782,6 @@ a:hover {
 .line-items .dpl-card-body > div:nth-child(2) {
   text-align: right; }
 
-/*-- DPL Button Styles --*/
-.dpl-button, .dpl-button-ghost, .dpl-button-full, .dpl-button:visited, .dpl-button-ghost:visited, .dpl-button-full:visited {
-  border: 1px solid #196FD0;
-  color: #FFFFFF;
-  background-color: #196FD0;
-  font-family: "UHC Sans Bold", sans-serif;
-  padding: 0.75rem 1rem;
-  display: inline-block;
-  border-radius: 3px;
-  text-decoration: none;
-  text-align: center; }
-
-.dpl-button-ghost, .dpl-button-ghost:visited {
-  border: 1px solid #196FD0;
-  color: #196FD0;
-  background-color: #FFFFFF;
-  font-family: "UHC Sans Bold", sans-serif; }
-
-.dpl-button-full {
-  width: 100%; }
-
-.dpl-button-link, .dpl-button-link:visited {
-  font-size: 0.938rem;
-  font-family: "UHC Sans Regular", sans-serif;
-  text-decoration: none; }
-
 /*-- DPL Notification Styles --*/
 .dpl-notification-error, .dpl-notification-success {
   border: 1px solid #E91B18;
@@ -911,6 +888,39 @@ td:first-child {
 /* End Website/Product Specific Styles */
 /*---------------------------------------------------------------------*/
 /* Begin Module/Universal Styles */
+/*-- DPL Button Styles --*/
+.dpl-button, .dpl-button-ghost, .dpl-button-full, .dpl-button-inactive, .dpl-button:visited, .dpl-button-ghost:visited, .dpl-button-full:visited, .dpl-button-inactive:visited {
+  border: 1px solid #196FD0;
+  color: #FFFFFF;
+  background-color: #196FD0;
+  font-family: "UHC Sans Bold", sans-serif;
+  padding: 0.75rem 1rem;
+  display: inline-block;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center; }
+
+.dpl-button-ghost, .dpl-button-ghost:visited {
+  border: 1px solid #196FD0;
+  color: #196FD0;
+  background-color: #FFFFFF;
+  font-family: "UHC Sans Bold", sans-serif; }
+
+.dpl-button-inactive, .dpl-button-inactive:visited {
+  border: 1px solid #757575;
+  color: #757575;
+  background-color: #E0E0E0;
+  font-family: "UHC Sans Bold", sans-serif; }
+
+.dpl-button-full {
+  width: 100%; }
+
+.dpl-button-link, .dpl-button-link:visited {
+  font-size: 0.938rem;
+  font-family: "UHC Sans Regular", sans-serif;
+  text-decoration: none; }
+
+/*-- DPL Spacing Styles --*/
 .d-block {
   display: block; }
 
@@ -930,11 +940,28 @@ td:first-child {
 .p-lr {
   padding: 0 1rem; }
 
+.p-r {
+  padding-right: 1rem; }
+
+/*-- DPL Layout Styles --*/
 .grid-full {
   grid-template-columns: 1fr; }
 
+.flex-item-r {
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: right; }
+
 .button-bottom {
   margin-top: 1.75rem; }
+
+/*-- DPL Tab Styles --*/
+.tab_panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid #E0E0E0;
+  padding: 1rem; }
 
 /* End Module/Universal Styles */
 /*---------------------------------------------------------------------*/

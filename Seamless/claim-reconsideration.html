@@ -141,7 +141,9 @@
 
             <div class="dpl-insights-header wrapper">
 
-                <ul class="dpl-insights-details">
+            	<a class="dpl-insights-header-back" href="#"><i class="fas fa-angle-left"></i></a>
+
+                <ul class="dpl-insights-details flex-item-l">
 
                     <li>Claim Number:<br class="remove"> <span>7479894912</span> <a href="#">Stephanie Johnson</a></li>
                     <li>Member ID: <strong>123456 00</strong></li>
@@ -149,15 +151,9 @@
                     
                 </ul>
 
-                <div class="dpl-insights-options">
-
-                    <a class="dpl-button-ghost"><i class="fas fa-flag"></i> Unflag Claim</a> <a class="dpl-button">New Search</a>
-
-                </div>
-
             </div>
 
-            <div class="dpl-insights-status wrapper">
+            <div class="dpl-insights-status wrapper p-b">
 
                 <div class="dpl-notification-error">
 
@@ -165,36 +161,19 @@
 
                 </div>
 
-                <div class="dpl-notification-success">
-
-                    <p>Adjudication Status: <strong>In-Network</strong></p>
-
-                </div>
-
-            </div>
-
-            <div class="dpl-jump-menu wrapper" id="jump-menu">
-
-                <ul class="dpl-jump-menu-list">
-
-                    <li><a class="active" href="#member-details">Member &amp; Provider Details</a></li>
-                    <li><a href="#claim-details">Claim Details</a></li>
-                    <li><a href="#line-items">Line Items</a></li>
-                    <li><a href="#payments">Payments</a></li>
-                    <li><a href="#documents">Documents</a></li>
-                    <li><a href="#act">Act on Claim</a></li>
-                    
-                </ul>
-
                 <p class="dpl-jump-menu-cta"><a href="#">View Patients Eligibility &amp; Benefits <i class="fas fa-angle-right"></i></a></p>
 
             </div>
 
         </header>
 
-        <main class="wrapper main-content">
+        <main class="wrapper main-content no-jump-menu">
 
-            <div class="accordion_content acc-content-grid-1">
+        	<h2>Create a Reconsideration</h2>
+
+        	<p class="text-sm">This form is to be completed by physicians, hospitals, or other health care professionals to request a claim reconsideration for members enrolled in benefit plans administered by UnitedHealthcare. <strong>A separate request must be filled out for each claim reconsideration. Don't use this form for appeals or disputes. Continue to use your standard appeals process for formal appeals and disputes.</strong></p>
+
+            <div class="content-grid-3">
 
                 <div class="dpl-card">
 
@@ -206,7 +185,109 @@
 
                     <div class="dpl-card-body">
 
-                        
+                        <h3 class="subtitle-full">Provider Information</h3>
+
+                        <p>Billing Provider<br> <strong>Minneapolis Medical Center</strong></p>
+
+                        <p>Tax ID Number<br> <strong>956130458</strong></p>
+
+                        <p class="m-0">Servicing Provider<br> <strong>Scott Brundle</strong></p>
+
+                        <hr>
+
+                        <h3 class="subtitle">Submitter's Contact Information</h3>
+
+                       	<p class="align-r m-0"><small>All Fields are Required</small></p>
+
+                        <form class="form">
+
+                        	<div class="form-row-2">
+
+	                        	<div class="form-element">
+
+	                        		<label>First Name</label>
+
+	                        		<input type="text" name="">
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                        		<label>Last Name</label>
+
+	                        		<input type="text" name="">
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <div class="form-row-2">
+
+	                        	<div class="form-element">
+
+	                        		<label>Phone Number</label>
+
+	                        		<input type="phone" name="" placeholder="(###) ###-####">
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                        		<label>Email Address</label>
+
+	                        		<input type="email" name="">
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <div class="form-row-1">
+
+	                        	<div class="form-element">
+
+	                        		<label>Street Address</label>
+
+	                        		<input type="text" name="">
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <div class="form-row-3">
+
+	                        	<div class="form-element">
+
+	                        		<label>City</label>
+
+	                        		<input type="text" name="">
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                        		<label>State</label>
+
+	                        		<select>
+
+	                        			<option value="0">Please Select</option>
+	                        			<option value="1">Option 1</option>
+	                        			<option value="2">Option 2</option>
+
+	                        		</select>
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                        		<label>Zip Code</label>
+
+	                        		<input type="text" name="">
+	                        		
+	                        	</div>
+
+	                        </div>
+                        	
+                        </form>
 
                     </div>
 
@@ -222,7 +303,51 @@
 
                     <div class="dpl-card-body">
 
-                        
+                        <form class="form">
+
+                        	<div class="form-row-1">
+
+	                        	<div class="form-element">
+
+	                        		<label>Amount Requested</label>
+
+	                        		<input type="text" name="">
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <div class="form-row-1">
+
+	                        	<div class="form-element">
+
+	                        		<input class="checkbox" type="checkbox" checked="checked">
+
+	                        		<label class="container">One</label>
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <div class="form-row-1">
+
+	                        	<div class="form-element">
+
+	                        		<label>Request Reason</label>
+
+	                        		<select>
+
+	                        			<option value="0">Please Select a Reason</option>
+	                        			<option value="1">Option 1</option>
+	                        			<option value="2">Option 2</option>
+
+	                        		</select>
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                    </form>
 
                     </div>
 

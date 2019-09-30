@@ -1186,8 +1186,22 @@ td:first-child {
 	line-height: 1.125rem;
 }
 
+.text-md {
+	font-size: 1.125rem;
+	margin-bottom: 0.5rem;
+}
+
+.text-lg {
+	font-size: 1.375rem;
+	margin-bottom: 0.5rem;
+}
+
 .align-r {
 	text-align: right;
+}
+
+.align-c {
+	text-align: center;
 }
 
 .subtitle, .subtitle-full {
@@ -1239,41 +1253,6 @@ td:first-child {
 	font-size: 0.938rem;
 	font-family: $brand-font;
 	text-decoration: none;
-}
-
-/*-- DPL Spacing Styles --*/
-
-.d-block {
-	display: block;
-}
-
-.m-0 {
-	margin: 0;
-}
-
-.m-b {
-	margin-bottom: 1rem;
-}
-
-.m-t {
-	margin-top: 1rem;
-}
-
-.p-0 {
-	padding-right: 0;
-	padding-left: 0;
-}
-
-.p-lr {
-	padding: 0 1rem;
-}
-
-.p-r {
-	padding-right: 1rem;
-}
-
-.p-b {
-	padding-bottom: 1rem;
 }
 
 /*-- DPL Layout Styles --*/
@@ -1337,6 +1316,16 @@ td:first-child {
 	margin-top: 1.75rem;
 }
 
+.button-row {
+	margin: 1.5rem 1rem;
+	text-align: center;
+}
+
+.button-row .dpl-button, .button-row .dpl-button-ghost {
+	width: 28%;
+	margin-right: 1rem;
+}
+
 /*-- DPL Form Styles --*/
 
 .form {
@@ -1374,11 +1363,140 @@ label {
 	display: block;
 }
 
-input, select {
+input, select, textarea {
 	border: 1px solid $grayscale-500;
 	padding: 0.688rem;
 	border-radius: 3px;
 	width: 100%;
+	font-size: 0.875rem;
+	color: $grayscale-800;
+}
+
+select {
+	display: block;
+    font-size: 0.875rem;
+    font-family: $base-font;
+    font-weight: $grayscale-1000;
+    color: #444;
+    line-height: 1.3;
+    padding: 0.625rem 0.688rem 0.688rem;
+    max-width: 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $grayscale-0;
+    background-image: url(../images/down-arrow.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: right 0.688rem top 50%, 0 0;
+}
+
+textarea {
+	min-height: 183px;
+}
+
+.form-checkbox {
+	display: flex;
+	align-items: center;
+	font-size: 0.875rem;
+	font-family: $brand-font;
+}
+
+.form-checkbox input {
+	width: 20px;
+	border: 3px solid $base-accent-color;
+	padding: 0;
+	border-radius: 0;
+	width: 20px;
+	height: 20px;
+	font-size: 0.875rem;
+	color: $grayscale-800;
+	-moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form-checkbox span {
+	margin-left: 0.25rem;
+}
+
+.file-upload-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 2px dashed $grayscale-600;
+	padding: 1.75rem;
+}
+
+.file-upload-container h3 {
+	text-align: center;
+	margin: 0;
+}
+
+.file-upload-container h3 .fas {
+	font-size: 3rem;
+	color: $base-accent-color;
+	margin-bottom: 0.5rem;
+}
+
+.file-upload-container span {
+	font-family: $base-font;
+	font-size: 1.313rem;
+}
+
+.custom-file-input {
+	color: transparent;
+	border: 0;
+	padding: 0;
+	width: auto;
+	height: 45px;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+	visibility: hidden;
+}
+
+.custom-file-input::before {
+  content: 'Browse and Upload Document';
+  color: $grayscale-0;
+  display: inline-block;
+  background: $base-accent-color;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 0.625rem 1rem;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: $base-font;
+  width: 100%;
+  text-align: center;
+}
+
+.custom-file-input:hover::before {
+  border-color: black;
+}
+
+.custom-file-input:active {
+  outline: 0;
+}
+
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+
+::placeholder {
+	color: $grayscale-600;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: $grayscale-600;
+}
+
+::-ms-input-placeholder {
+	color: $grayscale-600;
 }
 
 /*-- DPL Tab Styles --*/
@@ -1389,6 +1507,41 @@ input, select {
 	align-items: center;
 	border-top: 3px solid $grayscale-400;
 	padding: 1rem;
+}
+
+/*-- DPL Spacing Styles --*/
+
+.d-block {
+	display: block;
+}
+
+.m-0 {
+	margin: 0;
+}
+
+.m-b {
+	margin-bottom: 1rem;
+}
+
+.m-t {
+	margin-top: 1rem;
+}
+
+.p-0 {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.p-lr {
+	padding: 0 1rem;
+}
+
+.p-r {
+	padding-right: 1rem;
+}
+
+.p-b {
+	padding-bottom: 1rem;
 }
 
 /* End Module/Universal Styles */

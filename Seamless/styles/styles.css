@@ -683,7 +683,7 @@ a:hover {
   display: flex;
   justify-content: space-between; }
 
-.claim-summary-status .dpl-notification-alert-error, .dpl-notification-alert-success {
+.claim-summary-status .dpl-notification-error, .dpl-notification-success {
   flex-grow: 1; }
 
 .status-history {

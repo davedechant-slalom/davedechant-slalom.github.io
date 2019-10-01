@@ -284,7 +284,7 @@ a, a:visited {
 }
 
 a:hover {
-	color: $base-accent-color-hover;
+	color: $brand-color;
 	text-decoration: none;
 }
 
@@ -700,7 +700,7 @@ a:hover {
 }
 
 .main-content.no-jump-menu {
-	margin-top: 320px;
+	margin-top: 330px;
 }
 
 /*-- Accordion Styles --*/
@@ -1119,6 +1119,10 @@ td:first-child {
 	text-indent: -9999px;
 }
 
+td.td-form {
+	padding: 0.5rem 0.813rem;
+}
+
 .t-body-top td {
 	border-top: 3px solid $grayscale-400;
 }
@@ -1169,6 +1173,26 @@ td:first-child {
 
 .white tr {
 	background-color: $grayscale-0;
+}
+
+.upload-table {
+	visibility: hidden;
+	position: absolute;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.upload-table:target {
+	visibility: visible;
+	position: relative;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 /* End Website/Product Specific Styles */
@@ -1231,11 +1255,22 @@ td:first-child {
 	text-align: center;
 }
 
+.dpl-button:hover, .dpl-button-ghost:hover, .dpl-button-full:hover, .dpl-button-inactive:hover {
+	color: $grayscale-0;
+	background-color: $brand-color;
+}
+
 .dpl-button-ghost, .dpl-button-ghost:visited {
 	border: 1px solid $base-accent-color;
 	color: $base-accent-color;
 	background-color: $grayscale-0;
 	font-family: $base-font;
+}
+
+.dpl-button-ghost:hover {
+	border: 1px solid $brand-color;
+	color: $brand-color;
+	background-color: $grayscale-0;
 }
 
 .dpl-button-inactive, .dpl-button-inactive:visited {
@@ -1444,48 +1479,6 @@ textarea {
 	font-size: 1.313rem;
 }
 
-.custom-file-input {
-	color: transparent;
-	border: 0;
-	padding: 0;
-	width: auto;
-	height: 45px;
-}
-
-.custom-file-input::-webkit-file-upload-button {
-	visibility: hidden;
-}
-
-.custom-file-input::before {
-  content: 'Browse and Upload Document';
-  color: $grayscale-0;
-  display: inline-block;
-  background: $base-accent-color;
-  border: 1px solid #999;
-  border-radius: 3px;
-  padding: 0.625rem 1rem;
-  outline: none;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  cursor: pointer;
-  font-size: 1rem;
-  font-family: $base-font;
-  width: 100%;
-  text-align: center;
-}
-
-.custom-file-input:hover::before {
-  border-color: black;
-}
-
-.custom-file-input:active {
-  outline: 0;
-}
-
-.custom-file-input:active::before {
-  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
-}
-
 ::placeholder {
 	color: $grayscale-600;
 	opacity: 1;
@@ -1525,6 +1518,10 @@ textarea {
 
 .m-t {
 	margin-top: 1rem;
+}
+
+.m-r {
+	margin-right: 1rem;
 }
 
 .p-0 {

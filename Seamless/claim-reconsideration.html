@@ -135,13 +135,13 @@
                     
                 </ul>
 
-                <a class="dpl-button-link" href="#"><i class="fas fa-print"></i> Print</a>
+                <a class="dpl-button-link" href="#" onclick="window.print();return false;"><i class="fas fa-print"></i> Print</a>
                 
             </div>
 
             <div class="dpl-insights-header wrapper">
 
-            	<a class="dpl-insights-header-back" href="#"><i class="fas fa-angle-left"></i></a>
+            	<a class="dpl-insights-header-back" href="index.html"><i class="fas fa-angle-left"></i></a>
 
                 <ul class="dpl-insights-details flex-item-l">
 
@@ -153,11 +153,11 @@
 
             </div>
 
-            <div class="dpl-insights-status wrapper p-b">
+            <div class="dpl-insights-status wrapper m-b">
 
-                <div class="dpl-notification-error">
+                <div class="dpl-notification-error m-r">
 
-                    <p>Current Claim Status: <i class="fas fa-exclamation-triangle"></i> <strong>Denied</strong> <a href="#">why?</a> • First Date of Service: <strong>08/08/2019</strong> • Total Billed: <strong>$3,848.95</strong></p>
+                    <p>Current Claim Status: <i class="fas fa-exclamation-triangle"></i> <strong>Denied</strong> • First Date of Service: <strong>08/08/2019</strong> • Total Billed: <strong>$3,848.95</strong></p>
 
                 </div>
 
@@ -391,11 +391,93 @@
 
                         <div class="file-upload-container">
 
-                            <h3><i class="fas fa-cloud-upload-alt"></i></i><br> Drag and Drop a Document Here</h3>
+                            <h3><i class="fas fa-cloud-upload-alt"></i><br> Drag and Drop a Document Here</h3>
 
                             <span>Or</span>
 
-                            <input type="file" class="custom-file-input">
+                            <a class="dpl-button" href="#upload-table">Browse and Upload Document</a>
+                            
+                        </div>
+
+                        <div class="upload-table m-t" id="upload-table">
+
+                            <table class="table default">
+
+                                <tr>
+
+                                    <th>File Name</th>
+                                    <th>Date Posted</th>
+                                    <th>Contact Name</th>
+                                    <th>Document Type</th>
+                                    <th>Action</th>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td><a href="#">documentname.png</a></td>
+                                    <td>11/12/2019</td>
+                                    <td>Joe Smith</td>
+                                    <td class="td-form">
+
+                                        <form>
+
+                                            <div class="form-row-1 m-0">
+
+                                                <div class="form-element">
+
+                                                    <select>
+
+                                                        <option value="0">Please Select Document Type</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+
+                                                    </select>
+                                                    
+                                                </div>
+
+                                            </div>
+                                            
+                                        </form>
+
+                                    </td>
+                                    <td><i class="fas fa-trash-alt"></i></i></td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td><a href="#">documentname.png</a></td>
+                                    <td>11/12/2019</td>
+                                    <td>Joe Smith</td>
+                                    <td class="td-form">
+
+                                        <form>
+
+                                            <div class="form-row-1 m-0">
+
+                                                <div class="form-element">
+
+                                                    <select>
+
+                                                        <option value="0">Please Select Document Type</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+
+                                                    </select>
+                                                    
+                                                </div>
+
+                                            </div>
+                                            
+                                        </form>
+
+                                    </td>
+                                    <td><i class="fas fa-trash-alt"></i></i></td>
+
+                                </tr>
+
+                            </table>
                             
                         </div>
 
@@ -430,8 +512,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
         <script defer src="js/classie.js"></script>
-
-        <script defer src="js/smoothscroll.js"></script>
 
         <script defer src="js/scripts.js"></script>
 

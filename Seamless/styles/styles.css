@@ -170,7 +170,7 @@ a, a:visited {
   transition: all 0.3s ease-in-out; }
 
 a:hover {
-  color: #5EC1FD;
+  color: #033DA1;
   text-decoration: none; }
 
 /* End Reset/Base Styles */
@@ -500,7 +500,7 @@ a:hover {
   margin-top: 350px; }
 
 .main-content.no-jump-menu {
-  margin-top: 320px; }
+  margin-top: 330px; }
 
 /*-- Accordion Styles --*/
 /*- Accordion Tab Styles -*/
@@ -851,6 +851,9 @@ td:nth-child(3), th:nth-child(3) {
 td:first-child {
   text-indent: -9999px; }
 
+td.td-form {
+  padding: 0.5rem 0.813rem; }
+
 .t-body-top td {
   border-top: 3px solid #E0E0E0; }
 
@@ -891,6 +894,24 @@ td:first-child {
 
 .white tr {
   background-color: #FFFFFF; }
+
+.upload-table {
+  visibility: hidden;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.upload-table:target {
+  visibility: visible;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
 
 /* End Website/Product Specific Styles */
 /*---------------------------------------------------------------------*/
@@ -937,11 +958,20 @@ td:first-child {
   text-decoration: none;
   text-align: center; }
 
+.dpl-button:hover, .dpl-button-ghost:hover, .dpl-button-full:hover, .dpl-button-inactive:hover {
+  color: #FFFFFF;
+  background-color: #033DA1; }
+
 .dpl-button-ghost, .dpl-button-ghost:visited {
   border: 1px solid #196FD0;
   color: #196FD0;
   background-color: #FFFFFF;
   font-family: "UHC Sans Bold", sans-serif; }
+
+.dpl-button-ghost:hover {
+  border: 1px solid #033DA1;
+  color: #033DA1;
+  background-color: #FFFFFF; }
 
 .dpl-button-inactive, .dpl-button-inactive:visited {
   border: 1px solid #757575;
@@ -1113,42 +1143,6 @@ textarea {
   font-family: "UHC Sans Bold", sans-serif;
   font-size: 1.313rem; }
 
-.custom-file-input {
-  color: transparent;
-  border: 0;
-  padding: 0;
-  width: auto;
-  height: 45px; }
-
-.custom-file-input::-webkit-file-upload-button {
-  visibility: hidden; }
-
-.custom-file-input::before {
-  content: 'Browse and Upload Document';
-  color: #FFFFFF;
-  display: inline-block;
-  background: #196FD0;
-  border: 1px solid #999;
-  border-radius: 3px;
-  padding: 0.625rem 1rem;
-  outline: none;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  cursor: pointer;
-  font-size: 1rem;
-  font-family: "UHC Sans Bold", sans-serif;
-  width: 100%;
-  text-align: center; }
-
-.custom-file-input:hover::before {
-  border-color: black; }
-
-.custom-file-input:active {
-  outline: 0; }
-
-.custom-file-input:active::before {
-  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); }
-
 ::placeholder {
   color: #9E9E9E;
   opacity: 1; }
@@ -1179,6 +1173,9 @@ textarea {
 
 .m-t {
   margin-top: 1rem; }
+
+.m-r {
+  margin-right: 1rem; }
 
 .p-0 {
   padding-right: 0;

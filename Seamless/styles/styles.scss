@@ -1458,23 +1458,23 @@ textarea {
 	-moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+    position: relative;
 }
 
-.form-checkbox input:checked {
-	background-color: $base-accent-color;
-	position: relative;
-}
-
-.form-checkbox input:checked:before {
+.form-checkbox input:before {
 	font-family: 'Font Awesome 5 Pro';
 	content: "\f00c";
 	font-weight: 900;
-	font-size: 0.688rem;
+	font-size: 0.625rem;
 	color: $grayscale-0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+}
+
+.form-checkbox input:checked {
+	background-color: $base-accent-color;
 }
 
 .form-checkbox span {

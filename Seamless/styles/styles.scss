@@ -71,7 +71,7 @@ $success-color-active: #1FA995;
 
 /* support: error */
 
-$error-color: #E71D36;
+$error-color: #E91B18;
 $error-color-hover: #F95F72;
 $error-color-active: #A70A1D;
 
@@ -1047,7 +1047,7 @@ a:hover {
 /*-- DPL Notification Styles --*/
 
 .dpl-notification-error, .dpl-notification-success {
-	border: 1px solid #E91B18;
+	border: 1px solid $error-color;
 	background-color: #FFE6F0;
 	text-align: center;
 	margin-right: 0.5rem;
@@ -1106,6 +1106,11 @@ th {
 	vertical-align: middle;
 }
 
+.upload-table th {
+	border-top: 1px solid $grayscale-400;
+	border-bottom: 1px solid $grayscale-400;
+}
+
 td:first-child, th:first-child, td:nth-child(2), th:nth-child(2) {
 	width: 6.5%;
 	text-align: center;
@@ -1120,7 +1125,7 @@ td:first-child {
 }
 
 td.td-form {
-	padding: 0.5rem 0.813rem;
+	padding: 0.375rem 0.813rem;
 }
 
 .t-body-top td {
@@ -1239,6 +1244,10 @@ td.td-form {
 .subtitle-full {
 	grid-column-start: 1;
 	grid-column-end: 3;
+}
+
+.fc-error {
+	color: $error-color;
 }
 
 /*-- DPL Button Styles --*/
@@ -1449,6 +1458,23 @@ textarea {
 	-moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+}
+
+.form-checkbox input:checked {
+	background-color: $base-accent-color;
+	position: relative;
+}
+
+.form-checkbox input:checked:before {
+	font-family: 'Font Awesome 5 Pro';
+	content: "\f00c";
+	font-weight: 900;
+	font-size: 0.688rem;
+	color: $grayscale-0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 
 .form-checkbox span {

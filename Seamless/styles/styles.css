@@ -425,7 +425,7 @@ a:hover {
 .smaller .dpl-insights-details li:first-child a {
   font-size: 0.875rem; }
 
-.smaller .dpl-insights-options .dpl-button, .smaller .dpl-insights-options .dpl-button-ghost {
+.smaller .dpl-insights-options .dpl-button, .smaller .dpl-insights-options .dpl-button-ghost, .smaller .dpl-insights-options .dpl-button-inactive {
   padding: 0.375rem 0.875rem;
   font-size: 0.813rem; }
 
@@ -790,28 +790,33 @@ a:hover {
   text-align: right; }
 
 /*-- DPL Notification Styles --*/
-.dpl-notification-error, .dpl-notification-success {
+.dpl-notification-error, .dpl-notification-success, .dpl-notification-info {
   border: 1px solid #E91B18;
   background-color: #FFE6F0;
   text-align: center;
   margin-right: 0.5rem;
   border-radius: 3px;
-  padding: 0.125rem; }
+  padding: 0.125rem 0.5rem; }
 
-.smaller .dpl-notification-error, .smaller .dpl-notification-success {
-  padding: 0 0.063rem; }
+.smaller .dpl-notification-error, .smaller .dpl-notification-success, .smaller .dpl-notification-info {
+  padding: 0 0.25rem; }
 
 .dpl-notification-success {
   margin: 0;
   border: 1px solid #0D880B;
   background-color: #F4F8E7; }
 
-.dpl-notification-error p, .dpl-notification-success p {
+.dpl-notification-info {
+  margin: 0;
+  border: 1px solid #346fc8;
+  background-color: #f3fafc; }
+
+.dpl-notification-error p, .dpl-notification-success p, .dpl-notification-info p {
   margin: 0;
   font-size: 0.875rem; }
 
 /*-- DPL Table Styles --*/
-.table {
+.table, .table-no-border {
   font-family: "UHC Sans Regular", sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -824,6 +829,18 @@ tr {
 
 td, th {
   border: 1px solid #E0E0E0;
+  text-align: left;
+  padding: 1rem 0.813rem;
+  font-size: 0.875rem;
+  width: 13.8%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.table-no-border td, .table-no-border th {
+  border: 0;
   text-align: left;
   padding: 1rem 0.813rem;
   font-size: 0.875rem;
@@ -953,6 +970,13 @@ td.td-form {
 .fc-error {
   color: #E91B18; }
 
+.fc-base-accent {
+  color: #196FD0; }
+
+/*-- DPL Font Styles --*/
+.bg-white {
+  background-color: #FFFFFF; }
+
 /*-- DPL Button Styles --*/
 .dpl-button, .dpl-button-ghost, .dpl-button-full, .dpl-button-inactive, .dpl-button:visited, .dpl-button-ghost:visited, .dpl-button-full:visited, .dpl-button-inactive:visited {
   border: 1px solid #196FD0;
@@ -994,6 +1018,15 @@ td.td-form {
   font-family: "UHC Sans Regular", sans-serif;
   text-decoration: none; }
 
+.button-w-text {
+  padding-left: 3.25rem; }
+
+.button-w-text p {
+  margin: 0 0 0.25rem;
+  font-size: 0.875rem;
+  font-family: "UHC Sans Bold", sans-serif;
+  color: #757575; }
+
 /*-- DPL Layout Styles --*/
 .content-grid-1 {
   display: grid;
@@ -1021,6 +1054,13 @@ td.td-form {
 .content-grid-3 .dpl-card:nth-of-type(3) {
   grid-column-start: 1;
   grid-column-end: 3; }
+
+.content-grid-4 {
+  display: grid;
+  grid-column-gap: 1rem;
+  align-items: stretch;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr; }
 
 .grid-full {
   grid-template-columns: 1fr; }
@@ -1202,6 +1242,9 @@ textarea {
 .p-0 {
   padding-right: 0;
   padding-left: 0; }
+
+.p-none {
+  padding: 0; }
 
 .p-lr {
   padding: 0 1rem; }

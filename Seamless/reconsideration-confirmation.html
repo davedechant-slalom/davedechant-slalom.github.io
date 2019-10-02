@@ -1,0 +1,386 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+
+        <meta name="description" content="XXX">
+
+        <title>XXX</title>
+
+        <!-- Meta Info -->
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1" />
+
+
+        <!-- Styles -->
+
+        <link href="styles/fontawesome.css" rel="stylesheet" type="text/css">
+        <link href="styles/styles.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+
+        <!-- Favicons/Icons -->
+
+        <link rel="shortcut icon" href="images/icons/favicon.ico">
+
+        <link rel="apple-touch-icon" href="images/icons/touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="images/icons/touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="images/icons/touch-icon-iphone-retina.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="images/icons/touch-icon-ipad-retina.png" />
+
+        <meta name="application-name" content="Site Tile"/>
+        <meta name="msapplication-TileColor" content="#000000"/>
+        <meta name="msapplication-square70x70logo" content="images/icons/tiny.png"/>
+        <meta name="msapplication-square150x150logo" content="images/icons/square.png"/>
+        <meta name="msapplication-wide310x150logo" content="images/icons/wide.png"/>
+        <meta name="msapplication-square310x310logo" content="images/icons/large.png"/>
+
+
+        <!-- Google Analytics Script -->
+
+
+        <!-- Force Old Browsers to Accept HTML5 -->
+
+        <!--[if lt IE 10]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <header class="dpl-header">
+
+            <div class="dpl-account-nav wrapper">
+
+                <a href="#">Return to Legacy Link</a> | <a href="#"><i class="fas fa-user"></i> My Account <i class="fas fa-chevron-down"></i></a>
+                
+            </div>
+
+            <div class="dpl-header-options wrapper">
+
+                <h1 class="dpl-logo">UnitedHealthcare | Link</h1>
+
+                <div class="dpl-header-selectors">
+
+                    <a class="dpl-header-selector" href="#selectors-options"><span>Payer</span> 87726 - UnitedHealthcare <i class="fas fa-chevron-down"></i></a>
+
+                    <div class="dpl-payer-modal" id="payer-modal">
+
+                        <div class="dpl-payer-options">
+
+                            <h4 class="dpl-payer-options-title">Selected Payer</h4>
+
+                            <hr>
+
+                            <label class="dpl-payer-options-label">Payer Group</label>
+
+                            <select class="dpl-payer-options-select">
+
+                                <option value="volvo">United Healthcare - 87726</option>
+                                <option value="saab">other option</option>
+                                <option value="saab">other option</option>
+
+                            </select>
+
+                            <a class="dpl-payer-options-link" href="#">What is this <i class="fas fa-chevron-down"></i></a>
+
+                            <hr>
+
+                            <div class="dpl-payer-options-buttons">
+
+                                <a class="dpl-button-ghost" href="#">Cancel</a> <a class="dpl-button" href="#">Save</a>
+
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <a class="dpl-header-selector" href="#"><span>Provider</span> Scott Brundle <i class="fas fa-chevron-down"></i></a>
+
+                </div>
+
+            </div>
+
+            <nav class="dpl-main-nav">
+
+                <div class="wrapper">
+
+                    <ul class="dpl-main-nav-list wrapper">
+
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Eligibility &amp; Benefits</a></li>
+                        <li><a href="#">Claims</a></li>
+                        <li><a href="#">Referrals</a></li>
+                        <li><a href="#">Prior Authorizations <i class="fas fa-external-link-square-alt"></i></a></li>
+                        
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <div class="dpl-breadcrumbs wrapper">
+
+                <ul class="dpl-breadcrumbs-list">
+
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Claims Summary Page</a></li>
+                    <li><a href="#">Claim Reconsideration Form</a></li>
+                    <li>Reconsideration Confirmation Page</li>
+                    
+                </ul>
+
+                <a class="dpl-button-link" href="#" onclick="window.print();return false;"><i class="fas fa-print"></i> Print</a>
+                
+            </div>
+
+            <div class="dpl-insights-header wrapper">
+
+                <ul class="dpl-insights-details">
+
+                    <li>Reconsideration Ticket Number:<br class="remove"> <span>PTPCR-1234923</span> <a href="#">Stephanie Johnson</a></li>
+                    <li>Member ID: <strong>123456 00</strong></li>
+                    <li>Patient Account Number: <strong>103411304333</strong></li>
+                    
+                </ul>
+
+                <div class="dpl-insights-options">
+
+                    <a class="dpl-button-inactive">Update <i class="fas fa-info-circle fc-base-accent"></i></a> <a class="dpl-button-ghost"><i class="far fa-flag"></i> Flag Ticket</a>
+
+                </div>
+
+            </div>
+
+            <div class="dpl-insights-status wrapper">
+
+                <div class="dpl-notification-error">
+
+                    <p>Claim Number: <a href="#">7479894912</a> Current Claim Status: <i class="fas fa-exclamation-triangle fc-error"></i> <strong>Denied</strong> • First Date of Service: <strong>08/08/2019</strong> • Total Billed: <strong>$3,848.95</strong></p>
+
+                </div>
+
+                <div class="dpl-notification-info">
+
+                    <p>Reconsideration Status: <strong>Assigned</strong></p>
+
+                </div>
+
+            </div>
+
+            <div class="dpl-jump-menu wrapper" id="jump-menu">
+
+                <ul class="dpl-jump-menu-list">
+
+                    <li><a class="active" href="#member-details">Contact Information</a></li>
+                    <li><a href="#claim-details">Request Details and History</a></li>
+                    <li><a href="#line-items">Attachments</a></li>
+                    
+                </ul>
+
+                <p class="dpl-jump-menu-cta"><a href="claim-summary-recon-assigned.html">Go Back to Claim Summary <i class="fas fa-angle-right"></i></a></p>
+
+            </div>
+
+        </header>
+
+        <main class="wrapper main-content">
+
+            <button class="accordion_tab" id="member-details"><i class="fas fa-id-card"></i> Contact Information</button>
+
+            <div class="accordion_content content-grid-1">
+
+                <div class="dpl-card">
+
+                    <div class="dpl-card-header">
+
+                        <h2 class="dpl-card-title">Provider Information</h2>
+
+                    </div>
+
+                    <div class="dpl-card-body">
+
+                        <div>
+
+                            <p>Billing Provider<br> <span>Minneapolis Medical Center</span></p>
+
+                            <p>Servicing Provider<br> <span>Scott Brundle</span></p>
+
+                        </div>
+
+                        <div>
+
+                            <p>Tax ID Number<br> <span>956130458</span></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="dpl-card">
+
+                    <div class="dpl-card-header">
+
+                        <h2 class="dpl-card-title">Submitter's Contact Information</h2>
+
+                    </div>
+
+                    <div class="dpl-card-body">
+
+                        <p>Name<br> <span>John Smith</span></p>
+
+                        <p>Email Address<br> <span>email@gmail.com</span></p>
+
+                        <p>Phone Number<br> <span>(555)555-5555</span></p>
+
+                        <p>Address<br> <span>1239 Main St,<br> Minneapolis, MN 55408</span></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="accordion_tab" id="claim-details"><i class="fas fa-file-invoice-dollar"></i> Request Details and History</button>
+
+            <div class="accordion_content content-grid-4">
+
+                <div class="dpl-card">
+
+                    <div class="dpl-card-header">
+
+                        <h2 class="dpl-card-title">Request Details</h2>
+
+                    </div>
+
+                    <div class="dpl-card-body d-block">
+
+                        <div class="dpl-notification-info m-b">
+
+		                    <p>Reconsideration Status: <strong>Assigned</strong></p>
+
+		                </div>
+
+		                <p>Amount Requested<br> <strong>I do not know the dollar amount</strong></p>
+
+		                <p class="m-0">Requested Reason<br> <strong>Other</strong></p>
+
+                    </div>
+
+                </div>
+
+                <div class="dpl-card">
+
+                    <div class="dpl-card-header">
+
+                        <h2 class="dpl-card-title">Request History</h2>
+
+                    </div>
+
+                    <div class="dpl-card-body p-none">
+
+                        <table class="table-no-border default">
+
+                            <tr>
+
+                                <th>Date</th>
+                                <th>Commenter</th>
+                                <th>Comment</th>
+
+                            </tr>
+
+                            <tr class="bg-white">
+
+                                <td>11/12/2019</td>
+                                <td>Joe Smith</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</td>
+
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="accordion_tab" id="line-items"><i class="fas fa-clipboard-list"></i> Attachments</button>
+
+            <div class="accordion_content">
+
+                <div class="dpl-card">
+
+                    <div class="dpl-card-header">
+
+                        <h2 class="dpl-card-title">Added Documents</h2>
+
+                    </div>
+
+                    <div class="dpl-card-body p-none">
+
+                        <table class="table default m-0">
+
+                            <tr>
+
+                                <th>File Name</th>
+                                <th>Date Posted</th>
+                                <th>Contact Name</th>
+                                <th>Document Type</th>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><a href="#">documentname.png</a></td>
+                                <td>11/12/2019</td>
+                                <td>Joe Smith</td>
+                                <td>Reason</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><a href="#">documentname.png</a></td>
+                                <td>11/12/2019</td>
+                                <td>Joe Smith</td>
+                                <td>Reason</td>
+
+                            </tr>
+
+                        </table>
+                            
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- JS Links -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+        <script defer src="js/classie.js"></script>
+
+        <script defer src="js/smoothscroll.js"></script>
+
+        <script defer src="js/accordion.js"></script>
+
+        <script defer src="js/accordion-table.js"></script>
+
+        <script defer src="js/scripts.js"></script>
+
+    </body>
+
+</html>

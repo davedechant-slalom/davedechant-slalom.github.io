@@ -683,7 +683,7 @@ a:hover {
   display: flex;
   justify-content: space-between; }
 
-.claim-summary-status .dpl-notification-error, .dpl-notification-success {
+.claim-summary-status .dpl-notification-error, .claim-summary-status .dpl-notification-success {
   flex-grow: 1; }
 
 .status-history {
@@ -796,9 +796,9 @@ a:hover {
   text-align: center;
   margin-right: 0.5rem;
   border-radius: 3px;
-  padding: 0.125rem 0.5rem; }
+  padding: 0.188rem 0.5rem; }
 
-.smaller .dpl-notification-error, .smaller .dpl-notification-success, .smaller .dpl-notification-info {
+.smaller .dpl-header .dpl-notification-error, .smaller .dpl-header .dpl-notification-success, .smaller .dpl-header .dpl-notification-info {
   padding: 0 0.25rem; }
 
 .dpl-notification-success {
@@ -987,7 +987,8 @@ td.td-form {
   display: inline-block;
   border-radius: 3px;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
 
 .dpl-button:hover, .dpl-button-ghost:hover, .dpl-button-full:hover, .dpl-button-inactive:hover {
   color: #FFFFFF;
@@ -1004,7 +1005,7 @@ td.td-form {
   color: #033DA1;
   background-color: #FFFFFF; }
 
-.dpl-button-inactive, .dpl-button-inactive:visited {
+.dpl-button-inactive, .dpl-button-inactive:visited, .dpl-button-inactive:hover {
   border: 1px solid #757575;
   color: #757575;
   background-color: #E0E0E0;
@@ -1254,6 +1255,55 @@ textarea {
 
 .p-b {
   padding-bottom: 1rem; }
+
+/*-- DPL ToolTip Styles --*/
+.dpl-tooltip-activator {
+  position: relative; }
+
+.dpl-tooltip, .dpl-tooltip-white {
+  position: absolute;
+  bottom: calc(100% + 7px);
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-family: "UHC Sans Bold", sans-serif;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  color: #FFFFFF;
+  border-radius: 3px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.dpl-tooltip-white {
+  background-color: #FFFFFF;
+  color: #000000;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3); }
+
+.dpl-tooltip:after, .dpl-tooltip-white:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent; }
+
+.dpl-tooltip-white:after {
+  border-color: #FFFFFF transparent transparent transparent; }
+
+.dpl-tooltip-activator:hover .dpl-tooltip, .dpl-tooltip-activator:hover .dpl-tooltip-white {
+  visibility: visible;
+  opacity: 1; }
 
 /* End Module/Universal Styles */
 /*---------------------------------------------------------------------*/

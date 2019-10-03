@@ -921,7 +921,7 @@ a:hover {
 	justify-content: space-between;
 }
 
-.claim-summary-status .dpl-notification-error, .dpl-notification-success {
+.claim-summary-status .dpl-notification-error, .claim-summary-status .dpl-notification-success {
 	flex-grow: 1;
 }
 
@@ -1046,16 +1046,16 @@ a:hover {
 
 /*-- DPL Notification Styles --*/
 
-.dpl-notification-error, .dpl-notification-success, , .dpl-notification-info {
+.dpl-notification-error, .dpl-notification-success, .dpl-notification-info {
 	border: 1px solid $error-color;
 	background-color: #FFE6F0;
 	text-align: center;
 	margin-right: 0.5rem;
 	border-radius: 3px;
-	padding: 0.125rem 0.5rem;
+	padding: 0.188rem 0.5rem;
 }
 
-.smaller .dpl-notification-error, .smaller .dpl-notification-success, .smaller .dpl-notification-info {
+.smaller .dpl-header .dpl-notification-error, .smaller .dpl-header .dpl-notification-success, .smaller .dpl-header .dpl-notification-info {
 	padding: 0 0.25rem;
 }
 
@@ -1291,6 +1291,7 @@ td.td-form {
 	border-radius: 3px;
 	text-decoration: none;
 	text-align: center;
+	cursor: pointer;
 }
 
 .dpl-button:hover, .dpl-button-ghost:hover, .dpl-button-full:hover, .dpl-button-inactive:hover {
@@ -1311,7 +1312,7 @@ td.td-form {
 	background-color: $grayscale-0;
 }
 
-.dpl-button-inactive, .dpl-button-inactive:visited {
+.dpl-button-inactive, .dpl-button-inactive:visited, .dpl-button-inactive:hover {
 	border: 1px solid $grayscale-700;
 	color: $grayscale-700;
 	background-color: $grayscale-400;
@@ -1617,6 +1618,62 @@ textarea {
 
 .p-b {
 	padding-bottom: 1rem;
+}
+
+/*-- DPL ToolTip Styles --*/
+
+.dpl-tooltip-activator {
+	position: relative;
+}
+
+.dpl-tooltip, .dpl-tooltip-white {
+	position: absolute;
+	bottom: calc(100% + 7px);
+	left: 50%;
+	transform: translate(-50%,0);
+	padding: 1rem;
+	background-color: rgba($grayscale-1000,0.75);
+	font-family: $base-font;
+	font-size: 0.875rem;
+	white-space: nowrap;
+	color: $grayscale-0;
+	border-radius: 3px;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.dpl-tooltip-white {
+	background-color: $grayscale-0;
+	color: $grayscale-1000;
+	-webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,0.3);
+	box-shadow: 0 0 6px 0 rgba(0,0,0,0.3);
+}
+
+.dpl-tooltip:after, .dpl-tooltip-white:after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
+	border-color: rgba($grayscale-1000,0.75) transparent transparent transparent;
+}
+
+.dpl-tooltip-white:after {
+	border-color: $grayscale-0 transparent transparent transparent;
+}
+
+.dpl-tooltip-activator:hover .dpl-tooltip, .dpl-tooltip-activator:hover .dpl-tooltip-white {
+	visibility: visible;
+	opacity: 1;
 }
 
 /* End Module/Universal Styles */

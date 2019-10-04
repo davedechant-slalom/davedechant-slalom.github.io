@@ -662,17 +662,19 @@ a:hover {
 }
 
 .dpl-jump-menu-list li:last-child:after {
-	display: none;
+	color: $grayscale-0;
 }
 
 .dpl-jump-menu-list li a {
 	font-family: $brand-font;
 	padding-bottom: 0.5rem;
 	display: inline-block;
+	border-bottom: 5px solid $grayscale-0;
 }
 
 .smaller .dpl-jump-menu-list li a {
 	padding-bottom: 0.25rem;
+	border-bottom: 3px solid $grayscale-0;
 }
 
 .dpl-jump-menu-list li a.active {

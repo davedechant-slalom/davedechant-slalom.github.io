@@ -471,15 +471,17 @@ a:hover {
   padding: 0 0.375rem; }
 
 .dpl-jump-menu-list li:last-child:after {
-  display: none; }
+  color: #FFFFFF; }
 
 .dpl-jump-menu-list li a {
   font-family: "UHC Sans Regular", sans-serif;
   padding-bottom: 0.5rem;
-  display: inline-block; }
+  display: inline-block;
+  border-bottom: 5px solid #FFFFFF; }
 
 .smaller .dpl-jump-menu-list li a {
-  padding-bottom: 0.25rem; }
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid #FFFFFF; }
 
 .dpl-jump-menu-list li a.active {
   color: #000000;

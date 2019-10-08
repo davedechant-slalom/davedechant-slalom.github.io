@@ -77,7 +77,7 @@ $error-color-active: #A70A1D;
 
 /* support: warning */
 
-$warning-color: #F9A825;
+$warning-color: #d29e35;
 $warning-color-hover: #FDC56A;
 $warning-color-active: #C37D0B;
 
@@ -615,12 +615,16 @@ a:hover {
 	padding: 0.125rem 0;
 }
 
-.dpl-insights-status .dpl-notification-error, .dpl-insights-status .dpl-notification-success {
+.dpl-insights-status .dpl-notification-error, .dpl-insights-status .dpl-notification-success, .dpl-insights-status .dpl-notification-warning {
 	flex-grow: 3;
 }
 
 .dpl-insights-status .dpl-notification-success {
 	flex-grow: 1;
+}
+
+.dpl-insights-status .dpl-notification-warning {
+	margin-right: 0.5rem;
 }
 
 /*-- Screen Jump Menu Navigation/Options --*/
@@ -919,7 +923,7 @@ a:hover {
 	justify-content: space-between;
 }
 
-.claim-summary-status .dpl-notification-error, .claim-summary-status .dpl-notification-success {
+.claim-summary-status .dpl-notification-error, .claim-summary-status .dpl-notification-success, .claim-summary-status .dpl-notification-warning {
 	flex-grow: 1;
 }
 
@@ -964,6 +968,21 @@ a:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#196fd0', endColorstr='#d2341e',GradientType=1 ); /* IE6-9 */
 }
 
+.history-timeline.warning:before {
+	position: absolute;
+	content: "";
+	top: -4px;
+	left: 0;
+	width: 50%;
+	height: 4px;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#196fd0+0,d29e35+100 */
+	background: rgb(25,111,208); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(25,111,208,1) 0%, rgba(210,158,53,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(25,111,208,1) 0%,rgba(210,158,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(25,111,208,1) 0%,rgba(210,158,53,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#196fd0', endColorstr='#d29e35',GradientType=1 ); /* IE6-9 */
+}
+
 .history-timeline-item {
 	position: absolute;
 	top: -0.813rem;
@@ -1000,6 +1019,10 @@ a:hover {
 .history-timeline-item.two .fas {
 	font-size: 1.25rem;
 	color: #d2341e;
+}
+
+.history-timeline-item.two.warning .fas {
+	color: $warning-color;
 }
 
 .history-timeline-item.three .fas {
@@ -1044,7 +1067,7 @@ a:hover {
 
 /*-- DPL Notification Styles --*/
 
-.dpl-notification-error, .dpl-notification-success, .dpl-notification-info {
+.dpl-notification-error, .dpl-notification-success, .dpl-notification-info, .dpl-notification-warning {
 	border: 1px solid $error-color;
 	background-color: #FFE6F0;
 	text-align: center;
@@ -1053,7 +1076,7 @@ a:hover {
 	padding: 0.188rem 0.5rem;
 }
 
-.smaller .dpl-header .dpl-notification-error, .smaller .dpl-header .dpl-notification-success, .smaller .dpl-header .dpl-notification-info {
+.smaller .dpl-header .dpl-notification-error, .smaller .dpl-header .dpl-notification-success, .smaller .dpl-header .dpl-notification-info, .smaller .dpl-header .dpl-notification-warning {
 	padding: 0 0.25rem;
 }
 
@@ -1069,7 +1092,13 @@ a:hover {
 	background-color: #f3fafc;
 }
 
-.dpl-notification-error p, .dpl-notification-success p, .dpl-notification-info p {
+.dpl-notification-warning {
+	margin: 0;
+	border: 1px solid $warning-color;
+	background-color: #fffcdd;
+}
+
+.dpl-notification-error p, .dpl-notification-success p, .dpl-notification-info p, .dpl-notification-warning p {
 	margin: 0;
 	font-size: 0.875rem;
 }
@@ -1267,11 +1296,15 @@ td.td-form {
 	color: $error-color;
 }
 
+.fc-warning {
+	color: $warning-color;
+}
+
 .fc-base-accent {
 	color: $base-accent-color;
 }
 
-/*-- DPL Font Styles --*/
+/*-- DPL Background Styles --*/
 
 .bg-white {
 	background-color: $grayscale-0;
@@ -1629,11 +1662,11 @@ textarea {
 	bottom: calc(100% + 7px);
 	left: 50%;
 	transform: translate(-50%,0);
-	padding: 1rem;
+	padding: 0.875rem;
+	width: 160px;
 	background-color: rgba($grayscale-1000,0.75);
 	font-family: $base-font;
 	font-size: 0.875rem;
-	white-space: nowrap;
 	color: $grayscale-0;
 	border-radius: 3px;
 	visibility: hidden;
@@ -1648,8 +1681,8 @@ textarea {
 .dpl-tooltip-white, .dpl-tooltip-white-l, .dpl-tooltip-white-r, .dpl-tooltip-white-b {
 	background-color: $grayscale-0;
 	color: $grayscale-1000;
-	-webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,0.3);
-	box-shadow: 0 0 6px 0 rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
 }
 
 .dpl-tooltip-white-l {

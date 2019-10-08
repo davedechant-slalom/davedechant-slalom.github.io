@@ -17,6 +17,14 @@
 		"oAP": "/claim-reconsideration.html",
 		"oF": 0
 		},
+	"/claim-summary-pended.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/claim-summary-pended.html",
+		"oF": 0
+		},
 	"/claim-summary-recon-assigned.html": {
 		"cB": 0,
 		"ft": 8192,

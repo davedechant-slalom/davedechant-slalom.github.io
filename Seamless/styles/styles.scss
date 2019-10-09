@@ -198,15 +198,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 2.25rem;
+	font-size: 2.125rem;
 }
 
 h2 {
-	font-size: 1.813rem;
+	font-size: 1.75rem;
 }
 
 h3 {
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 }
 
 h4 {
@@ -265,7 +265,7 @@ cite {
 }
 
 small {
-	font-size: .813rem;
+	font-size: .875rem;
 }
 
 strong {
@@ -275,7 +275,7 @@ strong {
 a, a:visited {
 	color: $base-accent-color;
 	text-decoration: none;
-	font-family: $base-font;
+	font-family: $brand-font;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
@@ -458,6 +458,7 @@ a:hover {
 	padding: 0.625rem 0;
 	display: block;
 	text-decoration: none;
+	font-family: $base-font;
 }
 
 .smaller .dpl-main-nav-list li a {
@@ -768,17 +769,18 @@ a:hover {
 .accordion_tab:after, .accordion_tab_table:after {
     font-family: "Font Awesome 5 Pro";
 	content: "\f107";
-    font-size: 1.875rem;
+    font-size: 2rem;
     color: $base-accent-color;
     position: absolute;
     top: 50%;
     right: 5px;
     border: 1px solid $brand-color;
     background-color: $grayscale-0;
-    padding: 0.125rem 0.5rem;
+    padding: 0.125rem 0.625rem;
     -webkit-transform: translate(0,-50%);
     transform: translate(0,-50%);
     border-radius: 50%;
+    font-weight: 100;
 }
 
 .accordion_tab.active:after, .accordion_tab_table.active:after {
@@ -1423,6 +1425,11 @@ td.td-form {
 	display: flex;
 	justify-content: space-between;
 	align-content: baseline;
+}
+
+.d-flex-3 {
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 .flex-item-r {

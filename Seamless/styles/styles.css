@@ -416,11 +416,14 @@ a:hover {
 .smaller .remove {
   display: none; }
 
-.dpl-insights-details li:first-child a {
+.dpl-insights-details li:first-child .claim-patient-name {
   font-size: 1rem;
-  text-decoration: none; }
+  color: #000000; }
 
-.smaller .dpl-insights-details li:first-child a {
+.dpl-insights-details li:first-child .claim-patient-name a {
+  font-family: "UHC Sans Bold", sans-serif; }
+
+.smaller .dpl-insights-details li:first-child .claim-patient-name {
   font-size: 0.875rem; }
 
 .smaller .dpl-insights-options .dpl-button, .smaller .dpl-insights-options .dpl-button-ghost, .smaller .dpl-insights-options .dpl-button-inactive {
@@ -629,7 +632,7 @@ a:hover {
   font-size: 0.75rem;
   text-transform: uppercase;
   border-bottom: 1px solid #757575;
-  color: #757575;
+  color: #424242;
   display: inline-block; }
 
 .accordion-table-copy {

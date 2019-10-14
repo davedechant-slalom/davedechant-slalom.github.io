@@ -455,10 +455,14 @@ a:hover {
 
 .dpl-main-nav-list li a {
 	color: $grayscale-0;
-	padding: 0.625rem 0;
+	padding: 0.625rem;
 	display: block;
 	text-decoration: none;
 	font-family: $base-font;
+}
+
+.dpl-main-nav-list li.active a {
+	background-color: #305fc3;
 }
 
 .smaller .dpl-main-nav-list li a {

@@ -508,6 +508,9 @@ a:hover {
 .main-content.no-jump-menu {
   margin-top: 330px; }
 
+.main-content-top-sm {
+  margin-top: 160px; }
+
 /*-- Accordion Styles --*/
 /*- Accordion Tab Styles -*/
 .accordion_tab, .accordion_tab_table {
@@ -972,6 +975,14 @@ td.td-form {
 /*---------------------------------------------------------------------*/
 /* Begin Module/Universal Styles */
 /*-- DPL Font Styles --*/
+.label-sm {
+  font-size: 0.875rem;
+  color: #757575; }
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 0.875rem; }
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.125rem; }
@@ -1008,6 +1019,17 @@ td.td-form {
   color: #d29e35; }
 
 .fc-base-accent {
+  color: #196FD0; }
+
+.icon-title {
+  font-size: 2.125rem;
+  text-align: center;
+  padding: 0.75rem 0 0;
+  margin-bottom: 0.25rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f3fafc;
   color: #196FD0; }
 
 /*-- DPL Background Styles --*/
@@ -1156,6 +1178,9 @@ td.td-form {
   grid-gap: 1rem;
   margin-bottom: 0.875rem; }
 
+.form-row-3-flex {
+  display: flex; }
+
 label {
   font-family: "UHC Sans Bold", sans-serif;
   margin: 0 0 0.25rem;
@@ -1193,13 +1218,13 @@ textarea {
 .textarea-2 {
   min-height: 247px; }
 
-.form-checkbox {
+.form-checkbox, .form-radio {
   display: flex;
   align-items: center;
   font-size: 0.875rem;
   font-family: "UHC Sans Regular", sans-serif; }
 
-.form-checkbox input {
+.form-checkbox input, .form-radio input {
   width: 20px;
   border: 3px solid #196FD0;
   padding: 0;
@@ -1213,7 +1238,12 @@ textarea {
   appearance: none;
   position: relative; }
 
-.form-checkbox input:before {
+.form-radio input {
+  border-radius: 50%;
+  width: 23px;
+  height: 23px; }
+
+.form-checkbox input:before, .form-radio input:before {
   font-family: 'Font Awesome 5 Pro';
   content: "\f00c";
   font-weight: 900;
@@ -1224,10 +1254,27 @@ textarea {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.form-checkbox input:checked {
+.form-radio input:before {
+  content: "";
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  visibility: hidden; }
+
+.form-checkbox input:checked, .form-radio input:checked {
   background-color: #196FD0; }
 
-.form-checkbox span {
+.form-radio input:checked:before {
+  background-color: #196FD0;
+  border: 2px solid #FFFFFF;
+  visibility: visible; }
+
+.form-checkbox span, .form-radio span {
   margin-left: 0.25rem; }
 
 .file-upload-container {

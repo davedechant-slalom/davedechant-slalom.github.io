@@ -297,7 +297,7 @@ a:hover {
   font-size: 0.938rem;
   font-family: "UHC Sans Bold", sans-serif;
   text-transform: uppercase;
-  margin-right: 2.5rem; }
+  margin-right: 1.75rem; }
 
 .smaller .dpl-main-nav-list li {
   font-size: 0.875rem; }
@@ -556,7 +556,7 @@ a:hover {
 .accordion_tab:hover, .accordion_tab_table:hover {
   background: none; }
 
-.accordion_tab .fas, .accordion_tab_table .fas {
+.accordion_tab .fas, .accordion_tab_table .fas, .accordion_tab .fal, .accordion_tab_table .fal {
   background-color: #FFFFFF;
   text-align: center;
   padding-top: 0.688rem;
@@ -1216,7 +1216,7 @@ select {
   background-position: right 0.688rem top 50%, 0 0; }
 
 textarea {
-  min-height: 183px; }
+  min-height: 100px; }
 
 .textarea-2 {
   min-height: 247px; }
@@ -1291,7 +1291,7 @@ textarea {
   text-align: center;
   margin: 0; }
 
-.file-upload-container h3 .fas {
+.file-upload-container h3 .fal {
   font-size: 3rem;
   color: #196FD0;
   margin-bottom: 0.5rem; }

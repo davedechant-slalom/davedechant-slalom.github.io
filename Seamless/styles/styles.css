@@ -1095,6 +1095,10 @@ td.td-form {
   background-color: #f3fafc;
   color: #196FD0; }
 
+.link-underline {
+  border-bottom: 2px solid #196FD0;
+  font-family: "UHC Sans Bold", sans-serif; }
+
 /*-- DPL Background Styles --*/
 .bg-white {
   background-color: #FFFFFF; }

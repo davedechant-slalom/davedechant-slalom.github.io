@@ -1410,6 +1410,11 @@ td.td-form {
 	color: $base-accent-color;
 }
 
+.link-underline {
+	border-bottom: 2px solid $base-accent-color;
+	font-family: $base-font;
+}
+
 /*-- DPL Background Styles --*/
 
 .bg-white {

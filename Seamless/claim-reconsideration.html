@@ -113,11 +113,17 @@
 
                 <ul class="dpl-insights-details flex-item-l">
 
-                    <li><strong>Claim Number:</strong><br class="remove"> <span>7479894912</span> <strong class="claim-patient-name"><a href="#">Stephanie Johnson</a></strong></li>
+                    <li><strong>Claim Number:</strong><br class="remove"> <span><a href="index.html"><strong>7479894912</strong></a></span> <strong class="claim-patient-name">Stephanie Johnson</strong></li>
                     <li>Member ID: <strong>123456 00</strong></li>
                     <li>Patient Account Number: <strong>103411304333</strong></li>
                     
                 </ul>
+
+                <div class="dpl-insights-options">
+
+                    <a class="dpl-button">New Search</a>
+
+                </div>
 
             </div>
 
@@ -348,8 +354,20 @@
 	                        		<select>
 
 	                        			<option value="0">Please Select a Reason</option>
-	                        			<option value="1">Option 1</option>
-	                        			<option value="2">Option 2</option>
+	                        			<option value="1">Change in Patient's Eligibility Status</option>
+	                        			<option value="2">Incorrect Payment</option>
+                                        <option value="2">Previously denied/closed for Additional Information</option>
+                                        <option value="2">Previously denied/closed requesting Explanation of Benefits for Coordination of Benefits</option>
+                                        <option value="2">Submission of a corrected Claim</option>
+                                        <option value="2">Resubmission of Prior Notification Information</option>
+                                        <option value="2">Submitting Additional Information for Bundled Claim</option>
+                                        <option value="2">Inaccurate Data Entry</option>
+                                        <option value="2">Other</option>
+                                        <option value="2">Previously processed but contracted rate applied incorrectly resulting in underpayment</option>
+                                        <option value="2">Previously denied/closed for Duplicate</option>
+                                        <option value="2">Previously denied for no Authorization</option>
+                                        <option value="2">Previously Processed but Coordination of Benefits Applied Incorrectly</option>
+                                        <option value="2">Coding Issue Other than Corrected Claim</option>
 
 	                        		</select>
 	                        		
@@ -421,8 +439,21 @@
 
                                 <tr>
 
-                                    <td><a href="#">documentname.png</a></td>
-                                    <td>11/12/2019</td>
+                                    <td><a href="#"><strong>documentname.png</strong></a></td>
+                                    <td>
+
+                                        <script>
+
+                                            var today = new Date();
+                                            var dd = String(today.getDate()).padStart(2, '0');
+                                            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                                            var yyyy = today.getFullYear();
+                                            today = mm + '/' + dd + '/' + yyyy;
+                                            document.write(today);
+
+                                        </script>
+
+                                    </td>
                                     <td>Joe Smith</td>
                                     <td class="td-form">
 
@@ -435,8 +466,17 @@
                                                     <select>
 
                                                         <option value="0">Please Select Document Type</option>
-                                                        <option value="1">Option 1</option>
-                                                        <option value="2">Option 2</option>
+                                                        <option value="1">Explanation of Benefits</option>
+                                                        <option value="1">Certifications</option>
+                                                        <option value="1">Consent Form(s)</option>
+                                                        <option value="1">Durable Medical Equipment Prescription</option>
+                                                        <option value="1">Justification for Admission</option>
+                                                        <option value="1">Laboratory Results</option>
+                                                        <option value="1">Medical Record Attachment</option>
+                                                        <option value="1">Operative Note</option>
+                                                        <option value="1">Physical Therapy Notes</option>
+                                                        <option value="1">Referral Form</option>
+                                                        <option value="1">Support Data for Claim</option>
 
                                                     </select>
                                                     
@@ -453,8 +493,21 @@
 
                                 <tr>
 
-                                    <td><a href="#">documentname.png</a></td>
-                                    <td>11/12/2019</td>
+                                    <td><a href="#"><strong>documentname.png</strong></a></td>
+                                    <td>
+
+                                        <script>
+
+                                            var today = new Date();
+                                            var dd = String(today.getDate()).padStart(2, '0');
+                                            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                                            var yyyy = today.getFullYear();
+                                            today = mm + '/' + dd + '/' + yyyy;
+                                            document.write(today);
+
+                                        </script>
+
+                                    </td>
                                     <td>Joe Smith</td>
                                     <td class="td-form">
 
@@ -467,8 +520,17 @@
                                                     <select>
 
                                                         <option value="0">Please Select Document Type</option>
-                                                        <option value="1">Option 1</option>
-                                                        <option value="2">Option 2</option>
+                                                        <option value="1">Explanation of Benefits</option>
+                                                        <option value="1">Certifications</option>
+                                                        <option value="1">Consent Form(s)</option>
+                                                        <option value="1">Durable Medical Equipment Prescription</option>
+                                                        <option value="1">Justification for Admission</option>
+                                                        <option value="1">Laboratory Results</option>
+                                                        <option value="1">Medical Record Attachment</option>
+                                                        <option value="1">Operative Note</option>
+                                                        <option value="1">Physical Therapy Notes</option>
+                                                        <option value="1">Referral Form</option>
+                                                        <option value="1">Support Data for Claim</option>
 
                                                     </select>
                                                     

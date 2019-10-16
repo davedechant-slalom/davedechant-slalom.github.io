@@ -498,15 +498,23 @@ a:hover {
   border-bottom: 3px solid #196FD0; }
 
 .dpl-jump-menu-cta {
-  margin: 0;
-  align-self: baseline; }
+  margin: 0 1.5rem 0 0;
+  align-self: center;
+  flex-grow: 1;
+  text-align: right; }
 
 .smaller .dpl-jump-menu-cta {
   font-size: 0.875rem; }
 
+.dpl-jump-menu .dpl-button-inactive {
+  margin-bottom: 0.375rem; }
+
 /*-- Content Container --*/
 .main-content {
   margin-top: 350px; }
+
+.main-content-notification {
+  margin-top: 0; }
 
 .main-content.no-jump-menu {
   margin-top: 330px; }
@@ -854,6 +862,58 @@ a:hover {
 .dpl-notification-error p, .dpl-notification-success p, .dpl-notification-info p, .dpl-notification-warning p {
   margin: 0;
   font-size: 0.875rem; }
+
+.notification-container {
+  padding-top: 370px;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out; }
+
+.notification-container:target {
+  visibility: hidden;
+  opacity: 0;
+  padding-top: 280px; }
+
+.notification-container.error:target {
+  visibility: hidden;
+  opacity: 0;
+  padding-top: 220px; }
+
+.dpl-notification-box-warning, .dpl-notification-box-error {
+  border: 1px solid #d29e35;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border-left: 10px solid #d29e35;
+  position: relative;
+  padding-left: 4.75rem; }
+
+.dpl-notification-box-error {
+  border: 1px solid #E91B18;
+  border-left: 10px solid #E91B18; }
+
+.dpl-notification-box-warning:before, .dpl-notification-box-error:before {
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f071";
+  font-weight: 800;
+  color: #d29e35;
+  font-size: 2.375rem;
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translate(0, -50%); }
+
+.dpl-notification-box-error:before {
+  color: #E91B18; }
+
+.dpl-notification-box-warning .dpl-button, .dpl-notification-box-error .dpl-button {
+  align-self: center; }
 
 /*-- DPL Table Styles --*/
 .table, .table-no-border {
@@ -1219,7 +1279,7 @@ select {
   background-position: right 0.688rem top 50%, 0 0; }
 
 textarea {
-  min-height: 100px; }
+  min-height: 125px; }
 
 .textarea-2 {
   min-height: 247px; }
@@ -1498,6 +1558,87 @@ textarea {
 .dpl-tooltip-activator:hover .dpl-tooltip, .dpl-tooltip-activator:hover .dpl-tooltip-white, .dpl-tooltip-activator:hover .dpl-tooltip-white-l, .dpl-tooltip-activator:hover .dpl-tooltip-white-r, .dpl-tooltip-activator:hover .dpl-tooltip-white-b {
   visibility: visible;
   opacity: 1; }
+
+/*-- DPL Modal Styles --*/
+.dpl-modal-overlay {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0; }
+
+.dpl-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+  min-width: 770px; }
+
+.modal-one:target, .modal-two:target, .modal-three:target {
+  visibility: visible;
+  opacity: 1; }
+
+.modal-one .q-two, .modal-one .dpl-modal-footer {
+  visibility: hidden;
+  opacity: 0; }
+
+.dpl-modal-header {
+  padding: 1.25rem;
+  border-bottom: 1px solid #E0E0E0;
+  display: flex;
+  justify-content: space-between; }
+
+.dpl-modal-title {
+  font-size: 2.25rem;
+  margin: 0; }
+
+.dpl-modal-header .fal {
+  font-size: 2.25rem; }
+
+.dpl-modal-body {
+  margin-bottom: 5rem;
+  padding: 1.25rem; }
+
+.dpl-modal-inputs, .dpl-modal-inputs-bottom {
+  display: flex;
+  margin: 0.75rem 0 0 1.5rem;
+  position: relative; }
+
+.dpl-modal-inputs .far, .dpl-modal-inputs-bottom .far {
+  color: #196FD0;
+  font-size: 1.5rem;
+  vertical-align: -4px; }
+
+.dpl-modal-inputs-bottom:before, .dpl-modal-inputs-bottom:after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 69px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #196FD0; }
+
+.dpl-modal-inputs-bottom:after {
+  top: 5px;
+  left: 69px; }
+
+.modal-two .dpl-modal-inputs-bottom:after {
+  display: none; }
+
+.dpl-modal-footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 0.875rem 1.25rem;
+  text-align: center; }
+
+.dpl-modal-footer .dpl-button, .dpl-modal-footer .dpl-button-ghost, .dpl-modal-footer .dpl-button-inactive {
+  min-width: 285px; }
 
 /* End Module/Universal Styles */
 /*---------------------------------------------------------------------*/

@@ -17,6 +17,14 @@
 		"oAP": "/add-a-document.html",
 		"oF": 0
 		},
+	"/appeal-submitted.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/appeal-submitted.html",
+		"oF": 0
+		},
 	"/claim-reconsideration.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -55,6 +63,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/claim-ticket-warning.html",
+		"oF": 0
+		},
+	"/create-an-appeal.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/create-an-appeal.html",
 		"oF": 0
 		},
 	"/images/_notes/dwsync.xml": {

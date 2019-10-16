@@ -98,8 +98,8 @@
                 <ul class="dpl-breadcrumbs-list">
 
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Claims Search Results</a></li>
-                    <li>Claims Summary Page</li>
+                    <li><a href="#">Claims Summary Page</a></li>
+                    <li>Appeal Form</li>
                     
                 </ul>
 
@@ -113,11 +113,17 @@
 
                 <ul class="dpl-insights-details flex-item-l">
 
-                    <li><strong>Claim Number:</strong><br class="remove"> <span>7479894912</span> <strong class="claim-patient-name"><a href="#">Stephanie Johnson</a></strong></li>
+                    <li><strong>Claim Number</strong><br class="remove"> <span><a href=""><strong>7479894912</strong></a></span> <strong class="claim-patient-name">Stephanie Johnson</strong></li>
                     <li>Member ID: <strong>123456 00</strong></li>
                     <li>Patient Account Number: <strong>103411304333</strong></li>
                     
                 </ul>
+
+                <div class="dpl-insights-options">
+
+                    <a class="dpl-button">New Search</a>
+
+                </div>
 
             </div>
 
@@ -129,7 +135,7 @@
 
                 </div>
 
-                <p class="dpl-jump-menu-cta"><a href="#"><strong>View Patients Eligibility &amp; Benefits</strong> <i class="fas fa-angle-right"></i></a></p>
+                <p class="dpl-jump-menu-cta m-0"><a href="#"><strong>View Patients Eligibility &amp; Benefits</strong> <i class="fas fa-angle-right"></i></a></p>
 
             </div>
 
@@ -137,9 +143,9 @@
 
         <main class="wrapper main-content no-jump-menu">
 
-        	<h2>Create a Reconsideration</h2>
+        	<h2>Create an Appeal</h2>
 
-        	<p class="text-sm">This form is to be completed by physicians, hospitals, or other health care professionals to request a claim reconsideration for members enrolled in benefit plans administered by UnitedHealthcare. <strong>A separate request must be filled out for each claim reconsideration. Don't use this form for appeals or disputes. Continue to use your standard appeals process for formal appeals and disputes.</strong></p>
+        	<p class="text-sm">This form is to be completed by physicians, hospitals or other health care professionals to request an appeal. Do not use this form for claim reconsideration or requests involving multiple claims for a member. If you are intending to submit a reconsideration, please use the <a href="#">claim reconsideration process</a>. If you are intending to submit an appeal for multiple claims for a member, you will need to submit your request in writing. Please refer to the appeal address information located on your Provider Remittance Advice.</p>
 
             <div class="content-grid-3">
 
@@ -189,7 +195,7 @@
 
 	                        </div>
 
-	                        <div class="form-row-2">
+	                        <div class="form-row-2 m-0">
 
 	                        	<div class="form-element">
 
@@ -240,52 +246,6 @@
                                 </div>
 
                             </div>
-
-	                        <!--<div class="form-row-1">
-
-	                        	<div class="form-element">
-
-	                        		<label>Street Address</label>
-
-	                        		<input type="text" name="">
-	                        		
-	                        	</div>
-
-	                        </div>
-
-	                        <div class="form-row-3 m-0">
-
-	                        	<div class="form-element">
-
-	                        		<label>City</label>
-
-	                        		<input type="text" name="">
-	                        		
-	                        	</div>
-
-	                        	<div class="form-element">
-
-	                        		<label>State</label>
-
-	                        		<select>
-
-	                        			<option value="0">Please Select</option>
-	                        			<option value="1">Option 1</option>
-	                        			<option value="2">Option 2</option>
-
-	                        		</select>
-	                        		
-	                        	</div>
-
-	                        	<div class="form-element">
-
-	                        		<label>Zip Code</label>
-
-	                        		<input type="text" name="">
-	                        		
-	                        	</div>
-
-	                        </div>-->
                         	
                         </form>
 
@@ -297,7 +257,7 @@
 
                     <div class="dpl-card-header">
 
-                        <h2 class="dpl-card-title">Request Information</h2>
+                        <h2 class="dpl-card-title">Comments</h2>
 
                     </div>
 
@@ -305,59 +265,7 @@
 
                         <form class="form">
 
-                        	<div class="form-row-1">
-
-	                        	<div class="form-element">
-
-                                    <div class="d-flex">
-
-                                        <label>Amount Requested</label>
-
-                                        <p class="text-sm m-0">All Fields are Required</p>
-
-                                    </div>
-
-	                        		<input type="text" name="">
-	                        		
-	                        	</div>
-
-	                        </div>
-
-	                        <div class="form-row-1">
-
-	                        	<div class="form-element">
-
-                                    <label class="form-checkbox">
-
-                                        <input class="checkbox" type="checkbox">
-
-                                        <span>I don't know</span>
-
-                                    </label>
-	                        		
-	                        	</div>
-
-	                        </div>
-
-	                        <div class="form-row-1">
-
-	                        	<div class="form-element">
-
-	                        		<label>Request Reason</label>
-
-	                        		<select>
-
-	                        			<option value="0">Please Select a Reason</option>
-	                        			<option value="1">Option 1</option>
-	                        			<option value="2">Option 2</option>
-
-	                        		</select>
-	                        		
-	                        	</div>
-
-	                        </div>
-
-                            <p class="text-sm">Please include what you are expecting from UnitedHealthcare to close this in your practice management system in the amount requested field above, and include any additional comments you would like in the coment field.</p>
+                        	<p class="text-sm">Please clearly indicate the reason for your appeal of the above claim and any details regarding your request.</p>
 
                             <div class="form-row-1 m-0">
 
@@ -365,7 +273,7 @@
 
                                     <label>New Comment</label>
 
-                                    <textarea placeholder="Add your comment here"></textarea>
+                                    <textarea class="textarea-2" placeholder="Add your comment here, comments are required"></textarea>
                                     
                                 </div>
 
@@ -377,7 +285,7 @@
 
                 </div>
 
-                <div class="dpl-card">
+                <div class="dpl-card m-t">
 
                     <div class="dpl-card-header">
 
@@ -501,11 +409,11 @@
 
             <div class="button-row">
 
+            	<p class="text-lg m-b">To ensure your appeal is submitted successfully, please wait for the confirmation notification to appear on your screen.</p>
+
                 <a class="dpl-button-ghost" href="#">Cancel</a>
 
-                <a class="dpl-button" href="#">Submit Reconsideration</a>
-
-                <a class="dpl-button" href="reconsideration-confirmation.html">Submit and Flag Reconsideration</a>
+                <a class="dpl-button" href="appeal-submitted.html">Submit Appeal</a>
 
             </div>
                             

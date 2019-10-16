@@ -147,6 +147,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	outline: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	line-height: 1;
 	color: $grayscale-1000;
@@ -708,6 +712,15 @@ a:hover {
 
 .dpl-jump-menu .dpl-button-inactive {
 	margin-bottom: 0.375rem;
+}
+
+.jumplink {
+	width: 1px;
+	height: 1px;
+	display: block;
+	position: absolute;
+	top: -235px;
+	left: 0;
 }
 
 /*-- Content Container --*/

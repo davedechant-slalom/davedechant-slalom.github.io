@@ -81,6 +81,14 @@
 		"oAP": "/create-an-appeal.html",
 		"oF": 0
 		},
+	"/flagged-claims-and-tickets.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/flagged-claims-and-tickets.html",
+		"oF": 0
+		},
 	"/images/_notes/dwsync.xml": {
 		"cB": 0,
 		"ft": 8192,

@@ -6,7 +6,7 @@
 
         <meta name="description" content="XXX">
 
-        <title>XXX</title>
+        <title>Claims Summary Page</title>
 
         <!-- Meta Info -->
 
@@ -684,7 +684,169 @@
 
                     </div>
 
-                    <a class="dpl-button claim-button" href="#">File an Appeal</a>
+                    <a class="dpl-button claim-button" href="#modal-one">File an Appeal</a>
+
+                    <div class="dpl-modal-overlay modal-one" id="modal-one">
+
+                        <div class="dpl-modal">
+
+                            <div class="dpl-modal-header">
+
+                                <h2 class="dpl-modal-title">Appeal Questionnaire</h2>
+
+                                <a href="#act"><i class="fal fa-times-circle"></i></a>
+
+                            </div>
+
+                            <div class="dpl-modal-body">
+
+                                <p class="text-sm">Please answer the following questions so that we can assist you correctly</p>
+
+                                <p class="text-lg">1. Does your request involve multiple claims for this patient?</p>
+
+                                <div class="dpl-modal-inputs">
+
+                                    <p class="m-r text-sm"><i class="far fa-circle"></i> Yes</p>
+
+                                    <p class="text-sm"><a href="#modal-two"><i class="far fa-circle"></i></a> No</p>
+                                    
+                                </div>
+
+                                <div class="q-two">
+
+                                    <p class="text-lg">2. Are you appealing on behalf of a member?</p>
+
+                                    <div class="dpl-modal-inputs-bottom">
+
+                                        <p class="m-r text-sm"><i class="far fa-circle"></i> Yes</p>
+
+                                        <p class="text-sm"><i class="far fa-circle"></i> No</p>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <div class="dpl-modal-footer">
+
+                                <a class="dpl-button-ghost m-r" href="#act">Cancel</a>
+
+                                <a class="dpl-button" href="create-an-appeal.html">Continue</a>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="dpl-modal-overlay modal-two" id="modal-two">
+
+                        <div class="dpl-modal">
+
+                            <div class="dpl-modal-header">
+
+                                <h2 class="dpl-modal-title">Appeal Questionnaire</h2>
+
+                                <a href="#act"><i class="fal fa-times-circle"></i></a>
+
+                            </div>
+
+                            <div class="dpl-modal-body">
+
+                                <p class="text-sm">Please answer the following questions so that we can assist you correctly</p>
+
+                                <p class="text-lg">1. Does your request involve multiple claims for this patient?</p>
+
+                                <div class="dpl-modal-inputs">
+
+                                    <p class="m-r text-sm"><i class="far fa-circle"></i> Yes</p>
+
+                                    <p class="text-sm"><i class="far fa-circle"></i> No</p>
+                                    
+                                </div>
+
+                                <div class="q-two">
+
+                                    <p class="text-lg">2. Are you appealing on behalf of a member?</p>
+
+                                    <div class="dpl-modal-inputs-bottom">
+
+                                        <p class="m-r text-sm"><i class="far fa-circle"></i> Yes</p>
+
+                                        <p class="text-sm"><a href="#modal-three"><i class="far fa-circle"></i></a> No</p>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <div class="dpl-modal-footer">
+
+                                <a class="dpl-button-ghost m-r" href="#act">Cancel</a>
+
+                                <a class="dpl-button-inactive">Continue</a>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="dpl-modal-overlay modal-three" id="modal-three">
+
+                        <div class="dpl-modal">
+
+                            <div class="dpl-modal-header">
+
+                                <h2 class="dpl-modal-title">Appeal Questionnaire</h2>
+
+                                <a href="#act"><i class="fal fa-times-circle"></i></a>
+
+                            </div>
+
+                            <div class="dpl-modal-body">
+
+                                <p class="text-sm">Please answer the following questions so that we can assist you correctly</p>
+
+                                <p class="text-lg">1. Does your request involve multiple claims for this patient?</p>
+
+                                <div class="dpl-modal-inputs">
+
+                                    <p class="m-r text-sm"><i class="far fa-circle"></i> Yes</p>
+
+                                    <p class="text-sm"><i class="far fa-circle"></i> No</p>
+                                    
+                                </div>
+
+                                <div class="q-two">
+
+                                    <p class="text-lg">2. Are you appealing on behalf of a member?</p>
+
+                                    <div class="dpl-modal-inputs-bottom">
+
+                                        <p class="m-r text-sm"><i class="far fa-circle"></i> Yes</p>
+
+                                        <p class="text-sm"><i class="far fa-circle"></i> No</p>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <div class="dpl-modal-footer">
+
+                                <a class="dpl-button-ghost m-r" href="#act">Cancel</a>
+
+                                <a class="dpl-button" href="create-an-appeal.html">Continue</a>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
 
                 </div>
 
@@ -729,8 +891,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
         <script defer src="js/classie.js"></script>
-
-        <script defer src="js/smoothscroll.js"></script>
 
         <script defer src="js/accordion.js"></script>
 

@@ -49,6 +49,14 @@
 		"oAP": "/claim-summary-pended.html",
 		"oF": 0
 		},
+	"/claim-summary-pending-end.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/claim-summary-pending-end.html",
+		"oF": 0
+		},
 	"/claim-summary-recon-assigned.html": {
 		"cB": 0,
 		"ft": 8192,

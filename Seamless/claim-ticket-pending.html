@@ -6,7 +6,7 @@
 
         <meta name="description" content="XXX">
 
-        <title>Appeal Confirmation Page</title>
+        <title>Pending Claim Ticket</title>
 
         <!-- Meta Info -->
 
@@ -81,7 +81,7 @@
 
                     <ul class="dpl-main-nav-list wrapper">
 
-                        <li><a href="claim-search.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">Eligibility &amp; Benefits</a></li>
                         <li><a href="#">Claims</a></li>
                         <li><a href="#">Referrals</a></li>
@@ -99,8 +99,8 @@
 
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Claims Summary Page</a></li>
-                    <li><a href="#">Appeal Form</a></li>
-                    <li>Appeal Confirmation Page</li>
+                    <li><a href="#">Add Attachment Form</a></li>
+                    <li>Pending Claim Ticket</li>
                     
                 </ul>
 
@@ -112,7 +112,7 @@
 
                 <ul class="dpl-insights-details">
 
-                    <li>Appeal Ticket Number<br class="remove"> <span>U923884749320</span> <strong class="claim-patient-name"><a href="#">Stephanie Johnson</a></strong></li>
+                    <li>Pending Claim Ticket:<br class="remove"> <span>CM-298238</span> <strong class="claim-patient-name"><a href="#">Janet Lynn</a></strong></li>
                     <li>Member ID: <strong>123456 00</strong></li>
                     <li>Patient Account Number: <strong>103411304333</strong></li>
                     
@@ -120,7 +120,7 @@
 
                 <div class="dpl-insights-options">
 
-                    <a class="dpl-button">New Search</a>
+                    <a class="dpl-button-ghost"><i class="fal fa-flag"></i> Flag Ticket</a> <a class="dpl-button">New Search</a>
 
                 </div>
 
@@ -128,9 +128,27 @@
 
             <div class="dpl-insights-status wrapper">
 
-                <div class="dpl-notification-error">
+                <div class="dpl-notification-warning">
 
-                    <p>Claim Number: <a href="#"><strong>7479894912</strong></a> • Current Claim Status: <i class="fas fa-exclamation-triangle fc-error"></i> <strong>Denied</strong> • First Date of Service: <strong>08/08/2019</strong> • Total Billed: <strong>$3,848.95</strong></p>
+                    <p>Claim Number: <a href="#"><strong>7479894912</strong></a> • Current Claim Status: <i class="fas fa-exclamation-triangle fc-warning"></i> <strong>Pending</strong> • First Date of Service: <strong>08/08/2019</strong> • Total Billed: <strong>$3,848.95</strong></p>
+
+                </div>
+
+                <div class="dpl-notification-info">
+
+                    <p>Pending Ticket Status: <strong>New</strong> 
+
+                        <i class="fas fa-info-circle fc-base-accent dpl-tooltip-activator">
+
+                            <span class="dpl-tooltip-white">
+
+                                This is a tooltip.
+
+                            </span>
+
+                        </i>
+
+                    </p>
 
                 </div>
 
@@ -141,40 +159,20 @@
                 <ul class="dpl-jump-menu-list">
 
                     <li><a class="active" href="#member-details">Contact Information</a></li>
-                    <li><a href="#claim-details">Comment History</a></li>
+                    <li><a href="#claim-details">Request Details and History</a></li>
                     <li><a href="#line-items">Attachments</a></li>
                     
                 </ul>
 
-                <p class="dpl-jump-menu-cta m-0"><a href="claim-summary-recon-assigned.html"><strong>Go Back to Claim Summary</strong> <i class="fal fa-angle-right"></i></a></p>
+                <p class="dpl-jump-menu-cta m-0"><a href="claim-summary-status-pending-new.html"><strong>Go Back to Claim Summary</strong> <i class="fal fa-angle-right"></i></a></p>
 
             </div>
 
         </header>
 
-        <main class="wrapper main-content-notification">
+        <main class="wrapper main-content">
 
-            <div class="notification-container error" id="notification-box">
-
-                <div class="dpl-notification-box-error">
-
-                    <div class="m-r">
-
-                    	<p class="text-lg"><strong>Print or save this screen for your records</strong></p>
-
-                        <p class="m-0">It is your only confirmation that this ticket has been submitted. To check the results of the review, please search for the claim by date of service 30 days after the submission</p>
-
-                        <p class="m-0"><a href="#"><strong>Print for your records</strong></a></p>
-
-                    </div>
-
-                    <a class="dpl-button" href="#notification-box">Close</a>
-                    
-                </div>
-                
-            </div>
-
-            <button class="accordion_tab"><span id="member-details" class="jumplink"></span><i class="fal fa-id-card"></i> Contact Information</button>
+            <button class="accordion_tab" id="member-details"><i class="fal fa-id-card"></i> Contact Information</button>
 
             <div class="accordion_content content-grid-1">
 
@@ -230,7 +228,7 @@
 
             </div>
 
-            <button class="accordion_tab"><span id="claim-details" class="jumplink"></span><i class="fal fa-clipboard-list"></i> Comment History</button>
+            <button class="accordion_tab" id="claim-details"><i class="fal fa-clipboard-list"></i> Comment History</button>
 
             <div class="accordion_content">
 
@@ -270,7 +268,7 @@
 
             </div>
 
-            <button class="accordion_tab"><span id="line-items" class="jumplink"></span><i class="fal fa-paperclip"></i> Attachments</button>
+            <button class="accordion_tab" id="line-items"><i class="fal fa-paperclip"></i> Attachments</button>
 
             <div class="accordion_content">
 
@@ -360,8 +358,6 @@
         <script defer src="js/accordion.js"></script>
 
         <script defer src="js/accordion-table.js"></script>
-
-        <script defer src="js/active-menu.js"></script>
 
         <script defer src="js/scripts.js"></script>
 

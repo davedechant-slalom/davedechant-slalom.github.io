@@ -9,76 +9,84 @@
 	],
 "creatorBuild": "31491",
 "files": {
-	"/add-a-document.html": {
+	"/claim-appeal-form.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/add-a-document.html",
+		"oAP": "/claim-appeal-form.html",
 		"oF": 0
 		},
-	"/appeal-submitted.html": {
+	"/claim-attachment-form.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/appeal-submitted.html",
+		"oAP": "/claim-attachment-form.html",
 		"oF": 0
 		},
-	"/claim-reconsideration.html": {
+	"/claim-reconsideration-form.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/claim-reconsideration.html",
+		"oAP": "/claim-reconsideration-form.html",
 		"oF": 0
 		},
-	"/claim-search.html": {
+	"/claim-summary-status-denied-recon-assigned.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/claim-search.html",
+		"oAP": "/claim-summary-status-denied-recon-assigned.html",
 		"oF": 0
 		},
-	"/claim-summary-pended.html": {
+	"/claim-summary-status-denied.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/claim-summary-pended.html",
+		"oAP": "/claim-summary-status-denied.html",
 		"oF": 0
 		},
-	"/claim-summary-pending-end.html": {
+	"/claim-summary-status-pending-new.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/claim-summary-pending-end.html",
+		"oAP": "/claim-summary-status-pending-new.html",
 		"oF": 0
 		},
-	"/claim-summary-recon-assigned.html": {
+	"/claim-summary-status-pending.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/claim-summary-recon-assigned.html",
+		"oAP": "/claim-summary-status-pending.html",
 		"oF": 0
 		},
-	"/claim-ticket-warning.html": {
+	"/claim-ticket-pending.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/claim-ticket-warning.html",
+		"oAP": "/claim-ticket-pending.html",
 		"oF": 0
 		},
-	"/create-an-appeal.html": {
+	"/confirmation-appeal.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/create-an-appeal.html",
+		"oAP": "/confirmation-appeal.html",
+		"oF": 0
+		},
+	"/confirmation-reconsideration.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/confirmation-reconsideration.html",
 		"oF": 0
 		},
 	"/flagged-claims-and-tickets.html": {
@@ -297,14 +305,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"/reconsideration-confirmation.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/reconsideration-confirmation.html",
-		"oF": 0
 		},
 	"/styles/.sass-cache/1fbf55d95b2884bf9ed718337eb825548459cd16/icons.scssc": {
 		"cB": 0,

@@ -1098,6 +1098,12 @@ td.td-form {
 .fc-base-accent {
   color: #196FD0; }
 
+.fc-brand {
+  color: #033DA1; }
+
+.fc-success {
+  color: #327b21; }
+
 .icon-title {
   font-size: 2.125rem;
   text-align: center;
@@ -1661,36 +1667,74 @@ textarea {
 /*-- DPL Tab Styles --*/
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1; }
+  border: 0;
+  background: none; }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
   float: left;
-  border: none;
+  width: 32.666%;
+  margin-right: 1%;
+  border: 0;
+  border-top: 1px solid #9E9E9E;
+  border-left: 1px solid #9E9E9E;
+  border-right: 1px solid #9E9E9E;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  transition: 0.3s; }
+  font-family: "UHC Sans Bold", sans-serif;
+  font-size: 1.313rem;
+  color: #196FD0;
+  transition: 0.3s;
+  border-radius: 3px 3px 0 0; }
+
+.tab button:last-child {
+  margin: 0; }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd; }
+  background-color: #E0E0E0; }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc; }
+  background-color: #FFFFFF;
+  color: #000000; }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
-  border: 1px solid #ccc;
-  border-top: none; }
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #9E9E9E;
+  border-left: 1px solid #9E9E9E;
+  border-right: 1px solid #9E9E9E; }
 
 .tabcontent {
   animation: fadeEffect 1s;
   /* Fading effect takes 1 second */ }
+
+.tab-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem; }
+
+.tab-header-actions {
+  display: flex; }
+
+.tab-header p, .tab-header-actions input, .tab-header-actions a {
+  align-self: center; }
+
+.tab-header-actions input {
+  min-width: 350px; }
+
+.tabcontent th {
+  position: relative; }
+
+.tabcontent th .fa-sort {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translate(0, -50%); }
 
 /* Go from zero to full opacity */
 @keyframes fadeEffect {

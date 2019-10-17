@@ -122,36 +122,42 @@
             <p>Click on the claim number to review the claim, or click the <i class="fas fa-flag fc-base-accent"></i> to unflag the claim and remove it from the list</p>
 
             <div class="tab">
-              <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-              <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-              <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Claims</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Claims Reconsideration Tickets</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Pending Claim Tickets</button>
+
             </div>
 
             <div id="London" class="tabcontent">
-              <h3>London</h3>
-              <p>London is the capital city of England.</p>
+
+                <div>
+
+                    <p>Claims Content</p>
+                    
+                </div>
+
             </div>
 
             <div id="Paris" class="tabcontent">
-              <h3>Paris</h3>
-              <p>Paris is the capital of France.</p>
+
+                <div>
+
+                    <p>Claims Content</p>
+                    
+                </div>
+
             </div>
 
             <div id="Tokyo" class="tabcontent">
-              <h3>Tokyo</h3>
-              <p>Tokyo is the capital of Japan.</p>
-            </div>
 
-            <script>
-                function openCity(cityName) {
-                  var i;
-                  var x = document.getElementsByClassName("city");
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                  }
-                  document.getElementById(cityName).style.display = "block";  
-                }
-                </script>
+                <div>
+
+                    <p>Claims Content</p>
+                    
+                </div>
+
+            </div>
                             
         </main>
 
@@ -163,9 +169,7 @@
 
         <script defer src="js/classie.js"></script>
 
-        <script defer src="js/accordion.js"></script>
-
-        <script defer src="js/accordion-table.js"></script>
+        <script defer src="js/tabs.js"></script>
 
         <script defer src="js/scripts.js"></script>
 

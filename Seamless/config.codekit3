@@ -73,6 +73,22 @@
 		"oAP": "/claim-ticket-pending.html",
 		"oF": 0
 		},
+	"/claims-search-member-info.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/claims-search-member-info.html",
+		"oF": 0
+		},
+	"/claims-search-provider-info.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/claims-search-provider-info.html",
+		"oF": 0
+		},
 	"/confirmation-appeal.html": {
 		"cB": 0,
 		"ft": 8192,

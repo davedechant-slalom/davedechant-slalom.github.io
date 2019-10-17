@@ -193,7 +193,7 @@
 
 	                        </div>
 
-	                        <a class="dpl-button-full" href="#">Verify Eligibility</a>
+	                        <a class="dpl-button-full" href="#" style="margin-top: 15px;">Verify Eligibility</a>
                         	
                         </form>
 
@@ -235,7 +235,7 @@
 
     	                        		<select>
 
-    	                        			<option value="0">Patient Account Number or Claim Number</option>
+    	                        			<option value="0">Provider Information</option>
     	                        			<option value="1">Option 1</option>
     	                        			<option value="2">Option 2</option>
 
@@ -245,11 +245,11 @@
 
                                         <ul class="claim-dropdown-content" id="claim-dropdown">
 
-                                            <li class="claim-dropdown-input"><a href="#"><strong>Patient Account Number or Claim Number</strong> <i class="fas fa-angle-up fc-base-accent"></i></a></li>
+                                            <li class="claim-dropdown-input"><a href="#"><strong>Provider Information</strong> <i class="fas fa-angle-up fc-base-accent"></i></a></li>
                                             <li class="claim-dropdown-title">Search for claims by</li>
-                                            <li><a href="#"><strong>Patient Account Number or Claim Number</strong> <i class="fas fa-check fc-base-accent"></i></a></li>
+                                            <li><a href="index.html">Patient Account Number or Claim Number</a></li>
                                             <li><a href="claims-search-member-info.html">Member Information</a></li>
-                                            <li><a href="claims-search-provider-info.html">Provider Information</a></li>
+                                            <li><a href="#"><strong>Provider Information</strong> <i class="fas fa-check fc-base-accent"></i></a></li>
                                             <li class="claim-dropdown-title">Search for rework tickets</li>
                                             <li><a href="#">Claims Reconsideration</a></li>
                                             <li><a href="#">Pended Claim Ticket</a></li>
@@ -267,7 +267,7 @@
 
 	                        <div class="form-row-3-flex">
 
-	                        	<p class="text-sm m-r"><strong>Make selection <br>to change field:</strong></p>
+	                        	<p class="text-sm m-r fc-gray"><strong>Search By:</strong></p>
 
 	                        	<div class="form-element m-r">
 
@@ -275,7 +275,7 @@
 
                                         <input class="radio" type="radio" checked="checked" name="radio">
 
-                                        <span>Patient Account Number</span>
+                                        <span>TIN<br> <strong>2847938</strong> <a href="#">Update</a></span>
 
                                     </label>
 	                        		
@@ -287,7 +287,7 @@
 
                                         <input class="radio" type="radio" name="radio">
 
-                                        <span>Claim Number</span>
+                                        <span>Provider<br> <strong>Scott Brundle</strong> <a href="#">Update</a></span>
 
                                     </label>
 	                        		
@@ -295,21 +295,79 @@
 
 	                        </div>
 
+	                        <hr class="m-0 m-b">
+
 	                        <div class="form-row-1">
 
 	                        	<div class="form-element">
 
-	                        		<label>Patient Account Number</label>
+	                        		<label>Select Adjudicated Claim Status* <i class="fas fa-info-circle fc-base-accent"></i></label>
 
-                                    <input type="text" name="">
+	                        		<select>
+
+	                        			<option value="0">Provider Information</option>
+	                        			<option value="1">Option 1</option>
+	                        			<option value="2">Option 2</option>
+
+	                        		</select>
 	                        		
 	                        	</div>
 
 	                        </div>
 
-	                        <p class="text-sm m-b d-block"><i class="fas fa-info-circle fc-base-accent"></i> The Patient Account Number is assigned by the provider of service's or supplier's acounting system.</p>
+	                        <hr class="m-0 m-b">
 
-	                        <a class="dpl-button-full" style="margin-top: 64px;" href="claim-summary-status-denied.html">Submit Search</a>
+	                        <div class="form-row-3-flex">
+
+	                        	<p class="text-sm m-r fc-gray"><strong>Selected Range:</strong></p>
+
+	                        	<div class="form-element m-r">
+
+                                    <label class="form-radio">
+
+                                        <input class="radio" type="radio" name="radio">
+
+                                        <span>Custom Date</span>
+
+                                    </label>
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+                                    <label class="form-radio">
+
+                                        <input class="radio" type="radio" name="radio">
+
+                                        <span>Predefined Date</span>
+
+                                    </label>
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <div class="form-row-2">
+
+	                        	<div class="form-element">
+
+	                        		<label>First Service Date</label>
+
+	                        		<input type="text" name="" placeholder="MM/DD/YYYY" value="06/01/2019">
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                        		<label>Last Service Date</label>
+
+	                        		<input type="text" name="" placeholder="MM/DD/YYYY" value="08/31/2019">
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <a class="dpl-button-full" href="claim-summary-status-denied.html">Submit Search</a>
                         	
                         </form>
 

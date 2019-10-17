@@ -193,7 +193,7 @@
 
 	                        </div>
 
-	                        <a class="dpl-button-full" href="#">Verify Eligibility</a>
+	                        <a class="dpl-button-full" href="#" style="margin-top: 145px;">Verify Eligibility</a>
                         	
                         </form>
 
@@ -235,7 +235,7 @@
 
     	                        		<select>
 
-    	                        			<option value="0">Patient Account Number or Claim Number</option>
+    	                        			<option value="0">Member Information</option>
     	                        			<option value="1">Option 1</option>
     	                        			<option value="2">Option 2</option>
 
@@ -245,10 +245,10 @@
 
                                         <ul class="claim-dropdown-content" id="claim-dropdown">
 
-                                            <li class="claim-dropdown-input"><a href="#"><strong>Patient Account Number or Claim Number</strong> <i class="fas fa-angle-up fc-base-accent"></i></a></li>
+                                            <li class="claim-dropdown-input"><a href="#"><strong>Member Information</strong> <i class="fas fa-angle-up fc-base-accent"></i></a></li>
                                             <li class="claim-dropdown-title">Search for claims by</li>
-                                            <li><a href="#"><strong>Patient Account Number or Claim Number</strong> <i class="fas fa-check fc-base-accent"></i></a></li>
-                                            <li><a href="claims-search-member-info.html">Member Information</a></li>
+                                            <li><a href="index.html">Patient Account Number or Claim Number</a></li>
+                                            <li><a href="#"><strong>Member Information</strong> <i class="fas fa-check fc-base-accent"></i></a></li>
                                             <li><a href="claims-search-provider-info.html">Provider Information</a></li>
                                             <li class="claim-dropdown-title">Search for rework tickets</li>
                                             <li><a href="#">Claims Reconsideration</a></li>
@@ -267,7 +267,7 @@
 
 	                        <div class="form-row-3-flex">
 
-	                        	<p class="text-sm m-r"><strong>Make selection <br>to change field:</strong></p>
+	                        	<p class="text-sm m-r fc-gray"><strong>Search By:</strong></p>
 
 	                        	<div class="form-element m-r">
 
@@ -275,7 +275,7 @@
 
                                         <input class="radio" type="radio" checked="checked" name="radio">
 
-                                        <span>Patient Account Number</span>
+                                        <span>TIN<br> <strong>2847938</strong> <a href="#">Update</a></span>
 
                                     </label>
 	                        		
@@ -287,7 +287,7 @@
 
                                         <input class="radio" type="radio" name="radio">
 
-                                        <span>Claim Number</span>
+                                        <span>Provider<br> <strong>Scott Brundle</strong> <a href="#">Update</a></span>
 
                                     </label>
 	                        		
@@ -295,21 +295,103 @@
 
 	                        </div>
 
-	                        <div class="form-row-1">
+	                        <hr class="m-0 m-b">
+
+	                        <p class="text-sm align-c fc-gray m-b"><strong>Provide at least 2 of the following:<br> Member ID, Date of Birth, First and Last Name</strong></p>
+
+	                        <div class="form-row-2">
 
 	                        	<div class="form-element">
 
-	                        		<label>Patient Account Number</label>
+	                        		<label>Member ID</label>
 
-                                    <input type="text" name="">
+	                        		<input type="text" name="" placeholder="12345678">
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                        		<label>Date of Birth*</label>
+
+	                        		<input type="text" name="" placeholder="MM/DD/YYYY">
 	                        		
 	                        	</div>
 
 	                        </div>
 
-	                        <p class="text-sm m-b d-block"><i class="fas fa-info-circle fc-base-accent"></i> The Patient Account Number is assigned by the provider of service's or supplier's acounting system.</p>
+	                        <div class="form-row-2">
 
-	                        <a class="dpl-button-full" style="margin-top: 64px;" href="claim-summary-status-denied.html">Submit Search</a>
+	                        	<div class="form-element">
+
+	                        		<label>First Name</label>
+
+	                        		<input type="text" name="" placeholder="First Name">
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                        		<label>Last Name</label>
+
+	                        		<input type="text" name="" placeholder="Last Name">
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <hr class="m-0 m-b">
+
+	                        <div class="form-row-3-flex">
+
+	                        	<p class="text-sm m-r fc-gray"><strong>Selected Range:</strong></p>
+
+	                        	<div class="form-element m-r">
+
+                                    <label class="form-radio">
+
+                                        <input class="radio" type="radio" name="radio">
+
+                                        <span>Custom Date</span>
+
+                                    </label>
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+                                    <label class="form-radio">
+
+                                        <input class="radio" type="radio" name="radio">
+
+                                        <span>Predefined Date</span>
+
+                                    </label>
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <div class="form-row-2">
+
+	                        	<div class="form-element">
+
+	                        		<label>First Service Date</label>
+
+	                        		<input type="text" name="" placeholder="MM/DD/YYYY">
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                        		<label>Last Service Date</label>
+
+	                        		<input type="text" name="" placeholder="MM/DD/YYYY">
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <a class="dpl-button-full" href="claim-summary-status-denied.html">Submit Search</a>
                         	
                         </form>
 

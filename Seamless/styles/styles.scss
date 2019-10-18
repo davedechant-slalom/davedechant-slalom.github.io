@@ -2160,6 +2160,25 @@ textarea {
 	min-width: 285px;
 }
 
+.upload-image {
+	position: fixed;
+	top: -900px;
+	left: 50%;
+	transform: translate(-50%,0);
+	z-index: 9999;
+	-webkit-box-shadow: 0 0 8px 0 rgba($grayscale-1000,0.35);
+	box-shadow: 0 0 8px 0 rgba($grayscale-1000,0.35);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.upload-image:target {
+	top: 0;
+}
+
 /*-- DPL Tab Styles --*/
 
 .tab {

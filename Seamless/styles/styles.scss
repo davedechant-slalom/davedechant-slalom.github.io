@@ -569,7 +569,7 @@ a:hover {
 
 .dpl-insights-details li:after {
 	content: "•";
-	padding: 0 0.5rem;
+	padding: 0 0.125rem;
 	color: $brand-color;
 	font-size: 1rem;
 }
@@ -1943,6 +1943,10 @@ textarea {
 
 .p-none {
 	padding: 0;
+}
+
+.p-all {
+	padding: 1rem;
 }
 
 .p-lr {

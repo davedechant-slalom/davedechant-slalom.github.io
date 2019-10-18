@@ -104,7 +104,7 @@
                     
                 </ul>
 
-                <a class="dpl-button-link" href="#" onclick="window.print();return false;"><i class="fas fa-print"></i> Print</a>
+                <a class="dpl-button-link flex-item-r m-r" href="flagged-claims-and-tickets.html"><i class="fas fa-search"></i> View Flagged Claims &amp; Tickets</a> <a class="dpl-button-link" href="#" onclick="window.print();return false;"><i class="fas fa-print"></i> Print</a>
                 
             </div>
 
@@ -120,7 +120,7 @@
 
                 <div class="dpl-insights-options">
 
-                    <a class="dpl-button-ghost"><i class="fal fa-flag"></i> Flag Ticket</a>
+                    <a class="dpl-button-ghost"><i class="fal fa-flag"></i> Unflag Claim</a>
 
                     <a class="dpl-button">New Search</a>
 
@@ -166,11 +166,11 @@
 
             <div class="notification-container" id="notification-box">
 
-                <div class="dpl-notification-box-warning">
+                <div class="dpl-notification-box-success">
 
                     <div>
 
-                        <p class="m-0"><strong>Your submission is pending assignment</strong> <br>Your will be able to make updates to the ticket, using the Update button above, once the status has changed.</p>
+                        <p class="m-0"><strong>Your submission is pending assignment</strong> <br>You will be able to make updates to the ticket, using the Update button above, once the status has changed.</p>
 
                     </div>
                     
@@ -220,11 +220,11 @@
 
                     <div class="dpl-card-body">
 
-                        <p>Name<br> <span>John Smith</span></p>
+                        <p>Name<br> <span>Taylor Anderson</span></p>
 
-                        <p>Email Address<br> <span>email@gmail.com</span></p>
+                        <p>Email Address<br> <span>tanderson@mplsmedical.org</span></p>
 
-                        <p>Phone Number<br> <span>(555)555-5555</span></p>
+                        <p>Phone Number<br> <span>612.555.1212</span></p>
 
                         <p class="m-0">Address<br> <span>1239 Main St,<br> Minneapolis, MN 55408</span></p>
 
@@ -236,7 +236,7 @@
 
             <button class="accordion_tab"><span id="claim-details" class="jumplink"></span><i class="fal fa-file-invoice-dollar"></i> Request Details and History</button>
 
-            <div class="accordion_content content-grid-4">
+            <div class="accordion_content content-grid-4 m-b">
 
                 <div class="dpl-card">
 
@@ -254,9 +254,9 @@
 
 		                </div>
 
-		                <p>Amount Requested<br> <strong>I do not know the dollar amount</strong></p>
+		                <p>Amount Requested<br> <strong>I don't know</strong></p>
 
-		                <p class="m-0">Requested Reason<br> <strong>Other</strong></p>
+		                <p class="m-0">Requested Reason<br> <strong>Previously processed but COB applied incorrectly</strong></p>
 
                     </div>
 
@@ -284,9 +284,22 @@
 
                             <tr class="bg-white">
 
-                                <td>11/12/2019</td>
-                                <td>Joe Smith</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</td>
+                                <td>
+
+                                    <script>
+
+                                        var today = new Date();
+                                        var dd = String(today.getDate()).padStart(2, '0');
+                                        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                                        var yyyy = today.getFullYear();
+                                        today = mm + '/' + dd + '/' + yyyy;
+                                        document.write(today);
+
+                                    </script>
+
+                                </td>
+                                <td>Taylor Anderson</td>
+                                <td>COB has been updated, please process claim</td>
 
                             </tr>
 

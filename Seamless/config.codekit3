@@ -33,6 +33,14 @@
 		"oAP": "/claim-reconsideration-form.html",
 		"oF": 0
 		},
+	"/claim-summary-jane.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/claim-summary-jane.html",
+		"oF": 0
+		},
 	"/claim-summary-status-denied-recon-assigned.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -252,6 +260,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/accordion-table-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/accordion-three.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/accordion-three-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

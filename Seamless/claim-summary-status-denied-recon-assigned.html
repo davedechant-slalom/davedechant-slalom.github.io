@@ -103,7 +103,7 @@
                     
                 </ul>
 
-                <a class="dpl-button-link" href="#" onclick="window.print();return false;"><i class="fas fa-print"></i> Print</a>
+                <a class="dpl-button-link flex-item-r m-r" href="flagged-claims-and-tickets.html"><i class="fas fa-search"></i> View Flagged Claims &amp; Tickets</a> <a class="dpl-button-link" href="#" onclick="window.print();return false;"><i class="fas fa-print"></i> Print</a>
                 
             </div>
 
@@ -111,7 +111,7 @@
 
                 <ul class="dpl-insights-details">
 
-                    <li><strong>Claim Number:</strong><br class="remove"> <span>7479894912</span> <strong class="claim-patient-name"><a href="#">Stephanie Johnson</a></strong></li>
+                    <li><strong>Claim Number:</strong><br class="remove"> <span>7479894912</span> <strong class="claim-patient-name"><a href="https://slalom.invisionapp.com/share/MZTVNGXEHGU#/screens/383483086_Eligibility_Summary_Demographics_Closed_Coverage_Open">Stephanie Johnson</a></strong></li>
                     <li>Member ID: <strong>123456 00</strong></li>
                     <li>Patient Account Number: <strong>103411304333</strong></li>
                     
@@ -154,7 +154,7 @@
                     
                 </ul>
 
-                <p class="dpl-jump-menu-cta"><a href="#"><strong>View Patients Eligibility &amp; Benefits</strong> <i class="fal fa-angle-right"></i></a></p>
+                <p class="dpl-jump-menu-cta"><a href="https://slalom.invisionapp.com/share/MZTVNGXEHGU#/screens/383483086_Eligibility_Summary_Demographics_Closed_Coverage_Open"><strong>View Patients Eligibility &amp; Benefits</strong> <i class="fal fa-angle-right"></i></a></p>
 
             </div>
 
@@ -268,7 +268,7 @@
 
                             <h3 class="status-history-title">Status History</h3>
 
-                            <p class="status-history-copy"><strong>There are open reconsideration or pending claim tickets asociated with this claim: <a href="#"><strong>PTPCR-1234923</strong></a></strong></p>
+                            <p class="status-history-copy"><strong>There are open reconsideration or pending claim tickets asociated with this claim: <a href="confirmation-reconsideration.html"><strong>PTPCR-1234923</strong></a></strong></p>
 
                             <div class="history-timeline">
 
@@ -438,7 +438,7 @@
 
                                 <h4 class="accordion-table-header">Remark Codes</h4>
 
-                                <p class="accordion-table-copy"><strong>OC:</strong> Before we can consider this claim, please send us the date and place of the accident and a brief description of how the accident happened.</p>
+                                <p class="accordion-table-copy"><strong>WW:</strong> We received your claim. We cannot process it at this time because we are still waiting for information about other insurance coverage. Please refer to the correspondence directed to the enrollee regarding.</p>
 
                                 <h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
 
@@ -471,7 +471,7 @@
 
                                 <h4 class="accordion-table-header">Remark Codes</h4>
 
-                                <p class="accordion-table-copy"><strong>OC:</strong> Before we can consider this claim, please send us the date and place of the accident and a brief description of how the accident happened.</p>
+                                <p class="accordion-table-copy"><strong>WW:</strong> We received your claim. We cannot process it at this time because we are still waiting for information about other insurance coverage. Please refer to the correspondence directed to the enrollee regarding.</p>
 
                                 <h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
 
@@ -504,7 +504,7 @@
 
                                 <h4 class="accordion-table-header">Remark Codes</h4>
 
-                                <p class="accordion-table-copy"><strong>OC:</strong> Before we can consider this claim, please send us the date and place of the accident and a brief description of how the accident happened.</p>
+                                <p class="accordion-table-copy"><strong>WW:</strong> We received your claim. We cannot process it at this time because we are still waiting for information about other insurance coverage. Please refer to the correspondence directed to the enrollee regarding.</p>
 
                                 <h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
 
@@ -540,7 +540,7 @@
 
                     <div class="dpl-card-body d-flex">
 
-                        <p class="m-0"><strong>No coordination of benefits information was recieved for this claim.</strong> Check this <a href="#">patient's eligibility</a> to determine if additional coverage exists.</p>
+                        <p class="m-0"><strong>No coordination of benefits information was recieved for this claim.</strong> Check this <a href="https://slalom.invisionapp.com/share/MZTVNGXEHGU#/screens/383483086_Eligibility_Summary_Demographics_Closed_Coverage_Open">patient's eligibility</a> to determine if additional coverage exists.</p>
 
                     </div>
 
@@ -654,21 +654,36 @@
 
                 <div class="tab_panel">
 
-                    <div>
+                    <div style="flex-grow: 1;">
 
                         <h3 class="m-0"><strong>Claim Reconsideration</strong></h3>
 
-                        <small><a href="#"><i class="fas fa-plus-circle"></i> When should you submit a claim reconsideration request?</a></small>
+                        <button class="accordion_tab_three"><small class="fc-base-accent">When should you submit a claim reconsideration request?</small></button>
+
+                        <div class="accordion_content_three">
+
+                            <p class="text-sm m-b">You should submit a Claim Reconsideration request if you believe a claim was paid incorrectly. Situations for reprocessing include, but are not limited to:</p>
+
+                            <ul>
+
+                                <li class="text-sm">Amount is different than what provider expected</li>
+                                <li class="text-sm">Claim was filed in a timely manner, when provider has proof</li>
+                                <li class="text-sm">Claim was denied for no authorization, when provider has an authorization number</li>
+                                <li class="text-sm">Difference in Coordination of Benefits (COB) information</li>
+                                
+                            </ul>
+
+                        </div>
 
                     </div>
 
-                    <div class="dpl-notification-info">
+                    <div class="dpl-notification-info m-r" style="flex-grow: 2;">
 
-	                    <p>Reconsideration Status: <strong>Pending Assignment</strong></p>
+                        <p>Reconsideration Status: <strong>Pending Assignment</strong></p>
 
-	                </div>
+                    </div>
 
-                    <a class="dpl-button claim-button" href="confirmation-reconsideration.html">View Reconsideration Ticket</a>
+                    <a class="dpl-button claim-button" href="claim-reconsideration-form.html">Create a Claim Reconsideration</a>
 
                 </div>
 
@@ -678,7 +693,20 @@
 
                         <h3 class="m-0"><strong>File an Appeal</strong></h3>
 
-                        <small><a href="#"><i class="fas fa-plus-circle"></i> When should you submit an Appeal?</a></small>
+                        <button class="accordion_tab_three"><small class="fc-base-accent">When should you submit an Appeal?</small></button>
+
+                        <div class="accordion_content_three">
+
+                            <p class="text-sm m-b">You should submit an Appeal when you wish to challenge a decision or request an exception. Situations for reprocessing include, but are not limited to:</p>
+
+                            <ul>
+
+                                <li class="text-sm">Medical necessity (must be filed as a member appeal/dispute and can be submitted by the member or by the provider on the member’s behalf)</li>
+                                <li class="text-sm">Exception to reimbursement policy</li>
+                                
+                            </ul>
+
+                        </div>
 
                     </div>
 
@@ -893,6 +921,8 @@
         <script defer src="js/accordion.js"></script>
 
         <script defer src="js/accordion-table.js"></script>
+
+        <script defer src="js/accordion-three.js"></script>
 
         <script defer src="js/active-menu.js"></script>
 

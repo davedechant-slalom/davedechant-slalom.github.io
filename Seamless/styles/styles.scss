@@ -749,7 +749,7 @@ a:hover {
 
 /*- Accordion Tab Styles -*/
 
-.accordion_tab, .accordion_tab_table {
+.accordion_tab, .accordion_tab_table, .accordion_tab_three {
 	position: relative;
 	background: none;
 	font-family: $base-font;
@@ -769,7 +769,7 @@ a:hover {
 	transition: all 0.3s ease-in-out;
 }
 
-.accordion_tab:before, .accordion_tab_table:before {
+.accordion_tab:before, .accordion_tab_table:before, .accordion_tab_three:before {
 	position: absolute;
 	content: "";
 	top: 0;
@@ -779,23 +779,23 @@ a:hover {
 	width: calc(100% - 10px);
 }
 
-.accordion_tab:first-of-type, .accordion_tab_table:first-of-type {
+.accordion_tab:first-of-type, .accordion_tab_table:first-of-type, .accordion_tab_three:first-of-type {
 	margin-top: 0;
 }
 
-.accordion_tab:first-of-type:before, .accordion_tab_table:first-of-type:before {
+.accordion_tab:first-of-type:before, .accordion_tab_table:first-of-type:before, .accordion_tab_three:first-of-type:before {
 	display: none;
 }
 
-.accordion_tab.active, .accordion_tab_table.active {
+.accordion_tab.active, .accordion_tab_table.active, .accordion_tab_three.active {
     background: none;
 }
 
-.accordion_tab:hover, .accordion_tab_table:hover {
+.accordion_tab:hover, .accordion_tab_table:hover, .accordion_tab_three:hover {
     background: none;
 }
 
-.accordion_tab .fas, .accordion_tab_table .fas, .accordion_tab .fal, .accordion_tab_table .fal {
+.accordion_tab .fas, .accordion_tab_table .fas, .accordion_tab_three .fas, .accordion_tab .fal, .accordion_tab_table .fal, .accordion_tab_three .fal {
 	background-color: $grayscale-0;
 	text-align: center;
 	padding-top: 0.688rem;
@@ -805,7 +805,7 @@ a:hover {
 	height: 42px;
 }
 
-.accordion_tab:after, .accordion_tab_table:after {
+.accordion_tab:after, .accordion_tab_table:after, .accordion_tab_three:after {
     font-family: "Font Awesome 5 Pro";
 	content: "\f107";
     font-size: 2rem;
@@ -822,14 +822,14 @@ a:hover {
     font-weight: 100;
 }
 
-.accordion_tab.active:after, .accordion_tab_table.active:after {
+.accordion_tab.active:after, .accordion_tab_table.active:after, .accordion_tab_three.active:after {
     font-family: "Font Awesome 5 Pro";
 	content: "\f106";
 }
 
 /*- Accordion Content Styles -*/
 
-.accordion_content, .accordion_content_table {
+.accordion_content, .accordion_content_table, .accordion_content_three {
     padding: 0 5px;
     display: block;
     -webkit-transition: all 0.3s ease-in-out;
@@ -901,6 +901,52 @@ a:hover {
 
 .accordion-table-copy:last-child {
     margin: 0 0 1rem;
+}
+
+/*- Accordion Three -*/
+
+.accordion_tab_three {
+	padding: 0 0 0 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.accordion_tab_three:before {
+	display: none;
+}
+
+.accordion_content_three {
+	padding: 0 1rem;
+    background-color: none;
+    border: 0;
+}
+
+.accordion_tab_three:after {
+    font-family: "Font Awesome 5 Pro";
+	content: "\f055";
+    font-size: 0.75rem;
+    right: auto;
+    left: 0;
+    border: 0;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    font-weight: 800;
+}
+
+.accordion_tab_three.active:after {
+    font-family: "Font Awesome 5 Pro";
+	content: "\f056";
+}
+
+.accordion_tab_three .fas, .accordion_tab_three .fal {
+	background: none;
+	text-align: left;
+	padding-top: 0;
+	border-radius: 0;
+	color: $base-accent-color;
+	width: auto;
+	height: auto;
 }
 
 /*-- Card/Tile Styles --*/
@@ -1167,7 +1213,7 @@ a:hover {
 	padding-top: 220px;
 }
 
-.dpl-notification-box-warning, .dpl-notification-box-error {
+.dpl-notification-box-warning, .dpl-notification-box-error, .dpl-notification-box-success {
 	border: 1px solid $warning-color;
 	padding: 0.75rem 1rem;
 	display: flex;
@@ -1184,7 +1230,12 @@ a:hover {
 	border-left: 10px solid $error-color;
 }
 
-.dpl-notification-box-warning:before, .dpl-notification-box-error:before {
+.dpl-notification-box-success {
+	border: 1px solid $success-color;
+	border-left: 10px solid $success-color;
+}
+
+.dpl-notification-box-warning:before, .dpl-notification-box-error:before, .dpl-notification-box-success:before {
 	font-family: 'Font Awesome 5 Pro';
 	content: "\f071";
 	font-weight: 800;
@@ -1198,6 +1249,11 @@ a:hover {
 
 .dpl-notification-box-error:before {
 	color: $error-color;
+}
+
+.dpl-notification-box-success:before {
+	content: "\f058";
+	color: $success-color;
 }
 
 .dpl-notification-box-warning .dpl-button, .dpl-notification-box-error .dpl-button {
@@ -1386,6 +1442,10 @@ td.td-form {
 	text-align: right;
 }
 
+.align-l {
+	text-align: left;
+}
+
 .align-c {
 	text-align: center;
 }
@@ -1512,7 +1572,7 @@ td.td-form {
 }
 
 .claim-button {
-	min-width: 260px;
+	min-width: 270px;
 }
 
 /*-- DPL Layout Styles --*/

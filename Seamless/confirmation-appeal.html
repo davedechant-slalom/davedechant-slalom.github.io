@@ -104,7 +104,7 @@
                     
                 </ul>
 
-                <a class="dpl-button-link" href="#" onclick="window.print();return false;"><i class="fas fa-print"></i> Print</a>
+                <a class="dpl-button-link flex-item-r m-r" href="flagged-claims-and-tickets.html"><i class="fas fa-search"></i> View Flagged Claims &amp; Tickets</a> <a class="dpl-button-link" href="#" onclick="window.print();return false;"><i class="fas fa-print"></i> Print</a>
                 
             </div>
 
@@ -112,9 +112,9 @@
 
                 <ul class="dpl-insights-details">
 
-                    <li>Appeal Ticket Number<br class="remove"> <span>U923884749320</span> <strong class="claim-patient-name"><a href="#">Stephanie Johnson</a></strong></li>
-                    <li>Member ID: <strong>123456 00</strong></li>
-                    <li>Patient Account Number: <strong>103411304333</strong></li>
+                    <li>Appeal Ticket Number<br class="remove"> <span>U923884749320</span> <strong class="claim-patient-name"><a href="#">Jane Smith</a></strong></li>
+                    <li>Member ID: <strong>907382112</strong></li>
+                    <li>Patient Account Number: <strong>52160549</strong></li>
                     
                 </ul>
 
@@ -130,7 +130,7 @@
 
                 <div class="dpl-notification-error">
 
-                    <p>Claim Number: <a href="#"><strong>7479894912</strong></a> • Current Claim Status: <i class="fas fa-exclamation-triangle fc-error"></i> <strong>Denied</strong> • First Date of Service: <strong>08/08/2019</strong> • Total Billed: <strong>$3,848.95</strong></p>
+                    <p>Claim Number: <a href="#"><strong>7907173695</strong></a> • Current Claim Status: <i class="fas fa-exclamation-triangle fc-error"></i> <strong>Denied</strong> • First Date of Service: <strong>10/03/2019</strong> • Total Billed: <strong>$5,511.54</strong></p>
 
                 </div>
 
@@ -146,7 +146,7 @@
                     
                 </ul>
 
-                <p class="dpl-jump-menu-cta m-0"><a href="claim-summary-status-denied-recon-assigned.html"><strong>Go Back to Claim Summary</strong> <i class="fal fa-angle-right"></i></a></p>
+                <p class="dpl-jump-menu-cta m-0"><a href="claim-summary-jane.html"><strong>Go Back to Claim Summary</strong> <i class="fal fa-angle-right"></i></a></p>
 
             </div>
 
@@ -216,11 +216,11 @@
 
                     <div class="dpl-card-body">
 
-                        <p>Name<br> <span>John Smith</span></p>
+                        <p>Name<br> <span>Taylor Anderson</span></p>
 
-                        <p>Email Address<br> <span>email@gmail.com</span></p>
+                        <p>Email Address<br> <span>tanderson@mplsmedical.org</span></p>
 
-                        <p>Phone Number<br> <span>(555)555-5555</span></p>
+                        <p>Phone Number<br> <span>612.555.1212</span></p>
 
                         <p class="m-0">Address<br> <span>1239 Main St,<br> Minneapolis, MN 55408</span></p>
 
@@ -256,8 +256,21 @@
 
                             <tr class="bg-white">
 
-                                <td>11/12/2019</td>
-                                <td>Joe Smith</td>
+                                <td>
+
+                                    <script>
+
+                                        var today = new Date();
+                                        var dd = String(today.getDate()).padStart(2, '0');
+                                        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                                        var yyyy = today.getFullYear();
+                                        today = mm + '/' + dd + '/' + yyyy;
+                                        document.write(today);
+
+                                    </script>
+
+                                </td>
+                                <td>Taylor Anderson</td>
                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</td>
 
                             </tr>
@@ -297,7 +310,7 @@
 
                             <tr>
 
-                                <td><a href="#"><strong>documentname.png</strong></a></td>
+                                <td><a href="#"><strong>image1.pdf</strong></a></td>
                                 <td>
 
                                     <script>
@@ -312,14 +325,14 @@
                                     </script>
 
                                 </td>
-                                <td>Joe Smith</td>
+                                <td>Taylor Anderson</td>
                                 <td>Reason</td>
 
                             </tr>
 
                             <tr>
 
-                                <td><a href="#"><strong>documentname.png</strong></a></td>
+                                <td><a href="#"><strong>image2.pdf</strong></a></td>
                                 <td>
 
                                     <script>
@@ -334,7 +347,7 @@
                                     </script>
 
                                 </td>
-                                <td>Joe Smith</td>
+                                <td>Taylor Anderson</td>
                                 <td>Reason</td>
 
                             </tr>

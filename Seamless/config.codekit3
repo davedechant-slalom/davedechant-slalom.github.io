@@ -245,15 +245,15 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/images/upload-image.jpg": {
-		"ft": 16384,
-		"iS": 69126,
-		"jF": 0,
+	"/images/upload-image.png": {
+		"ft": 32768,
+		"iS": 94715,
 		"oA": 0,
-		"oAP": "/images/upload-image.jpg",
+		"oAP": "/images/upload-image.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/index.html": {

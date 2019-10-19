@@ -1737,6 +1737,12 @@ textarea {
 .upload-image:target {
   top: 0; }
 
+.upload-image a {
+  display: block; }
+
+.upload-image img {
+  float: left; }
+
 /*-- DPL Tab Styles --*/
 .tab {
   overflow: hidden;

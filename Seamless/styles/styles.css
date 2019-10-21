@@ -825,7 +825,7 @@ a:hover {
   top: -0.813rem;
   left: -2px;
   font-family: "UHC Sans Bold", sans-serif;
-  font-size: 0.938rem; }
+  font-size: 0.875rem; }
 
 .history-timeline-item span {
   font-family: "UHC Sans Regular", sans-serif;
@@ -841,7 +841,9 @@ a:hover {
 .history-timeline-item.three {
   position: absolute;
   left: auto;
-  right: 0; }
+  right: 0;
+  color: #BDBDBD;
+  text-align: right; }
 
 .history-timeline-item .fas {
   font-size: 1.25rem;

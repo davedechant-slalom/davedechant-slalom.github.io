@@ -1075,7 +1075,7 @@ a:hover {
 	top: -0.813rem;
 	left: -2px;
 	font-family: $base-font;
-	font-size: 0.938rem;
+	font-size: 0.875rem;
 }
 
 .history-timeline-item span {
@@ -1095,6 +1095,8 @@ a:hover {
 	position: absolute;
 	left: auto;
 	right: 0;
+	color: $grayscale-500;
+	text-align: right;
 }
 
 .history-timeline-item .fas {

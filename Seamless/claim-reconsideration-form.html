@@ -225,7 +225,7 @@
 
                                     <label class="form-radio">
 
-                                        <input class="radio" type="radio" name="" checked="checked">
+                                        <input class="radio" type="radio" checked="checked">
 
                                         <span>By Phone</span>
 
@@ -237,7 +237,7 @@
 
                                     <label class="form-radio">
 
-                                        <input class="radio" type="radio" name="">
+                                        <input class="radio" type="radio">
 
                                         <span>By Email</span>
 
@@ -456,6 +456,14 @@
         <script defer src="js/classie.js"></script>
 
         <script defer src="js/scripts.js"></script>
+
+        <script type="text/javascript">
+
+            $('.radio').change(function() {
+                $('.radio').not(this).prop('checked', false);
+            });
+            
+        </script>
 
     </body>
 

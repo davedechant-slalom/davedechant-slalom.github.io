@@ -479,6 +479,14 @@
 
         <script defer src="js/scripts.js"></script>
 
+        <script type="text/javascript">
+
+            $('.radio').change(function() {
+                $('.radio').not(this).prop('checked', false);
+            });
+            
+        </script>
+
     </body>
 
 </html>

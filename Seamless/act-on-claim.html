@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+
+        <meta name="description" content="XXX">
+
+        <title>Claim Summary Page</title>
+
+        <!-- Meta Info -->
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1" />
+
+
+        <!-- Styles -->
+
+        <link href="styles/fontawesome.css" rel="stylesheet" type="text/css">
+        <link href="styles/styles.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+
+        <!-- Favicons/Icons -->
+
+        <link rel="shortcut icon" href="images/icons/favicon.ico">
+
+        <link rel="apple-touch-icon" href="images/icons/touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="images/icons/touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="images/icons/touch-icon-iphone-retina.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="images/icons/touch-icon-ipad-retina.png" />
+
+        <meta name="application-name" content="Site Tile"/>
+        <meta name="msapplication-TileColor" content="#000000"/>
+        <meta name="msapplication-square70x70logo" content="images/icons/tiny.png"/>
+        <meta name="msapplication-square150x150logo" content="images/icons/square.png"/>
+        <meta name="msapplication-wide310x150logo" content="images/icons/wide.png"/>
+        <meta name="msapplication-square310x310logo" content="images/icons/large.png"/>
+
+
+        <!-- Google Analytics Script -->
+
+
+        <!-- Force Old Browsers to Accept HTML5 -->
+
+        <!--[if lt IE 10]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <main class="wrapper main-content" style="margin-top: 0;">
+
+            <button class="accordion_tab"><span id="act" class="jumplink"></span><i class="fal fa-exclamation-triangle"></i> Act on Claim</button>
+
+            <div class="accordion_content fix-height">
+
+                <div class="tab_panel">
+
+                    <h3 class="m-0"><strong>Corrected Claim</strong></h3>
+
+                    <a class="dpl-button claim-button">Submit Corrected Claim</a>
+
+                </div>
+
+                <div class="tab_panel">
+
+                    <div>
+
+                        <h3 class="m-0"><strong>Claim Reconsideration</strong></h3>
+
+                        <button class="accordion_tab_three"><small class="fc-base-accent">When should you submit a claim reconsideration request?</small></button>
+
+                        <div class="accordion_content_three">
+
+                            <p class="text-sm m-b">You should submit a Claim Reconsideration request if you believe a claim was paid incorrectly. Situations for reprocessing include, but are not limited to:</p>
+
+                            <ul>
+
+                                <li class="text-sm">Amount is different than what provider expected</li>
+                                <li class="text-sm">Claim was filed in a timely manner, when provider has proof</li>
+                                <li class="text-sm">Claim was denied for no authorization, when provider has an authorization number</li>
+                                <li class="text-sm">Difference in Coordination of Benefits (COB) information</li>
+                                
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <a class="dpl-button claim-button">Create a Claim Reconsideration</a>
+
+                </div>
+
+                <div class="tab_panel">
+
+                    <div>
+
+                        <h3 class="m-0"><strong>File Appeal</strong></h3>
+
+                        <button class="accordion_tab_three"><small class="fc-base-accent">When should you submit an Appeal?</small></button>
+
+                        <div class="accordion_content_three">
+
+                            <p class="text-sm m-b">You should submit an Appeal when you wish to challenge a decision or request an exception. Situations for reprocessing include, but are not limited to:</p>
+
+                            <ul>
+
+                                <li class="text-sm">Medical necessity (must be filed as a member appeal/dispute and can be submitted by the member or by the provider on the member’s behalf)</li>
+                                <li class="text-sm">Exception to reimbursement policy</li>
+                                
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <a class="dpl-button claim-button" href="#modal-one">File Appeal</a>
+
+                    <div class="dpl-modal-overlay modal-one" id="modal-one">
+
+                        <div class="dpl-modal">
+
+                            <div class="dpl-modal-header">
+
+                                <h2 class="dpl-modal-title">Appeal Questionnaire</h2>
+
+                                <a href="#act"><i class="fal fa-times-circle"></i></a>
+
+                            </div>
+
+                            <div class="dpl-modal-body">
+
+                                <p class="text-sm">Please answer the following questions so that we can assist you correctly</p>
+
+                                <p class="text-lg">1. Does your request involve multiple claims for this patient?</p>
+
+                                <div class="dpl-modal-inputs">
+
+                                    <p class="m-r text-sm"><i class="far fa-circle"></i> Yes</p>
+
+                                    <p class="text-sm"><a href="#modal-two"><i class="far fa-circle"></i></a> No</p>
+                                    
+                                </div>
+
+                                <div class="q-two">
+
+                                    <p class="text-lg">2. Are you appealing on behalf of a member?</p>
+
+                                    <div class="dpl-modal-inputs-bottom">
+
+                                        <p class="m-r text-sm"><i class="far fa-circle"></i> Yes</p>
+
+                                        <p class="text-sm"><i class="far fa-circle"></i> No</p>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <div class="dpl-modal-footer">
+
+                                <a class="dpl-button-ghost m-r" href="#act">Cancel</a>
+
+                                <a class="dpl-button" href="create-an-appeal.html">Continue</a>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="dpl-modal-overlay modal-two" id="modal-two">
+
+                        <div class="dpl-modal">
+
+                            <div class="dpl-modal-header">
+
+                                <h2 class="dpl-modal-title">Appeal Questionnaire</h2>
+
+                                <a href="#act"><i class="fal fa-times-circle"></i></a>
+
+                            </div>
+
+                            <div class="dpl-modal-body">
+
+                                <p class="text-sm">Please answer the following questions so that we can assist you correctly</p>
+
+                                <p class="text-lg">1. Does your request involve multiple claims for this patient?</p>
+
+                                <div class="dpl-modal-inputs">
+
+                                    <p class="m-r text-sm"><i class="far fa-circle"></i> Yes</p>
+
+                                    <p class="text-sm"><i class="far fa-circle"></i> No</p>
+                                    
+                                </div>
+
+                                <div class="q-two">
+
+                                    <p class="text-lg">2. Are you appealing on behalf of a member?</p>
+
+                                    <div class="dpl-modal-inputs-bottom">
+
+                                        <p class="m-r text-sm"><i class="far fa-circle"></i> Yes</p>
+
+                                        <p class="text-sm"><a href="#modal-three"><i class="far fa-circle"></i></a> No</p>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <div class="dpl-modal-footer">
+
+                                <a class="dpl-button-ghost m-r" href="#act">Cancel</a>
+
+                                <a class="dpl-button-inactive">Continue</a>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="dpl-modal-overlay modal-three" id="modal-three">
+
+                        <div class="dpl-modal">
+
+                            <div class="dpl-modal-header">
+
+                                <h2 class="dpl-modal-title">Appeal Questionnaire</h2>
+
+                                <a href="#act"><i class="fal fa-times-circle"></i></a>
+
+                            </div>
+
+                            <div class="dpl-modal-body">
+
+                                <p class="text-sm">Please answer the following questions so that we can assist you correctly</p>
+
+                                <p class="text-lg">1. Does your request involve multiple claims for this patient?</p>
+
+                                <div class="dpl-modal-inputs">
+
+                                    <p class="m-r text-sm"><i class="far fa-circle"></i> Yes</p>
+
+                                    <p class="text-sm"><i class="far fa-circle"></i> No</p>
+                                    
+                                </div>
+
+                                <div class="q-two">
+
+                                    <p class="text-lg">2. Are you appealing on behalf of a member?</p>
+
+                                    <div class="dpl-modal-inputs-bottom">
+
+                                        <p class="m-r text-sm"><i class="far fa-circle"></i> Yes</p>
+
+                                        <p class="text-sm"><i class="far fa-circle"></i> No</p>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <div class="dpl-modal-footer">
+
+                                <a class="dpl-button-ghost m-r" href="#act">Cancel</a>
+
+                                <a class="dpl-button" href="claim-appeal-form.html">Continue</a>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="tab_panel">
+
+                    <div>
+
+                        <h3 class="m-0"><strong>File Dispute</strong></h3>
+
+                        <button class="accordion_tab_three"><small class="fc-base-accent">When should you submit an Dispute?</small></button>
+
+                        <div class="accordion_content_three">
+
+                            <p class="text-sm m-b">You should submit a Dispute when you wish to challenge a decision or request an exception. Situations for reprocessing include, but are not limited to:</p>
+
+                            <ul>
+
+                                <li class="text-sm">Medical necessity (must be filed as a member appeal/dispute and can be submitted by the member or by the provider on the member’s behalf)</li>
+                                <li class="text-sm">Exception to reimbursement policy</li>
+                                
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <a class="dpl-button claim-button">File Dispute</a>
+
+                </div>
+
+                <div class="tab_panel">
+
+                    <div>
+
+                        <h3 class="m-0"><strong>Add Attachments for Pending Claim</strong></h3>
+
+                        <small>Please provide requested documentation to complete the adjudication of this claim</small>
+
+                    </div>
+
+                    <small class="m-0 p-r flex-item-r"><i>This is not available for this claim.</i></small>
+
+                    <a class="dpl-button-inactive claim-button">Add Attachment</a>
+
+                </div>
+
+            </div>
+                            
+        </main>
+
+        <!-- JS Links -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+        <script defer src="js/classie.js"></script>
+
+        <script defer src="js/accordion.js"></script>
+
+        <script defer src="js/accordion-table.js"></script>
+
+        <script defer src="js/accordion-three.js"></script>
+
+        <script defer src="js/active-menu.js"></script>
+
+        <script defer src="js/scripts.js"></script>
+
+    </body>
+
+</html>

@@ -1531,6 +1531,11 @@ td.td-form {
 	cursor: pointer;
 }
 
+button.dpl-button {
+	font-size: 1rem;
+	padding: 0.625rem 1rem;
+}
+
 .dpl-button:hover, .dpl-button-ghost:hover, .dpl-button-full:hover, .dpl-button-inactive:hover {
 	color: $grayscale-0;
 	background-color: $brand-color;
@@ -1658,6 +1663,8 @@ td.td-form {
 .button-row {
 	margin: 1.5rem 1rem;
 	text-align: center;
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 .button-row .dpl-button, .button-row .dpl-button-ghost {

@@ -147,7 +147,7 @@
 
         	<p class="text-sm">This form is to be completed by physicians, hospitals or other health care professionals to request an appeal. Do not use this form for claim reconsideration or requests involving multiple claims for a member. If you are intending to submit a reconsideration, please use the <a href="#">claim reconsideration process</a>. If you are intending to submit an appeal for multiple claims for a member, you will need to submit your request in writing. Please refer to the appeal address information located on your Provider Remittance Advice.</p>
 
-            <div class="content-grid-3">
+            <form class="content-grid-3" action="/confirmation-appeal.html">
 
                 <div class="dpl-card">
 
@@ -173,7 +173,7 @@
 
                        	<p class="align-r m-0"><small>All Fields are Required</small></p>
 
-                        <form class="form">
+                        <div class="form">
 
                         	<div class="form-row-2">
 
@@ -247,7 +247,7 @@
 
                             </div>
                         	
-                        </form>
+                        </div>
 
                     </div>
 
@@ -263,7 +263,7 @@
 
                     <div class="dpl-card-body">
 
-                        <form class="form">
+                        <div class="form">
 
                         	<p class="text-sm">Please clearly indicate the reason for your appeal of the above claim and any details regarding your request.</p>
 
@@ -273,13 +273,13 @@
 
                                     <label>New Comment</label>
 
-                                    <textarea class="textarea-2" placeholder="Add your comment here, comments are required"></textarea>
+                                    <textarea class="textarea-2" placeholder="Add your comment here, comments are required" required></textarea>
                                     
                                 </div>
 
                             </div>
 
-	                    </form>
+	                    </div>
 
                     </div>
 
@@ -353,15 +353,15 @@
                                     <td>Taylor Anderson</td>
                                     <td class="td-form">
 
-                                        <form>
+                                        <div>
 
                                             <div class="form-row-1 m-0">
 
                                                 <div class="form-element">
 
-                                                    <select>
+                                                    <select required>
 
-                                                        <option value="0">Please Select Document Type</option>
+                                                        <option value="">Please Select Document Type</option>
                                                         <option value="1">Explanation of Benefits</option>
                                                         <option value="1">Certifications</option>
                                                         <option value="1">Consent Form(s)</option>
@@ -380,7 +380,7 @@
 
                                             </div>
                                             
-                                        </form>
+                                        </div>
 
                                     </td>
                                     <td><a href="#"><i class="fal fa-trash-alt"></i></a></td>
@@ -407,15 +407,15 @@
                                     <td>Taylor Anderson</td>
                                     <td class="td-form">
 
-                                        <form>
+                                        <div>
 
                                             <div class="form-row-1 m-0">
 
                                                 <div class="form-element">
 
-                                                    <select>
+                                                    <select required>
 
-                                                        <option value="0">Please Select Document Type</option>
+                                                        <option value="">Please Select Document Type</option>
                                                         <option value="1">Explanation of Benefits</option>
                                                         <option value="1">Certifications</option>
                                                         <option value="1">Consent Form(s)</option>
@@ -434,7 +434,7 @@
 
                                             </div>
                                             
-                                        </form>
+                                        </div>
 
                                     </td>
                                     <td><a href="#"><i class="fal fa-trash-alt"></i></a></td>
@@ -455,17 +455,17 @@
 
                 </div>
 
-            </div>
+                <div class="button-row">
 
-            <div class="button-row">
+                    <p class="text-lg m-b">To ensure your appeal is submitted successfully, please wait for the confirmation notification to appear on your screen.</p>
 
-            	<p class="text-lg m-b">To ensure your appeal is submitted successfully, please wait for the confirmation notification to appear on your screen.</p>
+                    <a class="dpl-button-ghost" href="#">Cancel</a>
 
-                <a class="dpl-button-ghost" href="#">Cancel</a>
+                    <button class="dpl-button">Submit Appeal</button>
 
-                <a class="dpl-button" href="confirmation-appeal.html">Submit Appeal</a>
+                </div>
 
-            </div>
+            </form>
                             
         </main>
 

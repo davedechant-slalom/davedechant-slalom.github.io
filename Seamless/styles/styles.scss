@@ -2101,7 +2101,7 @@ textarea {
 	min-width: 770px;
 }
 
-.modal-one:target, .modal-two:target, .modal-three:target {
+.modal-one:target, .modal-two:target, .modal-three:target, .modal-four:target {
 	visibility: visible;
 	opacity: 1;
 }
@@ -2158,6 +2158,10 @@ textarea {
 .dpl-modal-inputs-bottom:after {
 	top: 5px;
 	left: 69px;
+}
+
+.modal-four .dpl-modal-inputs-bottom:after {
+	left: 5px;
 }
 
 .modal-two .dpl-modal-inputs-bottom:after {

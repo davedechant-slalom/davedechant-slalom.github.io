@@ -2299,6 +2299,8 @@ textarea {
 
 .hide {
 	display: none;
+	height: 0px;
+	visibility: hidden;
 }
 
 /* Go from zero to full opacity */

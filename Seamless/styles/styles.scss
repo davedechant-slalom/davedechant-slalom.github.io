@@ -1818,6 +1818,7 @@ textarea {
 	align-items: center;
 	border: 2px dashed $grayscale-600;
 	padding: 1.75rem;
+	position: relative;
 }
 
 .file-upload-container h3 {
@@ -2283,6 +2284,17 @@ textarea {
 	top: 50%;
 	right: 4px;
 	transform: translate(0,-50%);
+}
+
+.hidden-upload {
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	padding: 0;
+	top: 85px;
+	right: 240px;
+	border: 0;
+	background: none;
 }
 
 /* Go from zero to full opacity */

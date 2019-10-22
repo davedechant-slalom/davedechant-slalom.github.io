@@ -1837,6 +1837,9 @@ textarea {
   border: 0;
   background: none; }
 
+.hide {
+  display: none; }
+
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
   from {

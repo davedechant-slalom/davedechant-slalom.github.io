@@ -7,7 +7,7 @@
 		"uuidString": "5B3B9DD8-9A69-4479-93D5-A23A88279C00"
 		}
 	],
-"creatorBuild": "31924",
+"creatorBuild": "31934",
 "files": {
 	"/act-on-claim.html": {
 		"cB": 0,
@@ -119,6 +119,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/confirmation-reconsideration.html",
+		"oF": 0
+		},
+	"/eligibility-summary.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/eligibility-summary.html",
 		"oF": 0
 		},
 	"/flagged-claims-and-tickets.html": {
@@ -2938,7 +2946,6 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"enableJavascript": 0,
-		"ieCompatibility": 0,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,

@@ -358,6 +358,16 @@ a:hover {
   text-decoration: none;
   font-family: "UHC Sans Regular", sans-serif; }
 
+.dpl-breadcrumbs .fa-search {
+  background-color: #196FD0;
+  color: #FFFFFF;
+  font-size: 0.563rem;
+  padding: 3px 4px 0 0;
+  width: 16px;
+  height: 16px;
+  vertical-align: 2px;
+  border-radius: 50%; }
+
 /*-- Insights/Options Header --*/
 .dpl-insights-header {
   display: flex;
@@ -393,16 +403,25 @@ a:hover {
 .dpl-insights-details li {
   list-style-type: none; }
 
+.dpl-insights-header-eligibilty .dpl-insights-details li {
+  font-size: 0.875rem; }
+
+.dpl-insights-details-title {
+  border-bottom: 1px solid #E0E0E0; }
+
+.dpl-insights-details-title .fas {
+  font-size: 1rem; }
+
 .smaller .dpl-insights-details li {
   font-size: 0.875rem; }
 
 .dpl-insights-details li:after {
   content: "•";
   padding: 0 0.125rem;
-  color: #033DA1;
+  color: #196FD0;
   font-size: 1rem; }
 
-.dpl-insights-details li:last-child:after {
+.dpl-insights-details li:last-child:after, .dpl-insights-header-eligibilty .dpl-insights-details li:first-child:after {
   display: none; }
 
 .dpl-insights-details li:first-child {
@@ -538,6 +557,29 @@ a:hover {
 
 /*-- Accordion Styles --*/
 /*- Accordion Tab Styles -*/
+.accordion-title-selector {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.accordion-title-selector .select {
+  width: 400px;
+  margin-left: 0.5rem;
+  border: 1px solid #9E9E9E;
+  padding: 0.75rem 0.875rem;
+  margin: 0 0 0 0.5rem;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  position: relative; }
+
+.accordion-title-selector .select .fas {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translate(0, -50%);
+  color: #196FD0;
+  font-size: 1rem; }
+
 .accordion_tab, .accordion_tab_table, .accordion_tab_three {
   position: relative;
   background: none;
@@ -1157,6 +1199,12 @@ td.td-form {
 .fc-gray {
   color: #616161; }
 
+.ff-base {
+  font-family: "UHC Sans Bold", sans-serif; }
+
+.ff-brand {
+  font-family: "UHC Sans Regular", sans-serif; }
+
 .icon-title {
   font-size: 2.125rem;
   text-align: center;
@@ -1270,6 +1318,13 @@ button.dpl-button {
   grid-column-gap: 1rem;
   align-items: stretch;
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr; }
+
+.content-grid-5 {
+  display: grid;
+  grid-column-gap: 1rem;
+  align-items: stretch;
+  grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 1fr 1fr; }
 
 .grid-full {

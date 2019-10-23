@@ -1048,6 +1048,7 @@ a:hover {
 	margin: 0;
 	font-size: 1.25rem;
 	font-family: $base-font;
+	align-self: center;
 }
 
 .dpl-card-secondary-title {
@@ -1062,6 +1063,16 @@ a:hover {
 
 .dpl-card-secondary-title p {
 	line-height: 1rem;
+	align-self: center;
+}
+
+.letter-links a {
+	font-family: $base-font;
+	margin-right: 0.875rem;
+}
+
+.letter-links a.fc-gray {
+	color: $grayscale-600;
 }
 
 .dpl-card-body {
@@ -1363,6 +1374,42 @@ a:hover {
 
 /*-- DPL Table Styles --*/
 
+.table-header {
+	background-color: $base-accent-color;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.75rem 1rem;
+}
+
+.table-header-title {
+	color: $grayscale-0;
+	text-transform: uppercase;
+	font-family: $base-font;
+	margin: 0;
+}
+
+.table-header-title .fal {
+	background-color: $grayscale-0;
+	color: $base-accent-color;
+	width: 25px;
+	height: 25px;
+	font-size: 2rem;
+	line-height: 1rem;
+	padding: 4px 0 0 5px;
+	vertical-align: -5px;
+	margin-right: 4px;
+	border-radius: 50%;
+}
+
+.table-header-cta {
+	color: $grayscale-0;
+	font-family: $base-font;
+	margin: 0;
+	font-size: 0.875rem;
+	text-decoration: underline;
+}
+
 .table, .table-no-border {
 	font-family: $brand-font;
 	border-collapse: collapse;
@@ -1478,6 +1525,10 @@ td.td-form {
 
 .default th, .default td {
 	width: auto;
+}
+
+.default tr:nth-child(odd) {
+	background-color: $grayscale-0;
 }
 
 .white tr {
@@ -2090,6 +2141,10 @@ textarea {
 
 .p-b {
 	padding-bottom: 1rem;
+}
+
+.p-t {
+	padding-top: 1rem;
 }
 
 /*-- DPL ToolTip Styles --*/

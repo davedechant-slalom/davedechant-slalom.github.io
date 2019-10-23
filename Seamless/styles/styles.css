@@ -792,7 +792,8 @@ a:hover {
 .dpl-card-title {
   margin: 0;
   font-size: 1.25rem;
-  font-family: "UHC Sans Bold", sans-serif; }
+  font-family: "UHC Sans Bold", sans-serif;
+  align-self: center; }
 
 .dpl-card-secondary-title {
   padding: 1rem;
@@ -803,7 +804,15 @@ a:hover {
   line-height: 1rem; }
 
 .dpl-card-secondary-title p {
-  line-height: 1rem; }
+  line-height: 1rem;
+  align-self: center; }
+
+.letter-links a {
+  font-family: "UHC Sans Bold", sans-serif;
+  margin-right: 0.875rem; }
+
+.letter-links a.fc-gray {
+  color: #9E9E9E; }
 
 .dpl-card-body {
   padding: 1rem;
@@ -1062,6 +1071,38 @@ a:hover {
   align-self: center; }
 
 /*-- DPL Table Styles --*/
+.table-header {
+  background-color: #196FD0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem; }
+
+.table-header-title {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "UHC Sans Bold", sans-serif;
+  margin: 0; }
+
+.table-header-title .fal {
+  background-color: #FFFFFF;
+  color: #196FD0;
+  width: 25px;
+  height: 25px;
+  font-size: 2rem;
+  line-height: 1rem;
+  padding: 4px 0 0 5px;
+  vertical-align: -5px;
+  margin-right: 4px;
+  border-radius: 50%; }
+
+.table-header-cta {
+  color: #FFFFFF;
+  font-family: "UHC Sans Bold", sans-serif;
+  margin: 0;
+  font-size: 0.875rem;
+  text-decoration: underline; }
+
 .table, .table-no-border {
   font-family: "UHC Sans Regular", sans-serif;
   border-collapse: collapse;
@@ -1158,6 +1199,9 @@ td.td-form {
 
 .default th, .default td {
   width: auto; }
+
+.default tr:nth-child(odd) {
+  background-color: #FFFFFF; }
 
 .white tr {
   background-color: #FFFFFF; }
@@ -1658,6 +1702,9 @@ textarea {
 
 .p-b {
   padding-bottom: 1rem; }
+
+.p-t {
+  padding-top: 1rem; }
 
 /*-- DPL ToolTip Styles --*/
 .dpl-tooltip-activator {

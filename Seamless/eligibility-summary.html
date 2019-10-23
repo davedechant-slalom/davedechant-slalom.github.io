@@ -404,7 +404,7 @@
 
                     <div class="dpl-card-header">
 
-                        <h2 class="dpl-card-title">Servicing Care Provider <i class="fas fa-info-circle fc-base-accent"></i></h2>
+                        <h2 class="dpl-card-title">Servicing Care Provider <i class="fas fa-info-circle fc-base-accent text-sm"></i></h2>
 
                     </div>
 
@@ -434,7 +434,7 @@
 
                     <div class="dpl-card-header d-flex">
 
-                        <h2 class="dpl-card-title">Primary Care Physician <i class="fas fa-info-circle fc-base-accent"></i></h2>
+                        <h2 class="dpl-card-title">Primary Care Physician <i class="fas fa-info-circle fc-base-accent text-sm"></i></h2>
 
                         <a href="#"><strong>View PCP History</strong></a>
 
@@ -570,25 +570,27 @@
 
             </div>
 
-            <button class="accordion_tab"><span id="documents" class="jumplink"></span><i class="fal fa-file-invoice"></i> Related Documents</button>
+            <button class="accordion_tab"><span id="documents" class="jumplink"></span><i class="fal fa-file-invoice"></i> Coverage</button>
 
-            <div class="accordion_content content-grid-1">
+            <div class="accordion_content">
 
-                <div class="dpl-card">
+            	<div class="dpl-card m-b">
 
-                    <div class="dpl-card-header">
+                    <div class="dpl-card-body d-flex">
 
-                        <h2 class="dpl-card-title">Letters</h2>
+                        <h2 class="dpl-card-title m-0 m-r">Code Lookup Tool <i class="fas fa-info-circle fc-base-accent text-sm"></i></h2>
 
-                    </div>
+                        <p class="m-0 flex-item-l">Use this tool to validate a diagnosis and/or procedure code. This tool can<br> be used to confirm if these codes are currently valid and acceptable.</p>
 
-                    <div class="dpl-card-body d-block">
-
-                        <p>There are no letters associated with the claim at this time.</p>
-
-                        <p class="m-0"><strong>Note:</strong> Letters are displayed for UnitedHealthcare commercial and Medicare Advantage claims only.</p>
+                        <a href="#" class="dpl-button">Find a Code</a>
 
                     </div>
+
+                </div>
+
+                <div class="dpl-notification-success d-flex-3 m-b">
+
+                    <p><i class="fas fa-check-circle fc-success"></i> Based on your Selected Care Provider information, your network status for this member is: <strong>In-Network</strong> <a href="#">Change Provider</a></p>
 
                 </div>
 
@@ -596,13 +598,361 @@
 
                     <div class="dpl-card-header">
 
-                        <h2 class="dpl-card-title">Provider Information</h2>
+                        <h2 class="dpl-card-title">Copay &amp; Coinsurance</h2>
 
                     </div>
 
                     <div class="dpl-card-body d-block">
 
-                        <p><a href="#"><strong>08/29/2019</strong></a></p>
+                    	<div class="d-flex">
+
+                    		<div>
+
+	                        	<label class="label-sm">Network Status</label>
+
+	                        	<select style="width: 250px;">
+
+	                    			<option value="0">In-Network</option>
+	                    			<option value="1">Option 1</option>
+	                    			<option value="2">Option 2</option>
+
+	                    		</select>
+	                        	
+	                        </div>
+
+	                        <div>
+
+	                        	<label class="label-sm m-b">View Benefits for</label>
+
+	                        	<div class="d-flex">
+
+		                        	<div class="form-element m-r">
+
+		                                <label class="form-radio">
+
+		                                    <input class="radio" type="radio" checked="checked" name="radio">
+
+		                                    <span>Individual</span>
+
+		                                </label>
+		                        		
+		                        	</div>
+
+		                        	<div class="form-element flex-item-l">
+
+		                                <label class="form-radio">
+
+		                                    <input class="radio" type="radio" name="radio">
+
+		                                    <span>Family</span>
+
+		                                </label>
+		                        		
+		                        	</div>
+
+		                        </div>
+	                        	
+	                        </div>
+
+	                        <div>
+
+	                        	<label class="label-sm m-b">Virtual Visits <i class="fas fa-info-circle fc-base-accent"></i></label>
+
+	                        	<p>Virtual visits exist for this policy</p>
+	                        	
+	                        </div>
+
+	                        <div>
+
+	                        	<label class="label-sm m-b">Looking for a service that is not listed? <i class="fas fa-info-circle fc-base-accent"></i></label>
+
+	                        	<a href="#" class="dpl-button-ghost dpl-button-full"><i class="fas fa-plus-circle"></i> Add a Service</a>
+	                        	
+	                        </div>
+                    		
+                    	</div>
+
+                    </div>
+
+                    <div class="dpl-card-body d-block p-none">
+
+                    	<div class="table-header">
+
+                    		<p class="table-header-title"><i class="fal fa-angle-up"></i> Popular Services Coverage</p>
+
+                    		<a class="table-header-cta" href="#">Click to Collapse</a>
+                    		
+                    	</div>
+
+                    	<table class="table default m-0">
+
+                            <tr>
+
+                                <th>Service</th>
+                                <th>Copay</th>
+                                <th>Co-ins</th>
+                                <th>Service Level Deductable Info</th>
+                                <th>Status</th>
+
+                            </tr>
+
+                            <tr class="t-body-top">
+
+                                <td>Diagnostic Medical</td>
+                                <td>$90.00/day</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td><span class="fc-success">Active</span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>Diagnostic Medical</strong></td>
+                                <td>$90.00/day</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td><span class="fc-success">Active</span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>Diagnostic Medical</strong></td>
+                                <td>$90.00/day</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td><span class="fc-success">Active</span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>Diagnostic Medical</strong></td>
+                                <td>$90.00/day</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td><span class="fc-success">Active</span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>Diagnostic Medical</strong></td>
+                                <td>$90.00/day</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td><span class="fc-success">Active</span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>Diagnostic Medical</strong></td>
+                                <td>$90.00/day</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td><span class="fc-success">Active</span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>Diagnostic Medical</strong></td>
+                                <td>$90.00/day</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td><span class="fc-success">Active</span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>Diagnostic Medical</strong></td>
+                                <td>$90.00/day</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td><span class="fc-success">Active</span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>Diagnostic Medical</strong></td>
+                                <td>$90.00/day</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td><span class="fc-success">Active</span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>Diagnostic Medical</strong></td>
+                                <td>$90.00/day</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td><span class="fc-success">Active</span></td>
+
+                            </tr>
+
+                        </table>
+
+                        <div class="table-header">
+
+                    		<p class="table-header-title"><i class="fal fa-angle-up"></i> Therapy Coverage</p>
+
+                    		<a class="table-header-cta" href="#">Click to Collapse</a>
+                    		
+                    	</div>
+
+                    	<table class="table default">
+
+                            <tr>
+
+                                <th>Service</th>
+                                <th>Copay</th>
+                                <th>Co-ins</th>
+                                <th>Visits Allowed and Remaining</th>
+
+                            </tr>
+
+                            <tr class="t-body-top">
+
+                                <td><strong>Cardiac Rehabilitation</strong></td>
+                                <td>$20.00/visit</td>
+                                <td>0%</td>
+                                <td>4 of 5 Visits Remaining</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>Chiropractic</strong></td>
+                                <td>$20.00/visit</td>
+                                <td>0%</td>
+                                <td>18 of 30 Visits Remaining</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>Occupational Therapy</strong></td>
+                                <td>$20.00/visit</td>
+                                <td>30%</td>
+                                <td>10 of 10 Visits Remaining</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>Physical Therapy</strong></td>
+                                <td>$90.00/visit</td>
+                                <td>0%</td>
+                                <td>5 of 15 Visits Remaining</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><strong>Speech Therapy</strong></td>
+                                <td>$0.00/visit</td>
+                                <td>30%</td>
+                                <td>10 of 10 Visits Remaining</td>
+
+                            </tr>
+
+                        </table>
+                    	
+                    </div>
+
+                </div>
+
+                <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            	<p class="text-xs">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            	<p class="text-xs">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            	<p class="text-xs">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+            	<div class="dpl-card m-b">
+
+                    <div class="dpl-card-header">
+
+                        <h2 class="dpl-card-title">Detailed Benefits <i class="fas fa-info-circle fc-base-accent text-sm"></i></h2>
+
+                    </div>
+
+                    <div class="dpl-card-secondary-title d-flex">
+
+                    	<p class="m-0 letter-links"><a href="#">A</a><a href="#">B</a><a href="#">C</a><a href="#">D</a><a href="#">E</a><a href="#">F</a><a href="#" class="fc-gray">G</a><a href="#">H</a><a href="#">I</a><a href="#" class="fc-gray">J</a><a href="#" class="fc-gray">K</a><a href="#" class="fc-gray">L</a><a href="#">M</a><a href="#">N</a><a href="#">O</a><a href="#">P</a><a href="#">Q</a><a href="#">R</a><a href="#">S</a><a href="#">T</a><a href="#">U</a><a href="#">V</a><a href="#" class="fc-gray">W</a><a href="#" class="fc-gray">X</a><a href="#" class="fc-gray">Y</a><a href="#" class="fc-gray">Z</a><a href="#">Clear</a></p>
+
+                    	<input type="search" name="" placeholder="Search a Keyword" style="width: 345px;">
+
+                    </div>
+
+                    <div class="dpl-card-body d-block">
+
+                    	<div class="d-flex">
+
+                    		<div>
+
+                    			<p class="m-b"><a href="#">Abortion</a></p>
+                    			<p class="m-b"><a href="#">Acupunture</a></p>
+                    			<p class="m-b"><a href="#">Allergy</a></p>
+                    			<p class="m-b"><a href="#">Ambulance Services</a></p>
+                    			<p class="m-b"><a href="#">Behavioral Health</a></p>
+                    			<p class="m-b"><a href="#">Chemotherapy</a></p>
+                    			<p class="m-b"><a href="#">Chiropractic Services</a></p>
+                    			<p class="m-b"><a href="#">Dental/Oral Services</a></p>
+                    			<p class="m-0"><a href="#">Diagnostic Tests, Radiology, Labs</a></p>
+                    			
+                    		</div>
+
+                    		<div>
+
+                    			<p class="m-b"><a href="#">Dialysis Service</a></p>
+                    			<p class="m-b"><a href="#">DME Coverage</a></p>
+                    			<p class="m-b"><a href="#">Emergency/Urgent Care</a></p>
+                    			<p class="m-b"><a href="#">Family Planning</a></p>
+                    			<p class="m-b"><a href="#">Hearing Services</a></p>
+                    			<p class="m-b"><a href="#">HIV/AIDS Testing &amp; Treatment</a></p>
+                    			<p class="m-b"><a href="#">Hospice</a></p>
+                    			<p class="m-b"><a href="#">Immunizations/EPSDT</a></p>
+                    			<p class="m-0"><a href="#">Infertility Testing &amp; Services</a></p>
+                    			
+                    		</div>
+
+                    		<div>
+
+                    			<p class="m-b"><a href="#">Inpatient Services</a></p>
+                    			<p class="m-b"><a href="#">Maternity</a></p>
+                    			<p class="m-b"><a href="#">Not Covered Benefits</a></p>
+                    			<p class="m-b"><a href="#">Obesity/Bariatric Surgery</a></p>
+                    			<p class="m-b"><a href="#">Office Visit</a></p>
+                    			<p class="m-b"><a href="#">Outpatient Hospital Services</a></p>
+                    			<p class="m-b"><a href="#">Pain Management</a></p>
+                    			<p class="m-b"><a href="#">Pharmacy Coverage-Brand</a></p>
+                    			<p class="m-0"><a href="#">Podiatry Services</a></p>
+                    			
+                    		</div>
+
+                    		<div>
+
+                    			<p class="m-b"><a href="#">Rehabilitation Services</a></p>
+                    			<p class="m-b"><a href="#">Screenings &amp; Exams</a></p>
+                    			<p class="m-b"><a href="#">Sleep Studies</a></p>
+                    			<p class="m-b"><a href="#">Specialist Benefit</a></p>
+                    			<p class="m-b"><a href="#">Specialty Injectables</a></p>
+                    			<p class="m-b"><a href="#">Substance Abuse</a></p>
+                    			<p class="m-b"><a href="#">Transplants</a></p>
+                    			<p class="m-b"><a href="#">Transportation</a></p>
+                    			<p class="m-0"><a href="#">Vision Coverage</a></p>
+                    			
+                    		</div>
+                    		
+                    	</div>
 
                     </div>
 
@@ -610,119 +960,6 @@
 
             </div>
 
-            <button class="accordion_tab"><span id="act" class="jumplink"></span><i class="fal fa-exclamation-triangle"></i> Act on Claim</button>
-
-            <div class="accordion_content fix-height">
-
-                <div class="tab_panel">
-
-                    <h3 class="m-0"><strong>Corrected Claim</strong></h3>
-
-                    <a class="dpl-button claim-button">Submit Corrected Claim</a>
-
-                </div>
-
-                <div class="tab_panel">
-
-                    <div>
-
-                        <h3 class="m-0"><strong>Claim Reconsideration</strong></h3>
-
-                        <button class="accordion_tab_three"><small class="fc-base-accent">When should you submit a claim reconsideration request?</small></button>
-
-                        <div class="accordion_content_three">
-
-                            <p class="text-sm m-b">You should submit a Claim Reconsideration request if you believe a claim was paid incorrectly. Situations for reprocessing include, but are not limited to:</p>
-
-                            <ul>
-
-                                <li class="text-sm">Amount is different than what provider expected</li>
-                                <li class="text-sm">Claim was filed in a timely manner, when provider has proof</li>
-                                <li class="text-sm">Claim was denied for no authorization, when provider has an authorization number</li>
-                                <li class="text-sm">Difference in Coordination of Benefits (COB) information</li>
-                                
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                    <a class="dpl-button claim-button" href="claim-reconsideration-form.html">Create a Claim Reconsideration</a>
-
-                </div>
-
-                <div class="tab_panel">
-
-                    <div>
-
-                        <h3 class="m-0"><strong>File Appeal</strong></h3>
-
-                        <button class="accordion_tab_three"><small class="fc-base-accent">When should you submit an Appeal?</small></button>
-
-                        <div class="accordion_content_three">
-
-                            <p class="text-sm m-b">You should submit an Appeal when you wish to challenge a decision or request an exception. Situations for reprocessing include, but are not limited to:</p>
-
-                            <ul>
-
-                                <li class="text-sm">Medical necessity (must be filed as a member appeal/dispute and can be submitted by the member or by the provider on the member’s behalf)</li>
-                                <li class="text-sm">Exception to reimbursement policy</li>
-                                
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                    <a class="dpl-button claim-button">File Appeal</a>
-                                                
-                </div>
-
-                <div class="tab_panel">
-
-                    <div>
-
-                        <h3 class="m-0"><strong>File Dispute</strong></h3>
-
-                        <button class="accordion_tab_three"><small class="fc-base-accent">When should you submit an Dispute?</small></button>
-
-                        <div class="accordion_content_three">
-
-                            <p class="text-sm m-b">You should submit a Dispute when you wish to challenge a decision or request an exception. Situations for reprocessing include, but are not limited to:</p>
-
-                            <ul>
-
-                                <li class="text-sm">Medical necessity (must be filed as a member appeal/dispute and can be submitted by the member or by the provider on the member’s behalf)</li>
-                                <li class="text-sm">Exception to reimbursement policy</li>
-                                
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                    <a class="dpl-button claim-button">File Dispute</a>
-
-                </div>
-
-                <div class="tab_panel">
-
-                    <div>
-
-                        <h3 class="m-0"><strong>Add Attachments for Pending Claim</strong></h3>
-
-                        <small>Please provide requested documentation to complete the adjudication of this claim</small>
-
-                    </div>
-
-                    <small class="m-0 p-r flex-item-r"><i>This is not available for this claim.</i></small>
-
-                    <a class="dpl-button-inactive claim-button">Add Attachment</a>
-
-                </div>
-
-            </div>
-                            
         </main>
 
         <!-- JS Links -->

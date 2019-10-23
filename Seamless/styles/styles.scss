@@ -66,7 +66,7 @@ $information-color-active: #62CBFA;
 /* support: success */
 
 $success-color: #327b21;
-$success-color-hover: #93DFD4;
+$success-color-hover: #7ED321;
 $success-color-active: #1FA995;
 
 /* support: error */
@@ -772,15 +772,41 @@ a:hover {
 
 /*- Accordion Tab Styles -*/
 
-.accordion-title-selector {
+.accordion-title-selector, .accordion-title-selector-center {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 }
 
-.accordion-title-selector .select {
+.accordion-title-selector-center {
+	display: block;
+	position: relative;
+}
+
+.accordion-title-selector-center:before {
+	content: "";
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: $grayscale-400;
+}
+
+.accordion-title-selector-center .selector {
+	background-color: $grayscale-200;
+	padding: 0 0.5rem;
+	width: 288px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.accordion-title-selector-center .selector p {
+	margin-bottom: 0.25rem;
+}
+
+.accordion-title-selector .select, .accordion-title-selector-center .select {
 	width: 400px;
-	margin-left: 0.5rem;
 	border: 1px solid $grayscale-600;
 	padding: 0.75rem 0.875rem;
 	margin: 0 0 0 0.5rem;
@@ -789,7 +815,12 @@ a:hover {
 	position: relative;
 }
 
-.accordion-title-selector .select .fas {
+.accordion-title-selector-center .select {
+	width: 270px;
+	margin: 0;
+}
+
+.accordion-title-selector .select .fas, .accordion-title-selector-center .select .fas {
 	position: absolute;
 	top: 50%;
 	right: 0.75rem;
@@ -1549,6 +1580,10 @@ td.td-form {
 
 .fc-success {
 	color: $success-color;
+}
+
+.fc-success-hover {
+	color: $success-color-hover;
 }
 
 .fc-gray {
@@ -2387,6 +2422,33 @@ textarea {
 	display: none;
 	height: 0px;
 	visibility: hidden;
+}
+
+.fill-bar {
+	display: block;
+	width: 100%;
+	height: 1rem;
+	background-color: $grayscale-400;
+	border-radius: 3px;
+	margin: 0.563rem 0;
+	position: relative;
+}
+
+.fill-bar:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: $success-color-hover;
+	border-radius: 3px;
+}
+
+.fill-bar.perc-42:after {
+	width: 42%;
+}
+
+.fill-bar.perc-87:after {
+	width: 87%;
 }
 
 /* Go from zero to full opacity */

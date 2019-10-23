@@ -557,14 +557,36 @@ a:hover {
 
 /*-- Accordion Styles --*/
 /*- Accordion Tab Styles -*/
-.accordion-title-selector {
+.accordion-title-selector, .accordion-title-selector-center {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
 
-.accordion-title-selector .select {
+.accordion-title-selector-center {
+  display: block;
+  position: relative; }
+
+.accordion-title-selector-center:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #E0E0E0; }
+
+.accordion-title-selector-center .selector {
+  background-color: #F5F5F5;
+  padding: 0 0.5rem;
+  width: 288px;
+  margin: 0 auto;
+  position: relative; }
+
+.accordion-title-selector-center .selector p {
+  margin-bottom: 0.25rem; }
+
+.accordion-title-selector .select, .accordion-title-selector-center .select {
   width: 400px;
-  margin-left: 0.5rem;
   border: 1px solid #9E9E9E;
   padding: 0.75rem 0.875rem;
   margin: 0 0 0 0.5rem;
@@ -572,7 +594,11 @@ a:hover {
   background-color: #FFFFFF;
   position: relative; }
 
-.accordion-title-selector .select .fas {
+.accordion-title-selector-center .select {
+  width: 270px;
+  margin: 0; }
+
+.accordion-title-selector .select .fas, .accordion-title-selector-center .select .fas {
   position: absolute;
   top: 50%;
   right: 0.75rem;
@@ -1210,6 +1236,9 @@ td.td-form {
 
 .fc-success {
   color: #327b21; }
+
+.fc-success-hover {
+  color: #7ED321; }
 
 .fc-gray {
   color: #616161; }
@@ -1912,6 +1941,29 @@ textarea {
   display: none;
   height: 0px;
   visibility: hidden; }
+
+.fill-bar {
+  display: block;
+  width: 100%;
+  height: 1rem;
+  background-color: #E0E0E0;
+  border-radius: 3px;
+  margin: 0.563rem 0;
+  position: relative; }
+
+.fill-bar:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #7ED321;
+  border-radius: 3px; }
+
+.fill-bar.perc-42:after {
+  width: 42%; }
+
+.fill-bar.perc-87:after {
+  width: 87%; }
 
 /* Go from zero to full opacity */
 @keyframes fadeEffect {

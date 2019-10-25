@@ -379,6 +379,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/sign-in.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/sign-in.html",
+		"oF": 0
+		},
 	"/styles/.sass-cache/1fbf55d95b2884bf9ed718337eb825548459cd16/icons.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -834,6 +842,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/uhc-fonts/uhcsans-ultralightitalic.woff2",
+		"oF": 0
+		},
+	"/uhc-provider-home.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/uhc-provider-home.html",
 		"oF": 0
 		},
 	"/webfonts/fa-brands-400.eot": {

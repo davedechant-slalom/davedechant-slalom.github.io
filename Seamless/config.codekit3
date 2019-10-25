@@ -251,6 +251,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/images/provider-home.jpg": {
+		"ft": 16384,
+		"iS": 161716,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/provider-home.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/images/uhc-link-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,

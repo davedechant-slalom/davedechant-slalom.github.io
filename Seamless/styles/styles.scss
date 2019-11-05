@@ -1811,7 +1811,7 @@ button.dpl-button, button.dpl-button-full {
 	width: 145px;
 }
 
-.button-unflag, .button-flag:target {
+.button-unflag:target, .button-flag:target {
 	opacity: 1;
 	visibility: visible;
 }

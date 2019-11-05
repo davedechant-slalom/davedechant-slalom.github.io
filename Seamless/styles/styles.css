@@ -240,6 +240,19 @@ a:hover {
 .smaller .dpl-account-nav a {
   font-size: 0.75rem; }
 
+.or-spacer {
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  transform: translate(-50%, 0);
+  font-family: "UHC Sans Bold", sans-serif;
+  font-size: 1.125rem;
+  padding: 12px;
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  background-color: #FFFFFF;
+  border-radius: 50%; }
+
 /*-- Product Level Navigation/Options --*/
 .dpl-header-options {
   display: flex;
@@ -468,6 +481,9 @@ a:hover {
 .smaller .dpl-insights-options .dpl-button, .smaller .dpl-insights-options .dpl-button-ghost, .smaller .dpl-insights-options .dpl-button-inactive {
   padding: 0.375rem 0.875rem;
   font-size: 0.813rem; }
+
+.dpl-insights-options {
+  position: relative; }
 
 .dpl-insights-status {
   display: flex;
@@ -1397,6 +1413,21 @@ button.dpl-button, button.dpl-button-full {
 
 .claim-button {
   min-width: 270px; }
+
+.button-unflag, .button-flag {
+  position: absolute;
+  top: 0;
+  left: -16px;
+  opacity: 0;
+  visibility: hidden; }
+
+.button-flag {
+  left: 0;
+  width: 145px; }
+
+.button-unflag, .button-flag:target {
+  opacity: 1;
+  visibility: visible; }
 
 /*-- DPL Layout Styles --*/
 .content-grid-1 {

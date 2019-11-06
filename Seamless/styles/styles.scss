@@ -1519,6 +1519,10 @@ td:first-child, th:first-child, td:nth-child(2), th:nth-child(2) {
 	text-align: center;
 }
 
+.default td:first-child, .default th:first-child, .default td:nth-child(2), .default th:nth-child(2) {
+	text-align: left;
+}
+
 td:nth-child(3), th:nth-child(3) {
 	width: 18%;
 }

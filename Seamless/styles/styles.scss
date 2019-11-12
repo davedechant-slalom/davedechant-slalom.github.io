@@ -1454,7 +1454,7 @@ a:hover {
 	border-radius: 50%;
 }
 
-.table-header-cta {
+.table-header-cta, .table-header-cta:hover, .table-header-cta:visited {
 	color: $grayscale-0;
 	font-family: $base-font;
 	margin: 0;
@@ -1486,6 +1486,10 @@ td, th {
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+}
+
+.default-2 td {
+	font-size: 1rem;
 }
 
 .table-no-border td, .table-no-border th {
@@ -1701,8 +1705,12 @@ td.td-form {
 	font-family: $base-font;
 }
 
-.ff-brand {
+.ff-brand, .dpl-card-body p span.ff-brand {
 	font-family: $brand-font;
+}
+
+.ff-normal, .dpl-card-body p span.ff-normal {
+	font-family: $base-font;
 }
 
 .icon-title {
@@ -2591,6 +2599,22 @@ textarea {
 @keyframes fadeEffect {
 	from {opacity: 0;}
 	to {opacity: 1;}
+}
+
+.show-all {
+	margin-top: 0.75rem;
+	padding: 0.75rem 0 0;
+	position: relative;
+}
+
+.show-all:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -1rem;
+	width: calc(100% + 2rem);
+	height: 1px;
+	background-color: $grayscale-400;
 }
 
 /* End Module/Universal Styles */

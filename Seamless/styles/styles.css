@@ -1137,7 +1137,7 @@ a:hover {
   margin-right: 4px;
   border-radius: 50%; }
 
-.table-header-cta {
+.table-header-cta, .table-header-cta:hover, .table-header-cta:visited {
   color: #FFFFFF;
   font-family: "UHC Sans Bold", sans-serif;
   margin: 0;
@@ -1166,6 +1166,9 @@ td, th {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
+
+.default-2 td {
+  font-size: 1rem; }
 
 .table-no-border td, .table-no-border th {
   border: 0;
@@ -1334,8 +1337,11 @@ td.td-form {
 .ff-base {
   font-family: "UHC Sans Bold", sans-serif; }
 
-.ff-brand {
+.ff-brand, .dpl-card-body p span.ff-brand {
   font-family: "UHC Sans Regular", sans-serif; }
+
+.ff-normal, .dpl-card-body p span.ff-normal {
+  font-family: "UHC Sans Bold", sans-serif; }
 
 .icon-title {
   font-size: 2.125rem;
@@ -2083,6 +2089,20 @@ textarea {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+.show-all {
+  margin-top: 0.75rem;
+  padding: 0.75rem 0 0;
+  position: relative; }
+
+.show-all:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  width: calc(100% + 2rem);
+  height: 1px;
+  background-color: #E0E0E0; }
 
 /* End Module/Universal Styles */
 /*---------------------------------------------------------------------*/

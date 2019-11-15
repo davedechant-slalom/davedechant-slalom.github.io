@@ -146,7 +146,8 @@ small {
 /* Begin Website/Product Specific Styles */
 #react-entry-point {
   width: 940px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .carbon-calc-logo {
   border: 2px solid black;
@@ -226,7 +227,10 @@ small {
   border: 1px solid black;
   padding: 0.688rem;
   border-radius: 3px;
-  margin: 0 0 1.25rem; }
+  margin: 0 0 1.25rem;
+  font-size: 0.875rem;
+  color: black;
+  font-family: 'Poppins', sans-serif; }
 
 ::-webkit-input-placeholder, .Select-placeholder {
   font-size: 0.875rem;
@@ -250,6 +254,29 @@ small {
   font-size: 0.875rem;
   color: gray;
   font-family: 'Poppins', sans-serif; }
+
+.calculate-button {
+  display: block;
+  width: 100%;
+  border: 0;
+  background-color: #0C62FB;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  color: white;
+  border-radius: 3px;
+  padding: 0.438rem 1rem; }
+
+.charts {
+  width: 51%;
+  position: absolute;
+  top: 300px;
+  right: 0; }
+
+.chart {
+  display: block !important;
+  width: 100% !important;
+  text-align: center; }
 
 /* End Website/Product Specific Styles */
 /*---------------------------------------------------------------------*/

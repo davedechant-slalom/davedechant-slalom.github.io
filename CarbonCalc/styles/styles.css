@@ -1,37 +1,5 @@
 /* CSS Document */
-/*
-Name: Empty Boilerplate
-Author: dave dechant
-Description: Empty boilerplate for website
-*/
-/* Table of Contents */
-/* 1. SASS Variables */
-/*- 1a. Colors -*/
-/*- 1b. Fonts -*/
-/* 2. Reset/Base Styles */
-/*- 2a. Reset -*/
-/*- 2b. Responsive Images -*/
-/*- 2c. Text -*/
-/* Module/Universal Styles */
-/* Website/Product Specific Styles */
-/* Responsive/Media Query Styles */
-/*---------------------------------------------------------------------*/
-/* 1. SASS Variables */
-/*- 1a. Colors -*/
-/* brand highlight */
-/* base primary */
-/* base secondary */
-/* base accent */
-/* support: information */
-/* support: success */
-/* support: error */
-/* support: warning */
-/* grayscale */
-/*- 1b. Fonts -*/
-/* End SASS Variables */
-/*---------------------------------------------------------------------*/
-/* 2. Begin Reset/Base Styles */
-/*- 2a. Reset -*/
+/*- Reset -*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
@@ -77,12 +45,12 @@ blockquote, q {
 main, section, nav, article, aside, header, footer {
   display: block; }
 
-/*- 2b. Responsive Images -*/
+/*- Responsive Images -*/
 img {
   max-width: 100%;
   height: auto; }
 
-/*- 2c. Text -*/
+/*- Text -*/
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
   font-family: 'Poppins', sans-serif;
@@ -138,26 +106,23 @@ cite {
 small {
   font-size: .813rem; }
 
-/* End Reset/Base Styles */
-/*---------------------------------------------------------------------*/
-/* Begin Module/Universal Styles */
-/* End Module/Universal Styles */
-/*---------------------------------------------------------------------*/
 /* Begin Website/Product Specific Styles */
 #react-entry-point {
-  width: 940px;
+  width: 100%;
+  padding: 0 1rem;
   margin: 0 auto;
   position: relative; }
 
+/* Added class to H1 to create logo */
 .carbon-calc-logo {
   border: 2px solid black;
   padding: 0.75rem 1.5rem;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 800;
   margin: 3rem auto;
   color: black !important;
   position: relative;
-  width: 484px; }
+  width: 430px; }
 
 .carbon-calc-logo::before, .carbon-calc-logo::after {
   content: "\f072";
@@ -176,12 +141,14 @@ small {
   left: auto;
   right: -13px; }
 
+/* Added class to H2 to style title */
 .hero-title {
   color: black !important;
   font-size: 1.875rem;
   text-align: center !important;
   margin: 0 0 1.375rem; }
 
+/* Added class to copty in div */
 .hero-copy {
   position: relative;
   margin: 0 0 25px;
@@ -200,9 +167,9 @@ small {
 
 .project-details, .staffing-details {
   display: block !important;
-  border-right: 1px dashed black;
-  width: 50%;
-  padding-right: 2rem; }
+  border-bottom: 1px dashed black;
+  width: 100% !important;
+  padding-bottom: 2rem; }
 
 .project-details {
   padding-bottom: 1.5rem;
@@ -267,12 +234,6 @@ small {
   border-radius: 3px;
   padding: 0.438rem 1rem; }
 
-.charts {
-  width: 51%;
-  position: absolute;
-  top: 300px;
-  right: 0; }
-
 .chart {
   display: block !important;
   width: 100% !important;
@@ -284,5 +245,25 @@ small {
 /* sm */
 /* md */
 /* lg */
+@media (min-width: 992px) {
+  #react-entry-point {
+    width: 940px; }
+  .carbon-calc-logo {
+    font-size: 2rem;
+    width: 484px; }
+  .project-details, .staffing-details {
+    border: 0;
+    border-right: 1px dashed black;
+    width: 49% !important;
+    padding-right: 2rem;
+    padding-bottom: 0; }
+  .project-details {
+    border-bottom: 1px dashed black; }
+  .charts {
+    width: 51%;
+    position: absolute;
+    top: 300px;
+    right: 0; } }
+
 /* xl */
 /* End Responsive/Media Queries */

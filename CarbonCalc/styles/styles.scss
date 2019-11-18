@@ -1,115 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*
-Name: Empty Boilerplate
-Author: dave dechant
-Description: Empty boilerplate for website
-*/
-
-
-/* Table of Contents */
-
-/* 1. SASS Variables */
-/*- 1a. Colors -*/
-/*- 1b. Fonts -*/
-
-/* 2. Reset/Base Styles */
-/*- 2a. Reset -*/
-/*- 2b. Responsive Images -*/
-/*- 2c. Text -*/
-
-/* Module/Universal Styles */
-
-/* Website/Product Specific Styles */
-
-/* Responsive/Media Query Styles */
-
-
-/*---------------------------------------------------------------------*/
-
-
-/* 1. SASS Variables */
-
-/*- 1a. Colors -*/
-
-/* brand highlight */
-
-$brand-color: #1CB38F;
-$brand-color-hover: #23D7AC;
-$brand-color-active: #15866B;
-
-/* base primary */
-
-$base-primary-color: #2F3952;
-$base-primary-color-hover: #52638C;
-$base-primary-color-active: #151924;
-
-/* base secondary */
-
-$base-secondary-color: #64798B;
-$base-secondary-color-hover: #90ACC5;
-$base-secondary-color-active: #3B4752;
-
-/* base accent */
-
-$base-accent-color: #009EFF;
-$base-accent-color-hover: #5EC1FD;
-$base-accent-color-active: #0275BB;
-
-/* support: information */
-
-$information-color: #A5DFF9;
-$information-color-hover: #D8F1FC;
-$information-color-active: #62CBFA;
-
-/* support: success */
-
-$success-color: #58C9B9;
-$success-color-hover: #93DFD4;
-$success-color-active: #1FA995;
-
-/* support: error */
-
-$error-color: #E71D36;
-$error-color-hover: #F95F72;
-$error-color-active: #A70A1D;
-
-/* support: warning */
-
-$warning-color: #F9A825;
-$warning-color-hover: #FDC56A;
-$warning-color-active: #C37D0B;
-
-
-/* grayscale */
-
-$grayscale-0: #FFFFFF;
-$grayscale-100: #FAFAFA;
-$grayscale-200: #F5F5F5;
-$grayscale-300: #EEEEEE;
-$grayscale-400: #E0E0E0;
-$grayscale-500: #BDBDBD;
-$grayscale-600: #9E9E9E;
-$grayscale-700: #757575;
-$grayscale-800: #616161;
-$grayscale-900: #424242;
-$grayscale-1000: #000000;
-
-/*- 1b. Fonts -*/
-
-$brand-font: 'Poppins', sans-serif;
-$base-font: 'Poppins', sans-serif;
-
-/* End SASS Variables */
-
-
-/*---------------------------------------------------------------------*/
-
-
-/* 2. Begin Reset/Base Styles */
-
-/*- 2a. Reset -*/
+/*- Reset -*/
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	margin: 0;
@@ -166,14 +58,14 @@ main, section, nav, article, aside, header, footer {
 	display: block;	
 }
 
-/*- 2b. Responsive Images -*/
+/*- Responsive Images -*/
 
 img {
 	max-width: 100%;
 	height: auto;
 }
 
-/*- 2c. Text -*/
+/*- Text -*/
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 10px;
@@ -245,37 +137,26 @@ small {
 	font-size: .813rem;
 }
 
-/* End Reset/Base Styles */
-
-
-/*---------------------------------------------------------------------*/
-
-
-/* Begin Module/Universal Styles */
-
-/* End Module/Universal Styles */
-
-
-/*---------------------------------------------------------------------*/
-
 
 /* Begin Website/Product Specific Styles */
 
 #react-entry-point {
-	width: 940px;
+	width: 100%;
+	padding: 0 1rem;
 	margin: 0 auto;
 	position: relative;
 }
 
+/* Added class to H1 to create logo */
 .carbon-calc-logo {
 	border: 2px solid black;
 	padding: 0.75rem 1.5rem;
-	font-size: 2rem;
+	font-size: 1.75rem;
 	font-weight: 800;
 	margin: 3rem auto;
 	color: black !important;
 	position: relative;
-	width: 484px;
+	width: 430px;
 }
 
 .carbon-calc-logo::before, .carbon-calc-logo::after {
@@ -297,6 +178,7 @@ small {
 	right: -13px;
 }
 
+/* Added class to H2 to style title */
 .hero-title {
 	color: black !important;
 	font-size: 1.875rem;
@@ -304,6 +186,7 @@ small {
 	margin: 0 0 1.375rem;
 }
 
+/* Added class to copty in div */
 .hero-copy {
 	position: relative;
 	margin: 0 0 25px;
@@ -324,9 +207,9 @@ small {
 
 .project-details, .staffing-details {
 	display: block !important;
-	border-right: 1px dashed black;
-	width: 50% ;
-	padding-right: 2rem;
+	border-bottom: 1px dashed black;
+	width: 100% !important;
+	padding-bottom: 2rem;
 }
 
 .project-details {
@@ -360,10 +243,6 @@ small {
 	font-size: 0.875rem;
 	color: black;
 	font-family: 'Poppins', sans-serif;
-}
-
-#destination_airport {
-	
 }
 
 ::-webkit-input-placeholder, .Select-placeholder {
@@ -401,10 +280,7 @@ small {
 }
 
 .charts {
-	width: 51%;
-	position: absolute;
-	top: 300px;
-	right: 0;
+	
 }
 
 .chart {
@@ -437,7 +313,33 @@ small {
 /* lg */
 @media (min-width: 992px) {
 
+	#react-entry-point {
+		width: 940px;
+	}
 
+	.carbon-calc-logo {
+		font-size: 2rem;
+		width: 484px;
+	}
+
+	.project-details, .staffing-details {
+		border: 0;
+		border-right: 1px dashed black;
+		width: 49% !important;
+		padding-right: 2rem;
+		padding-bottom: 0;
+	}
+
+	.project-details {
+		border-bottom: 1px dashed black;
+	}
+
+	.charts {
+		width: 51%;
+		position: absolute;
+		top: 300px;
+		right: 0;
+	}
 
 }
 

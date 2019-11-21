@@ -2451,7 +2451,7 @@ textarea {
 	min-width: 770px;
 }
 
-.modal-one:target, .modal-two:target, .modal-three:target, .modal-four:target {
+.modal-one:target, .modal-two:target, .modal-three:target, .modal-four:target, #add-service-modal:target {
 	visibility: visible;
 	opacity: 1;
 }
@@ -2475,11 +2475,22 @@ textarea {
 
 .dpl-modal-header .fal {
 	font-size: 2.25rem;
+	font-weight: 100;
 }
 
 .dpl-modal-body {
 	margin-bottom: 5rem;
 	padding: 1.25rem;
+}
+
+#add-service-modal .dpl-modal .dpl-modal-body {
+	max-height: 300px;
+	overflow-y: scroll;
+	margin-bottom: 0;
+}
+
+#add-service-modal .dpl-modal .dpl-modal-body .form-checkbox span {
+	font-size: 1rem;
 }
 
 .dpl-modal-inputs, .dpl-modal-inputs-bottom {

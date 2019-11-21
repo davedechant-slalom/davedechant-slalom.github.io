@@ -495,6 +495,10 @@ a:hover {
 	z-index: 9999;
 }
 
+.smaller .dpl-options-dropdown-payer, .smaller .dpl-options-dropdown-provider {
+	top: 30px;
+}
+
 .dpl-options-dropdown-payer .fa-chevron-up, .dpl-options-dropdown-provider .fa-chevron-up {
 	position: absolute;
 	top: -40px;
@@ -502,7 +506,12 @@ a:hover {
 	background-color: $grayscale-0;
 }
 
-.dpl-options-dropdown-provider .fa-chevron-up {
+.smaller .dpl-options-dropdown-payer .fa-chevron-up, .smaller .dpl-options-dropdown-provider .fa-chevron-up {
+	top: -30px;
+	right: 233px;
+}
+
+.dpl-options-dropdown-provider .fa-chevron-up, .smaller .dpl-options-dropdown-provider .fa-chevron-up {
 	right: 0;
 }
 

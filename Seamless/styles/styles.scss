@@ -2803,6 +2803,46 @@ textarea {
 	opacity: 1;
 }
 
+.search-drawer-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($grayscale-1000,0.4);
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.search-drawer {
+	position: absolute;
+	top: 0;
+	right: -550px;
+	width: 550px;
+	height: 100%;
+	background-color: $grayscale-0;
+	padding: 3rem 5rem 0 1.5rem;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.search-drawer-container:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.search-drawer-container:target .search-drawer {
+	right: 0;
+}
+
 /* End Module/Universal Styles */
 
 

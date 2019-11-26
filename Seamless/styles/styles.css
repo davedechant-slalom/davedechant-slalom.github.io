@@ -696,6 +696,9 @@ a:hover {
 .main-content-2 {
   margin-top: 310px; }
 
+.main-content-3 {
+  margin-top: 280px; }
+
 .main-content-notification {
   margin-top: 0; }
 
@@ -1285,7 +1288,8 @@ td, th {
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  vertical-align: middle; }
 
 .default-2 td {
   font-size: 1rem; }
@@ -1306,8 +1310,7 @@ th {
   border-top: 3px solid #E0E0E0;
   border-bottom: 3px solid #E0E0E0;
   font-family: "UHC Sans Bold", sans-serif;
-  background-color: #F1FAFC;
-  vertical-align: middle; }
+  background-color: #F1FAFC; }
 
 .upload-table th {
   border-top: 1px solid #E0E0E0;
@@ -2018,7 +2021,7 @@ textarea {
   background-color: #FFFFFF;
   min-width: 770px; }
 
-.modal-one:target, .modal-two:target, .modal-three:target, .modal-four:target, #add-service-modal:target {
+.modal-one:target, .modal-two:target, .modal-three:target, .modal-four:target, #add-service-modal:target, #member-modal:target {
   visibility: visible;
   opacity: 1; }
 
@@ -2043,6 +2046,9 @@ textarea {
 .dpl-modal-body {
   margin-bottom: 5rem;
   padding: 1.25rem; }
+
+#member-modal .dpl-modal-body {
+  margin-bottom: 0; }
 
 #add-service-modal .dpl-modal .dpl-modal-body {
   max-height: 300px;
@@ -2298,6 +2304,64 @@ textarea {
 
 .search-drawer-container:target .search-drawer {
   right: 0; }
+
+.numbers-row {
+  border: 1px solid #9E9E9E;
+  width: 132px;
+  height: 42px;
+  position: relative;
+  border-radius: 3px; }
+
+.numbers-row input {
+  border: 0;
+  height: 40px;
+  width: 50px;
+  border-radius: 0px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #000000;
+  font-size: 1.313rem;
+  font-family: "UHC Sans Regular", sans-serif;
+  text-align: center; }
+
+.button {
+  background-color: #196FD0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 0.563rem;
+  cursor: pointer; }
+
+.inc.button {
+  left: auto;
+  right: 0; }
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+  display: none; }
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button {
+  display: none; }
+
+/* Always display the drop down caret */
+/* A few custom styles for date inputs */
+input[type="date"] {
+  color: #000000;
+  font-family: "UHC Sans Regular", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 0.688rem; }
+
+input[type="date"], focus {
+  color: #000000; }
 
 /* End Module/Universal Styles */
 /*---------------------------------------------------------------------*/

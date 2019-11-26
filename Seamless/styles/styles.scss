@@ -933,6 +933,10 @@ a:hover {
 	margin-top: 310px;
 }
 
+.main-content-3 {
+	margin-top: 280px;
+}
+
 .main-content-notification {
 	margin-top: 0;
 }
@@ -1625,6 +1629,7 @@ td, th {
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	vertical-align: middle;
 }
 
 .default-2 td {
@@ -1649,7 +1654,6 @@ th {
 	border-bottom: 3px solid $grayscale-400;
 	font-family: $base-font;
 	background-color: #F1FAFC;
-	vertical-align: middle;
 }
 
 .upload-table th {
@@ -2515,7 +2519,7 @@ textarea {
 	min-width: 770px;
 }
 
-.modal-one:target, .modal-two:target, .modal-three:target, .modal-four:target, #add-service-modal:target {
+.modal-one:target, .modal-two:target, .modal-three:target, .modal-four:target, #add-service-modal:target, #member-modal:target {
 	visibility: visible;
 	opacity: 1;
 }
@@ -2545,6 +2549,10 @@ textarea {
 .dpl-modal-body {
 	margin-bottom: 5rem;
 	padding: 1.25rem;
+}
+
+#member-modal .dpl-modal-body {
+	margin-bottom: 0;
 }
 
 #add-service-modal .dpl-modal .dpl-modal-body {
@@ -2841,6 +2849,78 @@ textarea {
 
 .search-drawer-container:target .search-drawer {
 	right: 0;
+}
+
+
+
+.numbers-row {
+	border: 1px solid $grayscale-600;
+	width: 132px;
+	height: 42px;
+	position: relative;
+	border-radius: 3px;
+}
+
+.numbers-row input {
+	border: 0;
+	height: 40px;
+	width: 50px;
+	border-radius: 0px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,0);
+	color: $grayscale-1000;
+	font-size: 1.313rem;
+	font-family: $brand-font;
+	text-align: center;
+}
+
+.button {
+	background-color: $base-accent-color;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: $grayscale-0;
+	font-size: 1.25rem;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 0.563rem;
+	cursor: pointer;
+}
+
+.inc.button {
+	left: auto;
+	right: 0;
+}
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+    color: $grayscale-1000;
+    font-family: $brand-font;
+    font-size: 1rem;
+    padding: 0.5rem 0.688rem;
+}
+
+input[type="date"], focus {
+    color: $grayscale-1000;
 }
 
 /* End Module/Universal Styles */

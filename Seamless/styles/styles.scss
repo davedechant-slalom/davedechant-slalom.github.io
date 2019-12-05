@@ -383,10 +383,6 @@ a:hover {
 	font-size: 0.75rem;
 }
 
-
-
-
-
 .or-spacer {
 	position: absolute;
 	left: 50%;
@@ -1861,21 +1857,18 @@ td.td-form {
 	font-family: $base-font;
 }
 
-.icon-title {
-	font-size: 2.125rem;
-	text-align: center;
-	padding: 0.75rem 0 0;
-	margin-bottom: 0.25rem;
-	width: 60px;
-	height: 60px;
+.title-icon {
+	font-size: 2.875rem;
+	width: 52px;
+	height: 52px;
+	padding-top: 0.188rem;
+	color: #196ECF;
+	background-color: #f1f9fb;
 	border-radius: 50%;
-	background-color: #f3fafc;
-	color: $base-accent-color;
 }
 
-.icon-large {
+.title-icon-large {
 	font-size: 2.125rem;
-	vertical-align: -0.375rem;
 }
 
 .link-underline {

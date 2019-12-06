@@ -33,12 +33,36 @@
 		"oAP": "/carlotta-guidicelli/index.html",
 		"oF": 0
 		},
+	"/ellen-scott/claim-summary-cs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/ellen-scott/claim-summary-cs.html",
+		"oF": 0
+		},
 	"/ellen-scott/claim-summary.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/ellen-scott/claim-summary.html",
+		"oF": 0
+		},
+	"/ellen-scott/eligibility-summary-cs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/ellen-scott/eligibility-summary-cs.html",
+		"oF": 0
+		},
+	"/ellen-scott/eligibility-summary.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/ellen-scott/eligibility-summary.html",
 		"oF": 0
 		},
 	"/ellen-scott/index.html": {
@@ -444,20 +468,28 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/members-search-results.html": {
+	"/reese-tindle/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/members-search-results.html",
+		"oAP": "/reese-tindle/index.html",
 		"oF": 0
 		},
-	"/members-search.html": {
+	"/reese-tindle/members-search-results.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/members-search.html",
+		"oAP": "/reese-tindle/members-search-results.html",
+		"oF": 0
+		},
+	"/reese-tindle/members-search.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/reese-tindle/members-search.html",
 		"oF": 0
 		},
 	"/roger-davis/claim-reconsideration-confirmation.html": {
@@ -562,22 +594,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/stephanie-johnson/eligibility-summary.html",
-		"oF": 0
-		},
-	"/stephanie-johnson/home-member-info.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/stephanie-johnson/home-member-info.html",
-		"oF": 0
-		},
-	"/stephanie-johnson/home-provider-info.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/stephanie-johnson/home-provider-info.html",
 		"oF": 0
 		},
 	"/stephanie-johnson/index.html": {

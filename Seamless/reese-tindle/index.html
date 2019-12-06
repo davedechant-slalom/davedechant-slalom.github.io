@@ -18,14 +18,15 @@
 
         <!-- Styles -->
 
-        <link href="styles/fontawesome.css" rel="stylesheet" type="text/css">
-        <link href="styles/styles.css" rel="stylesheet" type="text/css">
+        <link href="../styles/icons.css" rel="stylesheet" type="text/css">
+        <link href="../styles/fontawesome.css" rel="stylesheet" type="text/css">
+        <link href="../styles/styles.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
 
 
         <!-- Favicons/Icons -->
 
-        <link rel="shortcut icon" href="images/icons/favicon.ico">
+        <link rel="shortcut icon" href="../images/icons/favicon.ico">
 
         <link rel="apple-touch-icon" href="images/icons/touch-icon-iphone.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="images/icons/touch-icon-ipad.png" />
@@ -152,8 +153,9 @@
                         <select class="m-b">
 
                             <option value="0">Scott Brundle</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
+                            <option value="1">Felicity Firmin</option>
+                            <option value="2">Maureen Johnson</option>
+                            <option value="3">Reese Tindle</option>
 
                         </select>
 
@@ -195,15 +197,15 @@
 
         	<p class="align-c"><strong>Before you get started, make sure your <a href="#" class="link-underline">payer information</a> and <a href="#" class="link-underline">provider information</a> in the top right corner of the page is correct.</strong><br> Try out our shortcuts to eligibility and claims information below for quick links to common tasks.</p>
 
-            <div class="content-grid-3 m-b" style="position: relative;">
+            <div class="content-grid-3 m-b">
 
-                <div class="dpl-card">
+                <div class="dpl-card" style="margin-right: 2rem;">
 
                     <div class="dpl-card-body">
 
                     	<div class="d-flex-3 align-c">
 
-                    		<p class="m-0"><i class="fal fa-umbrella icon-title"></i></p>
+                    		<span class="icon-coverage title-icon m-b"></span>
 
                     		<h2 class="text-lg"><strong>Verify Eligibility &amp; Benefits</strong></h2>
 
@@ -261,7 +263,7 @@
 
 	                        </div>
 
-	                        <p class="text-sm"><a href="#"><i class="fas fa-plus-circle"></i> <strong>Search for Multiple Members</strong></a></p>
+	                        <p class="text-sm"><a href="#member-modal"><i class="fas fa-plus-circle"></i> <strong>Search for Multiple Members</strong></a></p>
 
 	                        <hr>
 
@@ -287,15 +289,117 @@
 
 	                        </div>
 
-	                        <a class="dpl-button-full" href="#" style="margin-top: 15px;">Verify Eligibility</a>
+	                        <a class="dpl-button-full" href="eligibility-summary.html" style="margin-top: 14px;">Verify Eligibility</a>
                         	
                         </form>
 
                     </div>
 
-                </div>
+                    <div class="dpl-modal-overlay" id="member-modal">
 
-                <span class="or-spacer">or</span>
+                        <div class="dpl-modal">
+
+                            <div class="dpl-modal-header">
+
+                                <h2 class="dpl-modal-title">Search for Multiple Members</h2>
+
+                                <a href="#act"><i class="fal fa-times-circle"></i></a>
+
+                            </div>
+
+                            <div class="dpl-modal-body">
+
+                                <p class="text-lg">1. Would you like to apply the same service dates for all members?</p>
+
+                                <div style="width: 450px; padding-left: 25px;">
+
+                                    <div class="form-row-3-flex">
+
+                                        <div class="form-element m-r">
+
+                                            <label class="form-radio">
+
+                                                <input class="radio" type="radio" checked="checked" name="radio">
+
+                                                <span>Yes</span>
+
+                                            </label>
+                                            
+                                        </div>
+
+                                        <div class="form-element">
+
+                                            <label class="form-radio">
+
+                                                <input class="radio" type="radio" name="radio">
+
+                                                <span>No</span>
+
+                                            </label>
+                                            
+                                        </div>
+
+                                    </div>
+
+                                    <p class="text-xs m-0 m-t m-b">Leaving the date blank defaults to today's date and returns current, past, or future policies; or enter date range up to 6 years in the past or 12 months in the future.</p>
+
+                                    <div class="form-row-2">
+
+                                        <div class="form-element">
+
+                                            <label>Start Date</label>
+
+                                            <input class="date-input" type="date" name="" value="2019-10-05" required>
+                                            
+                                        </div>
+
+                                        <div class="form-element">
+
+                                            <label>End Date</label>
+
+                                            <input class="date-input" type="date" name="" value="2019-10-05" required>
+                                            
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <hr>
+
+                                <p class="text-lg">2. How many total members would you like to search for?</p>
+
+                                <div style="width: 450px; padding-left: 25px;">
+
+                                    <form method="post" action="">
+
+                                        <div class="numbers-row">
+
+                                            <input type="text" name="incrementer" value="1">
+
+                                        </div>
+
+                                    </form>
+
+                                    <p class="text-sm m-0"><i>20 Entry Max</i></p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="dpl-modal-footer">
+
+                                <a class="dpl-button-ghost m-r" href="">Cancel</a>
+
+                                <a class="dpl-button" href="members-search.html">Next</a>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                </div>
 
                 <div class="dpl-card">
 
@@ -303,11 +407,11 @@
 
                     	<div class="d-flex-3 align-c">
 
-                    		<p class="m-0"><i class="fal fa-file-invoice-dollar icon-title"></i></p>
+                    		<span class="icon-claims title-icon m-b"></span>
 
                     		<h2 class="text-lg"><strong>Look Up a Claim or Ticket</strong></h2>
 
-                    		<p class="text-sm m-0"><a href="flagged-claims-and-tickets.html"><strong>View Flagged Claims and Tickets</strong></a></p>
+                    		<p class="text-sm m-0"><a href="../flagged-claims-and-tickets.html"><strong>View Flagged Claims and Tickets</strong></a></p>
 
                     	</div>
 
@@ -331,7 +435,7 @@
 
     	                        		<select>
 
-    	                        			<option value="0">Provider Information</option>
+    	                        			<option value="0">Member ID &amp; Date of Birth</option>
     	                        			<option value="1">Option 1</option>
     	                        			<option value="2">Option 2</option>
 
@@ -341,11 +445,13 @@
 
                                         <ul class="claim-dropdown-content" id="claim-dropdown">
 
-                                            <li class="claim-dropdown-input"><a href="#"><strong>Provider Information</strong> <i class="fas fa-angle-up fc-base-accent"></i></a></li>
+                                            <li class="claim-dropdown-input"><a href="#"><strong>Member ID &amp; Date of Birth</strong> <i class="fas fa-angle-up fc-base-accent"></i></a></li>
                                             <li class="claim-dropdown-title">Search for claims by</li>
-                                            <li><a href="index.html">Patient Account Number or Claim Number</a></li>
-                                            <li><a href="claims-search-member-info.html">Member Information</a></li>
-                                            <li><a href="#"><strong>Provider Information</strong> <i class="fas fa-check fc-base-accent"></i></a></li>
+                                            <li><a href="index.html"><strong>Member ID &amp; Date of Birth</strong> <i class="fas fa-check fc-base-accent"></i></a></li>
+                                            <li><a href="#">Member ID &amp; Member Name</a></li>
+                                            <li><a href="#">Member Name &amp; Date of Birth</a></li>
+                                            <li><a href="#">Patient Account Number or Claim Number</a></li>
+                                            <li><a href="claims-search-provider-info.html">Provider Information</a></li>
                                             <li class="claim-dropdown-title">Search for rework tickets</li>
                                             <li><a href="#">Claims Reconsideration</a></li>
                                             <li><a href="#">Pended Claim Ticket</a></li>
@@ -371,7 +477,7 @@
 
                                         <input class="radio" type="radio" checked="checked" name="radio">
 
-                                        <span>TIN<br> <strong>2847938</strong> <a href="#">Update</a></span>
+                                        <span>TIN<br> <strong>2847938</strong> <a href="#"><strong class="text-xs">Edit</strong></a></span>
 
                                     </label>
 	                        		
@@ -383,7 +489,7 @@
 
                                         <input class="radio" type="radio" name="radio">
 
-                                        <span>Provider<br> <strong>Scott Brundle</strong> <a href="#">Update</a></span>
+                                        <span>Provider<br> <strong>Scott Brundle</strong> <a href="#"><strong class="text-xs">Edit</strong></a></span>
 
                                     </label>
 	                        		
@@ -393,19 +499,21 @@
 
 	                        <hr class="m-0 m-b">
 
-	                        <div class="form-row-1">
+	                        <div class="form-row-2">
 
 	                        	<div class="form-element">
 
-	                        		<label>Select Adjudicated Claim Status* <i class="fas fa-info-circle fc-base-accent"></i></label>
+	                        		<label>Member ID</label>
 
-	                        		<select>
+	                        		<input type="text" name="" placeholder="12345678">
+	                        		
+	                        	</div>
 
-	                        			<option value="0">Provider Information</option>
-	                        			<option value="1">Option 1</option>
-	                        			<option value="2">Option 2</option>
+	                        	<div class="form-element">
 
-	                        		</select>
+	                        		<label>Date of Birth</label>
+
+	                        		<input type="text" name="" placeholder="MM/DD/YYYY">
 	                        		
 	                        	</div>
 
@@ -415,7 +523,7 @@
 
 	                        <div class="form-row-3-flex">
 
-	                        	<p class="text-sm m-r fc-gray"><strong>Selected Range:</strong></p>
+	                        	<p class="text-sm m-r fc-gray"><strong>Select Range:</strong></p>
 
 	                        	<div class="form-element m-r">
 
@@ -449,7 +557,7 @@
 
 	                        		<label>First Service Date</label>
 
-	                        		<input type="text" name="" placeholder="MM/DD/YYYY" value="06/01/2019">
+	                        		<input type="text" name="" placeholder="MM/DD/YYYY">
 	                        		
 	                        	</div>
 
@@ -457,13 +565,13 @@
 
 	                        		<label>Last Service Date</label>
 
-	                        		<input type="text" name="" placeholder="MM/DD/YYYY" value="08/31/2019">
+	                        		<input type="text" name="" placeholder="MM/DD/YYYY">
 	                        		
 	                        	</div>
 
 	                        </div>
 
-	                        <a class="dpl-button-full" href="claim-summary-status-denied.html">Submit Search</a>
+	                        <a class="dpl-button-full" href="claim-summary.html">Submit Search</a>
                         	
                         </form>
 
@@ -481,9 +589,11 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-        <script defer src="js/classie.js"></script>
+        <script defer src="../js/classie.js"></script>
 
-        <script defer src="js/scripts.js"></script>
+        <script defer src="../js/incrementing.js"></script>
+
+        <script defer src="../js/scripts.js"></script>
 
     </body>
 

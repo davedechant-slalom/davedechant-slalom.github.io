@@ -2221,6 +2221,9 @@ textarea {
   background-color: #7ED321;
   border-radius: 3px; }
 
+.fill-bar.perc-16:after {
+  width: 16%; }
+
 .fill-bar.perc-42:after {
   width: 42%; }
 

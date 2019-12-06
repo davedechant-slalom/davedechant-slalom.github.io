@@ -1858,17 +1858,18 @@ td.td-form {
 }
 
 .title-icon {
-	font-size: 2.875rem;
+	font-size: 1.875rem;
 	width: 52px;
 	height: 52px;
-	padding-top: 0.188rem;
+	padding-top: 0.688rem;
 	color: #196ECF;
 	background-color: #f1f9fb;
 	border-radius: 50%;
 }
 
-.title-icon-large {
+.title-largin-icon {
 	font-size: 2.125rem;
+	vertical-align: -6px;
 }
 
 .link-underline {
@@ -2786,7 +2787,7 @@ textarea {
 	position: relative;
 }
 
-#chiro-services {
+.detailed-benefits-card {
 	position: absolute;
 	top: -5px;
 	left: 0;
@@ -2797,9 +2798,11 @@ textarea {
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	width: 100%;
+	min-height: 460px;
 }
 
-#chiro-services:target {
+.detailed-benefits-card:target {
 	visibility: visible;
 	opacity: 1;
 }

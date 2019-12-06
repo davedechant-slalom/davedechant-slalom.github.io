@@ -65,57 +65,60 @@
 .icon-favorite-active:before {
   content: "\e90c";
 }
-.icon-fill-check:before {
+.icon-favorite-inactive:before {
   content: "\e90d";
 }
-.icon-fill-info:before {
+.icon-fill-check:before {
   content: "\e90e";
 }
-.icon-fill-plus:before {
+.icon-fill-info:before {
   content: "\e90f";
 }
-.icon-fill-search:before {
+.icon-fill-plus:before {
   content: "\e910";
 }
-.icon-flag-active:before {
+.icon-fill-search:before {
   content: "\e911";
 }
-.icon-flag-inactive:before {
+.icon-flag-active:before {
   content: "\e912";
 }
-.icon-future:before {
+.icon-flag-inactive:before {
   content: "\e913";
 }
-.icon-id-card:before {
+.icon-future:before {
   content: "\e914";
 }
-.icon-insurance:before {
+.icon-id-card:before {
   content: "\e915";
 }
-.icon-money:before {
+.icon-insurance:before {
   content: "\e916";
 }
-.icon-patient-doctor:before {
+.icon-money:before {
   content: "\e917";
 }
-.icon-patient:before {
+.icon-patient-doctor:before {
   content: "\e918";
 }
-.icon-person:before {
+.icon-patient:before {
   content: "\e919";
 }
-.icon-print:before {
+.icon-person:before {
   content: "\e91a";
 }
-.icon-search-list:before {
+.icon-print:before {
   content: "\e91b";
 }
-.icon-search:before {
+.icon-search-list:before {
   content: "\e91c";
 }
-.icon-submit-claim:before {
+.icon-search:before {
   content: "\e91d";
 }
-.icon-trash:before {
+.icon-submit-claim:before {
   content: "\e91e";
+}
+.icon-trash:before {
+  content: "\e91f";
 }

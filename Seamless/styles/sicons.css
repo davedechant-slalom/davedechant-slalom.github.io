@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'seamless';
+  src:  url('../webfonts/seamless.eot?n7qs0k');
+  src:  url('../webfonts/seamless.eot?n7qs0k#iefix') format('embedded-opentype'),
+    url('../webfonts/seamless.ttf?n7qs0k') format('truetype'),
+    url('../webfonts/seamless.woff?n7qs0k') format('woff'),
+    url('../webfonts/seamless.svg?n7qs0k#seamless') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="sicon-"], [class*=" sicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'seamless' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sicon-arrow-breadcrumb:before {
+  content: "\e900";
+}
+.sicon-arrow-circle-down:before {
+  content: "\e901";
+}
+.sicon-arrow-circle-up:before {
+  content: "\e902";
+}
+.sicon-arrow-down:before {
+  content: "\e903";
+}
+.sicon-arrow-up:before {
+  content: "\e904";
+}
+.sicon-checkmark:before {
+  content: "\e905";
+}
+.sicon-claims:before {
+  content: "\e906";
+}
+.sicon-close:before {
+  content: "\e907";
+}
+.sicon-coverage:before {
+  content: "\e908";
+}
+.sicon-doctor:before {
+  content: "\e909";
+}
+.sicon-error:before {
+  content: "\e90a";
+}
+.sicon-external-link:before {
+  content: "\e90b";
+}
+.sicon-favorite-active:before {
+  content: "\e90c";
+}
+.sicon-favorite-inactive:before {
+  content: "\e90d";
+}
+.sicon-fill-check:before {
+  content: "\e90e";
+}
+.sicon-fill-info:before {
+  content: "\e90f";
+}
+.sicon-fill-plus:before {
+  content: "\e910";
+}
+.sicon-fill-search:before {
+  content: "\e911";
+}
+.sicon-flag-active:before {
+  content: "\e912";
+}
+.sicon-flag-inactive:before {
+  content: "\e913";
+}
+.sicon-future:before {
+  content: "\e914";
+}
+.sicon-id-card:before {
+  content: "\e915";
+}
+.sicon-insurance:before {
+  content: "\e916";
+}
+.sicon-money:before {
+  content: "\e917";
+}
+.sicon-patient-doctor:before {
+  content: "\e918";
+}
+.sicon-patient:before {
+  content: "\e919";
+}
+.sicon-person:before {
+  content: "\e91a";
+}
+.sicon-print:before {
+  content: "\e91b";
+}
+.sicon-search-list:before {
+  content: "\e91c";
+}
+.sicon-search:before {
+  content: "\e91d";
+}
+.sicon-submit-claim:before {
+  content: "\e91e";
+}
+.sicon-trash:before {
+  content: "\e91f";
+}

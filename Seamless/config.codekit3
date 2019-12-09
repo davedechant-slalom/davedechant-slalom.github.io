@@ -662,13 +662,13 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/styles/icons.css": {
+	"/styles/sicons.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/styles/icons-min.css",
+		"oAP": "/styles/sicons-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -1247,38 +1247,38 @@
 		"oAP": "/webfonts/fa-solid-900.woff2",
 		"oF": 0
 		},
-	"/webfonts/icomoon.eot": {
+	"/webfonts/seamless.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/webfonts/icomoon.eot",
+		"oAP": "/webfonts/seamless.eot",
 		"oF": 0
 		},
-	"/webfonts/icomoon.svg": {
+	"/webfonts/seamless.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/webfonts/icomoon.svg",
+		"oAP": "/webfonts/seamless.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/webfonts/icomoon.ttf": {
+	"/webfonts/seamless.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/webfonts/icomoon.ttf",
+		"oAP": "/webfonts/seamless.ttf",
 		"oF": 0
 		},
-	"/webfonts/icomoon.woff": {
+	"/webfonts/seamless.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/webfonts/icomoon.woff",
+		"oAP": "/webfonts/seamless.woff",
 		"oF": 0
 		}
 	},

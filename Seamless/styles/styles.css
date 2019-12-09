@@ -879,6 +879,10 @@ a:hover {
   padding: 0;
   border-radius: 0; }
 
+.accordion-table-services .accordion_tab_table:after {
+  font-size: 1.875rem;
+  left: 1rem; }
+
 .accordion-table-header {
   margin: 1rem 0 0;
   font-size: 0.75rem;
@@ -893,6 +897,34 @@ a:hover {
 
 .accordion-table-copy:last-child {
   margin: 0 0 1rem; }
+
+.accordion-table-services .t-body-top td {
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 0; }
+
+.accordion-table-services th {
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  width: 15%; }
+
+.accordion-table-services .default th {
+  width: 15%; }
+
+.accordion-table-services .default th:nth-child(4) {
+  width: 23%; }
+
+.accordion-table-services .default td {
+  border-top: 0;
+  border-bottom: 1px solid #E0E0E0;
+  width: 15%; }
+
+.accordion-table-services .default td:nth-child(4) {
+  width: 23%; }
+
+.accordion-table-services td:first-child, .accordion-table-services th:first-child {
+  text-indent: 0;
+  width: 23%;
+  padding-left: 2.125rem; }
 
 /*- Accordion Three -*/
 .accordion_tab_three {
@@ -1057,6 +1089,9 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#196fd0', endColorstr='#d2341e',GradientType=1 );
   /* IE6-9 */ }
 
+.process .history-timeline:before {
+  display: none; }
+
 .history-timeline.warning:before {
   position: absolute;
   content: "";
@@ -1094,6 +1129,9 @@ a:hover {
   transform: translate(-50%, 0);
   text-align: center; }
 
+.process .history-timeline-item.two {
+  color: #BDBDBD; }
+
 .history-timeline-item.three {
   position: absolute;
   left: auto;
@@ -1113,7 +1151,7 @@ a:hover {
 .history-timeline-item.two.warning .fas {
   color: #d29e35; }
 
-.history-timeline-item.three .fas {
+.history-timeline-item.three .fas, .process .history-timeline-item.two .fas {
   font-size: 1rem;
   color: #FFFFFF;
   border: 3px solid #E0E0E0;
@@ -1479,7 +1517,7 @@ td.td-form {
   background-color: #f1f9fb;
   border-radius: 50%; }
 
-.title-largin-icon {
+.title-large-icon {
   font-size: 2.125rem;
   vertical-align: -6px; }
 

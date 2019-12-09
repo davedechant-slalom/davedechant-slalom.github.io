@@ -17,6 +17,22 @@
 		"oAP": "/carlotta-guidicelli/claim-summary.html",
 		"oF": 0
 		},
+	"/carlotta-guidicelli/claims-table.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/carlotta-guidicelli/claims-table.html",
+		"oF": 0
+		},
+	"/carlotta-guidicelli/eligibility-summary-services-added.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/carlotta-guidicelli/eligibility-summary-services-added.html",
+		"oF": 0
+		},
 	"/carlotta-guidicelli/eligibility-summary.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -41,12 +57,36 @@
 		"oAP": "/ellen-scott/claim-summary-cs.html",
 		"oF": 0
 		},
+	"/ellen-scott/claim-summary-strep.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/ellen-scott/claim-summary-strep.html",
+		"oF": 0
+		},
 	"/ellen-scott/claim-summary.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/ellen-scott/claim-summary.html",
+		"oF": 0
+		},
+	"/ellen-scott/claims-table-cs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/ellen-scott/claims-table-cs.html",
+		"oF": 0
+		},
+	"/ellen-scott/claims-table.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/ellen-scott/claims-table.html",
 		"oF": 0
 		},
 	"/ellen-scott/eligibility-summary-cs.html": {

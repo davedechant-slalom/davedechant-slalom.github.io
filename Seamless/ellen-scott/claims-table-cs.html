@@ -18,9 +18,9 @@
 
         <!-- Styles -->
 
-        <link href="styles/sicons.css" rel="stylesheet" type="text/css">
-        <link href="styles/fontawesome.css" rel="stylesheet" type="text/css">
-        <link href="styles/styles.css" rel="stylesheet" type="text/css">
+        <link href="../styles/sicons.css" rel="stylesheet" type="text/css">
+        <link href="../styles/fontawesome.css" rel="stylesheet" type="text/css">
+        <link href="../styles/styles.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
 
 
@@ -203,7 +203,7 @@
 
             <div class="wrapper m-t">
 
-                <h1>Flagged Claims & Tickets</h1>
+                <h1>Claims List - Christopher Scott (90 days)</h1>
 
                 <p>Use the column <i class="fas fa-sort fc-base-accent"></i> to sort the table</p>
 
@@ -215,31 +215,7 @@
 
             <p>Click on the claim number to review the claim, or click the <i class="fas fa-flag fc-base-accent"></i> to unflag the claim and remove it from the list.</p>
 
-            <div class="tab">
-
-                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Claims</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Claims Reconsideration Tickets</button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Pending Claim Tickets</button>
-
-            </div>
-
-            <div id="London" class="tabcontent">
-
-                <div class="tab-header">
-
-                    <p class="m-0">Showing your 5 flagged claims</p>
-
-                    <div class="tab-header-actions">
-
-                        <input class="m-r" type="search" name="" placeholder="Search Results Below">
-
-                        <a class="dpl-button-ghost" href="#">Refresh</a>
-
-                    </div>
-                    
-                </div>
-
-                <table class="table default m-0">
+            <table class="table default m-0">
 
                     <tr>
 
@@ -260,14 +236,14 @@
                     <tr>
 
                         <td><i class="fas fa-flag fc-base-accent"></i></td>
-                        <td>David</td>
-                        <td>Dechant</td>
-                        <td><a>2487654221</a></td>
+                        <td>Christopher</td>
+                        <td>Scott</td>
+                        <td><a href="claim-summary.html">7479894912</a></td>
                         <td>08/04/2019</td>
                         <td>$260.00</td>
                         <td>$0.00</td>
                         <td>08/10/2019</td>
-                        <td>487654221</td>
+                        <td>123456 00</td>
                         <td>08/17/2019</td>
                         <td><strong class="fc-success">Paid/Finalized</strong></td>
 
@@ -276,145 +252,20 @@
                     <tr>
 
                         <td><i class="fas fa-flag fc-base-accent"></i></td>
-                        <td>Jennifer</td>
-                        <td>Dali</td>
-                        <td><a>8745982234</a></td>
+                        <td>Christopher</td>
+                        <td>Scott</td>
+                        <td><a>6829834014</a></td>
                         <td>08/10/2019</td>
                         <td>$250.00</td>
                         <td>$0.00</td>
                         <td>08/18/2019</td>
-                        <td>745982234</td>
+                        <td>123456 00</td>
                         <td>08/25/2019</td>
                         <td><strong class="fc-brand">Payable</strong></td>
 
                     </tr>
 
-                    <tr>
-
-                        <td><i class="fas fa-flag fc-base-accent"></i></td>
-                        <td>Josephine</td>
-                        <td>Helena</td>
-                        <td><a>3214790876</a></td>
-                        <td>09/19/2019</td>
-                        <td>$200.00</td>
-                        <td>$90.07</td>
-                        <td>09/25/2019</td>
-                        <td>214709876</td>
-                        <td>09/29/2019</td>
-                        <td><strong class="fc-success">Paid/Finalized</strong></td>
-
-                    </tr>
-
-                    <tr>
-
-                        <td><i class="fas fa-flag fc-base-accent"></i></td>
-                        <td>Jane</td>
-                        <td>Smith</td>
-                        <td><a href="claim-summary-jane.html">7907173695</a></td>
-                        <td>10/03/2019</td>
-                        <td>$5,511.54</td>
-                        <td>$0.00</td>
-                        <td>10/11/2019</td>
-                        <td>907382112</td>
-                        <td>10/22/2019</td>
-                        <td><strong class="fc-error">Denied</strong></td>
-
-                    </tr>
-
-                    <tr>
-
-                        <td><i class="fas fa-flag fc-base-accent"></i></td>
-                        <td>Jacqueline</td>
-                        <td>Kay</td>
-                        <td><a>4161558904</a></td>
-                        <td>10/15/2019</td>
-                        <td>$140.00</td>
-                        <td>$67.03</td>
-                        <td>10/22/2019</td>
-                        <td>161558904</td>
-                        <td>10/28/2019</td>
-                        <td><strong class="fc-success">Paid/Finalized</strong></td>
-
-                    </tr>
-
                 </table>
-
-            </div>
-
-            <div id="Paris" class="tabcontent">
-
-                <div class="tab-header">
-
-                    <p class="m-0">Showing your 2 flagged claims</p>
-
-                    <div class="tab-header-actions">
-
-                        <input class="m-r" type="search" name="" placeholder="Search Results Below">
-
-                        <a class="dpl-button-ghost" href="#">Refresh</a>
-
-                    </div>
-                    
-                </div>
-
-                <table class="table default m-0">
-
-                    <tr>
-
-                        <th><i class="fas fa-flag fc-base-accent"></i></th>
-                        <th>First Name <i class="fas fa-sort fc-base-accent"></i></th>
-                        <th>Last Name <i class="fas fa-sort fc-base-accent"></i></th>
-                        <th>Claim Number <i class="fas fa-sort fc-base-accent"></i></th>
-                        <th>Date of Service <i class="fas fa-sort fc-base-accent"></i></th>
-                        <th>Ticket Number <i class="fas fa-sort fc-base-accent"></i></th>
-                        <th>Submission Date <i class="fas fa-sort fc-base-accent"></i></th>
-                        <th>Member ID Number <i class="fas fa-sort fc-base-accent"></i></th>
-                        <th>Flagged Date <i class="fas fa-sort fc-base-accent"></i></th>
-                        <th>Status <i class="fas fa-sort fc-base-accent"></i></th>
-
-                    </tr>
-
-                    <tr>
-
-                        <td><i class="fas fa-flag fc-base-accent"></i></td>
-                        <td class="align-l">Stephanie</td>
-                        <td>Johnson</td>
-                        <td><a href="claim-summary-status-denied-recon-assigned.html">7479894912</a></td>
-                        <td>08/08/2019</td>
-                        <td><a href="confirmation-reconsideration.html">PTPCR-1234923</a></td>
-                        <td>08/15/2019</td>
-                        <td>123456 00</td>
-                        <td>10/22/2019</td>
-                        <td><strong class="fc-brand">New</strong></td>
-
-                    </tr>
-
-                    <tr>
-
-                        <td><i class="fas fa-flag fc-base-accent"></i></td>
-                        <td class="align-l">James</td>
-                        <td>Erickson</td>
-                        <td><a href="claim-summary-status-denied-recon-assigned.html">8873728372</a></td>
-                        <td>10/18/2019</td>
-                        <td><a href="confirmation-reconsideration.html">PTPCR-234232</a></td>
-                        <td>10/22/2019</td>
-                        <td>223823 11</td>
-                        <td>09/18/2019</td>
-                        <td><strong class="fc-brand">New</strong></td>
-
-                    </tr>
-
-                </table>
-
-            </div>
-
-            <div id="Tokyo" class="tabcontent" style="padding: 50px 0;">
-
-                <p class="align-c text-lg m-b">You currently have no flagged pending-claim tickets</p>
-
-                <p class="align-c text-lg m-0">While viewing a ticket, click the "Flag Ticket" button to add it to this list.</p>
-
-            </div>
                             
         </main>
 
@@ -424,11 +275,11 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-        <script defer src="js/classie.js"></script>
+        <script defer src="../js/classie.js"></script>
 
-        <script defer src="js/tabs.js"></script>
+        <script defer src="../js/tabs.js"></script>
 
-        <script defer src="js/scripts.js"></script>
+        <script defer src="../js/scripts.js"></script>
 
     </body>
 

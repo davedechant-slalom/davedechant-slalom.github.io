@@ -246,7 +246,7 @@
 
                                 <h2>New Search</h2>
 
-                                <h3><a href="#"><i class="fal fa-times-circle icon-large"></i></a></h3>
+                                <h3><a href="#"><span class="sicon-close title-large-icon"></span></a></h3>
                                 
                             </div>
 
@@ -256,7 +256,7 @@
 
                                 <h3 class="text-lg flex-align-c">Eligibility &amp; Benefits Search</h3>
 
-                                <h3><i class="fal fa-chevron-circle-up fc-base-accent icon-large"></i></h3>
+                                <h3><span class="sicon-arrow-circle-up title-large-icon fc-base-accent"></span></h3>
                                 
                             </div>
 
@@ -338,7 +338,7 @@
 
                                 <h3 class="text-lg flex-align-c m-0">Claims Search</h3>
 
-                                <h3 class="m-0"><i class="fal fa-chevron-circle-down fc-base-accent icon-large"></i></h3>
+                                <h3 class="m-0"><span class="sicon-arrow-circle-down title-large-icon fc-base-accent"></span></h3>
                                 
                             </div>
 
@@ -348,7 +348,7 @@
 
                                 <h3 class="text-lg flex-align-c m-0">Referrals Search</h3>
 
-                                <h3 class="m-0"><i class="fal fa-chevron-circle-down fc-base-accent icon-large"></i></h3>
+                                <h3 class="m-0"><span class="sicon-arrow-circle-down title-large-icon fc-base-accent"></span></h3>
                                 
                             </div>
                             
@@ -382,7 +382,7 @@
                     
                 </ul>
 
-                <p class="dpl-jump-menu-cta m-0"><a href="claim-summary.html"><strong>View Patient Claim Summary <i class="fas fa-angle-right"></i></strong></a></p>
+                <p class="dpl-jump-menu-cta m-0"><a href="claims-table.html"><strong>View Patient Claim Summary <i class="fas fa-angle-right"></i></strong></a></p>
 
             </div>
 
@@ -990,7 +990,7 @@
 
                                                         <input class="checkbox" type="checkbox" required>
 
-                                                        <span>Inpatient Services</span>
+                                                        <span>Labs</span>
 
                                                     </label>
 
@@ -1128,7 +1128,7 @@
 
                                             <a class="dpl-button-ghost m-r" href="#act">Reset</a>
 
-                                            <a class="dpl-button" href="#act">Apply</a>
+                                            <a class="dpl-button" href="eligibility-summary-services-added.html">Apply</a>
                                             
                                         </div>
                                         
@@ -1144,7 +1144,7 @@
 
                     <div class="dpl-card-body d-block p-none">
 
-                    	<div class="table-header">
+                        <div class="table-header">
 
                     		<p class="table-header-title"><i class="fal fa-angle-up"></i> Popular Services Coverage</p>
 
@@ -1152,119 +1152,211 @@
                     		
                     	</div>
 
-                    	<table class="table default default-2 m-0">
+                        <div class="accordion-table-services">
 
-                            <tr>
+                            <table class="table default default-2 m-0">
 
-                                <th><strong>Service</strong></th>
-                                <th>Copay</th>
-                                <th>Co-ins</th>
-                                <th>Service Level Deductable Info <i class="fas fa-info-circle fc-base-accent"></i></th>
-                                <th>Status</th>
+                                <tr>
 
-                            </tr>
+                                    <th><strong>Service</strong></th>
+                                    <th>Copay</th>
+                                    <th>Co-ins</th>
+                                    <th>Service Level Deductable Info <i class="fas fa-info-circle fc-base-accent"></i></th>
+                                    <th>Status</th>
 
-                            <tr class="t-body-top">
+                                </tr>
 
-                                <td><strong>Diagnostic Medical</strong></td>
-                                <td>$90.00/day</td>
-                                <td>0%</td>
-                                <td>-</td>
-                                <td><span class="fc-success">Active</span></td>
+                            </table>
 
-                            </tr>
+                            <table class="table default default-2 m-0">
 
-                            <tr>
+                                <tr class="t-body-top">
 
-                                <td><a href="#"><strong>Diagnostic X-Ray</strong></a></td>
-                                <td><a href="#">View Details</a></td>
-                                <td><a href="#">View Details</a></td>
-                                <td>-</td>
-                                <td><span class="fc-success">Active</span></td>
+                                    <td><strong>Diagnostic Medical</strong></td>
+                                    <td>$90.00/day</td>
+                                    <td>0%</td>
+                                    <td>-</td>
+                                    <td><span class="fc-success">Active</span></td>
 
-                            </tr>
+                                </tr>
 
-                            <tr>
+                            </table>
 
-                                <td><a href="#"><strong>DME Purchase</strong></a></td>
-                                <td><a href="#">View Details</a></td>
-                                <td><a href="#">View Details</a></td>
-                                <td>-</td>
-                                <td><span class="fc-success">Active</span></td>
+                            <button class="accordion_tab_table">
 
-                            </tr>
+                                <table class="table default default-2 m-0">
 
-                            <tr>
+                                    <tr class="t-body-top" style="background-color: #FAFAFA">
 
-                                <td><strong>Emergency Services</strong></td>
-                                <td>$30.00/visit</td>
-                                <td>0%</td>
-                                <td>-</td>
-                                <td><span class="fc-success">Active</span></td>
+                                        <td><strong class="fc-base-accent">Diagnostic X-Ray</strong></td>
+                                        <td><span class="fc-base-accent">View Details</span></td>
+                                        <td><span class="fc-base-accent">View Details</span></td>
+                                        <td>-</td>
+                                        <td><span class="fc-success">Active</span></td>
 
-                            </tr>
+                                    </tr>
 
-                            <tr>
+                                </table>
 
-                                <td><a href="#"><strong>Hospital In-Patient</strong></a></td>
-                                <td><a href="#">View Details</a></td>
-                                <td><a href="#">View Details</a></td>
-                                <td>-</td>
-                                <td><span class="fc-success">Active</span></td>
+                            </button>
 
-                            </tr>
+                            <div class="accordion_content_table">
 
-                            <tr>
+                                <h4 class="accordion-table-header">Remark Codes</h4>
 
-                                <td><a href="#"><strong>Hospital Out-Patient<strong></a></td>
-                                <td><a href="#">View Details</a></td>
-                                <td><a href="#">View Details</a></td>
-                                <td>-</td>
-                                <td><span class="fc-success">Active</span></td>
+                                <p class="accordion-table-copy"><strong>WW:</strong> We received your claim. We cannot process it at this time because we are still waiting for information about other insurance coverage from the member.</p>
 
-                            </tr>
+                            </div>
 
-                            <tr>
+                            <button class="accordion_tab_table">
 
-                                <td><strong>MRI/CT Scan</strong></td>
-                                <td>$50.00/visit</td>
-                                <td>0%</td>
-                                <td>-</td>
-                                <td><span class="fc-success">Active</span></td>
+                                <table class="table white default default-2 m-0">
 
-                            </tr>
+                                    <tr class="t-body-top">
 
-                            <tr>
+                                        <td><strong class="fc-base-accent">DME Purchase</strong></td>
+                                        <td><span class="fc-base-accent">View Details</span></td>
+                                        <td><span class="fc-base-accent">View Details</span></td>
+                                        <td>-</td>
+                                        <td><span class="fc-success">Active</span></td>
 
-                                <td><strong>Physician Visit</strong></td>
-                                <td>$0.00/visit</td>
-                                <td>0%</td>
-                                <td>-</td>
-                                <td><span class="fc-success">Active</span></td>
+                                    </tr>
 
-                            </tr>
+                                </table>
 
-                            <tr>
+                            </button>
 
-                                <td><strong>Specialist Visit</strong></td>
-                                <td>$35.00/day</td>
-                                <td>0%</td>
-                                <td>-</td>
-                                <td><span class="fc-success">Active</span></td>
+                            <div class="accordion_content_table white">
 
-                            </tr>
+                                <h4 class="accordion-table-header">Remark Codes</h4>
 
-                            <tr>
+                                <p class="accordion-table-copy"><strong>WW:</strong> We received your claim. We cannot process it at this time because we are still waiting for information about other insurance coverage from the member.</p>
 
-                                <td><strong>Urgent Care</strong></td>
-                                <td>$30.00/day</td>
-                                <td>0%</td>
-                                <td>-</td>
-                                <td><span class="fc-success">Active</span></td>
+                            </div>
 
-                            </tr>
+                            <table class="table default default-2 m-0">
 
-                        </table>
+                                <tr class="t-body-top" style="background-color: #FAFAFA">
+
+                                    <td><strong>Emergency Services</strong></td>
+                                    <td>$30.00/visit</td>
+                                    <td>0%</td>
+                                    <td>-</td>
+                                    <td><span class="fc-success">Active</span></td>
+
+                                </tr>
+
+                            </table>
+
+                            <button class="accordion_tab_table">
+
+                                <table class="table white default default-2 m-0">
+
+                                    <tr class="t-body-top">
+
+                                        <td><strong class="fc-base-accent">Hospital In-Patient</strong></td>
+                                        <td><span class="fc-base-accent">View Details</span></td>
+                                        <td><span class="fc-base-accent">View Details</span></td>
+                                        <td>-</td>
+                                        <td><span class="fc-success">Active</span></td>
+
+                                    </tr>
+
+                                </table>
+
+                            </button>
+
+                            <div class="accordion_content_table white">
+
+                                <h4 class="accordion-table-header">Remark Codes</h4>
+
+                                <p class="accordion-table-copy"><strong>WW:</strong> We received your claim. We cannot process it at this time because we are still waiting for information about other insurance coverage from the member.</p>
+
+                            </div>
+
+                            <button class="accordion_tab_table">
+
+                                <table class="table default default-2 m-0">
+
+                                    <tr class="t-body-top" style="background-color: #FAFAFA">
+
+                                        <td><strong class="fc-base-accent">Hospital Out-Patient</strong></td>
+                                        <td><span class="fc-base-accent">View Details</span></td>
+                                        <td><span class="fc-base-accent">View Details</span></td>
+                                        <td>-</td>
+                                        <td><span class="fc-success">Active</span></td>
+
+                                    </tr>
+
+                                </table>
+
+                            </button>
+
+                            <div class="accordion_content_table">
+
+                                <h4 class="accordion-table-header">Remark Codes</h4>
+
+                                <p class="accordion-table-copy"><strong>WW:</strong> We received your claim. We cannot process it at this time because we are still waiting for information about other insurance coverage from the member.</p>
+
+                            </div>
+
+                            <table class="table default default-2 m-0">
+
+                                <tr class="t-body-top">
+
+                                    <td><strong>MRI/CT Scan</strong></td>
+                                    <td>$50.00/visit</td>
+                                    <td>0%</td>
+                                    <td>-</td>
+                                    <td><span class="fc-success">Active</span></td>
+
+                                </tr>
+
+                            </table>
+
+                            <table class="table default default-2 m-0">
+
+                                <tr class="t-body-top" style="background-color: #FAFAFA">
+
+                                    <td><strong>Physician Visit</strong></td>
+                                    <td>$0.00/visit</td>
+                                    <td>0%</td>
+                                    <td>-</td>
+                                    <td><span class="fc-success">Active</span></td>
+
+                                </tr>
+
+                            </table>
+
+                            <table class="table default default-2 m-0">
+
+                                <tr class="t-body-top">
+
+                                    <td><strong>Specialist Visit</strong></td>
+                                    <td>$35.00/visit</td>
+                                    <td>0%</td>
+                                    <td>-</td>
+                                    <td><span class="fc-success">Active</span></td>
+
+                                </tr>
+
+                            </table>
+
+                            <table class="table default default-2 m-0">
+
+                                <tr class="t-body-top" style="background-color: #FAFAFA">
+
+                                    <td><strong>Urgent Care</strong></td>
+                                    <td>$30.00/visit</td>
+                                    <td>0%</td>
+                                    <td>-</td>
+                                    <td><span class="fc-success">Active</span></td>
+
+                                </tr>
+
+                            </table>
+
+                        </div>
 
                         <div class="table-header">
 

@@ -194,7 +194,7 @@
                 <ul class="dpl-breadcrumbs-list">
 
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Claims Search Results</a></li>
+                    <li><a href="claims-table.html">Claims Search Results</a></li>
                     <li>Claims Summary Page</li>
                     
                 </ul>
@@ -208,7 +208,7 @@
                 <ul class="dpl-insights-details">
 
                     <li><strong>Claim Number:</strong><br class="remove"> <span>6829834014</span> <strong class="claim-patient-name"><a href="eligibility-summary.html">Ellen Scott</a></strong></li>
-                    <li>Member ID: <strong>823112 00</strong></li>
+                    <li>Member ID: <strong>134778 00</strong></li>
                     <li>Patient Account Number: <strong>103411304333</strong></li>
                     
                 </ul>
@@ -225,9 +225,9 @@
 
             <div class="dpl-insights-status wrapper">
 
-                <div class="dpl-notification-error">
+                <div class="dpl-notification-success m-r">
 
-                    <p>Current Claim Status: <i class="fas fa-exclamation-triangle fc-error"></i> <strong>Denied</strong> <a href="#line-items">why?</a> • First Date of Service: <strong>11/05/2019</strong> • Total Billed: <strong>$3,848.95</strong></p>
+                    <p>Current Claim Status: <i class="fas fa-exclamation-triangle fc-success"></i> <strong>Paid</strong> <a href="#line-items">See Details?</a> • First Date of Service: <strong>11/22/2019</strong> • Total Billed: <strong>$260.00</strong></p>
 
                 </div>
 
@@ -278,9 +278,9 @@
 
                             <p>Patient Name<br> <span>Ellen Scott</span></p>
 
-                            <p>Member ID<br> <span>823112 00</span></p>
+                            <p>Member ID<br> <span>134778 00</span></p>
 
-                            <p class="m-0">Patient's Date of Birth<br> <span>03/21/1942</span></p>
+                            <p class="m-0">Patient's Date of Birth<br> <span>05/04/1976</span></p>
 
                         </div>
 
@@ -340,17 +340,17 @@
 
                             <p>Patient Account Number<br> <span>103411304333</span></p>
 
-                            <p>First Date of Service<br> <span>11/05/2019</span></p>
+                            <p>First Date of Service<br> <span>11/22/2019</span></p>
 
-                            <p>Received Date<br> <span>08/15/2019</span></p>
+                            <p>Received Date<br> <span>11/23/2019</span></p>
                             
                         </div>
 
                         <div class="claim-summary-status">
 
-                            <div class="dpl-notification-error">
+                            <div class="dpl-notification-success m-r">
 
-                                <p>Current Claim Status: <i class="fas fa-exclamation-triangle fc-error"></i> <strong>Denied</strong> <a href="#line-items">why?</a></p>
+                                <p>Current Claim Status: <i class="fas fa-exclamation-triangle fc-success"></i> <strong>Paid</strong> <a href="#line-items">why?</a></p>
 
                             </div>
 
@@ -368,17 +368,16 @@
 
                             <div class="history-timeline">
 
-                                <p class="history-timeline-item one"><i class="fas fa-check-circle"></i><br> <span>08/15/2019</span><br> Received</p>
+                                <p class="history-timeline-item one"><i class="fas fa-check-circle"></i><br> <span>11/23/2019</span><br> Received</p>
 
-                                <p class="history-timeline-item two"><i class="fas fa-exclamation-triangle"></i><br> <span>08/21/2019</span><br> Denied</p>
+                                <p class="history-timeline-item two"><i class="fas fa-exclamation-triangle"></i><br> <span>11/29/2019</span><br> Paid</p>
 
                                 <p class="history-timeline-item three"><i class="fas fa-circle"></i><br> Paid/Finalized</p>
                                 
                             </div>
 
-                            <p class="status-history-copy"><strong>F1:</strong> Finalized/Denial - The claim/line has been denied</p>
+                            <p class="status-history-copy"><strong>F1:</strong> Finalized/Paid - The claim/line has been paid</p>
 
-                            <p class="status-history-copy"><strong>585:</strong> <a href="#line-items"><strong>Please refer to line-items for more information</strong></a></p>
                             
                         </div>
 
@@ -418,13 +417,13 @@
 
                         <div>
 
-                            <p>$3,848.95</p>
+                            <p>$260.00</p>
 
                             <p>$0.00</p>
 
-                            <p>$3,848.95</p>
+                            <p>$0.00</p>
 
-                            <p><strong>$0.00</strong></p>
+                            <p><strong>$234.00</strong></p>
 
                         </div>
 
@@ -509,6 +508,41 @@
 
                             </table>
 
+                            
+
+                            <button class="accordion_tab_table">
+
+                                <table class="table m-0 white">
+
+                                    <tr>
+
+                                        <td>Open Table Row</i></a></td>
+                                        <td>1</td>
+                                        <td>11/22/2019 - 11/22/2019</td>
+                                        <td>99284</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>$250.00</td>
+                                        <td>$234.00</td>
+
+                                    </tr>
+
+                                </table>
+
+                            </button>
+
+                            <div class="accordion_content_table white">
+
+                                <h4 class="accordion-table-header">Remark Codes</h4>
+
+                                <p class="accordion-table-copy"><strong>A1:</strong> The difference between the allowed amount and the billed amount is not the patient's responsibility and may not be billed to them under the terms of your contract.</p>
+
+                                <!--<h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
+
+                                <p class="accordion-table-copy"><strong>40:</strong> The necessary information is stil needed to process this claim.</p>-->
+
+                            </div>
+
                             <button class="accordion_tab_table">
 
                                 <table class="table m-0">
@@ -516,12 +550,12 @@
                                     <tr class="t-body-top">
 
                                         <td style="background: #FFE6F0; border-top: 1px solid red; border-left: 1px solid red; border-right: 1px solid red; border-bottom: 1px solid #FFE6F0;">Open Table Row</i></a></td>
-                                        <td style="border-bottom: 1px solid red;">1</td>
-                                        <td style="border-bottom: 1px solid red;">11/05/2019 - 12/08/2019</td>
-                                        <td style="border-bottom: 1px solid red;">99284</td>
+                                        <td style="border-bottom: 1px solid red;">2</td>
+                                        <td style="border-bottom: 1px solid red;">11/22/2019 - 11/22/2019</td>
+                                        <td style="border-bottom: 1px solid red;">36415</td>
                                         <td style="border-bottom: 1px solid red;">-</td>
                                         <td style="border-bottom: 1px solid red;">25</td>
-                                        <td style="border-bottom: 1px solid red;">$2,732.00</td>
+                                        <td style="border-bottom: 1px solid red;">$10.00</td>
                                         <td style="border-bottom: 1px solid red;"><strong>$0.00</strong></td>
 
                                     </tr>
@@ -534,73 +568,7 @@
 
                                 <h4 class="accordion-table-header">Remark Codes</h4>
 
-                                <p class="accordion-table-copy"><strong>DJ:</strong> In order to consider your claim for processing we need to receive a finalized copy of the most recent explanation of benefits from your primary medical insurance carrier.</p>
-
-                                <!--<h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
-
-                                <p class="accordion-table-copy"><strong>40:</strong> The necessary information is stil needed to process this claim.</p>-->
-
-                            </div>
-
-                            <button class="accordion_tab_table">
-
-                                <table class="table m-0 white">
-
-                                    <tr>
-
-                                        <td>Open Table Row</i></a></td>
-                                        <td>2</td>
-                                        <td>08/08/2019 - 08/08/2019</td>
-                                        <td>36415</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>$365.95</td>
-                                        <td>$0.00</td>
-
-                                    </tr>
-
-                                </table>
-
-                            </button>
-
-                            <div class="accordion_content_table white">
-
-                                <h4 class="accordion-table-header">Remark Codes</h4>
-
-                                <p class="accordion-table-copy"><strong>DJ:</strong> In order to consider your claim for processing we need to receive a finalized copy of the most recent explanation of benefits from your primary medical insurance carrier.</p>
-
-                                <!--<h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
-
-                                <p class="accordion-table-copy"><strong>40:</strong> The necessary information is stil needed to process this claim.</p>-->
-
-                            </div>
-
-                            <button class="accordion_tab_table">
-
-                                <table class="table m-0">
-
-                                    <tr>
-
-                                        <td>Open Table Row</i></a></td>
-                                        <td>3</td>
-                                        <td>08/08/2019 - 08/08/2019</td>
-                                        <td>71046</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>$751.00</td>
-                                        <td>$0.00</td>
-
-                                    </tr>
-
-                                </table>
-
-                            </button>
-
-                            <div class="accordion_content_table">
-
-                                <h4 class="accordion-table-header">Remark Codes</h4>
-
-                                <p class="accordion-table-copy"><strong>DJ:</strong> In order to consider your claim for processing we need to receive a finalized copy of the most recent explanation of benefits from your primary medical insurance carrier.</p>
+                                <p class="accordion-table-copy"><strong>MC:</strong> Not covered when performed during the same session/date as a previously processed service for the patient</p>
 
                                 <!--<h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
 
@@ -613,8 +581,8 @@
                                 <tr>
 
                                     <td class="t-break">Overall Claim Totals</td>
-                                    <td class="t-break">$3848.95</td>
-                                    <td class="t-break">$0.00</td>
+                                    <td class="t-break">$260.00</td>
+                                    <td class="t-break">$234.00</td>
 
                                 </tr>
 
@@ -636,7 +604,7 @@
 
                     <div class="dpl-card-body d-flex">
 
-                        <p class="m-0"><strong>No coordination of benefits information was recieved for this claim.</strong> Check this <a href="https://slalom.invisionapp.com/share/AZUGDW5D4PB#/389443766_E-B">patient's eligibility</a> to determine if additional coverage exists.</p>
+                        <p class="m-0"><strong>Based on information received on this claim, we are the primary payer.</strong> Review the <a href="eligibility-summary.html">patient's eligibility</a> for more information.</p>
 
                     </div>
 

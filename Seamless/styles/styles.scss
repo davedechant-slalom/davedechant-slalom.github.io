@@ -1491,7 +1491,9 @@ a:hover {
 }
 
 .paid .history-timeline-item.three .fas {
-	border: 3px solid $success-color;
+	border: 0;
+	color: $success-color;
+	font-size: 1.25rem;
 }
 
 /*-- Card/Tile Billing Styles --*/

@@ -2215,6 +2215,10 @@ input, select, textarea {
 	color: $grayscale-800;
 }
 
+input.date-input {
+	text-transform: uppercase;
+}
+
 select {
 	display: block;
     font-size: 0.875rem;

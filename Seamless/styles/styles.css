@@ -1765,6 +1765,9 @@ input, select, textarea {
   font-size: 0.875rem;
   color: #616161; }
 
+input.date-input {
+  text-transform: uppercase; }
+
 select {
   display: block;
   font-size: 0.875rem;

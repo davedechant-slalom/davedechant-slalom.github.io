@@ -2842,6 +2842,10 @@ textarea {
 	border-radius: 3px;
 }
 
+.fill-bar.perc-0:after {
+	width: 0%;
+}
+
 .fill-bar.perc-16:after {
 	width: 16%;
 }
@@ -2892,7 +2896,7 @@ textarea {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	width: 100%;
-	min-height: 460px;
+	min-height: 480px;
 }
 
 .detailed-benefits-card:target {

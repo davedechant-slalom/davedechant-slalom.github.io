@@ -254,6 +254,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/images/seamless-icons/favorite-inactive.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/seamless-icons/favorite-inactive.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/images/uhc-link-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -586,6 +596,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/roger-davis/eligibility-summary.html",
+		"oF": 0
+		},
+	"/roger-davis/index-mj.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/roger-davis/index-mj.html",
 		"oF": 0
 		},
 	"/roger-davis/index.html": {

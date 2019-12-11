@@ -1111,6 +1111,20 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#196fd0', endColorstr='#d29e35',GradientType=1 );
   /* IE6-9 */ }
 
+.paid .history-timeline:before {
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#196fd0+0,327b21+100 */
+  background: #196fd0;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #196fd0 0%, #327b21 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #196fd0 0%, #327b21 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #196fd0 0%, #327b21 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#196fd0', endColorstr='#327b21',GradientType=1 );
+  /* IE6-9 */ }
+
 .history-timeline-item {
   position: absolute;
   top: -0.813rem;
@@ -1139,6 +1153,9 @@ a:hover {
   color: #BDBDBD;
   text-align: right; }
 
+.paid .history-timeline-item.three {
+  color: #000000; }
+
 .history-timeline-item .fas {
   font-size: 1.25rem;
   color: #196FD0;
@@ -1156,6 +1173,9 @@ a:hover {
   color: #FFFFFF;
   border: 3px solid #E0E0E0;
   border-radius: 50%; }
+
+.paid .history-timeline-item.three .fas {
+  border: 3px solid #327b21; }
 
 /*-- Card/Tile Billing Styles --*/
 .billing-summary .dpl-card-body {
@@ -2403,6 +2423,15 @@ input[type="date"] {
 
 input[type="date"], focus {
   color: #000000; }
+
+.box-left {
+  margin: 1rem 0 0;
+  padding-left: 277px; }
+
+.box-right {
+  text-align: left;
+  margin: 1rem 0 0;
+  padding-right: 476px; }
 
 /* End Module/Universal Styles */
 /*---------------------------------------------------------------------*/

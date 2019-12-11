@@ -1178,6 +1178,7 @@ a:hover {
 .paid .history-timeline-item.three .fas {
   border: 0;
   color: #327b21;
+  background-color: #FFFFFF;
   font-size: 1.25rem; }
 
 /*-- Card/Tile Billing Styles --*/

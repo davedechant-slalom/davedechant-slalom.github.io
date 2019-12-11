@@ -542,6 +542,14 @@
 		"oAP": "/reese-tindle/members-search.html",
 		"oF": 0
 		},
+	"/roger-davis/claim-reconsideration-confirmation-mj.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/roger-davis/claim-reconsideration-confirmation-mj.html",
+		"oF": 0
+		},
 	"/roger-davis/claim-reconsideration-confirmation.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -556,6 +564,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/roger-davis/claim-reconsideration-form.html",
+		"oF": 0
+		},
+	"/roger-davis/claim-summary-mj.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/roger-davis/claim-summary-mj.html",
+		"oF": 0
+		},
+	"/roger-davis/claim-summary-recon-assigned-mj.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/roger-davis/claim-summary-recon-assigned-mj.html",
 		"oF": 0
 		},
 	"/roger-davis/claim-summary-recon-assigned.html": {

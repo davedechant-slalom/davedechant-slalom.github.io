@@ -81,6 +81,12 @@ $warning-color: #d29e35;
 $warning-color-hover: #FDC56A;
 $warning-color-active: #C37D0B;
 
+/* support: warning */
+
+$info-color: #196ECF;
+$info-color-hover: #F1FAFC;
+$info-color-active: #F1FAFC;
+
 
 /* grayscale */
 
@@ -824,7 +830,7 @@ a:hover {
 	padding: 0.125rem 0;
 }
 
-.dpl-insights-status .dpl-notification-error, .dpl-insights-status .dpl-notification-success, .dpl-insights-status .dpl-notification-warning {
+.dpl-insights-status .dpl-notification-error, .dpl-insights-status .dpl-notification-success, .dpl-insights-status .dpl-notification-warning, .dpl-insights-status .dpl-notification-info {
 	flex-grow: 3;
 }
 
@@ -1351,7 +1357,7 @@ a:hover {
 	justify-content: space-between;
 }
 
-.claim-summary-status .dpl-notification-error, .claim-summary-status .dpl-notification-success, .claim-summary-status .dpl-notification-warning {
+.claim-summary-status .dpl-notification-error, .claim-summary-status .dpl-notification-success, .claim-summary-status .dpl-notification-warning, .claim-summary-status .dpl-notification-info {
 	flex-grow: 1;
 }
 
@@ -1523,7 +1529,7 @@ a:hover {
 
 /*-- DPL Notification Styles --*/
 
-.dpl-notification-error, .dpl-notification-success, .dpl-notification-info, .dpl-notification-warning {
+.dpl-notification-error, .dpl-notification-success, .dpl-notification-info, .dpl-notification-warning, .dpl-notification-info {
 	border: 1px solid $error-color;
 	background-color: #FFE6F0;
 	text-align: center;
@@ -1532,7 +1538,7 @@ a:hover {
 	padding: 0.188rem 0.5rem;
 }
 
-.smaller .dpl-header .dpl-notification-error, .smaller .dpl-header .dpl-notification-success, .smaller .dpl-header .dpl-notification-info, .smaller .dpl-header .dpl-notification-warning {
+.smaller .dpl-header .dpl-notification-error, .smaller .dpl-header .dpl-notification-success, .smaller .dpl-header .dpl-notification-info, .smaller .dpl-header .dpl-notification-warning, .smaller .dpl-header .dpl-notification-info {
 	padding: 0 0.25rem;
 }
 
@@ -1554,7 +1560,13 @@ a:hover {
 	background-color: #fffcdd;
 }
 
-.dpl-notification-error p, .dpl-notification-success p, .dpl-notification-info p, .dpl-notification-warning p {
+.dpl-notification-warning {
+	margin: 0;
+	border: 1px solid $info-color;
+	background-color: $info-color-hover;
+}
+
+.dpl-notification-error p, .dpl-notification-success p, .dpl-notification-info p, .dpl-notification-warning p, .dpl-notification-info p {
 	margin: 0;
 	font-size: 0.875rem;
 }
@@ -1582,7 +1594,7 @@ a:hover {
 	padding-top: 220px;
 }
 
-.dpl-notification-box-warning, .dpl-notification-box-error, .dpl-notification-box-success {
+.dpl-notification-box-warning, .dpl-notification-box-error, .dpl-notification-box-success, .dpl-notification-box-info {
 	border: 1px solid $warning-color;
 	padding: 0.75rem 1rem;
 	display: flex;
@@ -1604,7 +1616,12 @@ a:hover {
 	border-left: 10px solid $success-color;
 }
 
-.dpl-notification-box-warning:before, .dpl-notification-box-error:before, .dpl-notification-box-success:before {
+.dpl-notification-box-info {
+	border: 1px solid $info-color;
+	border-left: 10px solid $info-color;
+}
+
+.dpl-notification-box-warning:before, .dpl-notification-box-error:before, .dpl-notification-box-success:before, .dpl-notification-box-info:before {
 	font-family: 'Font Awesome 5 Pro';
 	content: "\f071";
 	font-weight: 800;
@@ -1905,6 +1922,10 @@ td.td-form {
 
 .fc-success-hover {
 	color: $success-color-hover;
+}
+
+.fc-info {
+	color: $info-color;
 }
 
 .fc-gray {

@@ -2301,6 +2301,9 @@ textarea {
 .fill-bar.perc-0:after {
   width: 0%; }
 
+.fill-bar.perc-9:after {
+  width: 9%; }
+
 .fill-bar.perc-16:after {
   width: 16%; }
 

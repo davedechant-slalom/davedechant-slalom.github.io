@@ -518,6 +518,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/prior-auth.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/prior-auth.html",
+		"oF": 0
+		},
 	"/reese-tindle/index.html": {
 		"cB": 0,
 		"ft": 8192,

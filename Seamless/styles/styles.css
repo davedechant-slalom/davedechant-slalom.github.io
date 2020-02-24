@@ -1391,6 +1391,19 @@ td:first-child, th:first-child, td:nth-child(2), th:nth-child(2) {
   width: 6.5%;
   text-align: center; }
 
+.default-width td:first-child, .default-width th:first-child, .default-width td:nth-child(2), .default-width th:nth-child(2) {
+  width: auto;
+  text-align: left; }
+
+.default-width td:first-child, .default-width th:first-child {
+  width: 6.5%; }
+
+.default-width th:first-child {
+  text-align: center; }
+
+.default-width td:nth-child(2), .default-width th:nth-child(2) {
+  width: 12%; }
+
 .default td:first-child, .default th:first-child, .default td:nth-child(2), .default th:nth-child(2) {
   text-align: left; }
 
@@ -1563,6 +1576,12 @@ td.td-form {
 
 .nowrap {
   white-space: nowrap; }
+
+.chevron-previous {
+  background-color: #E0E0E0;
+  color: #FFFFFF;
+  padding: 0.75rem 0.5rem 0;
+  border-radius: 3px; }
 
 /*-- DPL Background Styles --*/
 .bg-white {

@@ -340,7 +340,7 @@
 
                         <h2 class="dpl-card-title">Patient Information</h2>
 
-                        <p class="m-0"><a href="#"><strong>View ID Card</strong></a></p>
+                        <p class="m-0" style="line-height: 1rem;"><a href="#"><strong>View ID Card</strong></a></p>
 
                     </div>
 
@@ -362,7 +362,7 @@
 
                             <p>Group Number<br> <span>44400</span></p>
 
-                            <p>Effective - Term Dates<br> <span>MM/DD/YYYY - MM/DD/YYYY</span></p>
+                            <p class="m-0">Effective - Term Dates<br> <span>MM/DD/YYYY - MM/DD/YYYY</span></p>
 
                         </div>
 
@@ -380,13 +380,29 @@
 
                     <div class="dpl-card-body">
 
-                        <p>Verifying Referral Requirements<br> <span class="sicon-fill-check fc-success"></span> <span>Patient's Plan <br>Requires a Referral</span></p>
+                        <p>Verifying Referral Requirements<br> <span class="sicon-fill-check fc-success" style="vertical-align: -1px;"></span> <span>Patient's Plan <br>Requires a Referral</span></p>
 
-                        <p>Insurance Type<br> <span>Commercial</span></p>
+                        <div>
 
-                        <p>Tax ID<br> <span>956130458</span></p>
+                            <p class="m-0 m-b">Patient's Primary Care Provider<br> <span>Ma Cristina Ocampo</span></p>
 
-                        <p>Servicing Provider<br> <span>Dr. Felicity Firmin</span></p>
+                            <p class="m-0">Primary Care Provider's TIN<br> <span>182837282</span></p>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="d-flex">
+
+                            <p class="m-0">Verifying Provider<br> <span class="sicon-fill-check fc-success" style="vertical-align: -1px;"></span> <span>Selected Care Provider matches patient's primary care provider</span></p>
+
+                        </div>
+
+                        <div class="d-flex">
+
+                            <p class="m-0 text-sm">Patient's plan requires referral and provider has been successfully validated to continue</p>
+
+                        </div>
 
                     </div>
 
@@ -408,36 +424,53 @@
 
                         <div class="accordion-table">
 
-                            <p class="align-c"><span class="m-r">Not looking to create a referral based on the patient's history?</span> <a class="dpl-button" href="#">Create a New Referral</a></p>
+                            <p class="align-c m-0 m-b"><span class="m-r">Not looking to create a referral based on the patient's history?</span> <a class="dpl-button" href="#">Create a New Referral</a></p>
 
                         </div>
 
-                        <div class="d-flex p-all" style="border-top: 3px solid #E0E0E0;">
+                        <div class="d-flex p-all" style="border-top: 3px solid #E0E0E0; align-items: flex-start;">
 
-                            <p class="text-sm m-0"><strong>Showing 1 - 4 of 4 Referral Results</strong><br> Use the > to view more details about that row, including diagnosis codes and potential comments.</p>
+                            <p class="text-sm m-0" style="width: 420px;"><strong>Showing 1 - 4 of 4 Referral Results</strong><br> Use the <i class="fas fa-chevron-down fc-base-accent"></i> to view more details about that row, including diagnosis codes and potential comments.</p>
+
+                            <input type="search" name="" placeholder="Search Results Below" style="width: 310px;">
+
+                            <div class="d-flex">
+
+                                <p class="m-0 text-sm label-sm align-r m-r" style="line-height: 1rem; padding-top: 4px;"><strong>Results<br> Per Page</strong></p>
+
+                                <select class="m-r" style="width: 65px;">
+
+                                    <option value="0">10</option>
+                                    
+                                </select>
+
+                                <i class="fal fa-chevron-left chevron-previous" style="margin-right: 6px;"></i>
+
+                                <p class="m-0 text-sm label-sm align-r" style="line-height: 1rem; padding-top: 10px; margin-right: 6px;"><strong>Pg</strong></p>
+
+                                <input type="text" value="1" style="width: 35px; margin-right: 6px;">
+
+                                <p class="m-0 text-sm label-sm align-r" style="line-height: 1rem; padding-top: 10px; margin-right: 6px;"><strong>of 1</strong></p>
+
+                                <i class="fal fa-chevron-right chevron-previous"></i>
+                                
+                            </div>
                             
                         </div>
 
                         <div class="accordion-table">
 
-                            <table class="table m-0">
+                            <table class="table m-0 default-width">
 
                                 <tr>
 
                                     <th><a href="#"><strong>Show<br> All</strong></a></th>
-                                    <th>Line #</th>
-                                    <th>Date of Service</th>
-                                    <th>Service Code</th>
-                                    <th>Revenue Code</th>
-                                    <th>Modifier</th>
-                                    <th>Billed Amount</th>
-                                    <th>Paid Amount</th>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td class="t-break" colspan="8">Processed Date: 08/14/2019</td>
+                                    <th>Referral ID</th>
+                                    <th>Referring Provider</th>
+                                    <th>Referred to Provider</th>
+                                    <th>Start - End Date</th>
+                                    <th>Visits<br> Remaining</th>
+                                    <th>Action</th>
 
                                 </tr>
 
@@ -445,51 +478,17 @@
 
                             <button class="accordion_tab_table">
 
-                                <table class="table m-0">
+                                <table class="table m-0 white default-width">
 
                                     <tr class="t-body-top">
 
-                                        <td style="background: #FFE6F0; border-top: 1px solid red; border-left: 1px solid red; border-right: 1px solid red; border-bottom: 1px solid #FFE6F0;">Open Table Row</i></a></td>
-                                        <td style="border-bottom: 1px solid red;">1</td>
-                                        <td style="border-bottom: 1px solid red;">08/08/2019 - 08/08/2019</td>
-                                        <td style="border-bottom: 1px solid red;">99284</td>
-                                        <td style="border-bottom: 1px solid red;">-</td>
-                                        <td style="border-bottom: 1px solid red;">25</td>
-                                        <td style="border-bottom: 1px solid red;">$2,732.00</td>
-                                        <td style="border-bottom: 1px solid red;"><strong>$0.00</strong></td>
-
-                                    </tr>
-
-                                </table>
-
-                            </button>
-
-                            <div class="accordion_content_table" style="background: #FFE6F0; border-bottom: 1px solid red; border-left: 1px solid red; border-right: 1px solid red;">
-
-                                <h4 class="accordion-table-header">Remark Codes</h4>
-
-                                <p class="accordion-table-copy"><strong>WW:</strong> We received your claim. We cannot process it at this time because we are still waiting for information about other insurance coverage from the member.</p>
-
-                                <!--<h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
-
-                                <p class="accordion-table-copy"><strong>40:</strong> The necessary information is stil needed to process this claim.</p>-->
-
-                            </div>
-
-                            <button class="accordion_tab_table">
-
-                                <table class="table m-0 white">
-
-                                    <tr>
-
-                                        <td>Open Table Row</i></a></td>
-                                        <td>2</td>
-                                        <td>08/08/2019 - 08/08/2019</td>
-                                        <td>36415</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>$365.95</td>
-                                        <td>$0.00</td>
+                                        <td style="border-top: 0">Open Table Row</td>
+                                        <td style="border-top: 0"><a href="#"><strong>100000000000</strong></a></td>
+                                        <td style="border-top: 0">Dr. Freddy<br> 555-555-5555<br><br> 1299 Main St<br> Minneapolis, MN 55408</td>
+                                        <td style="border-top: 0">Dr. Susan<br> 555-555-5555<br><br> 1299 Main St<br> Minneapolis, MN 55408</td>
+                                        <td style="border-top: 0">MM/DD/YYYY -<br> MM/DD/YYYY</td>
+                                        <td style="border-top: 0">5</td>
+                                        <td style="border-top: 0"><a href="#"><strong>Duplicate Referral <span class="sicon-fill-info fc-base-accent"></span></strong></a></td>
 
                                     </tr>
 
@@ -499,30 +498,23 @@
 
                             <div class="accordion_content_table white">
 
-                                <h4 class="accordion-table-header">Remark Codes</h4>
-
-                                <p class="accordion-table-copy"><strong>WW:</strong> We received your claim. We cannot process it at this time because we are still waiting for information about other insurance coverage from the member.</p>
-
-                                <!--<h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
-
-                                <p class="accordion-table-copy"><strong>40:</strong> The necessary information is stil needed to process this claim.</p>-->
+                                <h4 class="accordion-table-header m-b" style="border: 0; line-height: 1.25rem;"><i style="text-decoration: underline;">Diagnosis Codes:</i> <strong>212.11</strong><br> <i style="text-decoration: underline;">Comments:</i> <strong>N/A</strong></h4>
 
                             </div>
 
                             <button class="accordion_tab_table">
 
-                                <table class="table m-0">
+                                <table class="table m-0 default-width">
 
                                     <tr>
 
-                                        <td>Open Table Row</i></a></td>
-                                        <td>3</td>
-                                        <td>08/08/2019 - 08/08/2019</td>
-                                        <td>71046</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>$751.00</td>
-                                        <td>$0.00</td>
+                                        <td>Open Table Row</td>
+                                        <td><a href="#"><strong>100000000000</strong></a></td>
+                                        <td>Dr. Freddy</td>
+                                        <td>Dr. Susan</td>
+                                        <td>MM/DD/YYYY -<br> MM/DD/YYYY</td>
+                                        <td>5</td>
+                                        <td><a href="#"><strong>Duplicate Referral <span class="sicon-fill-info fc-base-accent"></span></strong></a></td>
 
                                     </tr>
 
@@ -530,30 +522,52 @@
 
                             </button>
 
-                            <div class="accordion_content_table">
+                            <div class="accordion_content_table white">
 
-                                <h4 class="accordion-table-header">Remark Codes</h4>
-
-                                <p class="accordion-table-copy"><strong>WW:</strong> We received your claim. We cannot process it at this time because we are still waiting for information about other insurance coverage from the member.</p>
-
-                                <!--<h4 class="accordion-table-header">Claim Adjustment Reason Codes</h4>
-
-                                <p class="accordion-table-copy"><strong>40:</strong> The necessary information is stil needed to process this claim.</p>-->
+                                <h4 class="accordion-table-header m-b" style="border: 0; line-height: 1.25rem;"><i style="text-decoration: underline;">Diagnosis Codes:</i> <strong>212.11</strong><br> <i style="text-decoration: underline;">Comments:</i> <strong>N/A</strong></h4>
 
                             </div>
 
-                            <table class="table m-0">
+                            <button class="accordion_tab_table">
 
-                                <tr>
+                                <table class="table m-0 white default-width">
 
-                                    <td class="t-break">Overall Claim Totals</td>
-                                    <td class="t-break">$3848.95</td>
-                                    <td class="t-break">$0.00</td>
+                                    <tr>
 
-                                </tr>
+                                        <td>Open Table Row</td>
+                                        <td><a href="#"><strong>100000000000</strong></a></td>
+                                        <td>Dr. Freddy</td>
+                                        <td>Dr. Susan</td>
+                                        <td>MM/DD/YYYY -<br> MM/DD/YYYY</td>
+                                        <td>5</td>
+                                        <td><a href="#"><strong>Duplicate Referral <span class="sicon-fill-info fc-base-accent"></span></strong></a></td>
 
-                            </table>
+                                    </tr>
 
+                                </table>
+
+                            </button>
+
+                            <div class="accordion_content_table white">
+
+                                <h4 class="accordion-table-header m-b" style="border: 0; line-height: 1.25rem;"><i style="text-decoration: underline;">Diagnosis Codes:</i> <strong>212.11</strong><br> <i style="text-decoration: underline;">Comments:</i> <strong>N/A</strong></h4>
+
+                            </div>
+
+                            <div class="d-flex m-t" style="width: 160px; margin-left: 480px;">
+
+                                <i class="fal fa-chevron-left chevron-previous" style="margin-right: 6px;"></i>
+
+                                <p class="m-0 text-sm label-sm align-r" style="line-height: 1rem; padding-top: 10px; margin-right: 6px;"><strong>Pg</strong></p>
+
+                                <input type="text" value="1" style="width: 35px; margin-right: 6px;">
+
+                                <p class="m-0 text-sm label-sm align-r" style="line-height: 1rem; padding-top: 10px; margin-right: 6px;"><strong>of 1</strong></p>
+
+                                <i class="fal fa-chevron-right chevron-previous"></i>
+                                
+                            </div>
+                                
                         </div>
 
                     </div>

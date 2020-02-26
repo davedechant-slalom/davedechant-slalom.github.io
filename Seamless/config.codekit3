@@ -558,6 +558,14 @@
 		"oAP": "/referrals.html",
 		"oF": 0
 		},
+	"/referrals/create-referral.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/referrals/create-referral.html",
+		"oF": 0
+		},
 	"/referrals/index.html": {
 		"cB": 0,
 		"ft": 8192,

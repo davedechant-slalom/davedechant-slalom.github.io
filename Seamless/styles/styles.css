@@ -812,6 +812,19 @@ a:hover {
   width: 42px;
   height: 42px; }
 
+.accordion_tab .number, .tab-section-title .number {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding-top: 0.438rem;
+  border-radius: 50%;
+  color: #196FD0;
+  width: 42px;
+  height: 42px;
+  display: inline-block; }
+
+.tab-section-title .number {
+  padding-top: 0.625rem; }
+
 .accordion_tab:after, .accordion_tab_table:after, .accordion_tab_three:after {
   font-family: "Font Awesome 5 Pro";
   content: "\f107";
@@ -982,11 +995,25 @@ a:hover {
   background-color: #E0E0E0;
   padding: 0.688rem 1rem; }
 
-.dpl-card-title {
+.dpl-card-title, .tab-section-title {
   margin: 0;
   font-size: 1.25rem;
   font-family: "UHC Sans Bold", sans-serif;
   align-self: center; }
+
+.tab-section-title {
+  padding: 1rem 0.375rem;
+  margin-top: 1rem;
+  position: relative; }
+
+.tab-section-title:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0.375rem;
+  width: calc(100% - 0.563rem);
+  height: 3px;
+  background-color: #E0E0E0; }
 
 .dpl-card-secondary-title {
   padding: 1rem;
@@ -1749,6 +1776,22 @@ button.dpl-button, button.dpl-button-full {
   margin-right: 1rem; }
 
 /*-- DPL Form Styles --*/
+.form-w-arrow {
+  width: 340px;
+  padding-right: 5rem;
+  position: relative;
+  z-index: 10; }
+
+.form-w-arrow::after {
+  height: calc(100% + 2rem);
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -1rem;
+  width: 35px;
+  border-right: 1px solid #9E9E9E;
+  background-color: #FFFFFF; }
+
 .form {
   grid-column-start: 1;
   grid-column-end: 3; }

@@ -1072,6 +1072,21 @@ a:hover {
 	height: 42px;
 }
 
+.accordion_tab .number, .tab-section-title .number {
+	background-color: $grayscale-0;
+	text-align: center;
+	padding-top: 0.438rem;
+	border-radius: 50%;
+	color: $base-accent-color;
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+}
+
+.tab-section-title .number {
+	padding-top: 0.625rem;
+}
+
 .accordion_tab:after, .accordion_tab_table:after, .accordion_tab_three:after {
     font-family: "Font Awesome 5 Pro";
 	content: "\f107";
@@ -1276,11 +1291,27 @@ a:hover {
 	padding: 0.688rem 1rem;
 }
 
-.dpl-card-title {
+.dpl-card-title, .tab-section-title {
 	margin: 0;
 	font-size: 1.25rem;
 	font-family: $base-font;
 	align-self: center;
+}
+
+.tab-section-title {
+	padding: 1rem 0.375rem;
+	margin-top: 1rem;
+	position: relative;
+}
+
+.tab-section-title:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0.375rem;
+	width: calc(100% - 0.563rem);
+	height: 3px;
+	background-color: $grayscale-400;
 }
 
 .dpl-card-secondary-title {
@@ -2197,6 +2228,24 @@ button.dpl-button, button.dpl-button-full {
 
 /*-- DPL Form Styles --*/
 
+.form-w-arrow {
+	width: 340px;
+	padding-right: 5rem;
+	position: relative;
+	z-index: 10;
+}
+
+.form-w-arrow::after {
+	height: calc(100% + 2rem);
+	content: "";
+	position: absolute;
+	right: 0;
+	top: -1rem;
+	width: 35px;
+	border-right: 1px solid $grayscale-600;
+	background-color: $grayscale-0;
+}
+
 .form {
 	grid-column-start: 1;
 	grid-column-end: 3;
@@ -2984,8 +3033,6 @@ textarea {
 .search-drawer-container:target .search-drawer {
 	right: 0;
 }
-
-
 
 .numbers-row {
 	border: 1px solid $grayscale-600;

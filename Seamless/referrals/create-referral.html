@@ -188,7 +188,9 @@
                 <ul class="dpl-breadcrumbs-list">
 
                     <li><a href="index.html">Home</a></li>
-                    <li>Flagged Claims &amp; Tickets</li>
+                    <li><a href="#">Referrals</a></li>
+                    <li><a href="#">Search Results</a></li>
+                    <li>New Referral</li>
                     
                 </ul>
 
@@ -198,7 +200,7 @@
 
             <div class="wrapper m-t d-flex">
 
-                <h1>Search Results</h1>
+                <h1><span class="sicon-arrow-circle-down fc-base-accent" style="vertical-align: -4px; transform: rotate(90deg);"></span> New Referral</h1>
 
                 <div class="dpl-insights-options">
 
@@ -330,9 +332,9 @@
 
         <main class="wrapper main-content-3">
 
-            <h3 class="text-lg"><span class="sicon-fill-check fc-success" style="vertical-align: -2px;"></span> 1 Active Policy Found</h3>
+            <button class="accordion_tab"><span id="member-details" class="jumplink"></span><i class="fal fa-id-card"></i> Patient &amp; Insurance Information</button>
 
-            <div class="content-grid-1">
+            <div class="accordion_content content-grid-1">
 
                 <div class="dpl-card">
 
@@ -358,11 +360,9 @@
 
                         <div>
 
-                            <p>Plan Description<br> <span>HMO-AARP MedicareComplete (HMO)</span></p>
+                            <p>Member ID<br> <span>282837244</span></p>
 
-                            <p>Group Number<br> <span>44400</span></p>
-
-                            <p class="m-0">Effective - Term Dates<br> <span>MM/DD/YYYY - MM/DD/YYYY</span></p>
+                            <p>Address<br> <span>11223 Main St,<br> Minneapolis, MN 55408</span></p>
 
                         </div>
 
@@ -374,35 +374,19 @@
 
                     <div class="dpl-card-header">
 
-                        <h2 class="dpl-card-title">Plan &amp; Provider Verification</h2>
+                        <h2 class="dpl-card-title">Selected Insurance Details</h2>
 
                     </div>
 
                     <div class="dpl-card-body">
 
-                        <p>Verifying Referral Requirements<br> <span class="sicon-fill-check fc-success" style="vertical-align: -1px;"></span> <span>Patient's Plan <br>Requires a Referral</span></p>
+                        <p>Plan Description<br> <span>HMOPOS-AARP Medicare<br> Advantage (HMO-POS)</span></p>
 
-                        <div>
+                        <p>Effective - Term Dates<br> <span>MM/DD/YYYY - MM/DD/YYYY</span></p>
 
-                            <p class="m-0 m-b">Patient's Primary Care Provider<br> <span>Ma Cristina Ocampo</span></p>
+                        <p>Group Number<br> <span>44993</span></p>
 
-                            <p class="m-0">Primary Care Provider's TIN<br> <span>182837282</span></p>
-
-                        </div>
-
-                        <hr>
-
-                        <div class="d-flex">
-
-                            <p class="m-0">Verifying Provider<br> <span class="sicon-fill-check fc-success" style="vertical-align: -1px;"></span> <span>Selected Care Provider matches patient's primary care provider</span></p>
-
-                        </div>
-
-                        <div class="d-flex">
-
-                            <p class="m-0 text-sm">Patient's plan requires referral and provider has been successfully validated to continue</p>
-
-                        </div>
+                        <p class="m-0">Insurance Type<br> <span>Health Maintenance<br> Organization (HMO) -<br> Medicare Risk</span></p>
 
                     </div>
 
@@ -410,164 +394,352 @@
 
             </div>
 
-            <div class="content-grid m-t">
+            <h2 class="tab-section-title"><span id="claim-details" class="jumplink"></span><span class="number">1.</span> Referring Provider Information</h2>
+
+            <div class="content-grid-1" style="padding: 0 0.375rem;">
 
                 <div class="dpl-card">
 
-                    <div class="dpl-card-header">
+                    <div class="dpl-card-header d-flex">
 
-                        <h2 class="dpl-card-title">Stephanie Johnson's Referrals</h2>
+                        <h2 class="dpl-card-title">Patient's Primary Care Provider</h2>
 
                     </div>
 
-                    <div class="dpl-card-body p-0">
+                    <div class="dpl-card-body">
 
-                        <div class="accordion-table">
+                        <div>
 
-                            <p class="align-c m-0 m-b"><span class="m-r">Not looking to create a referral based on the patient's history?</span> <a class="dpl-button" href="create-referral.html">Create a New Referral</a></p>
+                            <p>Name<br> <span>Ma Cristina Ocampo</span></p>
+
+                            <p class="m-0">Address<br> <span>4465 Main Street,<br> Minneapolis, MN 55408</span></p>
 
                         </div>
 
-                        <div class="d-flex p-all" style="border-top: 3px solid #E0E0E0; align-items: flex-start;">
+                        <div>
 
-                            <p class="text-sm m-0" style="width: 420px;"><strong>Showing 1 - 4 of 4 Referral Results</strong><br> Use the <i class="fas fa-chevron-down fc-base-accent"></i> to view more details about that row, including diagnosis codes and potential comments.</p>
+                            <p>NPI<br> <span>282837244</span></p>
 
-                            <input type="search" name="" placeholder="Search Results Below" style="width: 310px;">
+                            <p>TIN<br> <span>8389239</span></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="dpl-card">
+
+                    <div class="dpl-card-header d-flex">
+
+                        <h2 class="dpl-card-title">Referring Provider</h2>
+
+                        <p class="m-0 text-sm" style="line-height: 1rem;">*Required Fields</p>
+
+                    </div>
+
+                    <div class="dpl-card-body">
+
+                        <p>Name<br> <span>Scott Brundle</span></p>
+
+                        <p>NPI<br> <span>3223213121</span></p>
+
+                        <p>Address<br> <span><a href="#"><strong>Select Provider's Address</strong></a></span></p>
+
+                        <p class="m-0">TIN<br> <span>8382342</span></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h2 class="tab-section-title"><span id="claim-details" class="jumplink"></span><span class="number">2.</span> Referred to Provider Information</h2>
+
+            <div style="padding: 0 0.375rem;">
+
+                <div class="dpl-card">
+
+                    <div class="dpl-card-header d-flex">
+
+                        <h2 class="dpl-card-title">Find and Select Referred to Provider</h2>
+
+                        <p class="m-0 text-sm" style="line-height: 1rem;">*Required Fields</p>
+
+                    </div>
+
+                    <div class="dpl-card-body">
+
+                        <div class="form-w-arrow">
+
+                            <p class="label-sm m-0"><strong>Provider Type:</strong></p>
+
+                            <div class="d-flex m-b" style="width: 100px;">
+
+                            	<div class="form-element m-r">
+
+	                                <label class="form-radio">
+
+	                                    <input class="radio" type="radio" checked="checked" name="radio">
+
+	                                    <span>Specialist</span>
+
+	                                </label>
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                                <label class="form-radio">
+
+	                                    <input class="radio" type="radio" name="radio">
+
+	                                    <span>Therapy</span>
+
+	                                </label>
+	                        		
+	                        	</div>
+                            	
+                            </div>
+
+                            <div class="form-element m-b">
+
+                        		<label>Mile Radius*</label>
+
+                        		<select>
+
+                        			<option value="0">5</option>
+                        			
+                        		</select>
+	                        		
+                        	</div>
+
+                        	<div class="form-element">
+
+                        		<label>Zip Code*</label>
+
+                        		<input type="number" name="" value="" required>
+                        		
+                        	</div>
+
+                        </div>
+
+                        <div style="width: 650px;">
+
+                            <p class="m-0" style="margin-bottom: 0.375rem;">Please select at least one additional filter. Only In-Network providers are returned.</p>
+
+                            <p class="m-0" style="margin-bottom: 0.75rem;><a href="#"><strong>Find a Provider for this Patient</strong> <span class="sicon-external-link fc-base-accent"></span> <span class="sicon-fill-info fc-base-accent"></span></a></p>
 
                             <div class="d-flex">
 
-                                <p class="m-0 text-sm label-sm align-r m-r" style="line-height: 1rem; padding-top: 4px;"><strong>Results<br> Per Page</strong></p>
+                            	<div class="form-element m-r" style="width: 100%;">
 
-                                <select class="m-r" style="width: 65px;">
+	                        		<label>Last Name</label>
 
-                                    <option value="0">10</option>
-                                    
-                                </select>
+	                        		<input type="text" name="" value="" required>
+	                        		
+	                        	</div>
 
-                                <i class="fal fa-chevron-left chevron-previous" style="margin-right: 6px;"></i>
+	                        	<div class="form-element m-r" style="width: 100%;">
 
-                                <p class="m-0 text-sm label-sm align-r" style="line-height: 1rem; padding-top: 10px; margin-right: 6px;"><strong>Pg</strong></p>
+	                        		<label>First Name</label>
 
-                                <input type="text" value="1" style="width: 35px; margin-right: 6px;">
+	                        		<input type="text" name="" value="" required>
+	                        		
+	                        	</div>
 
-                                <p class="m-0 text-sm label-sm align-r" style="line-height: 1rem; padding-top: 10px; margin-right: 6px;"><strong>of 1</strong></p>
+	                        	<div class="form-element" style="width: 100%;">
 
-                                <i class="fal fa-chevron-right chevron-previous"></i>
-                                
+	                        		<label>Gender</label>
+
+	                        		<select>
+
+	                        			<option value="0">Select Gender</option>
+	                        			
+	                        		</select>
+	                        		
+	                        	</div>
+
                             </div>
-                            
+
+                            <p class="text-xs m-b">Last Name and First Name wildcard search is available. At least 1 character followed by * required.</p>
+
+                            <div class="d-flex">
+
+                            	<div class="form-element m-r" style="width: 62%;">
+
+	                        		<label>Specialist Type</label>
+
+	                        		<select>
+
+	                        			<option value="0">Select Specialist Type</option>
+	                        			
+	                        		</select>
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element" style="width: 38%;">
+
+	                        		<label>NPI</label>
+
+	                        		<input type="text" name="" value="" required>
+	                        		
+	                        	</div>
+
+                            </div>
+
+                            <div class="d-flex m-t">
+
+                            	<a class="dpl-button-ghost dpl-button-full m-r" href="#">Reset</a>
+
+                            	<a class="dpl-button dpl-button-full" href="#">Select</a>
+
+                            </div>
+
                         </div>
 
-                        <div class="accordion-table">
+                    </div>
 
-                            <table class="table m-0 default-width">
+                </div>
 
-                                <tr>
+                <div class="dpl-card m-t">
 
-                                    <th><a href="#"><strong>Show<br> All</strong></a></th>
-                                    <th>Referral ID</th>
-                                    <th>Referring Provider</th>
-                                    <th>Referred to Provider</th>
-                                    <th>Start - End Date</th>
-                                    <th>Visits<br> Remaining</th>
-                                    <th>Action</th>
+                    <div class="dpl-card-header d-flex">
 
-                                </tr>
+                        <h2 class="dpl-card-title">Find and Select Referred to Provider</h2>
 
-                            </table>
+                        <p class="m-0 text-sm" style="line-height: 1rem;">*Required Fields</p>
 
-                            <button class="accordion_tab_table">
+                    </div>
 
-                                <table class="table m-0 white default-width">
+                    <div class="dpl-card-body">
 
-                                    <tr class="t-body-top">
+                        <div class="form-w-arrow">
 
-                                        <td style="border-top: 0">Open Table Row</td>
-                                        <td style="border-top: 0"><a href="#"><strong>100000000000</strong></a></td>
-                                        <td style="border-top: 0">Dr. Freddy<br> 555-555-5555<br><br> 1299 Main St<br> Minneapolis, MN 55408</td>
-                                        <td style="border-top: 0">Dr. Susan<br> 555-555-5555<br><br> 1299 Main St<br> Minneapolis, MN 55408</td>
-                                        <td style="border-top: 0">MM/DD/YYYY -<br> MM/DD/YYYY</td>
-                                        <td style="border-top: 0">5</td>
-                                        <td style="border-top: 0"><a href="#"><strong>Duplicate Referral <span class="sicon-fill-info fc-base-accent"></span></strong></a></td>
+                            <p class="label-sm m-0"><strong>Provider Type:</strong></p>
 
-                                    </tr>
+                            <div class="d-flex m-b" style="width: 100px;">
 
-                                </table>
+                            	<div class="form-element m-r">
 
-                            </button>
+	                                <label class="form-radio">
 
-                            <div class="accordion_content_table white">
+	                                    <input class="radio" type="radio" checked="checked" name="radio">
 
-                                <h4 class="accordion-table-header m-b" style="border: 0; line-height: 1.25rem;"><i style="text-decoration: underline;">Diagnosis Codes:</i> <strong>212.11</strong><br> <i style="text-decoration: underline;">Comments:</i> <strong>N/A</strong></h4>
+	                                    <span>Specialist</span>
+
+	                                </label>
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                                <label class="form-radio">
+
+	                                    <input class="radio" type="radio" name="radio">
+
+	                                    <span>Therapy</span>
+
+	                                </label>
+	                        		
+	                        	</div>
+                            	
+                            </div>
+
+                            <div class="form-element m-b">
+
+                        		<label>Mile Radius*</label>
+
+                        		<select>
+
+                        			<option value="0">5</option>
+                        			
+                        		</select>
+	                        		
+                        	</div>
+
+                        	<div class="form-element">
+
+                        		<label>Zip Code*</label>
+
+                        		<input type="number" name="" value="" required>
+                        		
+                        	</div>
+
+                        </div>
+
+                        <div style="width: 650px;">
+
+                            <p class="m-0" style="margin-bottom: 0.375rem;">Please select at least one additional filter. Only In-Network providers are returned.</p>
+
+                            <p class="m-0" style="margin-bottom: 0.75rem;><a href="#"><strong>Find a Provider for this Patient</strong> <span class="sicon-external-link fc-base-accent"></span> <span class="sicon-fill-info fc-base-accent"></span></a></p>
+
+                            <div class="d-flex">
+
+                            	<div class="form-element m-r" style="width: 100%;">
+
+	                        		<label>Last Name</label>
+
+	                        		<input type="text" name="" value="" required>
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element m-r" style="width: 100%;">
+
+	                        		<label>First Name</label>
+
+	                        		<input type="text" name="" value="" required>
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element" style="width: 100%;">
+
+	                        		<label>Gender</label>
+
+	                        		<select>
+
+	                        			<option value="0">Select Gender</option>
+	                        			
+	                        		</select>
+	                        		
+	                        	</div>
 
                             </div>
 
-                            <button class="accordion_tab_table">
+                            <p class="text-xs m-b">Last Name and First Name wildcard search is available. At least 1 character followed by * required.</p>
 
-                                <table class="table m-0 default-width">
+                            <div class="d-flex">
 
-                                    <tr>
+                            	<div class="form-element m-r" style="width: 62%;">
 
-                                        <td>Open Table Row</td>
-                                        <td><a href="#"><strong>100000000000</strong></a></td>
-                                        <td>Dr. Freddy</td>
-                                        <td>Dr. Susan</td>
-                                        <td>MM/DD/YYYY -<br> MM/DD/YYYY</td>
-                                        <td>5</td>
-                                        <td><a href="#"><strong>Duplicate Referral <span class="sicon-fill-info fc-base-accent"></span></strong></a></td>
+	                        		<label>Specialist Type</label>
 
-                                    </tr>
+	                        		<select>
 
-                                </table>
+	                        			<option value="0">Select Specialist Type</option>
+	                        			
+	                        		</select>
+	                        		
+	                        	</div>
 
-                            </button>
+	                        	<div class="form-element" style="width: 38%;">
 
-                            <div class="accordion_content_table white">
+	                        		<label>NPI</label>
 
-                                <h4 class="accordion-table-header m-b" style="border: 0; line-height: 1.25rem;"><i style="text-decoration: underline;">Diagnosis Codes:</i> <strong>212.11</strong><br> <i style="text-decoration: underline;">Comments:</i> <strong>N/A</strong></h4>
-
-                            </div>
-
-                            <button class="accordion_tab_table">
-
-                                <table class="table m-0 white default-width">
-
-                                    <tr>
-
-                                        <td>Open Table Row</td>
-                                        <td><a href="#"><strong>100000000000</strong></a></td>
-                                        <td>Dr. Freddy</td>
-                                        <td>Dr. Susan</td>
-                                        <td>MM/DD/YYYY -<br> MM/DD/YYYY</td>
-                                        <td>5</td>
-                                        <td><a href="#"><strong>Duplicate Referral <span class="sicon-fill-info fc-base-accent"></span></strong></a></td>
-
-                                    </tr>
-
-                                </table>
-
-                            </button>
-
-                            <div class="accordion_content_table white">
-
-                                <h4 class="accordion-table-header m-b" style="border: 0; line-height: 1.25rem;"><i style="text-decoration: underline;">Diagnosis Codes:</i> <strong>212.11</strong><br> <i style="text-decoration: underline;">Comments:</i> <strong>N/A</strong></h4>
+	                        		<input type="text" name="" value="" required>
+	                        		
+	                        	</div>
 
                             </div>
 
-                            <div class="d-flex m-t" style="width: 160px; margin-left: 480px;">
+                            <div class="d-flex m-t">
 
-                                <i class="fal fa-chevron-left chevron-previous" style="margin-right: 6px;"></i>
+                            	<a class="dpl-button-ghost dpl-button-full m-r" href="#">Reset</a>
 
-                                <p class="m-0 text-sm label-sm align-r" style="line-height: 1rem; padding-top: 10px; margin-right: 6px;"><strong>Pg</strong></p>
+                            	<a class="dpl-button dpl-button-full" href="#">Select</a>
 
-                                <input type="text" value="1" style="width: 35px; margin-right: 6px;">
-
-                                <p class="m-0 text-sm label-sm align-r" style="line-height: 1rem; padding-top: 10px; margin-right: 6px;"><strong>of 1</strong></p>
-
-                                <i class="fal fa-chevron-right chevron-previous"></i>
-                                
                             </div>
-                                
+
                         </div>
 
                     </div>
@@ -586,7 +758,7 @@
 
         <script defer src="../js/classie.js"></script>
 
-        <script defer src="../js/accordion.js"></script>
+        <!--<script defer src="../js/accordion.js"></script>-->
 
         <script defer src="../js/accordion-table.js"></script>
 

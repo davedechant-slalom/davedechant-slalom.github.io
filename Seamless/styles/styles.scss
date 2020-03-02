@@ -1072,6 +1072,17 @@ a:hover {
 	height: 42px;
 }
 
+.accordion_tab .tab-icon {
+	background-color: $grayscale-0;
+	text-align: center;
+	padding-top: 0.563rem;
+	border-radius: 50%;
+	color: $base-accent-color;
+	width: 42px;
+	height: 42px;
+	font-size: 1.375rem;
+}
+
 .accordion_tab .number, .tab-section-title .number {
 	background-color: $grayscale-0;
 	text-align: center;
@@ -1342,6 +1353,10 @@ a:hover {
 	padding: 1rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+
+.dpl-card-body.grid-four {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .form-sign-in .dpl-card-body {
@@ -2684,6 +2699,11 @@ textarea {
 	background-color: rgba($grayscale-1000,0.5);
 	visibility: hidden;
 	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .dpl-modal {
@@ -3132,10 +3152,13 @@ input[type="date"], focus {
 	border: 1px solid $grayscale-600;
 }
 
-.dpl-button-full.new-referral-submit-button:target {
+.dpl-button-full.new-referral-submit-button-color {
 	background-color: $base-accent-color;
 	color: $grayscale-0;
 	border: 1px solid $base-accent-color;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .hr-drop-shadow {

@@ -186,9 +186,9 @@
 
                 <ul class="dpl-breadcrumbs-list">
 
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Referrals</a></li>
-                    <li><a href="#">Search Results</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Referrals</a></li>
+                    <li><a href="search-results.html">Search Results</a></li>
                     <li>New Referral</li>
                     
                 </ul>
@@ -199,7 +199,7 @@
 
             <div class="wrapper m-t d-flex">
 
-                <h1><span class="sicon-arrow-circle-down fc-base-accent" style="vertical-align: -4px; transform: rotate(90deg);"></span> New Referral</h1>
+                <h1><a href="search-results.html"><span class="sicon-arrow-circle-down fc-base-accent" style="vertical-align: -4px; transform: rotate(90deg);"></span></a> New Referral</h1>
 
                 <div class="dpl-insights-options">
 
@@ -437,13 +437,25 @@
 
                     </div>
 
-                    <div class="dpl-card-body">
+                    <div class="dpl-card-body referring-provider-1" id="referring-provider-1">
 
                         <p>Name<br> <span>Scott Brundle</span></p>
 
                         <p>NPI<br> <span>3223213121</span></p>
 
                         <p>Address<br> <span><a href="#referral-step-1-modal"><strong>Select Provider's Address</strong></a></span></p>
+
+                        <p class="m-0">TIN<br> <span>8382342</span></p>
+
+                    </div>
+
+                    <div class="dpl-card-body referring-provider-2" id="referring-provider-2" style="display: none;">
+
+                        <p>Name<br> <span>Scott Brundle</span></p>
+
+                        <p>NPI<br> <span>3223213121</span></p>
+
+                        <p>Address* <a href="#"><strong>Change</strong></a><br> <span>1723723 Oak St,<br> Minneapolis MN 55408</span></p>
 
                         <p class="m-0">TIN<br> <span>8382342</span></p>
 
@@ -511,7 +523,7 @@
 
             <div style="padding: 0 0.375rem;" id="steptwo">
 
-                <div class="dpl-card new-referral-step-2-task-1" style="display: none;" id="new-referral-step-2-task-1">
+                <div class="dpl-card new-referral-step-2-task-1 m-b" style="display: none;" id="new-referral-step-2-task-1">
 
                     <div class="dpl-card-header d-flex">
 
@@ -562,6 +574,9 @@
                         		<select>
 
                         			<option value="0">5</option>
+                                    <option value="1">10</option>
+                                    <option value="2">15</option>
+                                    <option value="3">20</option>
                         			
                         		</select>
 	                        		
@@ -608,7 +623,9 @@
 	                        		<select>
 
 	                        			<option value="0">Select Gender</option>
-	                        			
+                                        <option value="0">Male</option>
+                                        <option value="0">Female</option>
+
 	                        		</select>
 	                        		
 	                        	</div>
@@ -655,7 +672,7 @@
 
                 </div>
 
-                <div class="dpl-card m-t new-referral-step-2-task-2" id="new-referral-step-2-task-2" style="display: none;">
+                <div class="dpl-card m-t new-referral-step-2-task-2 m-b" id="new-referral-step-2-task-2" style="display: none;">
 
                     <div class="dpl-card-header d-flex">
 
@@ -746,7 +763,7 @@
                                 <td>Acupunture</td>
                                 <td>M</td>
                                 <td><strong>NPI: </strong>1234567890<br> <strong>TIN: </strong>299230230</td>
-                                <td>21332 North M St<br> Minneapolis, MN, 55408 <strong>(3.2 mi)</strong></td>
+                                <td><strong>Multiple Address (2)</strong><br> <a href="#">View and Select Address</a></td>
                                 <td><a class="dpl-button dpl-button-full" href="#">Select</a></td>
 
                             </tr>
@@ -857,7 +874,7 @@
 
                 </div>
 
-                <div class="dpl-card m-t new-referral-step-2-task-3" id="new-referral-step-2-task-3" style="display: none;">
+                <div class="dpl-card m-t new-referral-step-2-task-3 m-b" id="new-referral-step-2-task-3" style="display: none;">
 
                     <div class="dpl-card-header d-flex">
 
@@ -901,11 +918,11 @@
 
             </div>
 
-            <h2 class="tab-section-title"><span class="number">3.</span> Add a Diagnosis Code(s)</h2>
+            <h2 class="tab-section-title m-0"><span class="number">3.</span> Add a Diagnosis Code(s)</h2>
 
             <div style="padding: 0 0.375rem;" class="new-referral-step-3">
 
-                <div class="dpl-card new-referral-step-3-task-1" id="new-referral-step-3-task-1" style="display: none;">
+                <div class="dpl-card new-referral-step-3-task-1 m-b" id="new-referral-step-3-task-1" style="display: none;">
 
                     <div class="dpl-card-header d-flex">
 
@@ -945,7 +962,7 @@
 
                 </div>
 
-                <div class="dpl-card new-referral-step-3-task-2" id="new-referral-step-3-task-2" style="display: none;">
+                <div class="dpl-card new-referral-step-3-task-2 m-b" id="new-referral-step-3-task-2" style="display: none;">
 
                     <div class="dpl-card-header d-flex">
 
@@ -1115,11 +1132,11 @@
 
             </div>
 
-            <h2 class="tab-section-title"><span class="number">4.</span> Submission Information</h2>
+            <h2 class="tab-section-title m-0"><span class="number">4.</span> Submission Information</h2>
 
             <div style="padding: 0 0.375rem;" class="new-referral-step-4">
 
-                <div class="dpl-card new-referral-step-4-task-1" style="display: none;" id="new-referral-step-4-task-1">
+                <div class="dpl-card new-referral-step-4-task-1 m-b" style="display: none;" id="new-referral-step-4-task-1">
 
                     <div class="dpl-card-header">
 
@@ -1185,11 +1202,11 @@
 
             </div>
 
-            <h2 class="tab-section-title"><span class="number">5.</span> Submitter Information</h2>
+            <h2 class="tab-section-title m-0"><span class="number">5.</span> Submitter Information</h2>
 
             <div style="padding: 0 0.375rem;" class="new-referral-step-5">
 
-                <div class="dpl-card new-referral-step-5-task-1" style="display: none;" id="new-referral-step-5-task-1">
+                <div class="dpl-card new-referral-step-5-task-1 m-b" style="display: none;" id="new-referral-step-5-task-1">
 
                     <div class="dpl-card-header d-flex">
 
@@ -1268,6 +1285,14 @@
         <script>
 
             $(document).ready(function(){
+
+                $("#show-new-referral-step-2-task-1").click(function(){
+                    $("#referring-provider-1").hide();
+                });
+
+                $("#show-new-referral-step-2-task-1").click(function(){
+                    $("#referring-provider-2").show();
+                });
 
                 $("#show-new-referral-step-2-task-1").click(function(){
                     $("#new-referral-step-2-task-1").show();

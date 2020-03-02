@@ -3183,6 +3183,14 @@ input[type="date"], focus {
 	text-align: right;
 }
 
+.submitted-date {
+	font-size: 0.75rem; position: absolute; top: 57px;
+}
+
+.smaller .submitted-date {
+	font-size: 0.75rem; position: absolute; top: 24px;
+}
+
 /* End Module/Universal Styles */
 
 

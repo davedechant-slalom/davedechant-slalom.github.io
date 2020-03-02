@@ -2536,29 +2536,34 @@ input[type="date"], focus {
   margin: 1rem 0 0;
   padding-right: 476px; }
 
-.new-referral-step-2, .new-referral-step-3, .new-referral-step-4, .new-referral-step-5 {
-  position: relative; }
-
-.new-referral-step-2-task-1, .new-referral-step-2-task-2, .new-referral-step-3-task-1, .new-referral-step-3-task-2, .new-referral-step-4-task-1, .new-referral-step-5-task-1 {
-  opacity: 0;
-  visibility: hidden;
-  display: none; }
-
-.new-referral-step-2-task-1:target, .new-referral-step-2-task-2:target, .new-referral-step-3-task-1:target, .new-referral-step-3-task-2:target, .new-referral-step-4-task-1:target {
-  opacity: 1;
-  visibility: visible;
-  display: block; }
-
 .dpl-button-full.new-referral-submit-button {
   background-color: #E0E0E0;
   color: #757575;
   border: 1px solid #9E9E9E; }
+
+.dpl-button-full.new-referral-submit-button:target {
+  background-color: #196FD0;
+  color: #FFFFFF;
+  border: 1px solid #196FD0; }
 
 .hr-drop-shadow {
   border: 1px solid #FFFFFF;
   margin: 1.25rem 0;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.13), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 6px 6px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.13), 0 4px 4px 0 rgba(0, 0, 0, 0.11), 0 6px 6px 0 rgba(0, 0, 0, 0.1); }
+
+.search-input {
+  position: relative;
+  width: 510px; }
+
+.search-input__icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding: 11px 11px 0 0;
+  text-align: right; }
 
 /* End Module/Universal Styles */
 /*---------------------------------------------------------------------*/

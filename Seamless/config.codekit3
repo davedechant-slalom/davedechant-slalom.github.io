@@ -408,6 +408,17 @@
 		"oAP": "/janet-lynn/index.html",
 		"oF": 0
 		},
+	"/js/accordion-four-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/accordion-four-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/accordion-four.js": {
 		"bF": 0,
 		"ft": 64,

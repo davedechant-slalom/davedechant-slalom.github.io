@@ -485,7 +485,7 @@
                                 <td>Minneapolis</td>
                                 <td>Minnesota</td>
                                 <td>55403</td>
-                                <td><a class="dpl-button dpl-button-full" href="#new-referral-step-2-task-1">Select</a></td>
+                                <td><a class="dpl-button dpl-button-full" onclick="myFunction()">Select</a></td>
 
                             </tr>
 
@@ -495,7 +495,7 @@
                                 <td>Minneapolis</td>
                                 <td>Minnesota</td>
                                 <td>55403</td>
-                                <td><a class="dpl-button dpl-button-full" href="#new-referral-step-2-task-1">Select</a></td>
+                                <td><a class="dpl-button dpl-button-full" onclick="myFunction()">Select</a></td>
 
                             </tr>
 
@@ -509,9 +509,9 @@
 
             <h2 class="tab-section-title"><span id="claim-details" class="jumplink"></span><span class="number">2.</span> Referred to Provider Information</h2>
 
-            <div style="padding: 0 0.375rem;" class="new-referral-step-2">
+            <div style="padding: 0 0.375rem;" id="steptwo">
 
-                <div class="dpl-card new-referral-step-2-task-1" id="new-referral-step-2-task-1">
+                <div class="dpl-card new-referral-step-2-task-1">
 
                     <div class="dpl-card-header d-flex">
 
@@ -883,7 +883,13 @@
 
                     		<p class="m-0" style="margin-bottom: 0.375rem;"><strong>Diagnosis Code</strong></p>
 
-                    		<input style="width: 510px;" type="text" name="" placeholder="Search a keyword or code">
+                            <div class="search-input">
+
+                                <input type="text" name="" placeholder="Search a keyword or code">
+
+                                <a href="#new-referral-step-3-task-2"><span class="sicon-search fc-base-accent search-input__icon"></span></a>
+
+                            </div>
 
                     		<hr class="hr-drop-shadow">
 
@@ -947,7 +953,7 @@
 
                     				<p class="m-0 text-sm" style="width: 400px; align-self: center;">Bitten by duck</p>
 
-                    				<p class="align-r m-0" style="width: 100%;"><a style="padding: 0.25rem 1rem;" class="dpl-button" href="#">Select</a></p>
+                    				<p class="align-r m-0" style="width: 100%;"><a style="padding: 0.25rem 1rem;" class="dpl-button" href="#new-referral-step-3-task-3">Select</a></p>
                     				
                     			</div>
 
@@ -1027,30 +1033,36 @@
 
                     		<p style="margin-bottom: 0.5rem; font-size: 1.25rem;" class="text-lg p-lr"><strong>Selected Diagnosis Codes*</strong></p>
 
-                    		<div style="background-color: #F1FAFC; padding: 0.875rem 1rem;">
+                            <p class="p-lr">Currently there are no selected diagnosis codes</p>
 
-                                <div class="d-flex" style="justify-content: flex-start;">
+                            <div class="new-referral-step-3-task-3" id="new-referral-step-3-task-3">
 
-                                    <p class="m-0" style="width: 113px; align-self: center;"><strong>Code</strong></p>
+                                <div style="background-color: #F1FAFC; padding: 0.875rem 1rem;">
 
-                                    <p class="m-0" style="width: 150px; align-self: center;"><strong>Description</strong></p>
-                                    
+                                    <div class="d-flex" style="justify-content: flex-start;">
+
+                                        <p class="m-0" style="width: 113px; align-self: center;"><strong>Code</strong></p>
+
+                                        <p class="m-0" style="width: 150px; align-self: center;"><strong>Description</strong></p>
+                                        
+                                    </div>
+
                                 </div>
 
-                            </div>
+                                <div style="border-bottom: 1px solid #eee; padding: 0.5rem 1rem;">
 
-                            <div style="border-bottom: 1px solid #eee; padding: 0.5rem 1rem;">
+                                    <div class="d-flex" style="justify-content: flex-start;">
 
-                                <div class="d-flex" style="justify-content: flex-start;">
+                                        <p class="m-0" style="width: 175px; align-self: center;"><strong>W61.61</strong></p>
 
-                                    <p class="m-0" style="width: 175px; align-self: center;"><strong>W61.61</strong></p>
+                                        <p class="m-0 text-sm" style="width: 400px; align-self: center;">Bitten by duck</p>
 
-                                    <p class="m-0 text-sm" style="width: 400px; align-self: center;">Bitten by duck</p>
+                                        <p class="align-r m-0" style="width: 100%;"><a style="padding: 0.25rem 1rem;" class="dpl-button-ghost" href="#">Remove</a></p>
+                                        
+                                    </div>
 
-                                    <p class="align-r m-0" style="width: 100%;"><a style="padding: 0.25rem 1rem;" class="dpl-button-ghost" href="#">Remove</a></p>
-                                    
                                 </div>
-
+                                
                             </div>
 
                     	</div>
@@ -1093,11 +1105,7 @@
 
                                     <p class="m-0"><strong>Start Date*</strong></p>
 
-                                    <select>
-
-                                        <option value="0">Select Start Date</option>
-                                        
-                                    </select>
+                                    <input class="date-input" type="date" name="" value="Select Start Date" required>
                                     
                                 </div>
 
@@ -1111,7 +1119,7 @@
 
                                     <p style="color: #888;" class="m-0"><strong>Valid to Date</strong></p>
 
-                                    <input style="background-color: #eee;" type="text" name="" value="" placeholder="MM/DD/YYYY">
+                                    <input style="background-color: #eee;" class="date-input" type="date" name="" value="Select Start Date">
                                     
                                 </div>
                                 
@@ -1122,6 +1130,8 @@
                                 <p class="m-0"><strong>Comments</strong></p>
 
                                 <textarea></textarea>
+
+                                <a href="#new-referral-submit-button">Complete Step</a>
                                 
                             </div>
                             
@@ -1191,7 +1201,7 @@
 
             <div style="width: 360px; margin: 1.5rem auto 4rem;">
 
-                <a class="dpl-button-full new-referral-submit-button" href="#">Submit Referral</a>
+                <a class="dpl-button-full new-referral-submit-button" href="recon-confirm.html" id="new-referral-submit-button">Submit Referral</a>
                 
             </div>
                             

@@ -836,24 +836,22 @@ a:hover {
   padding-top: 0.625rem; }
 
 .accordion_tab:after, .accordion_tab_table:after, .accordion_tab_three:after {
-  font-family: "Font Awesome 5 Pro";
-  content: "\f107";
-  font-size: 2rem;
+  font-family: "seamless";
+  content: "\e901";
+  font-size: 2.125rem;
   color: #196FD0;
   position: absolute;
   top: 50%;
   right: 5px;
-  border: 1px solid #033DA1;
   background-color: #FFFFFF;
-  padding: 0.125rem 0.625rem;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   border-radius: 50%;
   font-weight: 100; }
 
 .accordion_tab.active:after, .accordion_tab_table.active:after, .accordion_tab_three.active:after {
-  font-family: "Font Awesome 5 Pro";
-  content: "\f106"; }
+  font-family: "seamless";
+  content: "\e902"; }
 
 /*- Accordion Content Styles -*/
 .accordion_content, .accordion_content_table, .accordion_content_three {

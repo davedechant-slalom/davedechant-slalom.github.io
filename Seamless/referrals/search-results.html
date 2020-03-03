@@ -174,7 +174,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Eligibility &amp; Benefits</a></li>
                         <li><a href="#">Claims</a></li>
-                        <li><a href="#">Referrals</a></li>
+                        <li class="active"><a href="#">Referrals</a></li>
                         <li><a href="#">Prior Authorizations <i class="fas fa-external-link-square-alt"></i></a></li>
                         
                     </ul>
@@ -193,7 +193,7 @@
                     
                 </ul>
 
-                <a class="dpl-button-link" href="#" onclick="window.print();return false;"><i class="fas fa-print"></i> Print</a>
+                <a class="dpl-button-link" href="#" onclick="window.print();return false;"><span class="sicon-print"></span> Print</a>
                 
             </div>
 
@@ -379,11 +379,11 @@
 
                     </div>
 
-                    <div class="dpl-card-body">
+                    <div class="dpl-card-body p-0">
 
-                        <p>Verifying Referral Requirements<br> <span class="sicon-fill-check fc-success" style="vertical-align: -1px;"></span> <span>Patient's Plan <br>Requires a Referral</span></p>
+                        <p class="p-l">Verifying Referral Requirements<br> <span class="sicon-fill-check fc-success" style="vertical-align: -1px;"></span> <span>Patient's Plan <br>Requires a Referral</span></p>
 
-                        <div>
+                        <div class="p-r">
 
                             <p class="m-0 m-b">Patient's Primary Care Provider<br> <span>Ma Cristina Ocampo</span></p>
 
@@ -393,13 +393,13 @@
 
                         <hr>
 
-                        <div class="d-flex">
+                        <div class="d-flex p-lr">
 
                             <p class="m-0">Verifying Provider<br> <span class="sicon-fill-check fc-success" style="vertical-align: -1px;"></span> <span>Selected Care Provider matches patient's primary care provider</span></p>
 
                         </div>
 
-                        <div class="d-flex">
+                        <div class="d-flex p-lr">
 
                             <p class="m-0 text-sm">Patient's plan requires referral and provider has been successfully validated to continue</p>
 
@@ -433,10 +433,16 @@
 
                         <div class="d-flex p-all" style="border-top: 3px solid #E0E0E0; align-items: flex-start;">
 
-                            <p class="text-sm m-0" style="width: 420px;"><strong>Showing 1 - 4 of 4 Referral Results</strong><br> Use the <i class="fas fa-chevron-down fc-base-accent"></i> to view more details about that row, including diagnosis codes and potential comments.</p>
+                            <p class="text-sm m-0" style="width: 420px;"><strong>Showing 1 - 4 of 4 Referral Results <span class="sicon-fill-info fc-base-accent"></span></strong><br> Use the <i class="fas fa-chevron-down fc-base-accent"></i> to view more details about that row, including diagnosis codes and potential comments.</p>
 
-                            <input type="search" name="" placeholder="Search Results Below" style="width: 310px;">
+                            <div class="search-input" style="width: 310px;">
 
+                                <input type="text" name="" placeholder="Search Results Below">
+
+                                <span class="sicon-search search-input__icon" style="color: #ccc;"></span>
+
+                            </div>
+                            
                             <div class="d-flex">
 
                                 <p class="m-0 text-sm label-sm align-r m-r" style="line-height: 1rem; padding-top: 4px;"><strong>Results<br> Per Page</strong></p>

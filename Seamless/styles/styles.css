@@ -1799,17 +1799,27 @@ button.dpl-button, button.dpl-button-full {
   width: 340px;
   padding-right: 5rem;
   position: relative;
-  z-index: 10; }
+  border-right: 1px solid #9E9E9E; }
+
+.form-w-arrow::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  border: 1px solid #9E9E9E;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 110px;
+  right: -20px;
+  transform: rotate(45deg) translateX(0px) translateY(0px) skewX(10deg) skewY(10deg); }
 
 .form-w-arrow::after {
-  height: calc(100% + 2rem);
   content: "";
+  width: 60px;
+  height: 120px;
+  background-color: #FFFFFF;
   position: absolute;
-  right: 0;
-  top: -1rem;
-  width: 35px;
-  border-right: 1px solid #9E9E9E;
-  background-color: #FFFFFF; }
+  top: 85px;
+  right: 0; }
 
 .form {
   grid-column-start: 1;
@@ -2067,6 +2077,9 @@ textarea {
 
 .p-r {
   padding-right: 1rem; }
+
+.p-l {
+  padding-left: 1rem; }
 
 .p-b {
   padding-bottom: 1rem; }

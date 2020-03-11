@@ -6,7 +6,7 @@
 
         <meta name="description" content="XXX">
 
-        <title>Reconsideration Confirmation Page - Stephanie Johnson</title>
+        <title>Referrals</title>
 
         <!-- Meta Info -->
 
@@ -26,7 +26,7 @@
 
         <!-- Favicons/Icons -->
 
-        <link rel="shortcut icon" href="../images/icons/favicon.ico">
+        <link rel="shortcut icon" href="images/icons/favicon.ico">
 
         <link rel="apple-touch-icon" href="images/icons/touch-icon-iphone.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="images/icons/touch-icon-ipad.png" />
@@ -99,7 +99,7 @@
                         
                     </div>
 
-                    <a class="dpl-header-selector" href="#dropdown-provider"><span>Provider</span> Dr. Felicity Firmin <i class="fas fa-chevron-down"></i></a>
+                    <a class="dpl-header-selector" href="#dropdown-provider"><span>Provider</span> Scott Brundle <i class="fas fa-chevron-down"></i></a>
 
                     <div class="dpl-options-dropdown-provider" id="dropdown-provider">
 
@@ -148,7 +148,7 @@
 
                         <select class="m-b">
 
-                            <option value="0">Dr. Felicity Firmin</option>
+                            <option value="0">Scott Brundle</option>
                             
 
                         </select>
@@ -174,7 +174,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Eligibility &amp; Benefits</a></li>
                         <li><a href="#">Claims</a></li>
-                        <li><a href="#">Referrals</a></li>
+                        <li class="active"><a href="#">Referrals</a></li>
                         <li><a href="#">Prior Authorizations <i class="fas fa-external-link-square-alt"></i></a></li>
                         
                     </ul>
@@ -188,9 +188,7 @@
                 <ul class="dpl-breadcrumbs-list">
 
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="#">Claim Summary Page</a></li>
-                    <li><a href="#">Claim Reconsideration Form</a></li>
-                    <li>Reconsideration Confirmation Page</li>
+                    <li>Referrals</li>
                     
                 </ul>
 
@@ -198,38 +196,11 @@
                 
             </div>
 
-            <div class="dpl-insights-header wrapper" style="position: relative; margin-bottom: 18px;">
+            <div class="wrapper m-t">
 
-                <ul class="dpl-insights-details">
+                <h1 class="m-0">Referrals</h1>
 
-                    <li><strong>Referral ID</strong><br class="remove"> <span>0195865900</span> <strong class="claim-patient-name"><a href="eligibility-summary.html">Stephanie Johnson</a></strong></li>
-                    <li>Birthdate: <strong>MM/DD/YY</strong></li>
-                    <li>Member ID: <strong>123456 00</strong></li>
-                    <li>Group Number: <strong>55443</strong></li>
-                    
-                </ul>
-
-                <div class="dpl-insights-options">
-
-                    <a class="dpl-button">New Search</a><br>
-
-                </div>
-
-                <p class="submitted-date">Submitted: <strong>MM/DD/YYYY</strong></p>
-
-            </div>
-
-            <div class="dpl-jump-menu wrapper" id="jump-menu">
-
-                <ul class="dpl-jump-menu-list">
-
-                    <li><a class="active" href="#patient-details">Patient Insurance Details</a></li>
-                    <li><a href="#referring-provider">Referring Provider</a></li>
-                    <li><a href="#referral-details">Referred to Provider &amp; Referral Details</a></li>
-                    
-                </ul>
-
-                 <p class="dpl-jump-menu-cta m-0"><strong>View Patients</strong> <a href="eligibility-summary.html"><strong>Eligibility &amp; Benefits</strong></a> <strong>or</strong> <a href="#"><strong>Claims <i class="fas fa-angle-right" style="font-size: 0.375rem; vertical-align: 1px;"></i></strong></a> </p>
+                <p><strong>What is a referral?</strong></p>
 
             </div>
 
@@ -237,127 +208,115 @@
 
         <main class="wrapper main-content-2">
 
-            <button class="accordion_tab"><span id="patient-details" class="jumplink"></span><span class="sicon-id-card tab-icon"></span> Patient's Insurance Details</button>
+        	<div class="content-grid-6" style="width: 1000px; margin: 0 auto;">
 
-            <div class="accordion_content">
+	            <div class="dpl-card">
 
-                <div class="dpl-card">
+	                <div class="dpl-card-header">
 
-                    <div class="dpl-card-header">
+	                    <h2 class="dpl-card-title">Referral Search</h2>
 
-                        <h2 class="dpl-card-title">Patient Information</h2>
+	                </div>
 
-                    </div>
+	                <div class="dpl-card-body">
 
-                    <div class="dpl-card-body content-grid-7">
+	                    <form class="form">
 
-                        <p class="m-0">Plan Description<br> <span>HMO-AARP Medicare Complete</span></p>
+                    		<div class="form-row-1">
 
-                        <p class="m-0">Payer<br> <span>UnitedHealthcare</span></p>
+	                        	<div class="form-element">
 
-                        <p class="m-0">Effective - Term Dates<br> <span>MM/DD/YYYY - MM/DD/YYYY</span></p>
+	                        		<div class="d-flex">
 
-                        <p class="m-0">Payer ID<br> <span>82932</span></p>
+	                        			<label class="label-sm">Select Your Eligibility Search Criteria*</label>
 
-                    </div>
+	                        			<p class="text-sm m-0">*Required Fields</p>
 
-                </div>
+	                        		</div>
 
-            </div>
+                                    <div class="eligibility-dropdown">
 
-            <button class="accordion_tab"><span id="referring-provider" class="jumplink"></span><span class="sicon-doctor tab-icon"></span> Referring Provider</button>
+                                        <select>
 
-            <div class="accordion_content">
+                                            <option value="0">Member ID &amp; Date of Birth</option>
+                                            <option value="0">Member ID &amp; Name</option>
+                                            <option value="0">Member Name &amp; Date of Birth</option>
+                                            
+                                        </select>
 
-                <div class="dpl-card">
+                                    </div>
+	                        		
+	                        	</div>
 
-                    <div class="dpl-card-header">
+	                        </div>
 
-                        <h2 class="dpl-card-title">Provider Details</h2>
+	                        <hr class="m-0">
 
-                    </div>
+	                        <p class="label-sm m-0" style="margin: 0.5rem 0;"><strong>Currently Selected Provider: Scott Brundle <a href="#">Edit</a></strong></p>
 
-                    <div class="dpl-card-body content-grid-7">
+	                        <hr class="m-0 m-b">
 
-                        <p class="m-0">Name<br> <span>Scott Brundle</span></p>
+                        	<div class="form-row-2">
 
-                        <p class="m-0">Phone<br> <span>555-555-5555</span></p>
+	                        	<div class="form-element">
 
-                        <p class="m-0">NPI<br> <span>192930231</span></p>
+	                        		<label>Member ID</label>
 
-                        <p class="m-0">TIN<br> <span>2929382</span></p>
+	                        		<input type="text" name="" placeholder="12345678">
+	                        		
+	                        	</div>
 
-                    </div>
+	                        	<div class="form-element">
 
-                </div>
+	                        		<label>Date of Birth*</label>
 
-            </div>
+	                        		<input class="date-input" type="date" name="" value="YYYY-MM-DD" required>
+	                        		
+	                        	</div>
 
-            <button class="accordion_tab"><span id="referral-details" class="jumplink"></span><span class="sicon-patient-doctor tab-icon"></span> Referred to Provider &amp; Referral Details</button>
+	                        </div>
 
-            <div class="accordion_content content-grid-1">
+                            <div class="d-flex">
 
-                <div class="dpl-card">
+                                <a class="dpl-button-full" href="search-results.html">Submit Search</a>
+                                
+                            </div>
 
-                    <div class="dpl-card-header">
+	                    </form>
 
-                        <h2 class="dpl-card-title">Referred to Provider</h2>
+	                </div>
 
-                    </div>
+	            </div>
 
-                    <div class="dpl-card-body">
+	            <div class="dpl-card">
 
-                        <div>
+	                <div class="dpl-card-header">
 
-                            <p>Name<br> <span>John Smith</span></p>
+	                    <h2 class="dpl-card-title">Popular Resources</h2>
 
-                            <p>Address<br> <span>4465 Main Street, <br> Minneapolis MN 55408</span></p>
+	                </div>
 
-                        </div>
+	                <div class="dpl-card-body">
 
-                        <div>
+	                	<div>
 
-                            <p>NPI<br> <span>182837282</span></p>
+	                		<p><a href="#">Link Here <i class="fas fa-external-link-alt"></i></a></p>
 
-                            <p>TIN<br> <span>8389239</span></p>
+		                    <p><a href="#">Link Here <i class="fas fa-external-link-alt"></i></a></p>
 
-                            <p class="m-0">Phone Number<br> <span>555-555-5555</span></p>
+		                    <p><a href="#">Link Here <i class="fas fa-external-link-alt"></i></a></p>
 
-                        </div>
+		                    <p><a href="#">Link Here <i class="fas fa-external-link-alt"></i></a></p>
 
-                    </div>
+		                    <p><a href="#">Link Here <i class="fas fa-external-link-alt"></i></a></p>
+	                		
+	                	</div>
 
-                </div>
+	                </div>
 
-                <div class="dpl-card">
+	            </div>
 
-                    <div class="dpl-card-header">
-
-                        <h2 class="dpl-card-title">Referred Details</h2>
-
-                    </div>
-
-                    <div class="dpl-card-body">
-
-                        <p>Referral Dates<br> <span>MM/DD/YYYY - MM/DD/YYYY</span></p>
-
-                        <p>Number of Visits<br> <span>25</span></p>
-
-                        <div>
-
-                        	<p>Comments<br> <span>Lorem ipsum dolor sit amet...</span></p>
-
-                        	<p>Diagnosis Code(s)<br> <span>R26.81</span><br>Lorem ipsum dolor sit amet...</p>
-
-                        	<p class="m-0">Diagnosis Code(s)<br> <span>R26.81</span><br>Lorem ipsum dolor sit amet...</p>
-                        	
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
+	        </div>
                             
         </main>
 
@@ -369,13 +328,7 @@
 
         <script defer src="../js/classie.js"></script>
 
-        <script defer src="../js/accordion.js"></script>
-
-        <script defer src="../js/accordion-table.js"></script>
-
-        <script defer src="../js/accordion-three.js"></script>
-
-        <script defer src="../js/active-menu.js"></script>
+        <script defer src="../js/tabs.js"></script>
 
         <script defer src="../js/scripts.js"></script>
 

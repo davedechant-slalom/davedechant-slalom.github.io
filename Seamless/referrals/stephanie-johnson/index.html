@@ -1,0 +1,503 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+
+        <meta name="description" content="XXX">
+
+        <title>Eligibility Search & Claims Lookup</title>
+
+        <!-- Meta Info -->
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1" />
+
+
+        <!-- Styles -->
+
+        <link href="../styles/sicons.css" rel="stylesheet" type="text/css">
+        <link href="../styles/fontawesome.css" rel="stylesheet" type="text/css">
+        <link href="../styles/styles.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+
+        <!-- Favicons/Icons -->
+
+        <link rel="shortcut icon" href="images/icons/favicon.ico">
+
+        <link rel="apple-touch-icon" href="images/icons/touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="images/icons/touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="images/icons/touch-icon-iphone-retina.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="images/icons/touch-icon-ipad-retina.png" />
+
+        <meta name="application-name" content="Site Tile"/>
+        <meta name="msapplication-TileColor" content="#000000"/>
+        <meta name="msapplication-square70x70logo" content="images/icons/tiny.png"/>
+        <meta name="msapplication-square150x150logo" content="images/icons/square.png"/>
+        <meta name="msapplication-wide310x150logo" content="images/icons/wide.png"/>
+        <meta name="msapplication-square310x310logo" content="images/icons/large.png"/>
+
+
+        <!-- Google Analytics Script -->
+
+
+        <!-- Force Old Browsers to Accept HTML5 -->
+
+        <!--[if lt IE 10]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <header class="dpl-header">
+
+            <div class="dpl-account-nav wrapper">
+
+                <a href="#">Return to Legacy Link</a> | <a href="#"><i class="fas fa-user"></i> My Account <i class="fas fa-chevron-down"></i></a>
+                
+            </div>
+
+            <div class="dpl-header-options wrapper">
+
+                <h1 class="dpl-logo">UnitedHealthcare | Link</h1>
+
+                <div class="dpl-header-selectors">
+
+                    <a class="dpl-header-selector" href="#dropdown-payer"><span>Payer</span> 87726 - UnitedHealthcare <i class="fas fa-chevron-down"></i></a>
+
+                    <div class="dpl-options-dropdown-payer" id="dropdown-payer">
+
+                        <i class="fas fa-chevron-up fc-base-accent"></i>
+
+                        <p class="m-0"><strong>Selected Payer</strong></p>
+
+                        <hr class="m-t m-b">
+
+                        <label class="label-sm">Payer Group</label>
+
+                        <select class="m-b">
+
+                            <option value="0">UnitedHealthcare - 87726</option>
+                            
+
+                        </select>
+
+                        <a class="text-sm" href="#">What is this? <i class="fas fa-chevron-down"></i></a>
+
+                        <hr class="m-t">
+
+                        <div class="d-flex m-t">
+
+                            <a href="#" class="dpl-button-ghost dpl-button-full m-r">Cancel</a> <a href="#" class="dpl-button dpl-button-full">Save</a>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <a class="dpl-header-selector" href="#dropdown-provider"><span>Provider</span> Dr. Scott Brundle <i class="fas fa-chevron-down"></i></a>
+
+                    <div class="dpl-options-dropdown-provider" id="dropdown-provider">
+
+                        <i class="fas fa-chevron-up fc-base-accent"></i>
+
+                        <p class="m-0"><strong>Selected Care Provider</strong></p>
+
+                        <hr class="m-t m-b">
+
+                        <label class="label-sm">Provider/Organization</label>
+
+                        <select>
+
+                            <option value="0">Minneapolis Medical Group</option>
+                            
+
+                        </select>
+
+                        <label class="form-checkbox m-t m-b">
+
+                            <input class="checkbox" type="checkbox" required>
+
+                            <span>Use for Corporate Tax ID Owner</span>
+
+                        </label>
+
+                        <label class="label-sm">Corporate Tax ID Owner</label>
+
+                        <select class="m-b">
+
+                            <option value="0">Minneapolis Medical Group</option>
+                            
+
+                        </select>
+
+                        <label class="label-sm">Tax ID Number</label>
+
+                        <select class="m-b">
+
+                            <option value="0">28472938</option>
+                            
+                        </select>
+
+                        <label class="label-sm">Care Provider</label>
+
+                        <select class="m-b">
+
+                            <option value="0">Dr. Scott Brundle</option>
+
+                        </select>
+
+                        <div class="d-flex m-t">
+
+                            <a href="#" class="dpl-button-ghost dpl-button-full m-r">Cancel</a> <a href="#" class="dpl-button dpl-button-full">Save</a>
+                            
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+            <nav class="dpl-main-nav">
+
+                <div class="wrapper">
+
+                    <ul class="dpl-main-nav-list wrapper">
+
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Eligibility &amp; Benefits</a></li>
+                        <li><a href="#">Claims</a></li>
+                        <li><a href="referral-search.html">Referrals</a></li>
+                        <li><a href="#">Prior Authorizations <i class="fas fa-external-link-square-alt"></i></a></li>
+                        
+                    </ul>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <main class="wrapper main-content main-content-top-sm">
+
+        	<h1 class="align-c">Hello, Taylor</h1>
+
+        	<p class="align-c"><strong>Before you get started, make sure your <a href="#" class="link-underline">payer information</a> and <a href="#" class="link-underline">provider information</a> in the top right corner of the page is correct.</strong><br> Try out our shortcuts to eligibility and claims information below for quick links to common tasks.</p>
+
+            <div class="content-grid-3 m-b">
+
+                <div class="dpl-card" style="margin-right: 2rem;">
+
+                    <div class="dpl-card-body">
+
+                    	<div class="d-flex-3 align-c">
+
+                    		<span class="sicon-coverage title-icon m-b"></span>
+
+                    		<h2 class="text-lg"><strong>Verify Eligibility &amp; Benefits</strong></h2>
+
+                    		<p class="text-sm m-0"><a href="#"><strong>View Recent Search Results</strong></a></p>
+
+                    	</div>
+
+                    	<hr>
+
+                    	<form class="form">
+
+                    		<div class="form-row-1">
+
+	                        	<div class="form-element">
+
+	                        		<div class="d-flex">
+
+	                        			<label class="label-sm">Select Your Eligibility Search Criteria*</label>
+
+	                        			<p class="text-sm m-0">*Required Fields</p>
+
+	                        		</div>
+
+                                    <div class="eligibility-dropdown">
+
+                                        <select>
+
+                                            <option value="0">Member ID &amp; Date of Birth</option>
+                                            
+                                        </select>
+
+                                        <a class="eligibility-dropdown-activator" href="#eligibility-dropdown"></a>
+
+                                        <ul class="eligibility-dropdown-content" id="eligibility-dropdown">
+
+                                            <li class="eligibility-dropdown-input"><a href="#"><strong>Member ID &amp; Date of Birth</strong> <i class="fas fa-angle-up fc-base-accent"></i></a></li>
+
+                                            <li class="eligibility-dropdown-title"><strong>*Options below are not currently active</strong></li>
+
+                                            <li><strong>*</strong>Member ID &amp; Name</li>
+                                            <li><strong>*</strong>Member Name &amp; Date of Birth</li>
+
+                                        </ul>
+
+                                    </div>
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <hr>
+
+                        	<div class="form-row-2">
+
+	                        	<div class="form-element">
+
+	                        		<label>Member ID</label>
+
+	                        		<input type="text" name="" placeholder="12345678">
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                        		<label>Date of Birth*</label>
+
+	                        		<input class="date-input" type="date" name="" value="YYYY-MM-DD" required>
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <p class="text-sm"><a href="#"><i class="fas fa-plus-circle"></i> <strong>Search for Multiple Members</strong></a></p>
+
+	                        <hr>
+
+	                        <small class="text-xs m-b d-block">Leaving the date blank defaults to today's date and returns current, past, or future policies; or enter date range up to 6 years in the past or 12 months in the future.</small>
+
+	                        <div class="form-row-2">
+
+	                        	<div class="form-element">
+
+	                        		<label>First Service Date</label>
+
+	                        		<input class="date-input" type="date" name="" value="YYYY-MM-DD" required>
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                        		<label>Last Service Date</label>
+
+	                        		<input class="date-input" type="date" name="" value="YYYY-MM-DD" required>
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <a class="dpl-button-full" href="eligibility-summary.html" style="margin-top: 14px;">Verify Eligibility</a>
+                        	
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="dpl-card">
+
+                    <div class="dpl-card-body">
+
+                    	<div class="d-flex-3 align-c">
+
+                    		<span class="sicon-claims title-icon m-b"></span>
+
+                    		<h2 class="text-lg"><strong>Look Up a Claim or Ticket</strong></h2>
+
+                    		<p class="text-sm m-0"><a href="../flagged-claims-and-tickets.html"><strong>View Flagged Claims and Tickets</strong></a></p>
+
+                    	</div>
+
+                    	<hr>
+
+                    	<form class="form">
+
+                    		<div class="form-row-1">
+
+	                        	<div class="form-element">
+
+	                        		<div class="d-flex">
+
+	                        			<label class="label-sm">Select Your Claims Search Criteria*</label>
+
+	                        			<p class="text-sm m-0">*Required Fields</p>
+
+	                        		</div>
+
+                                    <div class="claim-dropdown">
+
+    	                        		<select>
+
+    	                        			<option value="0">Member ID &amp; Date of Birth</option>
+    	                        			
+    	                        		</select>
+
+                                        <a class="claim-dropdown-activator" href="#claim-dropdown"></a>
+
+                                        <ul class="claim-dropdown-content" id="claim-dropdown">
+
+                                            <li class="claim-dropdown-input"><a href="#"><strong>Member ID &amp; Date of Birth</strong> <i class="fas fa-angle-up fc-base-accent"></i></a></li>
+                                            <li class="claim-dropdown-title">Search for claims by</li>
+                                            <li><a href="index.html"><strong>Member ID &amp; Date of Birth</strong> <i class="fas fa-check fc-base-accent"></i></a></li>
+                                            <li><a href="#">Member ID &amp; Member Name</a></li>
+                                            <li><a href="#">Member Name &amp; Date of Birth</a></li>
+                                            <li><a href="#">Patient Account Number or Claim Number</a></li>
+                                            <li><a href="claims-search-provider-info.html">Provider Information</a></li>
+                                            <li class="claim-dropdown-title">Search for rework tickets</li>
+                                            <li><a href="#">Claims Reconsideration</a></li>
+                                            <li><a href="#">Pended Claim Ticket</a></li>
+                                            <li><a href="#">Appeal Status</a></li>
+                                            
+                                        </ul>
+
+                                    </div>
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <hr>
+
+	                        <div class="form-row-3-flex">
+
+	                        	<p class="text-sm m-r fc-gray"><strong>Search By:</strong></p>
+
+	                        	<div class="form-element m-r">
+
+                                    <label class="form-radio">
+
+                                        <input class="radio" type="radio" checked="checked" name="radio">
+
+                                        <span>TIN<br> <strong>2847938</strong> <a href="#"><strong class="text-xs">Edit</strong></a></span>
+
+                                    </label>
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+                                    <label class="form-radio">
+
+                                        <input class="radio" type="radio" name="radio">
+
+                                        <span>Provider<br> <strong>Dr. Felicity Firmin</strong> <a href="#"><strong class="text-xs">Edit</strong></a></span>
+
+                                    </label>
+	                        		
+	                        	</div>
+
+	                        </div>
+
+                        </form>
+
+                        <hr class="m-0 m-b">
+
+                        <form class="form">
+
+	                        <div class="form-row-2">
+
+	                        	<div class="form-element">
+
+	                        		<label>Member ID</label>
+
+	                        		<input type="text" name="" placeholder="12345678">
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                        		<label>Date of Birth</label>
+
+	                        		<input class="date-input" type="date" name="" value="YYYY-MM-DD" required>
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <hr class="m-0 m-b">
+
+	                        <div class="form-row-3-flex">
+
+	                        	<p class="text-sm m-r fc-gray"><strong>Select Range:</strong></p>
+
+	                        	<div class="form-element m-r">
+
+                                    <label class="form-radio">
+
+                                        <input class="radio" type="radio" name="radio" checked="checked">
+
+                                        <span>Custom Date</span>
+
+                                    </label>
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+                                    <label class="form-radio">
+
+                                        <input class="radio" type="radio" name="radio">
+
+                                        <span>Predefined Date</span>
+
+                                    </label>
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <div class="form-row-2">
+
+	                        	<div class="form-element">
+
+	                        		<label>First Service Date</label>
+
+	                        		<input class="date-input" type="date" name="" value="YYYY-MM-DD" required>
+	                        		
+	                        	</div>
+
+	                        	<div class="form-element">
+
+	                        		<label>Last Service Date</label>
+
+	                        		<input class="date-input" type="date" name="" value="YYYY-MM-DD" required>
+	                        		
+	                        	</div>
+
+	                        </div>
+
+	                        <a class="dpl-button-full" href="claim-summary.html">Submit Search</a>
+                        	
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+                            
+        </main>
+
+        <!-- JS Links -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+        <script defer src="js/classie.js"></script>
+
+        <script defer src="js/scripts.js"></script>
+
+    </body>
+
+</html>

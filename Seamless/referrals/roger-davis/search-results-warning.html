@@ -18,9 +18,9 @@
 
         <!-- Styles -->
 
-        <link href="../styles/sicons.css" rel="stylesheet" type="text/css">
-        <link href="../styles/fontawesome.css" rel="stylesheet" type="text/css">
-        <link href="../styles/styles.css" rel="stylesheet" type="text/css">
+        <link href="../../styles/sicons.css" rel="stylesheet" type="text/css">
+        <link href="../../styles/fontawesome.css" rel="stylesheet" type="text/css">
+        <link href="../../styles/styles.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
 
 
@@ -149,7 +149,7 @@
                         <select class="m-b">
 
                             <option value="0">Scott Brundle</option>
-                            
+                            <option value="0">Catherine Merchant, M.D.</option>
 
                         </select>
 
@@ -395,13 +395,13 @@
 
                         <div class="d-flex p-lr">
 
-                            <p class="m-0">Verifying Provider<br> <span class="sicon-error fc-warning" style="vertical-align: -1px;"></span> <span>Selected Care Provider</span></p>
+                            <p class="m-0">Verifying Provider<br> <span class="sicon-error fc-warning" style="vertical-align: -1px;"></span> <span>Selected Care Provider doesn't match patient's primary care provider.</span></p>
 
                         </div>
 
                         <div class="d-flex p-lr">
 
-                            <p class="m-0 text-sm">Please <a href="#">change your selection</a> in order to continue with a new referral for this member. Only the member's assigned primary care provider or a primary care provider associated can submit a referral.</p>
+                            <p class="m-0 text-sm">Please <a href="#"><strong>change your selection</strong></a> in order to continue with a new referral for this member. Only the member's assigned primary care provider or a primary care provider associated can submit a referral.</p>
 
                         </div>
 
@@ -427,7 +427,21 @@
 
                         <div class="accordion-table">
 
-                            <p class="align-c m-0 m-b"><span class="m-r">Not looking to create a referral based on the patient's history?</span> <a class="dpl-button" href="create-referral.html">Create a New Referral</a></p>
+                            <div style="padding: 0 1rem;" class="notification-container m-b" id="notification-box">
+
+                                <div class="dpl-notification-box-warning">
+
+                                    <div>
+
+                                        <p class="m-0"><strong>Since the selected care provider does not match the patient's primary care provider or an associated primary care provider, you are unable to duplicate referrals in the table below or create a brand new referral.</strong> <br>These actions have been disabled. To enable these actions, please change your selected provider.<br> <a href="#"><strong>Change your selected provider</strong></a></p>
+
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+
+                            <p class="align-c m-0 m-b"><span class="m-r">Not looking to create a referral based on the patient's history?</span> <a class="dpl-button dpl-button-inactive" href="create-referral.html">Create a New Referral</a></p>
 
                         </div>
 
@@ -593,17 +607,17 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-        <script defer src="../js/classie.js"></script>
+        <script defer src="../../js/classie.js"></script>
 
-        <script defer src="../js/accordion.js"></script>
+        <script defer src="../../js/accordion.js"></script>
 
-        <script defer src="../js/accordion-table.js"></script>
+        <script defer src="../../js/accordion-table.js"></script>
 
-        <script defer src="../js/accordion-three.js"></script>
+        <script defer src="../../js/accordion-three.js"></script>
 
-        <script defer src="../js/active-menu.js"></script>
+        <script defer src="../../js/active-menu.js"></script>
 
-        <script defer src="../js/scripts.js"></script>
+        <script defer src="../../js/scripts.js"></script>
 
     </body>
 

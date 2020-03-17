@@ -631,14 +631,6 @@
 		"oAP": "/referrals/carlotta-guidicelli/referral-search.html",
 		"oF": 0
 		},
-	"/referrals/carlotta-guidicelli/search-results-warning.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/referrals/carlotta-guidicelli/search-results-warning.html",
-		"oF": 0
-		},
 	"/referrals/carlotta-guidicelli/search-results.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -693,14 +685,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/referrals/ellen-scott/referral-search.html",
-		"oF": 0
-		},
-	"/referrals/ellen-scott/search-results-warning.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/referrals/ellen-scott/search-results-warning.html",
 		"oF": 0
 		},
 	"/referrals/ellen-scott/search-results.html": {
@@ -781,14 +765,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/referrals/stephanie-johnson/referral-search.html",
-		"oF": 0
-		},
-	"/referrals/stephanie-johnson/search-results-warning.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/referrals/stephanie-johnson/search-results-warning.html",
 		"oF": 0
 		},
 	"/referrals/stephanie-johnson/search-results.html": {

@@ -2203,7 +2203,7 @@ textarea {
 .dpl-modal.referral-step-2-modal {
   min-width: 1050px; }
 
-.modal-one:target, .modal-two:target, .modal-three:target, .modal-four:target, #add-service-modal:target, #member-modal:target, #referral-step-1-modal:target, #referral-step-2-modal:target {
+.modal-one:target, .modal-two:target, .modal-three:target, .modal-four:target, #add-service-modal:target, #member-modal:target, #referral-step-1-modal:target, #referral-step-2-modal:target, #pcphistory:target {
   visibility: visible;
   opacity: 1; }
 

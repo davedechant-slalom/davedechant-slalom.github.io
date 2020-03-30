@@ -188,9 +188,10 @@
                 <ul class="dpl-breadcrumbs-list">
 
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="#">Claim Summary Page</a></li>
-                    <li><a href="#">Claim Reconsideration Form</a></li>
-                    <li>Reconsideration Confirmation Page</li>
+                    <li><a href="index.html">Referrals</a></li>
+                    <li><a href="search-results.html">Search Results</a></li>
+                    <li><a href="#">New Referral</a></li>
+                    <li>Referral Confirmation</li>
                     
                 </ul>
 
@@ -215,7 +216,20 @@
 
                 </div>
 
-                <p class="submitted-date">Submitted: <strong>MM/DD/YYYY</strong></p>
+                <p class="submitted-date">Submitted: <strong>
+
+                    <script>
+
+                        var today = new Date();
+                        var dd = String(today.getDate()).padStart(2, '0');
+                        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                        var yyyy = today.getFullYear();
+                        today = mm + '/' + dd + '/' + yyyy;
+                        document.write(today);
+
+                    </script>
+
+                </strong></p>
 
             </div>
 
@@ -335,7 +349,7 @@
 
                             <p>TIN<br> <span>299230230</span></p>
 
-                            <p class="m-0">Phone Number<br> <span>555-555-5555</span></p>
+                            <p class="m-0">Phone Number<br> <span>612-302-4101</span></p>
 
                         </div>
 
